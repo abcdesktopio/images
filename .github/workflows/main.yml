@@ -73,4 +73,5 @@ jobs:
           cat artifact/${{ env.image }}.${{ env.imagetag }}.json
           git add artifact/${{ env.image }}.${{ env.imagetag }}.json
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}" artifact/${{ env.image }}.${{ env.imagetag }}.json
+          git pull
           git push         
