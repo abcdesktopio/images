@@ -62,19 +62,23 @@ jobs:
           name: artifact-${{ env.image }}
           path: artifact/${{ env.image }}.${{ env.imagetag }}.json
           if-no-files-found: warn # 'error' or 'ignore' are also available, defaults to `warn`
-          
+      
       - name: Commit build artifacts 
         env: 
           CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
           CI_COMMIT_AUTHOR: ${{ github.event.repository.name }} Continuous Integration
           image: ${{ github.event.client_payload.image }}
           imagetag: ${{ github.event.client_payload.tag }}
-        run: |
-          git config --global pull.ff only
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "abcdesktop@users.noreply.github.com"
-          cat artifact/${{ env.image }}.${{ env.imagetag }}.json
-          git add artifact/${{ env.image }}.${{ env.imagetag }}.json
-          git commit -m "${{ env.CI_COMMIT_MESSAGE }}" artifact/${{ env.image }}.${{ env.imagetag }}.json
-          git pull --rebase origin main
-          git push --force origin main        
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 10
+          max_attempts: 3
+          command: |
+            git config --global pull.ff only
+            git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+            git config --global user.email "abcdesktop@users.noreply.github.com"
+            cat artifact/${{ env.image }}.${{ env.imagetag }}.json
+            git add artifact/${{ env.image }}.${{ env.imagetag }}.json
+            git commit -m "${{ env.CI_COMMIT_MESSAGE }}" artifact/${{ env.image }}.${{ env.imagetag }}.json
+            git pull --rebase origin main
+            git push --force origin main        
