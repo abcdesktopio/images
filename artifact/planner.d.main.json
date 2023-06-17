@@ -1,0 +1,123 @@
+[
+    {
+        "Id": "sha256:c1beed09365190ea21d03217fcf8b93618e40f67eed4636f557c49588af9c692",
+        "RepoTags": [
+            "abcdesktopio/planner.d:main"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/planner.d@sha256:3a2d435a64b4c384ecdeb5533fb2cf24c60ce4bf1c2b88b97a5f947e6810c388"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-06-17T11:29:38.132162441Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "APPNAME=Planner",
+                "APPBIN=/usr/bin/planner",
+                "APP=/usr/bin/planner"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "office",
+                "oc.displayname": "Planner",
+                "oc.fileextensions": "mpp;mpx",
+                "oc.icon": "planner.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ5MCA0OTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MCA0OTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8ZyBpZD0iWE1MSURfODFfIj4NCgkJCTxnPg0KCQkJCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiNBRkI2QkI7IiBwb2ludHM9IjQ4MCwyOTcuNSA0MTUsMzYyLjUgNDE1LDI5Ny41IAkJCQkiLz4NCgkJCQk8cG9seWdvbiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgcG9pbnRzPSI0ODAsNTIuNSA0ODAsMjk3LjUgNDE1LDI5Ny41IDQxNSwzNjIuNSAxMCwzNjIuNSAxMCw1Mi41IAkJCQkiLz4NCgkJCTwvZz4NCgkJCTxwYXRoIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBkPSJNNDkwLDUyLjVjMC01LjUyMi00LjQ3Ny0xMC0xMC0xMEgxMGMtNS41MjMsMC0xMCw0LjQ3OC0xMCwxMHYzMTBjMCw1LjUyMiw0LjQ3NywxMCwxMCwxMGg0MDVsMCwwDQoJCQkJYzIuNjAyLTAuMDAxLDUuMTU5LTEuMDE2LDcuMDcxLTIuOTI5bDY1LTY1YzEuOTEyLTEuOTEzLDIuOTA0LTQuNDcsMi45MDUtNy4wNzFINDkwVjUyLjV6IE00MTUsMjg3LjVjLTUuNTIzLDAtMTAsNC40NzgtMTAsMTANCgkJCQl2NTVIMjB2LTI5MGg0NTB2MjI1SDQxNXogTTQyNSwzMzguMzU3VjMwNy41aDMwLjg1OEw0MjUsMzM4LjM1N3oiLz4NCgkJPC9nPg0KCTwvZz4NCgk8Zz4NCgkJPGcgaWQ9IlhNTElEXzgyXyI+DQoJCQk8Zz4NCgkJCQk8cmVjdCB4PSI2MCIgeT0iOTcuNSIgc3R5bGU9ImZpbGw6I0FGQjZCQjsiIHdpZHRoPSIxMjAiIGhlaWdodD0iNjAiLz4NCgkJCQk8cmVjdCB4PSIyNTAiIHk9IjEwMi41IiBzdHlsZT0iZmlsbDojQUZCNkJCOyIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIvPg0KCQkJCTxyZWN0IHg9IjI1MCIgeT0iMTgyLjUiIHN0eWxlPSJmaWxsOiNBRkI2QkI7IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjUwIi8+DQoJCQkJPHJlY3QgeD0iMjUwIiB5PSIyNjIuNSIgc3R5bGU9ImZpbGw6I0FGQjZCQjsiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiLz4NCgkJCTwvZz4NCgkJCTxwYXRoIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBkPSJNMjUwLDE2Mi41aDEwMGM1LjUyMywwLDEwLTQuNDc4LDEwLTEwdi01MGMwLTUuNTIyLTQuNDc3LTEwLTEwLTEwSDI1MGMtNS41MjMsMC0xMCw0LjQ3OC0xMCwxMA0KCQkJCXYxNWgtMjVjLTUuNTIzLDAtMTAsNC40NzgtMTAsMTB2NzVoLTgwdi0zNWg1NWM1LjUyMywwLDEwLTQuNDc4LDEwLTEwdi02MGMwLTUuNTIyLTQuNDc3LTEwLTEwLTEwSDYwYy01LjUyMywwLTEwLDQuNDc4LTEwLDEwDQoJCQkJdjYwYzAsNS41MjIsNC40NzcsMTAsMTAsMTBoNDV2NDVjMCw1LjUyMiw0LjQ3NywxMCwxMCwxMGg5MHY3MGMwLDUuNTIyLDQuNDc3LDEwLDEwLDEwaDI1djEwYzAsNS41MjIsNC40NzcsMTAsMTAsMTBoMTAwDQoJCQkJYzUuNTIzLDAsMTAtNC40NzgsMTAtMTB2LTUwYzAtNS41MjItNC40NzctMTAtMTAtMTBIMjUwYy01LjUyMywwLTEwLDQuNDc4LTEwLDEwdjIwaC0xNXYtNjBoMTV2MTBjMCw1LjUyMiw0LjQ3NywxMCwxMCwxMGgxMDANCgkJCQljNS41MjMsMCwxMC00LjQ3OCwxMC0xMHYtNTBjMC01LjUyMi00LjQ3Ny0xMC0xMC0xMEgyNTBjLTUuNTIzLDAtMTAsNC40NzgtMTAsMTB2MjBoLTE1di02NWgxNXYxNQ0KCQkJCUMyNDAsMTU4LjAyMiwyNDQuNDc3LDE2Mi41LDI1MCwxNjIuNXogTTI2MCwxMTIuNWg4MHYzMGgtODBWMTEyLjV6IE03MCwxMDcuNWgxMDB2NDBINzBWMTA3LjV6IE0yNjAsMjcyLjVoODB2MzBoLTgwVjI3Mi41eg0KCQkJCSBNMjYwLDE5Mi41aDgwdjMwaC04MFYxOTIuNXoiLz4NCgkJPC9nPg0KCTwvZz4NCgk8Zz4NCgkJPHJlY3QgeD0iNTAiIHk9IjI0Ny41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9Ijc1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8cmVjdCB4PSI1MCIgeT0iMjc3LjUiIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiB3aWR0aD0iNzUiIGhlaWdodD0iMjAiLz4NCgk8L2c+DQoJPGc+DQoJCTxyZWN0IHg9IjUwIiB5PSIzMDcuNSIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIHdpZHRoPSIxMzAiIGhlaWdodD0iMjAiLz4NCgk8L2c+DQoJPGc+DQoJCTxyZWN0IHg9IjEzNSIgeT0iMjQ3LjUiIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiLz4NCgk8L2c+DQoJPGc+DQoJCTxyZWN0IHg9IjM4MCIgeT0iOTIuNSIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIHdpZHRoPSIyNSIgaGVpZ2h0PSIyMCIvPg0KCTwvZz4NCgk8Zz4NCgkJPHJlY3QgeD0iNDIwIiB5PSI5Mi41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8cmVjdCB4PSIzODAiIHk9IjEyMi41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8cmVjdCB4PSI0MjAiIHk9IjEyMi41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8cmVjdCB4PSIzODAiIHk9IjE1Mi41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8cmVjdCB4PSI0MjAiIHk9IjE1Mi41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8cmVjdCB4PSIzODAiIHk9IjE4Mi41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8cmVjdCB4PSI0MjAiIHk9IjE4Mi41IiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjIwIi8+DQoJPC9nPg0KCTxnPg0KCQk8ZyBpZD0iWE1MSURfODNfIj4NCgkJCTxnPg0KCQkJCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiNFN0VDRUQ7IiBwb2ludHM9IjQ4MCw0MTcuNSA0MjAsNDM3LjUgNDIwLDM5Ny41IAkJCQkiLz4NCgkJCQk8cmVjdCB4PSIxMCIgeT0iMzk3LjUiIHN0eWxlPSJmaWxsOiNBRkI2QkI7IiB3aWR0aD0iNjAiIGhlaWdodD0iNDAiLz4NCgkJCQk8cmVjdCB4PSI3MCIgeT0iMzk3LjUiIHN0eWxlPSJmaWxsOiNGRkQyNDg7IiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQwIi8+DQoJCQk8L2c+DQoJCQk8cGF0aCBzdHlsZT0iZmlsbDojMjMxRjIwOyIgZD0iTTQ4My4xNjIsNDA4LjAxM2wtNjAtMjBjLTEuMDMzLTAuMzQ0LTIuMS0wLjQ5OC0zLjE2Mi0wLjQ5OFYzODcuNUgxMGMtNS41MjMsMC0xMCw0LjQ3OC0xMCwxMHY0MA0KCQkJCWMwLDUuNTIyLDQuNDc3LDEwLDEwLDEwaDQxMGwwLDBoMC4wMDFjMS4wNjEsMCwyLjEyOS0wLjE2OSwzLjE2MS0wLjUxM2w2MC0yMGM0LjA4My0xLjM2MSw2LjgzOC01LjE4Myw2LjgzOC05LjQ4Nw0KCQkJCUM0OTAsNDEzLjE5Niw0ODcuMjQ2LDQwOS4zNzQsNDgzLjE2Miw0MDguMDEzeiBNNjAsNDI3LjVIMjB2LTIwaDQwVjQyNy41eiBNNDEwLDQwNy41djIwSDgwdi0yMEg0MTB6IE00MzAsNDIzLjYyNnYtMTIuMjUyDQoJCQkJbDE4LjM3Nyw2LjEyNkw0MzAsNDIzLjYyNnoiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K",
+                "oc.keyword": "planner",
+                "oc.launch": "planner.Planner",
+                "oc.legacyfileextensions": "mpp;mpx",
+                "oc.mimetype": "application/x-planner;",
+                "oc.name": "Planner",
+                "oc.path": "/usr/bin/planner",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 463215974,
+        "VirtualSize": 463215974,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/de52b682543d94e145277e7192e6b9015e95818b4b64fee71992aced4c73a738/diff:/var/lib/docker/overlay2/2f2af746666dfa7612f56cfb4d6cabbf9a98d31ef309169238f771567a4ca95b/diff:/var/lib/docker/overlay2/b556ce9daf23aaa112491ba5f14fd9f51b2bfea69859ae2434f6b1fe96b6ddd7/diff:/var/lib/docker/overlay2/8a56f9143af3217a39dbc9a30c906509d5d99e468534e56b57ff58e842463448/diff:/var/lib/docker/overlay2/75f990d51a8e918b74e79e35e8a3b3d0aa8b9e33a17e23b448dbbb0b86f3529e/diff:/var/lib/docker/overlay2/4a8701dcbdf52c7be7513a7f1b8e810e49e388f0e1a3a6c240c9b5fc7f67b662/diff:/var/lib/docker/overlay2/9baeed40fec40c224ee3bda9c778ec7bcd75f224a648a519a64b82980d3c377c/diff:/var/lib/docker/overlay2/f8afa81358a94ccd744b6b338e31e414f81c5fc95e7966aba0d62f41fb208586/diff:/var/lib/docker/overlay2/3470a761068e9f823e631c99634332bf1777ba86e21cf56e8d6df8b6e03afb62/diff:/var/lib/docker/overlay2/3b2bf93a1231acf3027efb6899c1de8dda332ac7b349d8e9ec893361216e9f77/diff:/var/lib/docker/overlay2/04912abe0a4ea37aedad21884cb7778deda0e149b37386e28b8dd365ce00dcc6/diff:/var/lib/docker/overlay2/eaa0991221557bb84c2e4b4504eb2877d7395075148a12cb24cbf4e7e8f23934/diff:/var/lib/docker/overlay2/3a922fc1230ed0c6e9cf87272a1ee6fc86f4dc9eb97aaeddff1193c889cdb5bf/diff:/var/lib/docker/overlay2/c62c242995b79a35ead43090b56b0e4264d8bf5a1d6c97878c2a4dda0b80c269/diff:/var/lib/docker/overlay2/d37055127c8f3894d123c63955681d0f2703ca5277929f912e19b569cc9e128e/diff:/var/lib/docker/overlay2/cf0f802465c5eaee5d44ace6f83791878a11c1e604293aa960fe022626e0d295/diff",
+                "MergedDir": "/var/lib/docker/overlay2/32a6c7d67b847f94f253ab2addc5320e8b7c3af0bc6937f1f699a4d629471801/merged",
+                "UpperDir": "/var/lib/docker/overlay2/32a6c7d67b847f94f253ab2addc5320e8b7c3af0bc6937f1f699a4d629471801/diff",
+                "WorkDir": "/var/lib/docker/overlay2/32a6c7d67b847f94f253ab2addc5320e8b7c3af0bc6937f1f699a4d629471801/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:b8a36d10656ac19ddb96ef3107f76820663717708fc37ce929925c36d1b1d157",
+                "sha256:8160c7fd959921d06b521963ed3dab743817dbd7296092c2b5aaa237a823c8fd",
+                "sha256:c517d231c49852912a3ad85e2a35de0fc06fa224611f00dba81df259326cc5ff",
+                "sha256:ab5d9182254a11275d67219e2dc04a5d0f7e0ea4058a6807e019a757d100ada9",
+                "sha256:4b1c05d92ada3c1bc709a6449e12913905d71dfcb43bacda22e48020827d04a2",
+                "sha256:db9f83beaecc3910ae8d4ca41344f329e1ab9ec75b5677e43caaa75daf32f4d4",
+                "sha256:b5caef195cab4c6118419bf2b86f4b8ee128af68f612f66ba507fa0cf4afecfb",
+                "sha256:8c1929852511c798673eced3e7b549a5762123f52487da74a8510faaacf5217c",
+                "sha256:0bc0fc9f1b1f3faeb3d05be46d18595f3fa300e573131b0b78420e0994b630c3",
+                "sha256:19d0fb77c1bb54de0da2a26c416b2532831afdcad9868003312fcdc7547b2e10",
+                "sha256:c664c71faeb1171432b1d396b40e8eeb552c9d02d3ed9bf7933171a5a8533d6f",
+                "sha256:738490b44b5f26b784ec933858331bc45f032ec5a05cf95bb2cf161a64743035",
+                "sha256:70abb6d938a5e899ace6cd98fcf1b3d3da025dd11f3860bd4a3262f7073b0ee2",
+                "sha256:21817c286e4338fcf67ffb31b8ebefe858915724f20873b73c5acf5d07acd975",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:240bb6ea3d5c68515fd2d50fa1a5fae231c0c907b9f2f75177dcb5bc0bb4e185",
+                "sha256:8f87fe4522b42d40cf2ebc81fa80e03bc37c09d2e85ee86c482537c5415e79d6"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
