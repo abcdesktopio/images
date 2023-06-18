@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:dd33a505fd80fd55e216c18f5273ec8108c74101257318a411566d05c847d98f",
+        "Id": "sha256:d19305902f55bf941a0b2132aa9884942466073be2dcf73b40a80d25f88d5fc7",
         "RepoTags": [
             "abcdesktopio/cuda.d:main"
         ],
         "RepoDigests": [
-            "abcdesktopio/cuda.d@sha256:43cb4706f3ebf8d40a3cbebdc93e1dc8bab5c80cdf413aaf3947bb3f0ff206bf"
+            "abcdesktopio/cuda.d@sha256:010d4542856054a8a1b42b5323ae6f0da20979efcf4a8997b173360a5469da6c"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2023-06-17T13:34:15.236105258Z",
+        "Created": "2023-06-18T11:18:51.502399486Z",
         "Container": "",
         "ContainerConfig": {
             "Hostname": "",
@@ -45,7 +45,7 @@
             "Env": [
                 "PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "NVARCH=x86_64",
-                "NVIDIA_REQUIRE_CUDA=cuda>=12.0 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=510,driver<511 brand=unknown,driver>=510,driver<511 brand=nvidia,driver>=510,driver<511 brand=nvidiartx,driver>=510,driver<511 brand=geforce,driver>=510,driver<511 brand=geforcertx,driver>=510,driver<511 brand=quadro,driver>=510,driver<511 brand=quadrortx,driver>=510,driver<511 brand=titan,driver>=510,driver<511 brand=titanrtx,driver>=510,driver<511 brand=tesla,driver>=515,driver<516 brand=unknown,driver>=515,driver<516 brand=nvidia,driver>=515,driver<516 brand=nvidiartx,driver>=515,driver<516 brand=geforce,driver>=515,driver<516 brand=geforcertx,driver>=515,driver<516 brand=quadro,driver>=515,driver<516 brand=quadrortx,driver>=515,driver<516 brand=titan,driver>=515,driver<516 brand=titanrtx,driver>=515,driver<516 brand=tesla,driver>=520,driver<521 brand=unknown,driver>=520,driver<521 brand=nvidia,driver>=520,driver<521 brand=nvidiartx,driver>=520,driver<521 brand=geforce,driver>=520,driver<521 brand=geforcertx,driver>=520,driver<521 brand=quadro,driver>=520,driver<521 brand=quadrortx,driver>=520,driver<521 brand=titan,driver>=520,driver<521 brand=titanrtx,driver>=520,driver<521",
+                "NVIDIA_REQUIRE_CUDA=cuda>=12.0 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=510,driver<511 brand=unknown,driver>=510,driver<511 brand=nvidia,driver>=510,driver<511 brand=nvidiartx,driver>=510,driver<511 brand=geforce,driver>=510,driver<511 brand=geforcertx,driver>=510,driver<511 brand=quadro,driver>=510,driver<511 brand=quadrortx,driver>=510,driver<511 brand=titan,driver>=510,driver<511 brand=titanrtx,driver>=510,driver<511 brand=tesla,driver>=515,driver<516 brand=unknown,driver>=515,driver<516 brand=nvidia,driver>=515,driver<516 brand=nvidiartx,driver>=515,driver<516 brand=geforce,driver>=515,driver<516 brand=geforcertx,driver>=515,driver<516 brand=quadro,driver>=515,driver<516 brand=quadrortx,driver>=515,driver<516 brand=titan,driver>=515,driver<516 brand=titanrtx,driver>=515,driver<516",
                 "NV_CUDA_CUDART_VERSION=12.0.107-1",
                 "NV_CUDA_COMPAT_PACKAGE=cuda-compat-12-0",
                 "CUDA_VERSION=12.0.0",
@@ -85,46 +85,48 @@
                 "oc.path": "/usr/bin/konsole",
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
                 "oc.template": "abcdesktopio/oc.template.ubuntu.nvidia.22.04",
-                "oc.type": "app"
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
             }
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 855741703,
-        "VirtualSize": 855741703,
+        "Size": 848832199,
+        "VirtualSize": 848832199,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/8a273437437ffa5e2562a2c0404b136e0cbc4f4c4cda52841a4cfbf8cbfee908/diff:/var/lib/docker/overlay2/ca4f6ba223a6663df8644f86d1000294676560ccef3b17fad141beeefdaa4081/diff:/var/lib/docker/overlay2/2801c5d417343545c6315da6852abe740d1acf676162518f70d99bceb8512449/diff:/var/lib/docker/overlay2/1c7f7e928c98a10edbe141c4efac913f26bf32cbee09220d38932200be6a4538/diff:/var/lib/docker/overlay2/6b0eff5103a57341e3d93b16ff2b38c29eed85b1f3a41b0d47f5bbe3ce56f377/diff:/var/lib/docker/overlay2/16b995df4c0f6d99ada73d94d4fe582238591760c18f0660ea42b8372f6f5af0/diff:/var/lib/docker/overlay2/5ca91fd229003c225cd605b2549fd39ad8cf3ed00e234bce138128d182002ee9/diff:/var/lib/docker/overlay2/b37f81fc5e11b9c867dfe7f4a33cf40208aa6579de9c1dbdc2ca46b093c1d8f8/diff:/var/lib/docker/overlay2/1dd78b0f1fb0af7146a295fa8c1d7dc0ae996d98dbbe591993514ba1cf507043/diff:/var/lib/docker/overlay2/46e71b3956188d0fb9949e6b07d95fd42e8f6ca1d12f69ee22399c024561946b/diff:/var/lib/docker/overlay2/5454f35552f09ae034c6c52aecef833a461ca2fc51871dc8a8403888dd86fac6/diff:/var/lib/docker/overlay2/18255942d3ef05d9d2f98db4aef973e214261502ba29dffc3a4a77d8974a1fec/diff:/var/lib/docker/overlay2/4a5462e4bfecf8caf2434e8c5e4cc8dda52a1a4e8d42482f31c3556a3986a7e7/diff:/var/lib/docker/overlay2/b53dce6029978450827d994d79c17a5f8b7989ad6a32e0059faa4803343b8003/diff:/var/lib/docker/overlay2/5f025a1eb79b6497d8573fcc0cb3ab4cf76f85cfaf66647f9f66e4f6fbf66938/diff:/var/lib/docker/overlay2/12b0ccbdb4c60935a1c24792637da2ff0106f0c3acd513a8b304305aaf7a0036/diff:/var/lib/docker/overlay2/eea837a765cf84bc77c0104692021824dbfd03fedfc630508298ef995990f534/diff:/var/lib/docker/overlay2/7ab9a00a6d7d3292700cd42f32e543c2ed245e6cdf627f26cec390d3670c9765/diff:/var/lib/docker/overlay2/b31f2eb3fef6bc77ca0fc04a71fb18cee4c82bd296d814b3194c42252785b9ed/diff:/var/lib/docker/overlay2/cf497415fa13cddcbd921da830e5ad30a93beef5661579a6a9db7273cd86b2d1/diff",
-                "MergedDir": "/var/lib/docker/overlay2/4119cee0f250c3590d1b531ca1e9284cf1634345fe1efab5afc5f3f9905bf2e8/merged",
-                "UpperDir": "/var/lib/docker/overlay2/4119cee0f250c3590d1b531ca1e9284cf1634345fe1efab5afc5f3f9905bf2e8/diff",
-                "WorkDir": "/var/lib/docker/overlay2/4119cee0f250c3590d1b531ca1e9284cf1634345fe1efab5afc5f3f9905bf2e8/work"
+                "LowerDir": "/var/lib/docker/overlay2/0ffb9341ae9ad36703c29e392a4e37d77f1e846e6f0822df45ac4845cd44df8d/diff:/var/lib/docker/overlay2/914f0039b15253a3d96a14296defabefe8030a10729985709eb3738cc58e5e1e/diff:/var/lib/docker/overlay2/77a385d850d0381ee3cca4eeb0b9effdd337599acabfcc4c2aac8a65c8041f0d/diff:/var/lib/docker/overlay2/0abd8804bc4032bb1d1c3ee771354e5f03f13d4da626960c549bba526cc04faf/diff:/var/lib/docker/overlay2/8124dbd9fd58b5cd69212e7cdb408c1a54924e7010c85826601b383467ea977e/diff:/var/lib/docker/overlay2/f1a68f38fd4faea037f2676d2dc38d83615de4770c7a4ea26dc8c5de982aa857/diff:/var/lib/docker/overlay2/0f1b0a35c88a54e0154b526a483062aaf4d1b21011ff9a2fd41703d30e5193c8/diff:/var/lib/docker/overlay2/2719e5c3e467044b628dfb5ff826fe11feb3a052e581fa4ff05618d9d5d38954/diff:/var/lib/docker/overlay2/cc7592597a07a8960f6d009d61fc6c31b2381d2e7f3f8c017ccec03385b11014/diff:/var/lib/docker/overlay2/e37e81a5380a383ae37d3d7c281fb32b26d3953a655d02b99484f951a8aa8af1/diff:/var/lib/docker/overlay2/48ced90198a28169af75afbc957a0daf19b9d1a459552df13ff5d1d2bdc1e8f8/diff:/var/lib/docker/overlay2/b75ad7186ccb264e0badfde3b36b04c5124c0005f316d30dc75f20da4c4c63d0/diff:/var/lib/docker/overlay2/c8b945830f480c485da75ba1062854763a01851e368cb1bce8e49174efcfea0f/diff:/var/lib/docker/overlay2/5fbb8ceabac65530571c06d4982d02ba60e02496981b59580f84fa9cda519d19/diff:/var/lib/docker/overlay2/33362b39a0d2d2bc4a7edc1953873a7159cac4e1648c59420b0a87e012614df6/diff:/var/lib/docker/overlay2/ce19a8987d1c65e5c0e8e3e7fe5762f305433b7a7f7df61a1164303b560d02d1/diff:/var/lib/docker/overlay2/49bf261703f0592034499c3d5786f45aef0a0c3a8ff41edc76c3fdbceda03260/diff:/var/lib/docker/overlay2/42451acf7fc68e3699ad83f3da15182672ad04234f048c02c949b8ea0e430789/diff:/var/lib/docker/overlay2/cbed8b546ca1272733267a358729c5ef53db9668156aaf987d5e3aabc682f9b2/diff:/var/lib/docker/overlay2/7eea4b195ce06af55f7ac05b1f9526e8e9473ac6f608c7073215be94d2f690d0/diff",
+                "MergedDir": "/var/lib/docker/overlay2/f079e83b494d2ef3a04895d44fa451ebe4328fb47e6156fd0d701500e3a63760/merged",
+                "UpperDir": "/var/lib/docker/overlay2/f079e83b494d2ef3a04895d44fa451ebe4328fb47e6156fd0d701500e3a63760/diff",
+                "WorkDir": "/var/lib/docker/overlay2/f079e83b494d2ef3a04895d44fa451ebe4328fb47e6156fd0d701500e3a63760/work"
             },
             "Name": "overlay2"
         },
         "RootFS": {
             "Type": "layers",
             "Layers": [
-                "sha256:6515074984c6f8bb1b8a9962c8fb5f310fc85e70b04c88442a3939c026dbfad3",
-                "sha256:757e47ec34819c2d32529ddf9d05f13e26bbaa740d2f716286adbb4776cf6641",
-                "sha256:38cd288d21f095ae63667792f53a10008970241d29fc5acffa75a495aea377d2",
-                "sha256:0a3db33919af825f1a2c47c4f8c764a361acf0e3704b65644317037acb377c6b",
-                "sha256:c90a5299a232bb7a111ba713fb4bf0a00548197b158c55b8e811009b36528d01",
-                "sha256:b41b778f120b1eed20ae289dd93a088d6d502e9a6a52386662d98df60eefa405",
-                "sha256:99c3387fc89309dddf27089a4d9d05b8a7f364d224471037d1a9defced9b4158",
-                "sha256:36886c0564e037a427df7c875c16a438b490ba01dc337034de7cda30d476a7f4",
-                "sha256:612f2655b9d132819420279e70d0c6d010c245ae266df8d9c2099ee0e13ffdfb",
-                "sha256:f899cfe2b9918829c6b63437b168d077333c48a48d831ab255837efe92c08cc7",
-                "sha256:cd4b621068c3733ea72be97115917e84b0bc9f25f430dc67cb319cc955294067",
-                "sha256:53291cd0f3a5077832b0522e4e9dee48027dbd8d5afb0e8ea40efb339c3ac19c",
-                "sha256:13e26c2eb2138f257531fc83b23a47816332e0341d39548182c6072e85451a67",
-                "sha256:3d4000b9bbf8ca3f0b5c09cef951382cc3a5399979c365c5a26241fe1a134133",
-                "sha256:f19af4b9dc280fdcc6e83da7d8272a2abbd2cce90b8d1acaccda27f7b0331a16",
-                "sha256:885fe999edf0dc17c9057efa80fb9750e73f2b2cf4141d1e54599628453836d1",
-                "sha256:489d732a8e8bd80c7d4159f6044ab595046bcaee51021650caf954a68b704724",
-                "sha256:3a17c591964b0dbd720a1cb0a937c0dfc3ed4e52cd57f6cf378a1b9248ed86fa",
+                "sha256:966e94ab6e166fb358a208cfd8169d22dea352501c96700eb7f45092a2962ee6",
+                "sha256:9805bfc3b312bf65cfe039fd7f11acfb83c6c63aa6c2b3c8a8eade4b3e97c1c8",
+                "sha256:506deea5027619be5608838ad712caf662a549f7934bde993fd0b9380b942952",
+                "sha256:e89af8babb06a825d403c11706d2b64f13fa35be2118931334ada068bafd453e",
+                "sha256:1a3ad1b8a4400eae104752c55f313503659638cbf80e1bff72918a89e0289c0d",
+                "sha256:c668a00e44d9dadb04310363e8075296bf51d8f608d5a9ccf3349872a80e9a86",
+                "sha256:ae618e3debf12224e47fa1a6e1a5bb00250ad64f11730c8899ef0aa22d3e404a",
+                "sha256:59defe53fa236bbd995e557b01267c73b328adb6b2d0e649cb7088cda686ab3a",
+                "sha256:94a4c58407dc81f5e5a2a41ec664d5df64037a3ea0138a77773e6465c5da7a4d",
+                "sha256:e2d37bcb50287f5a4cca7989b6cbd2fc244e64c3e684987dc52c64a9de9cfe7e",
+                "sha256:a49a7fa3c240fe212e805f0a782bed6bcea0a919a7490c51ffba6d40e53f9408",
+                "sha256:409e40ca00cb888f5e4cf2855b1407ab4bda9b7c7ae2b6a76e98c99b62ea5a61",
+                "sha256:42107ab44f60726b7ff5efd1e16be76e09814eab34a29ad35f522690a4360820",
+                "sha256:390144cc932ff2c446fea0ca0e443cd3f2951c190fac1b96dddf856fe1b908c3",
+                "sha256:0ff8a5ae6d3c8c51a4c13778f54a1dc45aec355701acf75a0a71866699b1d3ac",
+                "sha256:db25c73177e22619ec4a2cbe4c2dfce82de5cd858435e7ad077cb9fd8c92a5d5",
+                "sha256:8f101ac696f45a9b859b830f08a7177963d335fff2789d00536e0de314e7c40b",
+                "sha256:fbdd044637d6d63c165fa7204cb64ebbc5619992b45dd6e6a16ce1e869fc38eb",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:ef2f743f36c0a7178cacadb6d03a399032fc3de588d74dfc9f3e6e27af25e008",
-                "sha256:474d8587d0cc1b0353b3c4c342aa433e9d80dc970d3f3a56812d4359d3800be2"
+                "sha256:62986feb02bf58827dd017ba2a96e5087e56cf21d7fa5a222d32a26dd524dfaf",
+                "sha256:70c64cb809f0e45573a9d9159dbc0b56e7b715936e40133f36459f038311e812"
             ]
         },
         "Metadata": {
