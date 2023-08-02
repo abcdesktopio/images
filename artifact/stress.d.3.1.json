@@ -1,0 +1,130 @@
+[
+    {
+        "Id": "sha256:1ff98545dd88daea812d63fdcfd35fb286e47edb9169636f819ad29688945a4d",
+        "RepoTags": [
+            "abcdesktopio/stress.d:3.1"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/stress.d@sha256:23b1c9e56e93304cc4ef08b3ad1bbb0e7706cb5c78cc0baf28a30bafa9d4eada"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-08-02T07:45:40.763566018Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ARGS=--name stress",
+                "APPNAME=stress",
+                "APPBIN=/usr/bin/konsole"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--name stress",
+                "oc.cat": "development",
+                "oc.desktopfile": "org.kde.konsole.desktop",
+                "oc.displayname": "stress",
+                "oc.host_config": "{\"mem_limit\":\"256M\",\"shm_size\":\"128M\",\"pid_mode\":false,\"ipc_mode\":false}",
+                "oc.icon": "stress.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNDk2LjgiIGhlaWdodD0iNDk2LjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlkPSJzdmdfMSIgZmlsbD0iIzZlYzZmMCIgZD0ibTE1Miw0ODRjMCw2LjQgLTUuNiwxMiAtMTIsMTJsMCwwYy02LjQsMCAtMTIsLTUuNiAtMTIsLTEybDAsLTQ3MmMwLC02LjQgNS42LC0xMiAxMiwtMTJsMCwwYzYuNCwwIDEyLDUuNiAxMiwxMmwwLDQ3MnoiLz4KICA8cGF0aCBpZD0ic3ZnXzMiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im0yMDgsNDg0YzAsNi40IC01LjYsMTIgLTEyLDEybDAsMGMtNi40LDAgLTEyLC01LjYgLTEyLC0xMmwwLC00NzJjMCwtNi40IDUuNiwtMTIgMTIsLTEybDAsMGM2LjQsMCAxMiw1LjYgMTIsMTJsMCw0NzJ6Ii8+CiAgPHBhdGggaWQ9InN2Z181IiBmaWxsPSIjNmVjNmYwIiBkPSJtMzEyLDQ4NGMwLDYuNCAtNS42LDEyIC0xMiwxMmwwLDBjLTYuNCwwIC0xMiwtNS42IC0xMiwtMTJsMCwtNDcyYzAsLTYuNCA1LjYsLTEyIDEyLC0xMmwwLDBjNi40LDAgMTIsNS42IDEyLDEybDAsNDcyeiIvPgogIDxwYXRoIGlkPSJzdmdfNyIgZmlsbD0iIzZlYzZmMCIgZD0ibTM2OCw0ODRjMCw2LjQgLTUuNiwxMiAtMTIsMTJsMCwwYy02LjQsMCAtMTIsLTUuNiAtMTIsLTEybDAsLTQ3MmMwLC02LjQgNS42LC0xMiAxMiwtMTJsMCwwYzYuNCwwIDEyLDUuNiAxMiwxMmwwLDQ3MnoiLz4KICA8cGF0aCBpZD0ic3ZnXzkiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im0yNjAsNDg0YzAsNi40IC01LjYsMTIgLTEyLDEybDAsMGMtNi40LDAgLTEyLC01LjYgLTEyLC0xMmwwLC00NzJjMCwtNi40IDUuNiwtMTIgMTIsLTEybDAsMGM2LjQsMCAxMiw1LjYgMTIsMTJsMCw0NzJ6Ii8+CiAgPHBhdGggaWQ9InN2Z18xMSIgZmlsbD0iIzZlYzZmMCIgZD0ibTEyLjgsMTUyYy03LjIsMCAtMTIuOCwtNC44IC0xMi44LC0xMmwwLDBjMCwtNy4yIDUuNiwtMTIgMTIuOCwtMTJsNDcxLjIsMGM3LjIsMCAxMi44LDQuOCAxMi44LDEybDAsMGMwLDcuMiAtNS42LDEyIC0xMi44LDEybC00NzEuMiwweiIvPgogIDxwYXRoIGlkPSJzdmdfMTMiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im00OTYsMTk2YzAsNi40IC01LjYsMTIgLTEyLDEybC00NzIsMGMtNi40LDAgLTEyLC01LjYgLTEyLC0xMmwwLDBjMCwtNi40IDUuNiwtMTIgMTIsLTEybDQ3MiwwYzYuNCwwIDEyLDUuNiAxMiwxMmwwLDB6Ii8+CiAgPHBhdGggaWQ9InN2Z18xNSIgZmlsbD0iIzZlYzZmMCIgZD0ibTQ5NiwzMDBjMCw2LjQgLTUuNiwxMiAtMTIsMTJsLTQ3MiwwYy02LjQsMCAtMTIsLTUuNiAtMTIsLTEybDAsMGMwLC02LjQgNS42LC0xMiAxMiwtMTJsNDcyLDBjNi40LDAgMTIsNS42IDEyLDEybDAsMHoiLz4KICA8cGF0aCBpZD0ic3ZnXzE3IiBmaWxsPSIjNmVjNmYwIiBkPSJtNDk2LDI1MWMwLDYuNCAtNS42LDEyIC0xMiwxMmwtNDcyLDBjLTYuNCwwIC0xMiwtNS42IC0xMiwtMTJsMCwwYzAsLTYuNCA1LjYsLTEyIDEyLC0xMmw0NzIsMGM2LjQsMCAxMiw1LjYgMTIsMTJsMCwweiIvPgogIDxwYXRoIGlkPSJzdmdfMTkiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im0xMi44LDM2OGMtNy4yLDAgLTEyLjgsLTQuOCAtMTIuOCwtMTJsMCwwYzAsLTcuMiA1LjYsLTEyIDEyLjgsLTEybDQ3MS4yLDBjNy4yLDAgMTIuOCw0LjggMTIuOCwxMmwwLDBjMCw3LjIgLTUuNiwxMiAtMTIuOCwxMmwtNDcxLjIsMHoiLz4KICA8cGF0aCBpZD0ic3ZnXzIxIiBmaWxsPSIjMzYzRjNFIiBkPSJtNDA4LDM4MS42YzAsMTQuNCAtMTIsMjYuNCAtMjYuNCwyNi40bC0yNTkuMiwwYy0xNC40LDAgLTI2LjQsLTEyIC0yNi40LC0yNi40bDAsLTI1OS4yYzAsLTE0LjQgMTIsLTI2LjQgMjYuNCwtMjYuNGwyNTkuMiwwYzE0LjQsMCAyNi40LDEyIDI2LjQsMjYuNGwwLDI1OS4yeiIvPgogIDxwYXRoIGlkPSJzdmdfMjIiIGQ9Im05NiwxMjIuNGMwLC0xNC40IDEyLC0yNi40IDI2LjQsLTI2LjRsMjU5LjIsMGMxNC40LDAgMjYuNCwxMiAyNi40LDI2LjRsMCwyNTkuMmMwLDE0LjQgLTEyLDI2LjQgLTI2LjQsMjYuNCIvPgogIDxwYXRoIGlkPSJzdmdfMjMiIGZpbGw9IiM0OTUxNTAiIGQ9Im0zNTIsMzM1LjJjMCw5LjYgLTcuMiwxNi44IC0xNi44LDE2LjhsLTE2Ni40LDBjLTkuNiwwIC0xNi44LC03LjIgLTE2LjgsLTE2LjhsMCwtMTY2LjRjMCwtOS42IDcuMiwtMTYuOCAxNi44LC0xNi44bDE2Ni40LDBjOS42LDAgMTYuOCw3LjIgMTYuOCwxNi44bDAsMTY2LjR6Ii8+CiAgPGcgaWQ9InN2Z18yOSIvPgogIDxnIGlkPSJzdmdfMzAiLz4KICA8ZyBpZD0ic3ZnXzMxIi8+CiAgPGcgaWQ9InN2Z18zMiIvPgogIDxnIGlkPSJzdmdfMzMiLz4KICA8ZyBpZD0ic3ZnXzM0Ii8+CiAgPGcgaWQ9InN2Z18zNSIvPgogIDxnIGlkPSJzdmdfMzYiLz4KICA8ZyBpZD0ic3ZnXzM3Ii8+CiAgPGcgaWQ9InN2Z18zOCIvPgogIDxnIGlkPSJzdmdfMzkiLz4KICA8ZyBpZD0ic3ZnXzQwIi8+CiAgPGcgaWQ9InN2Z180MSIvPgogIDxnIGlkPSJzdmdfNDIiLz4KICA8ZyBpZD0ic3ZnXzQzIi8+CiA8L2c+Cjwvc3ZnPg==",
+                "oc.keyword": "stress,stress,cpu,shell",
+                "oc.launch": "stress.konsole",
+                "oc.name": "stress",
+                "oc.path": "/usr/bin/konsole",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.gtk",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1218694336,
+        "VirtualSize": 1218694336,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/795b01720f40203b4440df818713767ef3934d0fd457c2244cb7969566461be0/diff:/var/lib/docker/overlay2/802b8947b67df1f41f401e9caa13a146a27873e6b827b2e848852c8755fdf920/diff:/var/lib/docker/overlay2/c658939a8cab0f4ce29e6fc14321b8ec39eb8e5f9c25ca796b108a92c265d6c1/diff:/var/lib/docker/overlay2/1f902aa5e1194542ddcf269139c85074920a80ffba0ad2623b68bbadb53e4b2f/diff:/var/lib/docker/overlay2/4f7476412736b647774d5a4e22653a097cccb4fe3c90306b84939aa00a1f237c/diff:/var/lib/docker/overlay2/052453b5208e71f06260667a1bf164271b8763e1c28d690d463d8b24b7963814/diff:/var/lib/docker/overlay2/125ec8ff5ac7048d006b4acb22930e6515e8ec6914b9461e18262bb5fdf48aa2/diff:/var/lib/docker/overlay2/9087e06b82c63cc3defe795348ab807f8678cd3e4217634636987f449ca1c9da/diff:/var/lib/docker/overlay2/433b64c5646b96ccbae922dcfd224668063d6574c5cb2103ca26b2580d3f6ca3/diff:/var/lib/docker/overlay2/5e9dde0facb4874a6c2c6ce4253c8445711b6d7b4b417eeeec58a04a57ba88ed/diff:/var/lib/docker/overlay2/55b4444adde87c875d5dc124e28efebdd311ff91d7f5fdac465dde487d699677/diff:/var/lib/docker/overlay2/dfcf47727b1f9cc6f88f44ccd15ac900f2daeddf8b0a91333e031aa3129a0ce1/diff:/var/lib/docker/overlay2/5526b291e2993e4091a33d98022cb2e63557a3bfbcc1e003950ad09871acbeef/diff:/var/lib/docker/overlay2/ad58256f2b74afa1cbedc2cf8cee0d78d5751e58df4cc6a822601184baf1657c/diff:/var/lib/docker/overlay2/f8f2fab641eb6accd8994ab579cde99ea52551aee356ede68759b8114f3d5a84/diff:/var/lib/docker/overlay2/f3934f0dc77008e07952b6fdd773577103ca03635373430a8871759451da4de6/diff:/var/lib/docker/overlay2/99047b963b0fb1cec73ac435d489df4b95791e6aa51ac776ff8566fb1baebb8e/diff:/var/lib/docker/overlay2/69a55ef6239fec918fc2be2a7423039823c631d864124506f4876d4e66cf745e/diff:/var/lib/docker/overlay2/5aa76db18d0041702cae7766c75d6a11f2a51978b94bb8efb4296f3621d0c1d2/diff:/var/lib/docker/overlay2/98db2d32962047b89eb11d663376498d8c51e7a35d791af37f2bc2df5baaafe8/diff:/var/lib/docker/overlay2/89eabb22eb6f00935d0faaa69d98e6bcd3bbefe0860e279836b9ffd22ee074cc/diff:/var/lib/docker/overlay2/22fd27ff1b27aa22c27ad5d824030cbf241a183a8bbae2fbb123aa5f65ae19e9/diff:/var/lib/docker/overlay2/334be2aed62c5d369aef22ad031f73e35c44a555d5dc4d328d9d2bd38b4e76d9/diff",
+                "MergedDir": "/var/lib/docker/overlay2/50690107199cf764494f60fda58b2195170a7510a8f05576385092912e148899/merged",
+                "UpperDir": "/var/lib/docker/overlay2/50690107199cf764494f60fda58b2195170a7510a8f05576385092912e148899/diff",
+                "WorkDir": "/var/lib/docker/overlay2/50690107199cf764494f60fda58b2195170a7510a8f05576385092912e148899/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:ec66d8cea54a2f4dfbbd8342ce082503bf8541e996a800c0d724b8dd2fea7f6a",
+                "sha256:3bc43b8f87f241a24c5c91e034438f1dd97335a439b614865205101e9e0878d6",
+                "sha256:b7d43453517c96305f63acbe6ec80c76fe1bacdd2f94d8f918445b87c92aa11f",
+                "sha256:f26f2aff6b9fc183e6f4aa0e385b33fdd83ba9ae41e9bf535ec8ecee69795070",
+                "sha256:89bd79a8b7c8318f935762374f25b11f40958973b2a2bdb473e4d56b2a73495a",
+                "sha256:b55fa05ff623ce581845814b7b4b738e2e96d81b5c31f092e933db714b1e95b5",
+                "sha256:7d2882ad23701d9de391b27f245db51e7e74da6c8013af8535f0983759be0089",
+                "sha256:e4a8a5f1d3f24600a85db05466e396ad8a8b2c2851adcd788807b988f15d4547",
+                "sha256:59cbed15563ce86c285da1ca038f0b5518746d2ab6973d8046dbc3ee03f8fdba",
+                "sha256:578e3aa0c9d3fca10455382a7504e6e3ef9b8977d541ae008e354530f6fd6a05",
+                "sha256:baf2e96df5b1b23ef894205c0e90b75f57291a16eca680a14e35a740c42d2893",
+                "sha256:f18879d546de51a59f9dc9d69c2301381ce676e408db1ee3a4a415243aeecc5c",
+                "sha256:3a95583f8599aa50e6d3dd1bc222d92d3bf2b3d25d1d0e3a08481b9a7c3fd53f",
+                "sha256:ece983de1d04ad8ad56b786b00a9d8713e58ac9b0369035651f2590cb68dd7d5",
+                "sha256:79aa40cfd16058b977bd78e022ad9399c5537ea2987ea2410192a976517e6758",
+                "sha256:6cbd46b52920aa87d58e3444693e6c81f66ee3ff9bccc7f12dcca458f2c0bc5f",
+                "sha256:de59ff5876f7a1e5679dd43d25a06b2a4fea878a4485f1d1cbc054287413ad78",
+                "sha256:d34a8232ec8eb7294161533a363b96c6f966e67a683c34e95e9e6840ff958378",
+                "sha256:ed397b339b825e66920da86470e4ff5017dede572d838526312f1cc6f1e10322",
+                "sha256:37dde38c6db6ad6c191fd7041513b99cf1e2b14ff42530c41434b203fecd1044",
+                "sha256:66a5f0dcff9e0809db106adef5ef9df10b78b4397895f9d5d9346d6f2b76bfaf",
+                "sha256:d730b9f442391749052db6aee38fe2bd8760d24371f2473dab87ef938a4746b9",
+                "sha256:e38098afd9d2aec268aa70d28a49150e0f3597878b75d60190d216d664854a62",
+                "sha256:9458cada9ddbf5612777d7790ef9c6b164cfd64ab798e1895f93b186ef1b9c49"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
