@@ -1,0 +1,118 @@
+[
+    {
+        "Id": "sha256:0c56258ad35ddc7e7fc1a3fb7cb55c48312ddb4f0ff8d29ec0a6ff6eef8c5bad",
+        "RepoTags": [
+            "abcdesktopio/stellarium.d:3.1"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/stellarium.d@sha256:3d0dc4e3754467fbc0492655d15304211c35e2b6249d8d106b59b217ea311e91"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-08-02T07:45:12.442660562Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "APPNAME=Stellarium",
+                "APPBIN=/usr/bin/stellarium"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "education",
+                "oc.desktopfile": "org.stellarium.Stellarium.desktop",
+                "oc.displayname": "Stellarium",
+                "oc.icon": "stellarium.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgaWQ9InN2ZzgiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDEyLjcgMTIuNyIgd2lkdGg9IjQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIiB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcyBpZD0iZGVmczIiPjxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNsaXBQYXRoNTM0MyI+PHBhdGggZD0ibSAzLjA2ODgzNTEsMjg1LjU1Njc3IGMgLTEuNjEzNTY4LDEuMTk1OTYgLTIuNTY2MjE4MSwzLjA4NDc4IC0yLjU2ODgzNTA5LDUuMDkzMjMgMCwzLjUwNzAxIDIuODQyOTkyMTksNi4zNSA2LjM1MDAwMDA5LDYuMzUgQyAxMC4zNTcwMDgsMjk3IDEzLjIsMjk0LjE1NzAxIDEzLjIsMjkwLjY1IGMgLTAuMDAyMiwtMC44NDI5NiAtMC40NTIwNzgsLTIuNzEyNzEgLTAuNTAwMjI4LC0yLjQ1MzU5IC0wLjAyNDI0LDAuODQxMjEgLTAuNTcxODA5LDIuMzUzMjIgLTAuNjAyMDMxLDIuMjMxMzggLTAuMDAyNiwtMC41MDYyMSAtMC4yODc2LC0xLjQyNjI2IC0wLjMwNTA5OCwtMS4xOTUwOSAwLjAyODA0LDEuNDA2OTUgLTEuNDgzNzQsMy4xNzY3NyAtMi4zMDc2NjIzLDMuNTAwMzggLTAuODMxMDQ1NywwLjM2OTQyIC0xLjczNzE2MzcsMC41NjQxMiAtMi42MTE3MjY3LDAuNTY1MzQgLTAuMTczNjkxOCwyZS01IC0xLjE2ODY1MTksLTAuMTM4MDcgLTEuNjQ0MzQzOSwtMC43MDQzNSAtMC44MjYzNzYsLTAuODkyNTMgLTAuMDAyMDEsLTEuMDk5OTQgMC40NjI1MDM5LC0xLjI3MzMxIDAuNTA1NTg2MiwtMC4xODg3MSAxLjAzMDg4NywtMC4zMDk2OSAxLjUyMDMyMTIsLTAuNDIwMTMgMC43NDU2OTg4LC0wLjE2ODI2IDAuNDcxMDYxOCwtMC41MjYyNiAwLjEwNDkwMjgsLTAuNjI4OSAtMC45MjY2OTM5LC0wLjI1OTc2IC0yLjA0NDg4NiwwLjMzNTQzIC0yLjg2NTQ1NzksMC4zMDU5MyAtMC44NDg0MDYsLTAuMDI5MSAtMC44MDQ2MTgsLTEuNjk2MjEgLTAuMTQwNTYwMSwtMS43NjIxNyAwLjczOTQyMTIsLTAuMDczNCAxLjY2NjUxNTEsLTAuNTEwNzkgMS40NjE3NzksLTAuNjU2NzMgLTAuODMwMzU0OSwtMC42MTY3MiAtMC45NjE3MzY5LC0wLjc5MDgxIC0xLjA1OTU1NDksLTEuMTY0MTggLTAuMTQ4MDIwMSwtMC41NjUgMC4zNDEyODIsLTEuMDM1NTcgMC4wNTc3NywtMC45NjM1NiAtMC4yNTk2MTY5LDAuMDggLTAuNDExMDY3OCwwLjE1NjQxIC0wLjU5ODg2MTksMC4yNTcxNSAtMC4xNjcyOTI5LDAuMDg5NyAtMC4yOTM4MTQsMC4wNTQ2IC0wLjY3NTE4NDEsMC4wMDIgLTAuMzI0OTQ0OSwtMC4wNDUgLTAuMzg3MDA1OCwtMC4wNTU3IC0wLjM3NTUwMDksLTAuMjU2NzMgMC4wMTE1LC0wLjIwMDk3IDAuMDcyOTUsLTAuNTIxMjUgLTAuMDUyMjMsLTAuNDc2NDggeiIgaWQ9InBhdGg1MzQ1IiBzdHlsZT0iZmlsbDojN2FhZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoyLjAxMDQ1OTQyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggY2xpcFBhdGhVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjbGlwUGF0aDQ1NDMiPjxwYXRoIGQ9Im0gMS43NzYwMDg4LDI5MS41Njk2IGMgLTEuODI2MTMzMzksMC4xNzQzNCAtMy4yOTQwMzE1LDAuOTE5MzQgLTMuNDkwMzk5NiwyLjE2NDUxIC0wLjI2MjkwNTQsMS42NjcyOSAxLjU2Nzg1OTEsMy4zNDEyNyA0LjA4OTEyMTMsMy43Mzg5MyAxLjIxNzIwODQsMC4xOTExOSAyLjQzNDIzNCwwLjA1MyAzLjM4MDc0MjMsLTAuMzgzODcgMC43MzEwMTk0LDAuNTI4MyAxLjY2OTM1NywwLjkwMDc4IDIuNjcwNDcyMSwxLjA2MDA4IDIuNTIxMjY5MSwwLjM5NzcxIDQuNzc4MzM4MSwtMC42MzE1IDUuMDQxMjgwMSwtMi4yOTg4IDAuMjYyOTA1LC0xLjY2NzMgLTEuNDkwNjY3LC0xLjk0MzI5IC00LjI1NzE2MywtMi4xNzkzOCAtMi43NjY0OTU4LC0wLjIzNjA5IC0zLjYxNjM4OTYsLTEuNjg4MzkgLTUuNzQ3MDQ0OCwtMi4wNDU3NSAtMC41NjYwMTkxLC0wLjA4OTMgLTEuMTM4MDgwOCwtMC4xMDgxNyAtMS42ODcwMDg0LC0wLjA1NTcgeiIgaWQ9InBhdGg0NTQ1IiBzdHlsZT0ib3BhY2l0eToxO3ZlY3Rvci1lZmZlY3Q6bm9uZTtmaWxsOiM2NjY2NjY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjIuMTE2NjY2NTY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTI4NC4zKSI+PGNpcmNsZSBjeD0iNi4zNDk5OTk5IiBjeT0iMjkwLjY0OTk5IiBpZD0icGF0aDQ1MTQiIHI9IjYuMzQ5OTk5OSIgc3R5bGU9ImZpbGw6I2FhY2NmZjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MS43NDY1ODgxMTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIvPjxwYXRoIGNsaXAtcGF0aD0idXJsKCNjbGlwUGF0aDQ1NDMpIiBkPSJtIDEyLjcsMjkwLjY0OTk5IGEgNi4zNDk5OTk5LDYuMzQ5OTk5OSAwIDAgMSAtNi4zNTAwMDAxLDYuMzUgQSA2LjM0OTk5OTksNi4zNDk5OTk5IDAgMCAxIDAsMjkwLjY0OTk5IGEgNi4zNDk5OTk5LDYuMzQ5OTk5OSAwIDAgMSA2LjM0OTk5OTksLTYuMzUgNi4zNDk5OTk5LDYuMzQ5OTk5OSAwIDAgMSA2LjM1MDAwMDEsNi4zNSB6IiBpZD0icGF0aDQ1MTQtMyIgc3R5bGU9ImZpbGw6IzY2NjY2NjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MS43NDY1ODgxMTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIvPjxnIGlkPSJnNDY3Ny05IiBzdHlsZT0iZmlsbDojNWI5OWY4O2ZpbGwtb3BhY2l0eToxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOS4xNTI0OTU4LC0zLjUyNDkyMzIpIj48cGF0aCBkPSJtIDE5LjU2NzQ1OCwyOTEuNzc1NjEgYSAyLjQ4NjY4MTEsMi40ODY2ODExIDAgMCAwIC0wLjQ2ODk5MiwtMC4zNjQ2NyAyLjQ4NjY4MTEsMi40ODY2ODExIDAgMCAxIC0wLjM2NTExNiwzLjA0NzM0IDIuNDg2NjgxMSwyLjQ4NjY4MTEgMCAwIDEgLTMuMDQ2NDYsMC4zNjYgMi40ODY2ODExLDIuNDg2NjgxMSAwIDAgMCAwLjM2NDIzMSwwLjQ2NzY2IDIuNDg2NjgxMSwyLjQ4NjY4MTEgMCAwIDAgMy41MTYzMzcsNC41ZS00IDIuNDg2NjgxMSwyLjQ4NjY4MTEgMCAwIDAgMCwtMy41MTY3OCB6IiBpZD0icGF0aDQ1MjYtNjkiIHN0eWxlPSJvcGFjaXR5OjE7dmVjdG9yLWVmZmVjdDpub25lO2ZpbGw6IzViOTlmODtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6Mi41NjA1MDIyOTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtzdHJva2Utb3BhY2l0eToxIi8+PHBhdGggZD0ibSA2LjQxODUxNDUsMjk0LjIzMjk5IC0wLjM1NjYyNDksLTAuMjUzOTQgLTAuMzU2NjI0OSwwLjI1Mzk0IDAuMDQxNjAyLC0wLjQzNTgyIC0wLjM5ODIyNjcsLTAuMTgxODcgMC4zOTgyMjY3LC0wLjE4MTg4IC0wLjA0MTYwMiwtMC40MzU4MiAwLjM1NjYyNSwwLjI1Mzk0IDAuMzU2NjI0OSwtMC4yNTM5NCAtMC4wNDE2MDIsMC40MzU4MiAwLjM5ODIyNjcsMC4xODE4OCAtMC4zOTgyMjY3LDAuMTgxODcgeiIgaWQ9InBhdGg0NTYxLTMzIiBzdHlsZT0ib3BhY2l0eToxO3ZlY3Rvci1lZmZlY3Q6bm9uZTtmaWxsOiM1Yjk5Zjg7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjEuNTk5OTE2NDY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIgdHJhbnNmb3JtPSJtYXRyaXgoMS4xMTY4ODgxLC0wLjY0NDgzNTY1LDAuNjQ0ODM1NjUsMS4xMTY4ODgxLC0xODMuMzc4MjEsLTMyLjQ5MTY2NikiLz48Y2lyY2xlIGN4PSIxMS4zMTU4NTUiIGN5PSIyOTMuNzIzOTQiIGlkPSJwYXRoNDYyMS04IiByPSIwLjMwMjY3ODI2IiBzdHlsZT0ib3BhY2l0eToxO3ZlY3Rvci1lZmZlY3Q6bm9uZTtmaWxsOiM1Yjk5Zjg7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjIuOTg5NDk2MjM7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIvPjxjaXJjbGUgY3g9IjE1LjU3NTQyMSIgY3k9IjI5MC4yMjA3OSIgaWQ9InBhdGg0NjI1LTAiIHI9IjAuMzU4MjY4ODkiIHN0eWxlPSJvcGFjaXR5OjE7dmVjdG9yLWVmZmVjdDpub25lO2ZpbGw6IzViOTlmODtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6My42OTkzOTgwNDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtzdHJva2Utb3BhY2l0eToxIi8+PGNpcmNsZSBjeD0iMTcuMTY4NjIzIiBjeT0iMjkyLjAxNDg5IiBpZD0icGF0aDQ2MjUtNS01IiByPSIwLjIyNjQ5Njk5IiBzdHlsZT0ib3BhY2l0eToxO3ZlY3Rvci1lZmZlY3Q6bm9uZTtmaWxsOiM1Yjk5Zjg7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjIuMzM4NzUyOTk7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIvPjxwYXRoIGQ9Im0gNi40MTg1MTQ1LDI5NC4yMzI5OSAtMC4zNTY2MjQ5LC0wLjI1Mzk0IC0wLjM1NjYyNDksMC4yNTM5NCAwLjA0MTYwMiwtMC40MzU4MiAtMC4zOTgyMjY3LC0wLjE4MTg3IDAuMzk4MjI2NywtMC4xODE4OCAtMC4wNDE2MDIsLTAuNDM1ODIgMC4zNTY2MjUsMC4yNTM5NCAwLjM1NjYyNDksLTAuMjUzOTQgLTAuMDQxNjAyLDAuNDM1ODIgMC4zOTgyMjY3LDAuMTgxODggLTAuMzk4MjI2NywwLjE4MTg3IHoiIGlkPSJwYXRoNDU2MS0xLTYiIHN0eWxlPSJvcGFjaXR5OjE7dmVjdG9yLWVmZmVjdDpub25lO2ZpbGw6IzViOTlmODtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MS41OTk5MTY0NjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtzdHJva2Utb3BhY2l0eToxIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjY4NzMwMTcyLC0wLjM5NjgxMzg1LDAuMzk2ODEzODUsMC42ODczMDE3MiwtMTA2LjEzNzk2LDk0LjI3OTU3NikiLz48L2c+PGcgaWQ9Imc0Njc3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOS4zMjk0NTE3LC0zLjc0MjMyMjQpIj48cGF0aCBkPSJtIDE5LjU2NzQ1OCwyOTEuNzc1NjEgYSAyLjQ4NjY4MTEsMi40ODY2ODExIDAgMCAwIC0wLjQ2ODk5MiwtMC4zNjQ2NyAyLjQ4NjY4MTEsMi40ODY2ODExIDAgMCAxIC0wLjM2NTExNiwzLjA0NzM0IDIuNDg2NjgxMSwyLjQ4NjY4MTEgMCAwIDEgLTMuMDQ2NDYsMC4zNjYgMi40ODY2ODExLDIuNDg2NjgxMSAwIDAgMCAwLjM2NDIzMSwwLjQ2NzY2IDIuNDg2NjgxMSwyLjQ4NjY4MTEgMCAwIDAgMy41MTYzMzcsNC41ZS00IDIuNDg2NjgxMSwyLjQ4NjY4MTEgMCAwIDAgMCwtMy41MTY3OCB6IiBpZD0icGF0aDQ1MjYiIHN0eWxlPSJvcGFjaXR5OjE7dmVjdG9yLWVmZmVjdDpub25lO2ZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6Mi41NjA1MDIyOTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtzdHJva2Utb3BhY2l0eToxIi8+PHBhdGggZD0ibSA2LjQxODUxNDUsMjk0LjIzMjk5IC0wLjM1NjYyNDksLTAuMjUzOTQgLTAuMzU2NjI0OSwwLjI1Mzk0IDAuMDQxNjAyLC0wLjQzNTgyIC0wLjM5ODIyNjcsLTAuMTgxODcgMC4zOTgyMjY3LC0wLjE4MTg4IC0wLjA0MTYwMiwtMC40MzU4MiAwLjM1NjYyNSwwLjI1Mzk0IDAuMzU2NjI0OSwtMC4yNTM5NCAtMC4wNDE2MDIsMC40MzU4MiAwLjM5ODIyNjcsMC4xODE4OCAtMC4zOTgyMjY3LDAuMTgxODcgeiIgaWQ9InBhdGg0NTYxIiBzdHlsZT0ib3BhY2l0eToxO3ZlY3Rvci1lZmZlY3Q6bm9uZTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjEuNTk5OTE2NDY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIgdHJhbnNmb3JtPSJtYXRyaXgoMS4xMTY4ODgxLC0wLjY0NDgzNTY1LDAuNjQ0ODM1NjUsMS4xMTY4ODgxLC0xODMuMzc4MjEsLTMyLjQ5MTY2NikiLz48Y2lyY2xlIGN4PSIxMS4zMTU4NTUiIGN5PSIyOTMuNzIzOTQiIGlkPSJwYXRoNDYyMSIgcj0iMC4zMDI2NzgyNiIgc3R5bGU9Im9wYWNpdHk6MTt2ZWN0b3ItZWZmZWN0Om5vbmU7ZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoyLjk4OTQ5NjIzO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowO3N0cm9rZS1vcGFjaXR5OjEiLz48Y2lyY2xlIGN4PSIxNS41NzU0MjEiIGN5PSIyOTAuMjIwNzkiIGlkPSJwYXRoNDYyNSIgcj0iMC4zNTgyNjg4OSIgc3R5bGU9Im9wYWNpdHk6MTt2ZWN0b3ItZWZmZWN0Om5vbmU7ZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozLjY5OTM5ODA0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowO3N0cm9rZS1vcGFjaXR5OjEiLz48Y2lyY2xlIGN4PSIxNy4xNjg2MjMiIGN5PSIyOTIuMDE0ODkiIGlkPSJwYXRoNDYyNS01IiByPSIwLjIyNjQ5Njk5IiBzdHlsZT0ib3BhY2l0eToxO3ZlY3Rvci1lZmZlY3Q6bm9uZTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjIuMzM4NzUyOTk7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIvPjxwYXRoIGQ9Im0gNi40MTg1MTQ1LDI5NC4yMzI5OSAtMC4zNTY2MjQ5LC0wLjI1Mzk0IC0wLjM1NjYyNDksMC4yNTM5NCAwLjA0MTYwMiwtMC40MzU4MiAtMC4zOTgyMjY3LC0wLjE4MTg3IDAuMzk4MjI2NywtMC4xODE4OCAtMC4wNDE2MDIsLTAuNDM1ODIgMC4zNTY2MjUsMC4yNTM5NCAwLjM1NjYyNDksLTAuMjUzOTQgLTAuMDQxNjAyLDAuNDM1ODIgMC4zOTgyMjY3LDAuMTgxODggLTAuMzk4MjI2NywwLjE4MTg3IHoiIGlkPSJwYXRoNDU2MS0xIiBzdHlsZT0ib3BhY2l0eToxO3ZlY3Rvci1lZmZlY3Q6bm9uZTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjEuNTk5OTE2NDY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIgdHJhbnNmb3JtPSJtYXRyaXgoMC42ODczMDE3MiwtMC4zOTY4MTM4NSwwLjM5NjgxMzg1LDAuNjg3MzAxNzIsLTEwNi4xMzc5Niw5NC4yNzk1NzYpIi8+PC9nPjwvZz48L3N2Zz4=",
+                "oc.keyword": "stellarium,stellarium,astronomy",
+                "oc.launch": "stellarium.stellarium",
+                "oc.mimetype": "application/x-stellarium-script;",
+                "oc.name": "Stellarium",
+                "oc.path": "/usr/bin/stellarium",
+                "oc.template": "abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 786601989,
+        "VirtualSize": 786601989,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/a51291497052e01596a8f2c99b42ebe937bd3b05dc785f491d303e3c5768396b/diff:/var/lib/docker/overlay2/793de385357ff230f4e5f8875f422c9e1ff9a83111ac56ac3ad555f0df713e13/diff:/var/lib/docker/overlay2/8fe12cceecdfcfef7ea9b00b79f68ee7fe249c588380c747d4d1e27b84ce85bc/diff:/var/lib/docker/overlay2/afe4bad14037973900c66a2dac4578727c2fba32247c7a9e0b5463d1d6492bc5/diff:/var/lib/docker/overlay2/e60d8926f004c2de15b24aca9de1969fc0f8ec0d7e198f4968c5416fdfe03a25/diff:/var/lib/docker/overlay2/64d1915ef89c3fe56f2ef6e212ff55267fedc1f762062c471d37cfcc9c8b5101/diff:/var/lib/docker/overlay2/162d9ef7a17a64cf608a21321ccf71e2e577bee2bdf56dfa8db5cefb0456cad5/diff:/var/lib/docker/overlay2/0458c004842ef4da2d3d0a1dd4ee795b09b84e785c22674335da8a303b2bbb54/diff:/var/lib/docker/overlay2/486b60fb7cf326850185f2740132d246cd0e1335477137e422d2e12788f94993/diff:/var/lib/docker/overlay2/bf639c8996a089da424eb935a6f303c5f6096c3a4927ee81c451234e8431c38f/diff:/var/lib/docker/overlay2/6e0530d54a24f7bbd44f344bfe4923e0fc41b9bb720ad150d03ad908301a86c0/diff:/var/lib/docker/overlay2/1d8e359ad5ed1cc41764293e838415db52bf207186958d2ed059ddaaecdd2832/diff:/var/lib/docker/overlay2/dfc670c137949fe9fc0ba28199b33a1218714996a08e5e5a643b83ddd11e8694/diff:/var/lib/docker/overlay2/be3f15f683f41c027e2da547df918ed7ec4d8ddbd6fc87866f34e4106d40a527/diff",
+                "MergedDir": "/var/lib/docker/overlay2/27fb393b9d7587007f3cd897faebf2d5773cb5d373f7dcab970893fb2239662a/merged",
+                "UpperDir": "/var/lib/docker/overlay2/27fb393b9d7587007f3cd897faebf2d5773cb5d373f7dcab970893fb2239662a/diff",
+                "WorkDir": "/var/lib/docker/overlay2/27fb393b9d7587007f3cd897faebf2d5773cb5d373f7dcab970893fb2239662a/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:78a822fe2a2d2c84f3de4a403188c45f623017d6a4521d23047c9fbb0801794c",
+                "sha256:b72017ecb57093b78ce315d6bca8b7aa22df578e5b9f193b5c4b258050098998",
+                "sha256:1b4e5908029588ff1a8a4739ad00b640d1b5e5e3da4f767b263524f4715621e3",
+                "sha256:6c713578d36cfa7c56677c6fe8c96e4b541624c0e3c0f83702564a1c0bb9290f",
+                "sha256:23afc4a948f8699e7b3833ba1295539d7d6cda6076cb4b280b5159bd135caf2c",
+                "sha256:2d849585eda3cbca026a6aba4adabf5db1fc3c0be0f95fb4f4540698e9e90c4a",
+                "sha256:b0230e626317c28ca25f3949d49af006db1bf61f1cd0683da2c7cb1bec8db3ab",
+                "sha256:2985330a253e459cf47749794226fdaa601a37b3b9a526189cb5c026437c1223",
+                "sha256:bfe90c791d8db22d750c009676203d3957e7ed79c0340f1e94600746bdfcfc99",
+                "sha256:c36d5673168f338a523fff90a5ed6d901bbaebea0fde2b15afab37116a36c863",
+                "sha256:bc439c76f8742bf707b4797a10dde2584026e66f0772038c13bf9123d62f19f4",
+                "sha256:1fc94681d876774297365eea3d54c831c9311386ca4bf7e5fc09477e1c50d595",
+                "sha256:581228a6c78def2a723b8b1318432b2e73537940d051a80fe15667988db415af",
+                "sha256:a83415f2ac5c6c95b9b0495f4eec40acdbb63f339b08f4438aaf856f9bde30ff",
+                "sha256:19b43c4d19acdfc039a2ec19d16f6a572c18844101261f654be2ff85207d90d9"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
