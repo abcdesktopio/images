@@ -1,0 +1,129 @@
+[
+    {
+        "Id": "sha256:87f3cc26a5c82abb22ec4e05d4039e8c82c8d83c8dac1a02290b86631564cbcf",
+        "RepoTags": [
+            "abcdesktopio/remmina.d:3.1"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/remmina.d@sha256:27cfd17b40847d66c7905a054213b46e5bf733b8976c3d95ed520f1aa3f35661"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-08-02T07:45:25.200873003Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "APPNAME=remmina",
+                "APPBIN=/usr/bin/remmina"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "office",
+                "oc.desktopfile": "remmina-file.desktop",
+                "oc.displayname": "Remmina",
+                "oc.icon": "remmina.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmVyc2lvbj0iMS4xIj4KIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTMwOC4zKSI+CiAgPGNpcmNsZSBzdHlsZT0iZmlsbDojZmZmZmZmIiBjeD0iMTIiIGN5PSIzMjAuMyIgcj0iOSIvPgogIDxwYXRoIHN0eWxlPSJvcGFjaXR5OjAuMSIgZD0ibSA4LDMxNS4xMzM5NyB2IDIuNDI1NzggTCA5Ljg2MTMyODEsMzE4Ljc5OTk4IDgsMzIwLjA0MDIyIHYgMi40MjU3OCBsIDUuNSwtMy42NjYwMiB6Ii8+CiAgPHBhdGggc3R5bGU9ImZpbGw6IzIwYWE3MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwzMDguMykiIGQ9Ik0gOCA2LjMzMzk4NDQgTCA4IDguNzU5NzY1NiBMIDkuODYxMzI4MSAxMCBMIDggMTEuMjQwMjM0IEwgOCAxMy42NjYwMTYgTCAxMy41IDEwIEwgOCA2LjMzMzk4NDQgeiIvPgogIDxwYXRoIHN0eWxlPSJvcGFjaXR5OjAuMSIgZD0ibSAxNiwzMTkuMTMzOTcgLTUuNSwzLjY2NjAxIDUuNSwzLjY2NjAyIHYgLTIuNDI1NzggTCAxNC4xNDA2MjUsMzIyLjc5OTk4IDE2LDMyMS41NTk3NSBaIi8+CiAgPHBhdGggc3R5bGU9ImZpbGw6IzM5ODlkYSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwzMDguMykiIGQ9Ik0gMTYgMTAuMzMzOTg0IEwgMTAuNSAxNCBMIDE2IDE3LjY2NjAxNiBMIDE2IDE1LjI0MDIzNCBMIDE0LjE0MDYyNSAxNCBMIDE2IDEyLjc1OTc2NiBMIDE2IDEwLjMzMzk4NCB6Ii8+CiAgPHBhdGggc3R5bGU9Im9wYWNpdHk6MC4yIiBkPSJtIDIwLjc0OTAyNCwzMTUuOTcyODUgLTEuNjgxNjQxLDEuMTE5MTQgQSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDIwLDMyMC43OTk5OSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDEyLDMyOC44IDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgNS44NDQ3MjY1LDMyNS44ODg4NiBMIDQuMTY4OTQ1MiwzMjcuMDA0MSBDIDYuMDAyMTQ2NSwzMjkuMzEzNjMgOC44MjkxMTc0LDMzMC44IDEyLDMzMC44IGMgNS41MTM5NTYsMCAxMCwtNC40ODU3OCAxMCwtMTAuMDAwMDEgMCwtMS43NTA3MSAtMC40NTcwMDEsLTMuMzk0NDUgLTEuMjUwOTc2LC00LjgyNzE0IHoiLz4KICA8cGF0aCBzdHlsZT0iZmlsbDojMjBhYTczIiBkPSJtIDIwLjc0OTAyNCwzMTUuNDcyODUgLTEuNjgxNjQxLDEuMTE5MTQgQSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDIwLDMyMC4yOTk5OSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDEyLDMyOC4zIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgNS44NDQ3MjY1LDMyNS4zODg4NiBMIDQuMTY4OTQ1MiwzMjYuNTA0MSBDIDYuMDAyMTQ2NSwzMjguODEzNjMgOC44MjkxMTc0LDMzMC4zIDEyLDMzMC4zIGMgNS41MTM5NTYsMCAxMCwtNC40ODU3OCAxMCwtMTAuMDAwMDEgMCwtMS43NTA3MSAtMC40NTcwMDEsLTMuMzk0NDUgLTEuMjUwOTc2LC00LjgyNzE0IHoiLz4KICA8cGF0aCBzdHlsZT0ib3BhY2l0eTowLjIiIGQ9Im0gMTIsMzEwLjc5OTk5IGMgLTUuNTE0MjE2OSwwIC0xMCw0LjQ4NTc5IC0xMCwxMCAwLDEuNjI3MzYgMC4zOTIwMjYzLDMuMTY0MTEgMS4wODQ5NjA5LDQuNTIzNDUgTCA0Ljc3NDQxNCwzMjQuMTk5NDEgQSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDQsMzIwLjc5OTk5IGEgNy45OTk5OTk4LDcuOTk5OTk5OCAwIDAgMSA4LC04IDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgNS45Mjc3MzQsMi42NDc0NyBsIDEuNjg1NTQ3LC0xLjEyMTEgQyAxNy43Nzc4MiwzMTIuMTcwNzIgMTUuMDQ2MDQ5LDMxMC43OTk5OSAxMiwzMTAuNzk5OTkgWiIvPgogIDxwYXRoIHN0eWxlPSJmaWxsOiMzOTg5ZGEiIGQ9Im0gMTIsMzEwLjMgYyAtNS41MTQyMTY5LDAgLTEwLDQuNDg1NzggLTEwLDkuOTk5OTkgMCwxLjYyNzM2IDAuMzkyMDI2MywzLjE2NDExIDEuMDg0OTYwOSw0LjUyMzQ1IEwgNC43NzQ0MTQsMzIzLjY5OTQxIEEgNy45OTk5OTk4LDcuOTk5OTk5OCAwIDAgMSA0LDMyMC4yOTk5OSBhIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgOCwtOCA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDUuOTI3NzM0LDIuNjQ3NDcgbCAxLjY4NTU0NywtMS4xMjExIEMgMTcuNzc3ODIsMzExLjY3MDcyIDE1LjA0NjA0OSwzMTAuMyAxMiwzMTAuMyBaIi8+CiAgPHBhdGggc3R5bGU9Im9wYWNpdHk6MC4yO2ZpbGw6I2ZmZmZmZiIgZD0ibSAxMiwzMTAuMyBjIC01LjUxNDIxNjksMCAtMTAsNC40ODU3OCAtMTAsOS45OTk5OSAwLDAuMDc1MSAwLjAwNTE3LDAuMTQ4OSAwLjAwNjg0LDAuMjIzNjQgMC4xNDczNDM4LC01LjM4NjU1IDQuNTcxNjU5MSwtOS43MjM2NCA5Ljk5MzE2NCwtOS43MjM2NCAyLjg5NTE0MiwwIDUuNTA0NDUsMS4yNDAzMSA3LjMzMjAzMSwzLjIxMzg3IGwgMC4yODEyNSwtMC4xODc1IEMgMTcuNzc3ODIsMzExLjY3MDcyIDE1LjA0NjA0OSwzMTAuMyAxMiwzMTAuMyBaIE0gNC4wMDg3ODksMzIwLjYyNTE5IEEgNy45OTk5OTk4LDcuOTk5OTk5OCAwIDAgMCA0LDMyMC43OTk5OSBhIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDAgMC42MTEzMjgxLDMuMDA3ODIgbCAwLjE2MzA4NTksLTAuMTA4NCBhIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgLTAuNzY1NjI1LC0zLjA3NDIyIHoiLz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "remmina,rdp,tsclient",
+                "oc.launch": "remmina.Remmina",
+                "oc.mimetype": "application/x-remmina;",
+                "oc.name": "remmina",
+                "oc.path": "/usr/bin/remmina",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.gtk",
+                "oc.type": "app",
+                "oc.usedefaultapplication": "true",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 991031697,
+        "VirtualSize": 991031697,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/f95cee8f2db3592469f37bc12e4700a77f291a9aaecfc0bc3c4cf15cef291d9c/diff:/var/lib/docker/overlay2/fef04e3cff86b078fbcc8d3b672f4d41e416ec3550c9986bea44eca49e81a12f/diff:/var/lib/docker/overlay2/b70978e983c254c5d4f8a0619e2819cba9fd7bbcdeccf236b357b4e5a0310714/diff:/var/lib/docker/overlay2/6f3ee567dafbe3f38aae19ce2f4dcb363971ee8e1f313412ea862fca7e554d96/diff:/var/lib/docker/overlay2/8c80a3e1773f672b6e6f7dd34d1a8c6da437832d85b8051b042cf6ec96a6d919/diff:/var/lib/docker/overlay2/3871f7f721f97e70629637e8543cb45e932c7f31244034542da188db63169d48/diff:/var/lib/docker/overlay2/45d4cdaab5cd2e1498f3734b6e4b170bf2d1d5c8c04c9e215d6d4f218d74411b/diff:/var/lib/docker/overlay2/67fde0004e391e193ac3a054d60e81d48ea367224acfbf6fbb2d161ce0340a06/diff:/var/lib/docker/overlay2/e8a1354c5ce85395ebfd75ce3ca9aa8cbbd73427c0a6b4aeed856b10d5f91449/diff:/var/lib/docker/overlay2/4d31bfef6cf53f147ddb9b722b79e6f729c9950db1640792cb373b00570e0745/diff:/var/lib/docker/overlay2/e7ba33c95f1778205080a16bb972ab2b25f53da33c7cac578473594245e5e3ad/diff:/var/lib/docker/overlay2/886a5e67744e7d87736945f0efe54782da12d0a1327f5b9250a6fdbeb218396c/diff:/var/lib/docker/overlay2/d0790d63846b8c1d8b6998d4c6a973072326e59ecf6333bb656ca8d415ca02d1/diff:/var/lib/docker/overlay2/cd7d016f9f9a2e008b07dc89c90919e0ab4f5c20dba9dca750e1b123447e1197/diff:/var/lib/docker/overlay2/c3227aff600dd8e2971f6a5bdc81422d54f0899b795e27a4ce34fdd98a577210/diff:/var/lib/docker/overlay2/0904438d76b85d50bff481e978b11307e3ab732092e78c83d2e52291263be2d8/diff:/var/lib/docker/overlay2/90b2b84a63ad155b19293f60c412160fb4292a9a34ed120259e49cdc9804b13c/diff:/var/lib/docker/overlay2/7faade2a1ba702295198650822f92f39eab312a9528927c7e14c2b98e492ccc7/diff:/var/lib/docker/overlay2/ea8b447e5d2a2adcef9ecc114b45531711ce03d2469e88d61167a83d29501602/diff:/var/lib/docker/overlay2/86b383052c54b18fd15685308bec6d0d5c6cfbd01a0e7080ede5d1aebd6346d6/diff:/var/lib/docker/overlay2/bdeecf0640fe84b20a5ccb95158145e19d57357efefcf966f6297cc76cd37978/diff:/var/lib/docker/overlay2/804aad7fa06bb6ff27bf1a1beb9866394fedf457f2b514293395118129158b6e/diff:/var/lib/docker/overlay2/78ed876e88e8d3d183e08387942d3159ddbb91bd894527d4e2f0c8d643380b38/diff",
+                "MergedDir": "/var/lib/docker/overlay2/3d3a6bfa9ea18a8964b35ffa1ff641bf49f39f7f432e80bce9eaf69e2fafd2c7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/3d3a6bfa9ea18a8964b35ffa1ff641bf49f39f7f432e80bce9eaf69e2fafd2c7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/3d3a6bfa9ea18a8964b35ffa1ff641bf49f39f7f432e80bce9eaf69e2fafd2c7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:ec66d8cea54a2f4dfbbd8342ce082503bf8541e996a800c0d724b8dd2fea7f6a",
+                "sha256:3bc43b8f87f241a24c5c91e034438f1dd97335a439b614865205101e9e0878d6",
+                "sha256:b7d43453517c96305f63acbe6ec80c76fe1bacdd2f94d8f918445b87c92aa11f",
+                "sha256:f26f2aff6b9fc183e6f4aa0e385b33fdd83ba9ae41e9bf535ec8ecee69795070",
+                "sha256:89bd79a8b7c8318f935762374f25b11f40958973b2a2bdb473e4d56b2a73495a",
+                "sha256:b55fa05ff623ce581845814b7b4b738e2e96d81b5c31f092e933db714b1e95b5",
+                "sha256:7d2882ad23701d9de391b27f245db51e7e74da6c8013af8535f0983759be0089",
+                "sha256:e4a8a5f1d3f24600a85db05466e396ad8a8b2c2851adcd788807b988f15d4547",
+                "sha256:59cbed15563ce86c285da1ca038f0b5518746d2ab6973d8046dbc3ee03f8fdba",
+                "sha256:578e3aa0c9d3fca10455382a7504e6e3ef9b8977d541ae008e354530f6fd6a05",
+                "sha256:baf2e96df5b1b23ef894205c0e90b75f57291a16eca680a14e35a740c42d2893",
+                "sha256:f18879d546de51a59f9dc9d69c2301381ce676e408db1ee3a4a415243aeecc5c",
+                "sha256:3a95583f8599aa50e6d3dd1bc222d92d3bf2b3d25d1d0e3a08481b9a7c3fd53f",
+                "sha256:ece983de1d04ad8ad56b786b00a9d8713e58ac9b0369035651f2590cb68dd7d5",
+                "sha256:79aa40cfd16058b977bd78e022ad9399c5537ea2987ea2410192a976517e6758",
+                "sha256:6cbd46b52920aa87d58e3444693e6c81f66ee3ff9bccc7f12dcca458f2c0bc5f",
+                "sha256:de59ff5876f7a1e5679dd43d25a06b2a4fea878a4485f1d1cbc054287413ad78",
+                "sha256:d34a8232ec8eb7294161533a363b96c6f966e67a683c34e95e9e6840ff958378",
+                "sha256:ed397b339b825e66920da86470e4ff5017dede572d838526312f1cc6f1e10322",
+                "sha256:37dde38c6db6ad6c191fd7041513b99cf1e2b14ff42530c41434b203fecd1044",
+                "sha256:97e4d22f49bea67f1820def9e7441a9c135e895f8e22c3080f36b73877864fc5",
+                "sha256:d3257a714f764350b674c07fc846087d837b7e6aa3a9cf9a238f5b252b285a13",
+                "sha256:7816e547820af589d586ef78f5712c965bec49658eac184ab3d5b11332eadd75",
+                "sha256:c17e3bdf70815feb526ee0cc80856da6fa9e44b6da3bb0986d85188ea34a6742"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
