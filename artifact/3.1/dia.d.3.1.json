@@ -1,37 +1,70 @@
 [
     {
-        "Id": "sha256:876df7e70624dec8fb73efc821ea962a7247ef327493491cdd0e56525d57e133",
+        "Id": "sha256:8b74abb98c4b9a9262aae2dec8fa300c28bc74b4159ad09a3a50b2ca916675e0",
         "RepoTags": [
             "abcdesktopio/dia.d:3.1"
         ],
         "RepoDigests": [
-            "abcdesktopio/dia.d@sha256:3e0e3bcf9283d9ae920fdaee966800e4b73379f7a434cc031f00c61134a30507"
+            "abcdesktopio/dia.d@sha256:42addc15fd63e2e7caf4edb39e185c5fcfd4052e788436933abdc7b37fab529d"
         ],
         "Parent": "",
-        "Comment": "buildkit.dockerfile.v0",
-        "Created": "2023-12-04T16:20:24.265800657Z",
-        "Container": "",
+        "Comment": "",
+        "Created": "2023-12-01T10:32:11.611377796Z",
+        "Container": "4ebfd4749a9e33afe1e3531c6f4b02105b754dcbdbfe129eefda8cd8706993b2",
         "ContainerConfig": {
-            "Hostname": "",
+            "Hostname": "4ebfd4749a9e",
             "Domainname": "",
-            "User": "",
+            "User": "balloon",
             "AttachStdin": false,
             "AttachStdout": false,
             "AttachStderr": false,
             "Tty": false,
             "OpenStdin": false,
             "StdinOnce": false,
-            "Env": null,
-            "Cmd": null,
-            "Image": "",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "APPNAME=Dia",
+                "APPBIN=/usr/bin/dia",
+                "APP=/usr/bin/dia"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"/composer/appli-docker-entrypoint.sh\"]"
+            ],
+            "Image": "sha256:4813c8d3c4a3fc9f1d3176d6dd95f30304da664538e34ce61d69f7ec849642c4",
             "Volumes": null,
             "WorkingDir": "",
             "Entrypoint": null,
             "OnBuild": null,
-            "Labels": null
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "graphics",
+                "oc.desktopfile": "dia.desktop",
+                "oc.displayname": "Dia",
+                "oc.fileextensions": "dia",
+                "oc.icon": "circle_dia.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDY0IDY0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxmaWx0ZXIgaWQ9ImZpbHRlcjk0MyIgeD0iLS4xMTk3NCIgeT0iLS4wOTgzNTciIHdpZHRoPSIxLjIzOTUiIGhlaWdodD0iMS4xOTY3IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxLjE0NzUiLz4KICA8L2ZpbHRlcj4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhckdyYWRpZW50MTE3NCIgeDE9IjMwLjA1NSIgeDI9IjMwLjA1NSIgeTE9IjU3Ljg2MyIgeTI9IjYuNjI0IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDYwLjIwMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzFmMWYxZiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiM1MjUyNTIiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0iZmlsdGVyMTM3NSIgeD0iLS4wMzA3MiIgeT0iLS4wMzA3MiIgd2lkdGg9IjEuMDYxNCIgaGVpZ2h0PSIxLjA2MTQiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNzY4Ii8+CiAgPC9maWx0ZXI+CiA8L2RlZnM+CiA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMCIgZmlsbD0iIzAwMDAwMCIgZmlsdGVyPSJ1cmwoI2ZpbHRlcjEzNzUpIiBvcGFjaXR5PSIuMTUiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgZmlsbCBtYXJrZXJzIi8+CiA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMCIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDExNzQpIiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIGZpbGwgbWFya2VycyIvPgogPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS4zMDQzIDAgMCAxLjMwNDMgMiAyKSI+CiAgPGcgb3BhY2l0eT0iLjEiPgogICA8cGF0aCBkPSJtMTYuNSAxMWgydjEuOTk2aC0yIiBmaWxsPSIjMDAwMDAwIi8+CiAgPC9nPgogPC9nPgogPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS4zMDQzIDAgMCAxLjMwNDMgMiAuNjk1NjUpIj4KICA8cGF0aCBkPSJtMTUgMTF2M2gxdjFoLTJ2M2gydjE0aC0ydjNoMnYwLjg3N2gtMWwyIDMuMTIzIDItMy4xMjNoLTF2LTAuODc3aDljNS41NCAwIDEwLTQuNDYgMTAtMTBzLTQuNDYtMTAtMTAtMTBoLTl2LTFoMXYtM3ptMyA3aDljMy44NzggMCA3IDMuMTIyIDcgN3MtMy4xMjIgNy03IDdoLTl6bTcgMi01IDloMTB6bTAgMy42IDEuODAxIDMuNGgtMy42MDIiIGZpbGw9IiMwMDAwMDAiIGZpbHRlcj0idXJsKCNmaWx0ZXI5NDMpIiBvcGFjaXR5PSIuNSIvPgogIDxwYXRoIGQ9Im0yNCAxOS01IDloMTBtLTMuMi0yaC0zLjZsMS44LTMuNCIgZmlsbD0iI2ZmOTQwOSIvPgogPC9nPgogPHBhdGggZD0ibTIwLjI2MSAxMy43Mzl2My45MTNoMS4zMDQzdjEuMzA0M2gtMi42MDg3djMuOTEzaDIuNjA4N3YxOC4yNjFoLTIuNjA4N3YzLjkxM2gyLjYwODd2MS4xNDM5aC0xLjMwNDNsMi42MDg3IDQuMDczNSAyLjYwODctNC4wNzM1aC0xLjMwNDN2LTEuMTQzOWgxMS43MzljNy4yMjYxIDAgMTMuMDQzLTUuODE3NCAxMy4wNDMtMTMuMDQzcy01LjgxNzQtMTMuMDQzLTEzLjA0My0xMy4wNDNoLTExLjczOXYtMS4zMDQzaDEuMzA0M3YtMy45MTN6bTMuOTEzIDkuMTMwNGgxMS43MzljNS4wNTgzIDAgOS4xMzA0IDQuMDcyMiA5LjEzMDQgOS4xMzA0cy00LjA3MjIgOS4xMzA0LTkuMTMwNCA5LjEzMDRoLTExLjczOXoiIGZpbGw9IiNmOWY5ZjkiLz4KPC9zdmc+Cg==",
+                "oc.keyword": "dia",
+                "oc.launch": "dia-gnome.Dia-gnome",
+                "oc.legacyfileextensions": "dia",
+                "oc.mimetype": "application/x-dia-diagram;",
+                "oc.name": "Dia",
+                "oc.path": "/usr/bin/dia",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.alpine.3.17",
+                "oc.type": "app"
+            }
         },
-        "DockerVersion": "",
-        "Author": "Alexandre DEVELY",
+        "DockerVersion": "24.0.2",
+        "Author": "",
         "Config": {
             "Hostname": "",
             "Domainname": "",
@@ -57,8 +90,7 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
+            "Image": "sha256:4813c8d3c4a3fc9f1d3176d6dd95f30304da664538e34ce61d69f7ec849642c4",
             "Volumes": null,
             "WorkingDir": "",
             "Entrypoint": null,
@@ -88,10 +120,10 @@
         "VirtualSize": 228640276,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/a000e1fe035da1bd776c3d55d985574c828a2fa1865c343b62b6be9cf8d3ae31/diff:/var/lib/docker/overlay2/44ae5f3bccf283675089022a2188fc9849cee5e7b639154e74c2a163db98a19c/diff:/var/lib/docker/overlay2/863270828a5a2106fa4c555b62b1dc032f7401617f9ef162d60929aec901a07a/diff:/var/lib/docker/overlay2/d40cab81cc8042a2e2520196b7d89bb695107ba9185291a96483be2c142cc8a7/diff:/var/lib/docker/overlay2/e36e4ec25dab359750a77a03d30ab8ce9c351352f8fc8b33ed903a1ad6331503/diff:/var/lib/docker/overlay2/546f0b749700197ed1f7c496b0c691d7eb3a6d1c16cca269abf3ea110cce6082/diff:/var/lib/docker/overlay2/4de71e45b057fc6bb71d163dfcbde197451b2947ca313c6a242d22dbd3d9d510/diff:/var/lib/docker/overlay2/8efa001f5f3293da2f1cb4ee9c2b20f5bbe5cc98a81fe651f22f019e9acdc39a/diff:/var/lib/docker/overlay2/e918ae0def2d97b0a9cb92ba083e824d0be1dd45b0cd375e567b94a525837e26/diff:/var/lib/docker/overlay2/70a30598f39b3cf514edb628aa55d652fcc641cd15fdf95c2a77cf9766cd821f/diff:/var/lib/docker/overlay2/041e9fa909527c56722e40c7be324ef5b8fc99c41dc07627b43bbf0dcba1724e/diff:/var/lib/docker/overlay2/cb26226aceef67e749b50defce9d2883d5393cdeaacff3e126c1f41a11040950/diff:/var/lib/docker/overlay2/49d30ff80bba11c7523b0c705e1cb9320e49b81254427e0a9e13723ed2f38096/diff:/var/lib/docker/overlay2/9f8e7a351636e86e37fd1532073e1914b5e8930cce766a8f14d2c6ee11d7162c/diff",
-                "MergedDir": "/var/lib/docker/overlay2/2e328c4e310f8fc7aca0a8495db3a3e520298e4e5403708a4d0551639feeb19b/merged",
-                "UpperDir": "/var/lib/docker/overlay2/2e328c4e310f8fc7aca0a8495db3a3e520298e4e5403708a4d0551639feeb19b/diff",
-                "WorkDir": "/var/lib/docker/overlay2/2e328c4e310f8fc7aca0a8495db3a3e520298e4e5403708a4d0551639feeb19b/work"
+                "LowerDir": "/var/lib/docker/overlay2/90875a0cf815a46bfeabe5006802f36bf8fcc4b14ff65611e878118cc27a37fb/diff:/var/lib/docker/overlay2/02f05047f1cc80e7e0eeaa76d28b63e0b0f3ce7c311ce25b10de2d0f3adc1688/diff:/var/lib/docker/overlay2/be81cc71594f9fc067d7bf7224442e5e26820ed54b24308af0fcf8193c55c5cf/diff:/var/lib/docker/overlay2/5cf3c443394e207a5647885defb3c0df27231b271ccfee0eaf6145f371b78927/diff:/var/lib/docker/overlay2/2d86b6d9ce28a9f72011ae3f98dc9b80823d39f59dcbe2151bc00c674c65807c/diff:/var/lib/docker/overlay2/48271357cd45e1e3d569c966977a302a3e4956fa6140c1d3d7b017793e6dc87d/diff:/var/lib/docker/overlay2/6e6abdf8671c9171489209198d6371df42f13dc9974b83004b4565a879aa0d54/diff:/var/lib/docker/overlay2/a758cd64f5d909af97339209b957be1b6ba20876d8124bdab90c099c3b7d623d/diff:/var/lib/docker/overlay2/e4c6083ee169a7e1189eae20f458947e476bb70251baf46db58707ea37963137/diff:/var/lib/docker/overlay2/37753633933e0a2ca74eb7c7ed0c1939ae75ff6fb0d202e673de9f4f3942e57e/diff:/var/lib/docker/overlay2/837855014dc50fc69afef64e4c2f4e027373d39ea941310fa8875f9776838ed7/diff:/var/lib/docker/overlay2/f5cc2b9d015a8f1e37a81249ad2f66231a33454b5ea8eb62d415ef12136c7c8a/diff:/var/lib/docker/overlay2/5d1fc604017c5b770cda74ffad9b339611fff1f20c93443ce9a5638ec2209990/diff:/var/lib/docker/overlay2/9f8e7a351636e86e37fd1532073e1914b5e8930cce766a8f14d2c6ee11d7162c/diff",
+                "MergedDir": "/var/lib/docker/overlay2/0151afadc57514dd756f761e9d4359d4cb76cd9ea7af951cda61cf4f9e86257c/merged",
+                "UpperDir": "/var/lib/docker/overlay2/0151afadc57514dd756f761e9d4359d4cb76cd9ea7af951cda61cf4f9e86257c/diff",
+                "WorkDir": "/var/lib/docker/overlay2/0151afadc57514dd756f761e9d4359d4cb76cd9ea7af951cda61cf4f9e86257c/work"
             },
             "Name": "overlay2"
         },
@@ -110,9 +142,9 @@
                 "sha256:f71bcbf0840fbe50727a424c32f5517a5cd41567a6a9238c026948c3e9b733d9",
                 "sha256:1e7dcc49a14efce4ba2352768927f04d6c5fdf7fc08d9dc98a461969b41b6d41",
                 "sha256:ec936d82795649e7719ad27d87db703ea4f0d51d1484988bddd71c88dd1bf55d",
-                "sha256:ff58efe2d1c98816a3bb045682dc8ae2af6b5b956904a403d22ea70ae7ad5212",
-                "sha256:145d41fa30bc9345b202cae89940b1ce97cf4bc614129f92b5f89ec3c4051857",
-                "sha256:7dec0b7c42ce6a0524768d5fb9fba1ff02f3534b7eecd8fcd6440013076708f8"
+                "sha256:5f5d9efb486e2ec527c9eff27222e9e341d811c53c15f7fcd0fddfa556519375",
+                "sha256:e8f24d3497511b72516522b3e52209b104187da9f6eaa5221ae105d648310692",
+                "sha256:59e4d1fd20394da5e451904fef25acbe7af064507a34a194462e91ae6256d4e1"
             ]
         },
         "Metadata": {
