@@ -1,0 +1,136 @@
+[
+    {
+        "Id": "sha256:0717b7b340cd132006f1b7e78a76066daaca951320af1eba584517fa4625f302",
+        "RepoTags": [
+            "abcdesktopio/beekeeperstudio.d:3.2"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/beekeeperstudio.d@sha256:456f737e636cb2835231ed70e5ccbc281ca9540f95b1399e3a1f033f10fb53c0"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-12-28T15:57:25.1977479Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ELECTRON_ENABLE_LOGGING=true",
+                "QT_X11_NO_MITSHM=1",
+                "ARGS=--no-sandbox",
+                "APPNAME=beekeeperstudio",
+                "APPBIN=/opt/Beekeeper-Studio/beekeeper-studio",
+                "APP=/opt/Beekeeper-Studio/beekeeper-studio"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--no-sandbox",
+                "oc.cat": "office",
+                "oc.desktopfile": "beekeeper-studio.desktop",
+                "oc.displayname": "Beekeeper-studio",
+                "oc.fileextensions": "sql",
+                "oc.host_config": "{\"shm_size\":\"2G\",\"ipc_mode\":\"shareable\"}",
+                "oc.icon": "beekeeper-studio.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEzMi44IDE0Ni4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMzIuOCAxNDYuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGQUQ4M0I7fQo8L3N0eWxlPgo8Zz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjEuMywyOC4yTDc3LjcsMy4xQzcwLjYtMSw2MS45LTEsNTQuOSwzLjFMNDMuNSw5LjdWMzl2Ni43djI3LjVjMCw4LjEsNC4zLDE1LjcsMTEuNCwxOS44CgkJCWMzLjUsMiw3LjUsMy4xLDExLjQsMy4xczcuOS0xLDExLjQtMy4xbDAsMGM3LjEtNC4xLDExLjQtMTEuNiwxMS40LTE5LjhjMC04LjEtNC4zLTE1LjctMTEuNC0xOS44bDAsMGMtMy41LTItNy41LTMuMS0xMS40LTMuMQoJCQlWMzZjMy45LDAsNy45LDEsMTEuNCwzLjFsMTIuNCw3LjJjNy4xLDQuMSwxMS40LDExLjYsMTEuNCwxOS44djE0LjNjMCw4LjEtNC4zLDE1LjctMTEuNCwxOS44bC0xMi40LDcuMmMtMy41LDItNy41LDMuMS0xMS40LDMuMQoJCQlzLTcuOS0xLTExLjQtMy4xbC0xMi40LTcuMmMtNy4xLTQuMS0xMS40LTExLjYtMTEuNC0xOS44di03LjJWNjZWNDcuNVYxNi44TDExLjQsMjguMkM0LjMsMzIuMywwLDM5LjgsMCw0OHY1MC4zCgkJCWMwLDguMSw0LjMsMTUuNywxMS40LDE5LjhMNTUsMTQzLjJjNy4xLDQuMSwxNS44LDQuMSwyMi44LDBsNDMuNi0yNS4xYzcuMS00LjEsMTEuNC0xMS42LDExLjQtMTkuOFY0OAoJCQlDMTMyLjcsMzkuOCwxMjguMywzMi4zLDEyMS4zLDI4LjJ6IE01Mi4zLDU1LjJjLTEuMywxLTIuNCwyLjEtMy40LDMuM3YtMTZsMy40LTJWNTUuMnogTTYxLDUxYy0xLjIsMC4zLTIuMywwLjYtMy40LDEuMVYzNy43CgkJCWMxLjEtMC41LDIuMy0wLjgsMy40LTEuMVY1MXoiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K",
+                "oc.keyword": "beekeeperstudio,database,sql,mysql,postgres,sqllite,db,sqlserver,query,editor",
+                "oc.launch": "beekeeper-studio.beekeeper-studio",
+                "oc.legacyfileextensions": "sql",
+                "oc.name": "beekeeperstudio",
+                "oc.path": "/opt/Beekeeper-Studio/beekeeper-studio",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.gtk",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1616955882,
+        "VirtualSize": 1616955882,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/54a9e64e02e32fac509382831df8a1860b86330815e73c6fd2bed453bf5479d2/diff:/var/lib/docker/overlay2/569a6148c5bd28208b0e2dee807ddc0a878ec750e666eaa7c52d4ba65d5525a0/diff:/var/lib/docker/overlay2/07654a836526d0ffe7cd191ce7181307681286fc165626a5df16e236bf42ec45/diff:/var/lib/docker/overlay2/94314d5ce6a2c39dc4d293ad00a08a480678424864651682c44c91e6b71d641b/diff:/var/lib/docker/overlay2/7420fe47f7ff0206739a9fa395a31127fc7dc9497237ea1c7ec50635dc6fc3ca/diff:/var/lib/docker/overlay2/928e2abe914de7da7a0570ef1263d5ee21b47a2bf80c17c34784688728deee73/diff:/var/lib/docker/overlay2/8c78b94795f464ad9322ae0b5b5f0a65e8078aedd1e801f205ffdd353b321bf6/diff:/var/lib/docker/overlay2/fe87f06b499ed581c3c708fd9f2605c0b97382987d4131f2382d355affdd4d70/diff:/var/lib/docker/overlay2/8967e7ffd7e9c80f7706044223971a0b06bddd17f758a03d974caefea3008718/diff:/var/lib/docker/overlay2/aa4f1475cc1980d446e364b6d3dde63a9495a13b8f34f2f65404cd2086f021a0/diff:/var/lib/docker/overlay2/b7da7a48de18ef05fa550d200adb9f70388ab3490cc027ea2cfeb548589dcc3e/diff:/var/lib/docker/overlay2/5f83099a58550a886f0a96c751b3bda602581aaafccb396350fe737885d40e82/diff:/var/lib/docker/overlay2/69226116cf67ba91af10e439c4ff2039dc08093bcf1420ca1c542a66fb38eba4/diff:/var/lib/docker/overlay2/bb9806dbe6f8b51e045983468e388dc049ac23090853aace643e29508a9a59f5/diff:/var/lib/docker/overlay2/d4332372021bb727e209b18c6d3dcf874a64ae8ecb454bdd776d49541a12d16c/diff:/var/lib/docker/overlay2/5ea1aebe22bd537a0a0a9cd40c14e8e0f1746c5e4174f3de29abc7dac7191215/diff:/var/lib/docker/overlay2/e1004628b4cefc0010dc3eb2e4eb04599bfad24f9b740d4a1d0e1930fcf3fee4/diff:/var/lib/docker/overlay2/35ced8ad1a8aac8369b76cc7fb7673a5a35d2a3e0343e0126cae6501580a3d27/diff:/var/lib/docker/overlay2/9ef9da1d0d7fb566b1fcea230e294bbc91fd00a437b201b5784ba9e44328120a/diff:/var/lib/docker/overlay2/f1f06935c167f85535eb2c49024d3790fd9d4ec86fda5fedf039eb94a380fe32/diff:/var/lib/docker/overlay2/e369dbb9c022616853b6aa3ebee547a9aac4abe300a8c477d49c5c4510e9f6ab/diff:/var/lib/docker/overlay2/78267f5d87f2e6830189f2b9adb719edb1753bf5c6ba351efb1602e077ca8216/diff:/var/lib/docker/overlay2/391b187b749bfbf7d0a4cd5e09a394baf7f995bcd73be0b7c03e32e2d1813d5a/diff:/var/lib/docker/overlay2/d7ad700f058b45f2ac6706830b5a3a175952aa62d6c320a68fc8c39d228c564f/diff",
+                "MergedDir": "/var/lib/docker/overlay2/d3fea2f624bcd32c1a4408d640feb1d2f123e91a9d735b63ae9d43588fb0ccb0/merged",
+                "UpperDir": "/var/lib/docker/overlay2/d3fea2f624bcd32c1a4408d640feb1d2f123e91a9d735b63ae9d43588fb0ccb0/diff",
+                "WorkDir": "/var/lib/docker/overlay2/d3fea2f624bcd32c1a4408d640feb1d2f123e91a9d735b63ae9d43588fb0ccb0/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:3a03f09d212915b240e9d216069aba5652ed4765c7e4b098c65e71860d47b8e1",
+                "sha256:09316b27ebb152da02a21f8aa38a8649a127cf00e0d9f70db103664456826256",
+                "sha256:ee70b258b53d828fb64c82c6af73cfd54e8f50bfa0cdd38f25e88f5e4a0b78ee",
+                "sha256:e100cfdb5e12cbb38faaa53391810b22ed6e717932ea41de087f9ca6e21d8943",
+                "sha256:aec0091d36d6c4255a4cbe35b33ba938b36f2cd21e32a386c53ccd0c63c8bcc9",
+                "sha256:1e95e7b2a8d22f131b759938a5346bf0922d1e2f97e1f1ab989995da423360ff",
+                "sha256:3caee338a41ebf8a72dbae5374cd9558a3d9d190730b9dd3ef2bce4277a3fd29",
+                "sha256:403ce2f7e79136ff2723c86c2bfb5ad35b55e67fbd29b18fd3c293e9fabb8404",
+                "sha256:a10610088a46e70168e4d8d4875250b4df4c0cbcc5235cf41dfa13782ae90a8e",
+                "sha256:97195aa5c4ea8cea81b99ae0983d0dcde23db3c90e213b981ad30838865456d6",
+                "sha256:f136dbefb78af2635b63aea8b1ef486d6499c8615783b8de2cc87252212b3abb",
+                "sha256:e122a1f958ecc2dc510dc0e0df12ea1aa2f2aee3ac30abe4c125719a38f153b7",
+                "sha256:82ac65d7588f1b9896216656aaa45c8677e8e8593f7c67475c10178bd716c230",
+                "sha256:ae925864a491e9d9aaf2a6d2a1a317125ddbbb6c668487e99a7722a02c87af85",
+                "sha256:31a6a9fe2a59586719cbd8995be818641d280e0b52105614f32cae0223c2052f",
+                "sha256:3c9698d420bb1c337d4ae5398246c8c3afcb8f320f47e12932b55c5b4da66f47",
+                "sha256:1246333e4daa6ae052999750954d9189a3f004274be327e8e9eef0954a9338a4",
+                "sha256:a0acbc870672499678f8ab672c6fafbc5c7202fca825d7aa2be5815981cad995",
+                "sha256:351d47033436f3b98659f3cf3be564d57e8cab0547f590498c6615b4c06a9f1e",
+                "sha256:d1bf0df676646420f53f952457bfdef45981bc92a63009c06e5a41c7925bb6bb",
+                "sha256:905ef6caf91c81ab1672b9fd318db141acd75a6dfad1f819c420911f6d07da96",
+                "sha256:b76961aa59c4b21996f2bf45db72328bb717d145db0de080a1000c6cb7e3532f",
+                "sha256:db966063c1e933a8fd3136b5f3ce5aee96f64ebf0274276c6a074b4304fbd716",
+                "sha256:e4ca4f49444f67c3494ea2d42df213ee8ff9caadc02c4bc3fe677ad01cece2d9",
+                "sha256:7cfa2009e2947de9027ffbce6d0f581858006691083695da08c5a84cf532e710"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
