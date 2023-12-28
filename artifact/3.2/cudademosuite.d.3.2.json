@@ -1,0 +1,133 @@
+[
+    {
+        "Id": "sha256:952faef8072d6383281d07bc6b1259f96f79b27415729f5c08da51bc6a0f5950",
+        "RepoTags": [
+            "abcdesktopio/cudademosuite.d:3.2"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/cudademosuite.d@sha256:cbe0cfbca6c02e8af4399f62bd8713a9abd4f45d0c89bcdf570113d0074ecf5a"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-12-28T15:59:44.538656502Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NVARCH=x86_64",
+                "NVIDIA_REQUIRE_CUDA=cuda>=12.0 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471",
+                "NV_CUDA_CUDART_VERSION=12.0.107-1",
+                "NV_CUDA_COMPAT_PACKAGE=cuda-compat-12-0",
+                "CUDA_VERSION=12.0.0",
+                "LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+                "NVIDIA_VISIBLE_DEVICES=all",
+                "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ARGS=--name cudademosuite",
+                "APPNAME=cudademosuite",
+                "APPBIN=/usr/bin/konsole",
+                "APP=/usr/bin/konsole"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--name cudademosuite",
+                "oc.cat": "development",
+                "oc.desktopfile": "org.kde.konsole.desktop",
+                "oc.displayname": "cuda demo suite",
+                "oc.icon": "nvidia.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InN2ZzIiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzUxLjQ2cHgiDQoJIGhlaWdodD0iMjU4Ljc4NXB4IiB2aWV3Qm94PSIzNS4xODggMzEuNTEyIDM1MS40NiAyNTguNzg1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDM1LjE4OCAzMS41MTIgMzUxLjQ2IDI1OC43ODUiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHRpdGxlICBpZD0idGl0bGU0Ij5nZW5lcmF0ZWQgYnkgcHN0b2VkaXQgdmVyc2lvbjozLjQ0IGZyb20gTlZCYWRnZV8yRC5lcHM8L3RpdGxlPg0KPHBhdGggaWQ9InBhdGgxNyIgZD0iTTM4NC4xOTUsMjgyLjEwOWMwLDMuNzcxLTIuNzY5LDYuMzAyLTYuMDQ3LDYuMzAydi0wLjAyM2MtMy4zNzEsMC4wMjMtNi4wODktMi41MDgtNi4wODktNi4yNzgNCgljMC0zLjc2OSwyLjcxOC02LjI5Myw2LjA4OS02LjI5M0MzODEuNDI3LDI3NS44MTYsMzg0LjE5NSwyNzguMzQsMzg0LjE5NSwyODIuMTA5eiBNMzg2LjY0OCwyODIuMTA5YzAtNS4xNzUtNC4wMi04LjE3OS04LjUtOC4xNzkNCgljLTQuNTExLDAtOC41MzEsMy4wMDQtOC41MzEsOC4xNzljMCw1LjE3Miw0LjAyMSw4LjE4OCw4LjUzMSw4LjE4OEMzODIuNjI5LDI5MC4yOTcsMzg2LjY0OCwyODcuMjgxLDM4Ni42NDgsMjgyLjEwOQ0KCSBNMzc2LjczOCwyODIuODAxaDAuOTFsMi4xMDksMy43MDNoMi4zMTZsLTIuMzM2LTMuODU5YzEuMjA3LTAuMDg2LDIuMi0wLjY2MSwyLjItMi4yODZjMC0yLjAxOS0xLjM5Mi0yLjY2OC0zLjc1LTIuNjY4aC0zLjQxMQ0KCXY4LjgxM2gxLjk2MVYyODIuODAxIE0zNzYuNzM4LDI4MS4zMDl2LTIuMTIyaDEuMzY0YzAuNzQyLDAsMS43NTMsMC4wNiwxLjc1MywwLjk2NWMwLDAuOTg1LTAuNTIzLDEuMTU3LTEuMzk4LDEuMTU3SDM3Ni43MzgiLz4NCjxwYXRoIGlkPSJwYXRoMTkiIGQ9Ik0zMjkuNDA2LDIzNy4wMjdsMTAuNTk4LDI4Ljk5M0gzMTguNDhMMzI5LjQwNiwyMzcuMDI3eiBNMzE4LjA1NiwyMjUuNzM4bC0yNC40MjMsNjEuODhoMTcuMjQ2bDMuODYzLTEwLjkzNA0KCWgyOC45MDNsMy42NTYsMTAuOTM0aDE4LjcyMmwtMjQuNjA1LTYxLjg4OEwzMTguMDU2LDIyNS43Mzh6IE0yNjkuMDIzLDI4Ny42NDFoMTcuNDk3di02MS45MjJsLTE3LjUtMC4wMDRMMjY5LjAyMywyODcuNjQxeg0KCSBNMTQ3LjU1NiwyMjUuNzE1bC0xNC41OTgsNDkuMDc4bC0xMy45ODQtNDkuMDc0bC0xOC44NzktMC4wMDRsMTkuOTcyLDYxLjkyNmgyNS4yMDdsMjAuMTMzLTYxLjkyNkgxNDcuNTU2eiBNMjE4LjI4MSwyMzkuMTk5aDcuNTINCgljMTAuOTEsMCwxNy45NjYsNC44OTgsMTcuOTY2LDE3LjYwOWMwLDEyLjcxNC03LjA1NiwxNy42MTMtMTcuOTY2LDE3LjYxM2gtNy41MlYyMzkuMTk5eiBNMjAwLjkzMSwyMjUuNzE1djYxLjkyNmgyOC4zNjYNCgljMTUuMTEzLDAsMjAuMDQ4LTIuNTEyLDI1LjM4NC04LjE0OGMzLjc2OS0zLjk1Nyw2LjIwNy0xMi42NDEsNi4yMDctMjIuMTM0YzAtOC43MDctMi4wNjMtMTYuNDY4LTUuNjYtMjEuMzA0DQoJYy02LjQ4MS04LjY0OS0xNS44MTctMTAuMzQtMjkuNzUtMTAuMzRIMjAwLjkzMXogTTM1LjE4OCwyMjUuNjI5djYyLjAxMmgxNy42NDV2LTQ3LjA4NmwxMy42NzIsMC4wMDQNCgljNC41MjcsMCw3Ljc1NCwxLjEyOCw5LjkzNCwzLjQ1N2MyLjc2NSwyLjk0NSwzLjg5NCw3LjY5OSwzLjg5NCwxNi4zOTV2MjcuMjNoMTcuMDk4di0zNC4yNjJjMC0yNC40NTMtMTUuNTg2LTI3Ljc1LTMwLjgzNi0yNy43NQ0KCUgzNS4xODh6IE0xNzIuNzcxLDIyNS43MTVsMC4wMDcsNjEuOTI2aDE3LjQ4OXYtNjEuOTI2SDE3Mi43NzF6Ii8+DQo8cGF0aCBpZD0icGF0aDIxIiBmaWxsPSIjNzdCOTAwIiBkPSJNODIuMjExLDEwMi40MTRjMCwwLDIyLjUwNC0zMy4yMDMsNjcuNDM3LTM2LjYzOFY1My43Mw0KCWMtNDkuNzY5LDMuOTk3LTkyLjg2Nyw0Ni4xNDktOTIuODY3LDQ2LjE0OXMyNC40MSw3MC41NjUsOTIuODY3LDc3LjAyNnYtMTIuODA0Qzk5LjQxMSwxNTcuNzgxLDgyLjIxMSwxMDIuNDE0LDgyLjIxMSwxMDIuNDE0eg0KCSBNMTQ5LjY0OCwxMzguNjM3djExLjcyNmMtMzcuOTY4LTYuNzY5LTQ4LjUwNy00Ni4yMzctNDguNTA3LTQ2LjIzN3MxOC4yMy0yMC4xOTUsNDguNTA3LTIzLjQ3djEyLjg2Nw0KCWMtMC4wMjMsMC0wLjAzOS0wLjAwNy0wLjA1OC0wLjAwN2MtMTUuODkxLTEuOTA3LTI4LjMwNSwxMi45MzgtMjguMzA1LDEyLjkzOFMxMjguMjQzLDEzMS40NDUsMTQ5LjY0OCwxMzguNjM3IE0xNDkuNjQ4LDMxLjUxMg0KCVY1My43M2MxLjQ2MS0wLjExMiwyLjkyMi0wLjIwNyw0LjM5MS0wLjI1N2M1Ni41ODItMS45MDcsOTMuNDQ5LDQ2LjQwNiw5My40NDksNDYuNDA2cy00Mi4zNDMsNTEuNDg4LTg2LjQ1Nyw1MS40ODgNCgljLTQuMDQzLDAtNy44MjgtMC4zNzUtMTEuMzgzLTEuMDA1djEzLjczOWMzLjA0LDAuMzg2LDYuMTkyLDAuNjEzLDkuNDgxLDAuNjEzYzQxLjA1MSwwLDcwLjczOC0yMC45NjUsOTkuNDg0LTQ1Ljc3OA0KCWM0Ljc2NiwzLjgxNywyNC4yNzgsMTMuMTAzLDI4LjI4OSwxNy4xNjhjLTI3LjMzMiwyMi44ODMtOTEuMDMxLDQxLjMyOS0xMjcuMTQ0LDQxLjMyOWMtMy40ODEsMC02LjgyNC0wLjIxMS0xMC4xMS0wLjUyOHYxOS4zMDYNCgloMTU2LjAzMlYzMS41MTJIMTQ5LjY0OHogTTE0OS42NDgsODAuNjU2VjY1Ljc3N2MxLjQ0Ni0wLjEwMSwyLjkwMy0wLjE3OSw0LjM5MS0wLjIyNmM0MC42ODgtMS4yNzgsNjcuMzgyLDM0Ljk2NSw2Ny4zODIsMzQuOTY1DQoJcy0yOC44MzIsNDAuMDQzLTU5Ljc0Niw0MC4wNDNjLTQuNDQ5LDAtOC40MzgtMC43MTUtMTIuMDI4LTEuOTIyVjkzLjUyM2MxNS44NCwxLjkxNCwxOS4wMjgsOC45MTEsMjguNTUxLDI0Ljc4NmwyMS4xOC0xNy44NTkNCgljMCwwLTE1LjQ2MS0yMC4yNzctNDEuNTI0LTIwLjI3N0MxNTUuMDIxLDgwLjE3MiwxNTIuMzEsODAuMzcxLDE0OS42NDgsODAuNjU2Ii8+DQo8L3N2Zz4NCg==",
+                "oc.keyword": "cudademosuite,cuda nvidia demo suite",
+                "oc.launch": "cudademosuite.konsole",
+                "oc.name": "cudademosuite",
+                "oc.path": "/usr/bin/konsole",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.nvidia.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 4005975918,
+        "VirtualSize": 4005975918,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/66d67bdf8beb4b85e76e49a3794eca4854c234a2ae4306f0cd88a6ee523ec36b/diff:/var/lib/docker/overlay2/2e74e2acb2a14b15045825f006553e7baf696c7141e144eaac1355bf1549fb94/diff:/var/lib/docker/overlay2/c7fe97fa41ee265437b646889d2de9e26f3db3b3ea743774a9f6218277f62c9b/diff:/var/lib/docker/overlay2/82f555c98866f00de6ee0e2d53b694110cc46fe1a8fb4b9e7bff20ac8af20565/diff:/var/lib/docker/overlay2/871cbcce39f1d3cacef4bcc89fb3fed5630f42b0291969d5f50e5108eb48cf83/diff:/var/lib/docker/overlay2/0ed971da0ccc39d6073fdd5f2d54f32a6ad417d87f55331bbdc1a509b0c611bb/diff:/var/lib/docker/overlay2/0b377c5fd256911a45f1dcfd12177e3886e5e0063ffe926f74c2402c010473dc/diff:/var/lib/docker/overlay2/34aa3c825196fca7e45025327814834e1ddd6694b144af500ec37e9f91918143/diff:/var/lib/docker/overlay2/2b34941fc18c239758c05f4888db690c31e6fe41d96c6c89e7e0019dedc2c15e/diff:/var/lib/docker/overlay2/6768561a9be97f5d15dcc2309ab682a7e6ed5e4b00706e3ba5f8760be7d38478/diff:/var/lib/docker/overlay2/7f5ea2b18cb7ebf09cb9b9c2988ec288b348f54ce5b234a4e97381d1fdd044a1/diff:/var/lib/docker/overlay2/cb70ed9774b80fecaac065360eeea714a9e3b85a29dff17d76d02d8f5023af98/diff:/var/lib/docker/overlay2/c85f5cdacd409d9f767f318a24632d7ff298ce992748dfbbdc4d26cfaab6415c/diff:/var/lib/docker/overlay2/7bbd3decadcdb8428df6c26c017b7ee3d707cd97977c99f4faa4ac7a979d3875/diff:/var/lib/docker/overlay2/6f0673ed82b05f63f6eff65872aed5f3160da67f4f69f38d581acf5ea923d72e/diff:/var/lib/docker/overlay2/e8f2a9505599f041feb02c66a10797d056304916bf9e53ed2f7835fd50a7de1c/diff:/var/lib/docker/overlay2/c7674708c81835678de9b2e619ed1f6e86659a08b3b11273d9b483829d2777cd/diff",
+                "MergedDir": "/var/lib/docker/overlay2/4cb0d41e317379f6e2ddc2d0cfdb629430278c5fd29e7f35b1bd8bd89745a6d5/merged",
+                "UpperDir": "/var/lib/docker/overlay2/4cb0d41e317379f6e2ddc2d0cfdb629430278c5fd29e7f35b1bd8bd89745a6d5/diff",
+                "WorkDir": "/var/lib/docker/overlay2/4cb0d41e317379f6e2ddc2d0cfdb629430278c5fd29e7f35b1bd8bd89745a6d5/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b",
+                "sha256:816f1523251fb7f2930f18d048598c04362381e3caeb2f1750bf81bd7105ea13",
+                "sha256:0bc83a8df0f97f1922dd58f296cf064a540b1b5755030ad2879c4d60cdc82bda",
+                "sha256:d721c10aab2ee4d60855574a77d0c679d72341f2860cb86374633585eff6538c",
+                "sha256:4ca458e6022e3a905e580dc360508f57e45828e45561841a502bb7f803b987f3",
+                "sha256:4283b7fba8ea1414f2e303b24720d6d24227faf5929eb3cfb1fba1d06a248afd",
+                "sha256:60542f56e1ad7b71d21cc53a969d1f0f35a18282432fb6f439eb4766da18fbd6",
+                "sha256:a3136d97fbaf6bcc81d07a30c2832e7f83e1ce4896d15656ef199c2b126421a2",
+                "sha256:fc4d4d30ed01c52af798acd2891682cc4698901f5495965c1762fa95fad3d71c",
+                "sha256:eb29571f550ad0dceda096dbbb6c18bf944a2c4880510016c64505d9f65443ec",
+                "sha256:30c2f70b8409d470e6d08e8c3ff377d4b8de022720faa0ff925962a82c7c11a6",
+                "sha256:8a4200544585d840de986ef6054b881ee3892c7ef882df8ad45fe44d3b86c626",
+                "sha256:f9e01d0a2bbbe655d369a9367608f6959e06b9f88a47b29d4003e9d35ca434bc",
+                "sha256:f0174f556b9f9a3f5d10d7556d5b81f76b6ab40d17ccd73fcc5d82edb0b95443",
+                "sha256:428a528672bfd7724763db573619e9bba0e3fd144e7ad60e69d4e64140adb7e0",
+                "sha256:bb5affd0f361ee1ddf2f1445768bcb9322bb3c077e00db542afa9f9722ad02b8",
+                "sha256:196a4948db2b7a1b5fc33f89553332bc6d1b3056b7f9473a65cac4d1c701dbb2",
+                "sha256:a05cd4cec1f124abd6dfb901583cea2668de98c99e71b891f011f809b8037b12"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
