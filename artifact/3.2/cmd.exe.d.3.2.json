@@ -1,0 +1,121 @@
+[
+    {
+        "Id": "sha256:d26400ff89bb84acbe0dc2b8e07adfcef921b7040575929ee10da8a614dd7ef6",
+        "RepoTags": [
+            "abcdesktopio/cmd.exe.d:3.2"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/cmd.exe.d@sha256:28e14e7d37a38336a49f65e9f84f6932815b406b3e84451cd0121d9785ba212c"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-12-29T17:11:13.555782682Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "WINEDLLOVERRIDES=mscoree,mshtml=",
+                "APPNAME=cmd.exe",
+                "APPBIN=/usr/bin/wineconsole",
+                "APP=/usr/bin/wineconsole"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities",
+                "oc.displayname": "cmd.exe wine (alpine)",
+                "oc.icon": "cmd.svg",
+                "oc.icondata": "PHN2ZyBoZWlnaHQ9IjEwMjQiIHdpZHRoPSI4OTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTgzMSAxMjdINjNjLTM1LjM1IDAtNjQgMjguNjUtNjQgNjR2NjQwYzAgMzUuMzUgMjguNjUgNjQgNjQgNjRoNzY4YzM1LjM1IDAgNjQtMjguNjUgNjQtNjRWMTkxQzg5NSAxNTUuNjQ5OTk5OTk5OTk5OTggODY2LjM1IDEyNyA4MzEgMTI3ek0xMjcgNTc1bDEyOC0xMjhMMTI3IDMxOWw2NC02NCAxOTIgMTkyTDE5MSA2MzkgMTI3IDU3NXpNNjM5IDYzOUgzODN2LTY0aDI1NlY2Mzl6IiAvPgo8L3N2Zz4K",
+                "oc.keyword": "cmd.exe,wine,command,cmd.exe",
+                "oc.launch": "conhost.exe.conhost.exe",
+                "oc.name": "cmd.exe",
+                "oc.path": "/usr/bin/wineconsole",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.alpine.wine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 647444033,
+        "VirtualSize": 647444033,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/0ccf6921b9facc1afe3f4e572523929028a77cf4ced6c3665726fc205469f268/diff:/var/lib/docker/overlay2/f72c0928ed97831fe778c1d46922044cdf0b341e06e41f215ec9e853679f1591/diff:/var/lib/docker/overlay2/973618f8aec3c91413a5a897314b8ad826e8ef29c484de8cdd6a72eb925deeea/diff:/var/lib/docker/overlay2/74750ee0c473666cec6275b777dabb6ef5f04ad1e7a29d5b19459eba99360f7a/diff:/var/lib/docker/overlay2/9eedc7cbcd0e0cae20acaad7b7eeac8f638358af609dcbdce72c02a1991b606e/diff:/var/lib/docker/overlay2/973b8e795dd4b8a65cbaa39924deb057c4ffc5474d5c8b92f45c689f3a5878fd/diff:/var/lib/docker/overlay2/7097364907cc6eeff0c9dd30981c8f8a5d76fae0d2491e64c0e12ee5ed79a18b/diff:/var/lib/docker/overlay2/117ef87aace81ea586721ba5e881f1bb78513d0cd3865fe2f5cddffbaf6c503d/diff:/var/lib/docker/overlay2/35ecf912b1c58c21cb6ca18cfaf7e2b86111b937b7f085944a6ea785e3131bd5/diff:/var/lib/docker/overlay2/5df08b1d3164800f69aa934349b9550255e9bed85e5e7645d1074b29cd08769f/diff:/var/lib/docker/overlay2/e91efced80593e8082c2012a532510f7fc4288e1f121ae14a632ff3048b78032/diff:/var/lib/docker/overlay2/4fd64d6263208d3ac4308bb0448801483aca9ec6dd7e4f41bdba2720b722be08/diff:/var/lib/docker/overlay2/bc9f2a002d6a81652ff99ce3c5a657e7df93618bccefad3282b261082331f095/diff:/var/lib/docker/overlay2/ab4a0c6412bda2fb392be8e8afa89488c20751b9f2d3a862ea58fa76e2e501a0/diff:/var/lib/docker/overlay2/8ec92ac307add5ef1f4f59cfc5443c518a46ff59aae510c6daab1f203f24b8e5/diff:/var/lib/docker/overlay2/7901ee88a7b302a2b625ee5dcf5004a6ecf0970a1dd2378f2ce0e17f3cf99f95/diff",
+                "MergedDir": "/var/lib/docker/overlay2/b7fcd38145ac41da97ac8ce34167afb90180669a3b069f3f07e8f4c92efde1d7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/b7fcd38145ac41da97ac8ce34167afb90180669a3b069f3f07e8f4c92efde1d7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/b7fcd38145ac41da97ac8ce34167afb90180669a3b069f3f07e8f4c92efde1d7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:5af4f8f59b764c64c6def53f52ada809fe38d528441d08d01c206dfb3fc3b691",
+                "sha256:a37580e2649efee679ad1527b2729b5ac8ba5546b24ba7e376711e11042adb21",
+                "sha256:60542f56e1ad7b71d21cc53a969d1f0f35a18282432fb6f439eb4766da18fbd6",
+                "sha256:ff16539303e58ef23235ba73e8b52f041f9c0ce6e1126d76aaf6175f6d243f7d",
+                "sha256:1aacc1a3b1760d6d69c36caa248f5397acd3d8a21cea80b2d0114fb40d528c4c",
+                "sha256:2c2bb3a3db40df9903fae8c51f89c46041964bd27923f909994036b563e433f3",
+                "sha256:333ab8b62d445901455a40697f2ab30dbd1ed422eaa27609bc21640e375dd68a",
+                "sha256:84a3b99f6ef468153a23456ed34c8b67169b9e40552a8a1c42c7d08924600157",
+                "sha256:b2f3f7a1bd5f34dd07d0dc15fc029234fcd4bb638579c0897318e2a34c8ca31d",
+                "sha256:99eb0af621f3747f5a88f01563e32fb831d5e31eefc2c733173156d86a6480ec",
+                "sha256:27b2590769436623085d6ccdf2b239928b27507d5ed82c92d06b52c31bfc986d",
+                "sha256:c38cb9561d23d740999d29cc642096ab7ec21c96468d6cca1293efadc7a6ecc8",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:25104128a8bc4c71961dea8dc9d53d9ab2281d5b47ce10545f69f3ff21f287d4",
+                "sha256:0fb81d445f10d842b68fe33cc49bca9401c4e0d8d6af01e27d0946e2e9dbd215",
+                "sha256:80c4ca3d59d1f605f22ac2dbb63beb309e9bbb4a8b8f90313e1d043da77f6c71",
+                "sha256:e4e82b41f9e3fb745226f9f8ab66f8410240fa78fff5d2a9f3c8b9f40fb2e30a"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
