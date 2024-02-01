@@ -1,0 +1,135 @@
+[
+    {
+        "Id": "sha256:f68c3336e418b39e4f817594ee82193b3013aee25f038ec4b05c6c291ddfa0a9",
+        "RepoTags": [
+            "abcdesktopio/beekeeperstudio.d:main"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/beekeeperstudio.d@sha256:62b5a9f11b482a956f4c32779185b8a18665dd6e4671990654aa0fb3c0c5981a"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-02-01T17:20:29.981279574Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ELECTRON_ENABLE_LOGGING=true",
+                "QT_X11_NO_MITSHM=1",
+                "ARGS=--no-sandbox",
+                "APPNAME=beekeeperstudio",
+                "APPBIN=/opt/Beekeeper-Studio/beekeeper-studio"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--no-sandbox",
+                "oc.cat": "office",
+                "oc.desktopfile": "beekeeper-studio.desktop",
+                "oc.displayname": "Beekeeper-studio",
+                "oc.fileextensions": "sql",
+                "oc.host_config": "{\"shm_size\":\"2G\",\"ipc_mode\":\"shareable\"}",
+                "oc.icon": "beekeeper-studio.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEzMi44IDE0Ni4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMzIuOCAxNDYuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGQUQ4M0I7fQo8L3N0eWxlPgo8Zz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjEuMywyOC4yTDc3LjcsMy4xQzcwLjYtMSw2MS45LTEsNTQuOSwzLjFMNDMuNSw5LjdWMzl2Ni43djI3LjVjMCw4LjEsNC4zLDE1LjcsMTEuNCwxOS44CgkJCWMzLjUsMiw3LjUsMy4xLDExLjQsMy4xczcuOS0xLDExLjQtMy4xbDAsMGM3LjEtNC4xLDExLjQtMTEuNiwxMS40LTE5LjhjMC04LjEtNC4zLTE1LjctMTEuNC0xOS44bDAsMGMtMy41LTItNy41LTMuMS0xMS40LTMuMQoJCQlWMzZjMy45LDAsNy45LDEsMTEuNCwzLjFsMTIuNCw3LjJjNy4xLDQuMSwxMS40LDExLjYsMTEuNCwxOS44djE0LjNjMCw4LjEtNC4zLDE1LjctMTEuNCwxOS44bC0xMi40LDcuMmMtMy41LDItNy41LDMuMS0xMS40LDMuMQoJCQlzLTcuOS0xLTExLjQtMy4xbC0xMi40LTcuMmMtNy4xLTQuMS0xMS40LTExLjYtMTEuNC0xOS44di03LjJWNjZWNDcuNVYxNi44TDExLjQsMjguMkM0LjMsMzIuMywwLDM5LjgsMCw0OHY1MC4zCgkJCWMwLDguMSw0LjMsMTUuNywxMS40LDE5LjhMNTUsMTQzLjJjNy4xLDQuMSwxNS44LDQuMSwyMi44LDBsNDMuNi0yNS4xYzcuMS00LjEsMTEuNC0xMS42LDExLjQtMTkuOFY0OAoJCQlDMTMyLjcsMzkuOCwxMjguMywzMi4zLDEyMS4zLDI4LjJ6IE01Mi4zLDU1LjJjLTEuMywxLTIuNCwyLjEtMy40LDMuM3YtMTZsMy40LTJWNTUuMnogTTYxLDUxYy0xLjIsMC4zLTIuMywwLjYtMy40LDEuMVYzNy43CgkJCWMxLjEtMC41LDIuMy0wLjgsMy40LTEuMVY1MXoiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K",
+                "oc.keyword": "beekeeperstudio,database,sql,mysql,postgres,sqllite,db,sqlserver,query,editor",
+                "oc.launch": "beekeeper-studio.beekeeper-studio",
+                "oc.legacyfileextensions": "sql",
+                "oc.name": "beekeeperstudio",
+                "oc.path": "/opt/Beekeeper-Studio/beekeeper-studio",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.gtk",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1618814933,
+        "VirtualSize": 1618814933,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/9bc09f567c046b5a988a3244b8efb81a94695144931d077b9681cd5e3aafa065/diff:/var/lib/docker/overlay2/65ca10642a8270804b6636617ff0f835f842417a6d54deb92aa706fb0a7f9157/diff:/var/lib/docker/overlay2/098018c7061e18c631d69946cf940fe5323e3c18bd9237b52399b01c714261eb/diff:/var/lib/docker/overlay2/d769f85484db9a6f0bedf0693fa0817e3b585d3aa7464edf90ae1cfc8a64a5d4/diff:/var/lib/docker/overlay2/cdab4e1cad9f8c9b8a3e844d1fc6966b16eee707f4babd28fe206508e16599ef/diff:/var/lib/docker/overlay2/3bb6f8b4c9a62604388658b4ae2c44ddf1c90b298eb80d9fd6ecba018dd1bc71/diff:/var/lib/docker/overlay2/4acf1314f256837fa6c1a382df5edcbe421070d2d1142c6901a15c1ff1904f84/diff:/var/lib/docker/overlay2/279eed284438fe4356f10fbc0e84cc3c167977c3df9e708296a7d9a600b81f7e/diff:/var/lib/docker/overlay2/f314bc633d673dfe34e3adce93b98e02fa3caff2316f297deaca67c025c47fa4/diff:/var/lib/docker/overlay2/7e37cf66b7b4f79ebccf8e553e1fc4860300650ae81c745deaf55b9bcf71f545/diff:/var/lib/docker/overlay2/b51cc1651664def1d5c81c5eb7be6ff3533b8d946c75b046c5b8ca9f1bb36e59/diff:/var/lib/docker/overlay2/a338ddc40b8215be6f953e575c951b7c7fa1c824e5837ce43a307e9c6bfe70b4/diff:/var/lib/docker/overlay2/b3c2ab81e2f7ecaada5024756edca5dc97836553541745b2c9fbd1ad872222b2/diff:/var/lib/docker/overlay2/a7da4028fec6a9f5725af823d5b36fba4aba1c16167cb1c7e54220b1196cddcd/diff:/var/lib/docker/overlay2/d146685c3b8899c7a43f7aba0dfde88af0bb809a7e055341a555823b54a2d9de/diff:/var/lib/docker/overlay2/523a9cda097eecce975daaa4713cedd994944d8138255ce1c3d6a0400499d559/diff:/var/lib/docker/overlay2/a6620adb8df42e7bb1e9406093c08a660ae36d1765cc2a41e4479fa391895c61/diff:/var/lib/docker/overlay2/4c7b32274dbc6e291a6cd203e9abc9ec334cbbf224f7b67341ba9cfc782e191c/diff:/var/lib/docker/overlay2/990787f3ef8b70272f444b590c6c73e67fa86f0c1db5f70eaffb5a25e9e5db19/diff:/var/lib/docker/overlay2/6481a66dc6af09c85e0ed9c64dcea416817a794dd8d98e2e54be91cfde0d52e6/diff:/var/lib/docker/overlay2/69e31a7cbc0ab029e02016774fce4fa8c738d6dc4c40bb60a0795ec84b214b8d/diff:/var/lib/docker/overlay2/827be68b883cf3f98752f22647fab24d870649d6f56d387a1d66a482f02d8b5e/diff:/var/lib/docker/overlay2/3f215cea03abfd2170ea1ab74f1f1a82752524fed0d234516bb35e5e17b8a8c9/diff:/var/lib/docker/overlay2/d15db8ad5cf2d9e9d39f663addf4890a05083d9c31dabc4187466dad6d165de6/diff",
+                "MergedDir": "/var/lib/docker/overlay2/c3bf04111f27bec3c5d412736471bdcc2ba36ba7891c5207ea0376928c5f4503/merged",
+                "UpperDir": "/var/lib/docker/overlay2/c3bf04111f27bec3c5d412736471bdcc2ba36ba7891c5207ea0376928c5f4503/diff",
+                "WorkDir": "/var/lib/docker/overlay2/c3bf04111f27bec3c5d412736471bdcc2ba36ba7891c5207ea0376928c5f4503/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:954c82bdeb5fcc80094317528fa3fcbb1026aeff64f872527d35ec9b4343b84d",
+                "sha256:178285831dff821f77d84e4b6961a53daad60daaae43494f687089b0d2446d56",
+                "sha256:f2f2483ca4573fb3f02ee30a7a7875014e25e644574d167dcfa41f4d0ebae63a",
+                "sha256:64b447c54a69fc565ac8c44266b2396ba72a77cc02f76378675f4a3df615c36b",
+                "sha256:1e2748cfc3ea91d8d73eeff789f93318846be3277dacabdd7955216cf4cd53a3",
+                "sha256:cad32ba09b224192d91133f4111a38e5543e9568f8556736a3feaa5d769ea052",
+                "sha256:482157dd262842d4e446f76284a1995badba5ea5f91d6e860e92f8d405c20005",
+                "sha256:3007d92ebab94e6f75fbd45c858a11b2d2ce6e680e9895752777ab7271aaa0d5",
+                "sha256:b88464a4af18b5e6bb0a76dc94183b0b96315e9dd06488745fb3ca279d31783c",
+                "sha256:382d34ba68a4baa4870dd34928250d58cfefc62b8d5cf4813920f99174e172aa",
+                "sha256:028ceca099766884150f6c152248c71bd880d2ba8570b69feed6f48f41a66d57",
+                "sha256:3426b98dd211f953305ae19dcd9ea456d07de07b93f3c5adf132ee6532e8b36d",
+                "sha256:cc78bd549918901b8587d1291184a985f93f8ad2f26c848a6180cdf3b04ad369",
+                "sha256:309085d4a1ea210d942f3f3f4026f2e0fa98f9326105bddd90daa591e2ae2e14",
+                "sha256:05251ed843dee65da50336b770fc09b4e6e0f11d9fe2e9cf0fd56856388198de",
+                "sha256:22875e4997918b86ecb0884fca827ac5d2323f5ef4b4d57fd34e057e43107cd2",
+                "sha256:b77f7e11a163eaeea8ec89fab716a9e92beb452373a5419b05bc7b0cf6f0cb2c",
+                "sha256:f9ab3cb91ce373603ffb4dbe64d946a77b15d3df81d4ebc7cbc8e2250d3af28f",
+                "sha256:c9feb7876ac568c722532d70d9296233159f301dd6bedd82c8114666936993d6",
+                "sha256:df292283d405493fdffef906319755b69be527aa953cea36543a4d4a2ea0faf2",
+                "sha256:0dcd249ce78874e310c5080574e129ea5d85585726594ba2443b0d8da9dec40c",
+                "sha256:b40784c3b47ba39198aa2d28001c97b4d4803dfdb513adc1c69ae04293548f73",
+                "sha256:65f43dfebe4b340781c995666477f4154bf8914e14bf57445fc30ab7f4d86640",
+                "sha256:359f1d1fd05e3941a688fbfa7c564bf63a6ecd98fc58ea52deaf0d2b2cbcc456",
+                "sha256:ef46b39858f68b3b550f70d1e14a7d31498fd32133423211995effbf16dbd652"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
