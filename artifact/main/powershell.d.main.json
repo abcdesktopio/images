@@ -1,0 +1,120 @@
+[
+    {
+        "Id": "sha256:b09f6c7792b30b74f68d2e925be1601a36ac468ca6d71a7d429036b787a87d7d",
+        "RepoTags": [
+            "abcdesktopio/powershell.d:main"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/powershell.d@sha256:6677b555515542fe747f43423c97683067597f60f74e42303606c4c14f0a5bd6"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-02-01T17:28:19.134075794Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "ARGS=--name powershell -e /usr/bin/pwsh",
+                "APPNAME=powershell",
+                "APPBIN=/usr/bin/konsole"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--name powershell -e /usr/bin/pwsh",
+                "oc.cat": "utilities",
+                "oc.displayname": "Powershell",
+                "oc.fileextensions": "ps1;",
+                "oc.icon": "powershell.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlBvd2VyU2hlbGwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyMDQuNjkxcHgiIGhlaWdodD0iMTU0LjUyMXB4IiB2aWV3Qm94PSIwIDAgMjA0LjY5MSAxNTQuNTIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMDQuNjkxIDE1NC41MjE7IgoJIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIHN0eWxlPSJkaXNwbGF5Om5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojMjY3MUJFOyIgZD0iTS00Ny41NDcsMjI2Ljg3MgoJCWMwLTk3LjEyOSwwLjA5NC0xOTQuMjU5LTAuMTk1LTI5MS4zODdjLTAuMDIxLTYuOTgyLDEuNDA0LTguNDExLDguMzg4LTguMzg5Yzk0LjM5NywwLjI5MiwxODguNzk4LDAuMjkyLDI4My4xOTUsMAoJCWM2Ljk4NC0wLjAyMiw4LjQxLDEuNDA3LDguMzg5LDguMzg5Yy0wLjI4OSw5Ny4xMjgtMC4xOTUsMTk0LjI1OC0wLjE5NSwyOTEuMzg3Yy0zLjIzOCwyLjAwOC02LjgzNywxLjEyOS0xMC4yNjgsMS4xMzEKCQljLTkzLjAxNSwwLjA0OS0xODYuMDMxLDAuMDQ5LTI3OS4wNDcsMEMtNDAuNzExLDIyOC4wMDEtNDQuMzEsMjI4Ljg4LTQ3LjU0NywyMjYuODcyeiIvPgoJPHBhdGggc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I0UwRUFGNTsiIGQ9Ik0xMjAuMTQsMC4wMzJjMjMuMDExLTAuMDA4LDQ2LjAyMy0wLjA3OCw2OS4wMzQsMC4wMTkKCQljMTMuNjgsMC4wNTYsMTcuNTM3LDQuNjI3LDE0LjU4OCwxOC4xMzdjLTguNjM2LDM5LjU2Ni0xNy40NjYsNzkuMDkyLTI2LjQxNSwxMTguNTg5Yy0yLjgzLDEyLjQ4NC05LjMzMiwxNy41OTgtMjIuNDY1LDE3LjYzNwoJCWMtNDYuMDIzLDAuMTM3LTkyLjA0NiwwLjE1Mi0xMzguMDY4LTAuMDA2Yy0xNS4wNDMtMC4wNTMtMTktNS4xNDgtMTUuNzU5LTE5LjQwNEM5Ljg0OSw5Ni4yODcsMTguNjksNTcuNTgyLDI3LjYwMiwxOC44OTIKCQlDMzAuOTk3LDQuMTQ4LDM2LjA5OSwwLjEsNTEuMTA0LDAuMDU3Qzc0LjExNi0wLjAwOCw5Ny4xMjgsMC4wNCwxMjAuMTQsMC4wMzJ6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojMjY3MUJFOyIgZD0iTTg1LjM2NSwxNDkuODEzYy0yMy4wMTQtMC4wMDgtNDYuMDI5LDAuMDk4LTY5LjA0Mi0wLjA1MwoJCWMtMTEuNjctMC4wNzYtMTMuNzkyLTIuODMtMTEuMTY1LTE0LjI0NGM4LjkwNi0zOC43MSwxOC4wOTktNzcuMzU1LDI2LjgwNy0xMTYuMTA5QzM0LjMsOS4wMTMsMzkuMzM3LDQuNDE5LDUwLjQ3Myw0LjUyMgoJCWM0Ni4wMjQsMC40MjcsOTIuMDU2LDAuMTM3LDEzOC4wODMsMC4xODRjMTEuNTQzLDAuMDExLDEzLjQ4MSwyLjQ4LDEwLjg5LDE0LjE4N2MtOC40MTMsMzguMDA3LTE2Ljg3OSw3Ni4wMDMtMjUuNDk0LDExMy45NjUKCQljLTMuMjI0LDE0LjIwNy02LjkzOCwxNi45MTgtMjEuODg1LDE2Ljk1MUMxMjkuODMzLDE0OS44NTYsMTA3LjU5OCwxNDkuODIxLDg1LjM2NSwxNDkuODEzeiIvPgoJPHBhdGggc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I0ZERkRGRTsiIGQ9Ik0xMDQuOTQ4LDczLjk1MWMtMS41NDMtMS44MS0zLjIzNy0zLjg5NC01LjAzMS01Ljg4NgoJCWMtMTAuMTczLTExLjMtMjAuMjU2LTIyLjY4NC0zMC42MS0zMy44MTVjLTQuNzM4LTUuMDk0LTYuMjQ4LTEwLjA0MS0wLjU1OC0xNS4wNjljNS42MjMtNC45NywxMS4xNDgtNC41MywxNi4zMDYsMS4xODgKCQljMTQuMzY1LDE1LjkxOSwyOC43MTMsMzEuODU2LDQzLjMxNiw0Ny41NTZjNS40NTIsNS44NjQsNC4xODIsOS44NTEtMS44MjMsMTQuMTk2Yy0yMy4wNDksMTYuNjgzLTQ1Ljk2OCwzMy41NDctNjguODYyLDUwLjQ0MwoJCWMtNS4xNDYsMy43OTktMTAuMDUyLDQuNzUtMTQuMjA5LTAuODYxYy00LjU4Ni02LjE4OS0wLjM0My05Ljg3MSw0LjQxNC0xMy4zMzVjMTcuMDEzLTEyLjM5MiwzMy45OTMtMjQuODMsNTAuOS0zNy4zNjYKCQlDMTAxLjE0Niw3OS4yNTYsMTA0LjUyNyw3OC4yMzgsMTA0Ljk0OCw3My45NTF6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojRkNGREZEOyIgZD0iTTExMi4yMzUsMTMzLjgxOWMtNi4xOTYsMC0xMi40MDEsMC4yMTMtMTguNTgzLTAuMDY4CgkJYy00LjkzMi0wLjIyMy03LjktMi45NzktNy44MzgtOC4xNzRjMC4wNi00LjkxMiwyLjUzNi04LjYwNSw3LjQ2My04LjczOGMxMy41NDItMC4zNjMsMjcuMTA0LTAuMjg1LDQwLjY1MS0wLjAyCgkJYzQuMzA1LDAuMDg0LDcuNDgzLDIuODg5LDcuNDU3LDcuMzc1Yy0wLjAzMSw1LjE0Ni0yLjczOSw5LjEzMy04LjI1LDkuNDY1Yy02Ljk0NCwwLjQyLTEzLjkzMSwwLjEwNC0yMC44OTksMC4xMDQKCQlDMTEyLjIzNSwxMzMuNzgsMTEyLjIzNSwxMzMuOCwxMTIuMjM1LDEzMy44MTl6Ii8+CjwvZz4KPC9zdmc+",
+                "oc.keyword": "powershell,powershell",
+                "oc.launch": "powershell.konsole",
+                "oc.name": "powershell",
+                "oc.path": "/usr/bin/konsole",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 651422325,
+        "VirtualSize": 651422325,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/53f1c40b665f39a6f936c9e338f6a3fbbaea79497378fd083d9cca7fff435739/diff:/var/lib/docker/overlay2/39be0eb96c5bda031917f2d8b8b8dacc94e1b4bb9134164a3b2db4732c61f96c/diff:/var/lib/docker/overlay2/13e016fd63134f8754f4f81bc9efe7d162fd702ed616148dd491acbd630d3a71/diff:/var/lib/docker/overlay2/f96e855e39766dcd2c9706aa0d029d4bf097194a8733ef74dc7353b935f4c526/diff:/var/lib/docker/overlay2/68e3b9e44e283c35d2521cf5cee5531b749ee950c8ee320ac369e5f163f9a9cc/diff:/var/lib/docker/overlay2/1e74585e588d40744baed60a2f03b4d9a31450633162737051c019a04d2a433f/diff:/var/lib/docker/overlay2/765bbe6e16b4bcdece0eb29523fcfcf2e2ca91ab8c3eeb121ae1defd2627b604/diff:/var/lib/docker/overlay2/24c780c41e8bf987339907f5c3f066cc9d3f2ed953219a8e73bcb0ee5e1408d9/diff:/var/lib/docker/overlay2/b881fe319a8560400e9cac1b609465b4c50045647c66a837791e5539880f14eb/diff:/var/lib/docker/overlay2/d6b11efd41b1e76f408e28798a04593c88e1bb9cedb408e782017b9410fb5dda/diff:/var/lib/docker/overlay2/27a57fa5fc2a2d5332bad47d9637df049bf553d3e15cebba2cb751b0ed1e6064/diff:/var/lib/docker/overlay2/1cc044b133885ef5b6a4e25cd71e0bb0ffd198a12a65a7538f8cd8c73ad274b4/diff:/var/lib/docker/overlay2/6e467dbec1e4648de8f69cefba227fd1ff0c36c8159b9b67dd0bd19bcaefac5d/diff:/var/lib/docker/overlay2/05ae070cadbc43670309530e7c1c9d8aa18cf96f16c5310e8cea78a0d70bd560/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2929b2ed1f44f04613eb8fb7bed9583548f4cafdd782d5401d0bc15bb075770a/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2929b2ed1f44f04613eb8fb7bed9583548f4cafdd782d5401d0bc15bb075770a/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2929b2ed1f44f04613eb8fb7bed9583548f4cafdd782d5401d0bc15bb075770a/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:4693057ce2364720d39e57e85a5b8e0bd9ac3573716237736d6470ec5b7b7230",
+                "sha256:79ea1821958e3fe69de8e61d9daab011e2b57997e09fba96d7b198458876fe44",
+                "sha256:6aab05dc35cab0b0e319a4f3a48d03e75afacfd3626d428717b5ee85bfadeba4",
+                "sha256:f82ea09d8b2526e238987e132d48ae46489e9787daaec02755beb904e174f00b",
+                "sha256:aab24eb4ae0a57ee872331da557e950bf150acb0fce57eb2dbac353e5018b96b",
+                "sha256:e657c32687d6281c43ffcdeaff9ec896a51f6f41297efd5dd460db1f188799cd",
+                "sha256:66736f58a6f7af2476c951a86ae1fde4eb7b99cff046c5eec77dc2c6610dc81b",
+                "sha256:c0a6092214625ac1caf5dff9bd286ca0bdd6fe29735d178c483481b74e1e096d",
+                "sha256:1e171823a32757f09bec3040c0ffa89d4e967794b420ac8cff72e18426b14f9a",
+                "sha256:cfa2198c7deee4f43b4dd029962872fb2bb3ce8a6490899a62d3fbfe7ce00fc6",
+                "sha256:65200582e337bf22f695890704496bfe870a9092010316172d25c6936f96a188",
+                "sha256:b95b2af17c8bd4f6df15e41ae2b66805d321162c849e15aa7ee6841cf89178c7",
+                "sha256:c72690c0c87cdc705ab9836f399cb416d6639ac49370c2a3399709fdc5f67854",
+                "sha256:d95383fe911fe098a4058f12489a3dafcec0df9789e479004379d60c7f9845fd",
+                "sha256:0a1548c5de1aa5bda88959fa5285c30fb70dc2973b7b5b8ae837c0e38d192c5d"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
