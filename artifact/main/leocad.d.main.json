@@ -1,0 +1,121 @@
+[
+    {
+        "Id": "sha256:2752f65bc7149ac650982b297ec68d70142abd443d0e44adb95b2a32a8636be6",
+        "RepoTags": [
+            "abcdesktopio/leocad.d:main"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/leocad.d@sha256:776f67d0133315ffc798f383a4af942dc3d9d891614fb244182a18c997b21996"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-02-01T17:24:34.325211362Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ARGS=-l /usr/bin/leocad.library.bin",
+                "APPNAME=Leocad",
+                "APPBIN=/usr/bin/leocad"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "-l /usr/bin/leocad.library.bin",
+                "oc.cat": "games",
+                "oc.displayname": "Leocad",
+                "oc.fileextensions": "lcd",
+                "oc.icon": "leocad.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSIwIiB4MT0iMjcuNDU2IiB5MT0iNDcuMzkiIHgyPSIyNi40NDIiIHkyPSIxLjAxNyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNlMWUxZTEiLz48c3RvcCBzdG9wLWNvbG9yPSIjZjRmNGZmIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iMSIgeDE9IjI0LjE0IiB5MT0iNDAuNjgzIiB4Mj0iMjMuODYiIHkyPSI2LjMxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2M1MjgyOCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZjU0NTQiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Im0yLjk4LS4wMDJoNDIuMDRjMS42NTIgMCAyLjk4MiAxLjMzIDIuOTgyIDIuOTgydjQyLjA0YzAgMS42NTItMS4zMyAyLjk4Mi0yLjk4MiAyLjk4MmgtNDIuMDRjLTEuNjUyIDAtMi45ODItMS4zMy0yLjk4Mi0yLjk4MnYtNDIuMDRjMC0xLjY1MiAxLjMzLTIuOTgyIDIuOTgyLTIuOTgyIiBmaWxsPSJ1cmwoIzApIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJtMjQuMTcgN2MtMS43MSAwLTIuOTk5Ljc0NS0zIDEuNzMydjEuMjU0Yy0uMDI2LjAwMS0uMDUzLjAwOS0uMDc4LjAyMWwtMS45MzggMWMtLjA4My4wNDMtLjE1Mi4xMDItLjIwOS4xNjgtLjQ5MS0uMjAyLTEuMDk2LS4zMjItMS43NzMtLjMyMi0xLjcwOSAwLTIuOTk4Ljc0My0yLjk5OCAxLjczdjEuMDY4Yy0uMTA4LjAwMy0uMjE2LjAyMy0uMzE2LjA3OGwtMy43MDEgMi4wMWMtLjEyOC4wNjktLjIxNC4xNzctLjI3Ny4yOTctLjAxOC4wMjctLjAyOS4wNTMtLjA0My4wODItLjAxMi4wMzQtLjAyLjA2Ny0uMDI3LjEwMi0uMDIuMDY2LS4wNTMuMTI4LS4wNTMuMTk5djE2LjI5M2MwIC4yNTUuMTM4LjQ5MS4zNjEuNjE3bDEzLjQ1OSA3LjU3NmMuMDA5LjAwNS4wMi4wMDMuMDI5LjAwOC4wOTEuMDQ2LjE4OS4wNzIuMjg5LjA3Ni4wMDEgMCAuMDE5LjAwOC4wMjkuMDA4LjA4OSAwIC4xNzEtLjAzOC4yNTQtLjA3LjAzLS4wMTIuMDY1LS4wMDcuMDk0LS4wMjNsLjAwNC0uMDAyYy4wMDItLjAwMDEuMDA0LS4wMDAxLjAwNi0uMDAyLjAwMi0uMDAwMS4wMDItLjAwMy4wMDQtLjAwNGwxMy41OC03LjYyNWMuMjI0LS4xMjUuMzYxLS4zNjIuMzYxLS42MTdsLjAxNC0xNi4yMDVjMC0uMjUxLS4xMzItLjQ4NS0uMzUtLjYxMS0uMDIzLS4wMTQtLjA1Mi0uMDExLS4wNzYtLjAyMS0uMDMyLS4wMjUtLjA1NS0uMDU2LS4wOTItLjA3NmwtMy43MDMtMi4wMWMtLjAxNi0uMDA5LS4wMzMtLjAwOC0uMDQ5LS4wMTZ2LTEuMTQzYzAtLjk4OC0xLjI4OS0xLjczMi0yLjk5OC0xLjczMi0uNzI2IDAtMS4zNjcuMTM5LTEuODc1LjM2OS0uMDM1LS4wMjgtLjA2NC0uMDYyLS4xMDUtLjA4NGwtMS43NjItLjkxYy0uMDItLjAwMS0uMDQyLS4wMDktLjA2My0uMDE4di0xLjQ2NWMwLS45ODgtMS4yODktMS43MzItMi45OTgtMS43MzJtLTEuOTM4IDMuMDYzYy41MTcuMjQ4IDEuMTgxLjM5OCAxLjkzOC4zOTguNzU2IDAgMS40MTktLjE1MSAxLjkzNi0uMzk4djEuOTYzYzAgLjIwNS0uNzMxLjY3LTEuOTM2LjY3LTEuMjA1IDAtMS45MzgtLjQ2NS0xLjkzOC0uNjd2LTEuOTYzbS0xLjA2MyAxLjQ5OHYuNDY1YzAgLjk4NyAxLjI5IDEuNzMgMyAxLjczIDEuNzExIDAgMi45OTktLjc0MyAyLjk5OC0xLjczdi0uMjVsLjg2MS40NDVjLS4wMzcuMTEzLS4wNTcuMjMtLjA1Ny4zNTJ2My4yOTNjMCAuOTg3IDEuMjkgMS43MyAzIDEuNzMgMS43MSAwIDIuOTk5LS43NDMgMi45OTgtMS43M3YtLjU1MWwyLjEgMS4xNDMtMTIuMTQzIDYuNzk5LTEyLjA0LTYuODQyIDIuMjkxLTEuMjQ2di43MDljMCAuOTg3IDEuMjg5IDEuNzMyIDIuOTk4IDEuNzMyIDEuNzA5IDAgMi45OTgtLjc0NSAyLjk5OC0xLjczMnYtMy4yOTNjMC0uMTU5LS4wNDQtLjMwOS0uMTA3LS40NTNsMS4xMDctLjU3bTcuODY1IDIuMzQyYy41MTYuMjQ4IDEuMTgxLjQgMS45MzguNC43NTYgMCAxLjQxOS0uMTUzIDEuOTM2LS40djEuOTYzYzAgLjE5NC0uNjc4LjY2OC0xLjkzNi42NjgtMS4yMDUgMC0xLjkzOC0uNDYzLTEuOTM4LS42Njh2LTEuOTYzbS0xMy44MDEuMDEyYy41MTcuMjQ4IDEuMTgxLjQgMS45MzguNC43NTUgMCAxLjQxOS0uMTUxIDEuOTM2LS4zOTh2MS45NjFjMCAuMTk0LS42NzguNjctMS45MzYuNjctMS4yNTggMC0xLjkzOC0uNDc2LTEuOTM4LS42N3YtMS45NjNtOC44OTEuNzIxYy0xLjcwOSAwLTMgLjc0NS0zIDEuNzMydjMuMjkzYzAgLjk4NyAxLjI5MSAxLjczMiAzIDEuNzMyIDEuNzA5IDAgMi45OTYtLjc0NSAyLjk5Ni0xLjczMnYtMy4yOTNjMC0uOTg3LTEuMjg3LTEuNzMyLTIuOTk2LTEuNzMybS0xLjkzOCAzLjA2MmMuNTE3LjI0OCAxLjE4MS40IDEuOTM4LjQuNzU1IDAgMS40MTgtLjE1MSAxLjkzNC0uMzk4djEuOTYxYzAgLjE5NC0uNjc2LjY3LTEuOTM0LjY3LTEuMjA1IDAtMS45MzgtLjQ2NS0xLjkzOC0uNjd2LTEuOTYzIiBmaWxsPSJ1cmwoIzEpIi8+PC9zdmc+Cg==",
+                "oc.keyword": "leocad,cad,lego",
+                "oc.launch": "leocad.Leocad",
+                "oc.legacyfileextensions": "lcd",
+                "oc.mimetype": "application/vnd.leocad;application/x-ldraw;application/x-multi-part-ldraw;application/x-ldlite;",
+                "oc.name": "Leocad",
+                "oc.path": "/usr/bin/leocad",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 650663799,
+        "VirtualSize": 650663799,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/fa2809ffec3d0c9f6b959f6b8ce75468d96260c41c4d6ee3ccd251d1c545501c/diff:/var/lib/docker/overlay2/0b0bfb9010774c4e60c823653153e93310e30be76f4057c3dba871609d667841/diff:/var/lib/docker/overlay2/dac19953d70b7a47a1c02b8eaf82b9044ad09f9c16d94b4bec5dd674b53805fd/diff:/var/lib/docker/overlay2/717cdccd3e5a3b7b17a1ff05321e270b2d01f2ba310b2a7bab6af95cf7d1eda7/diff:/var/lib/docker/overlay2/ea35a7f8775a856dba4cfb6bec8c0300008c138a1e14d5689fbf2cc6d92f2b35/diff:/var/lib/docker/overlay2/e6ad92da73f57c203c046c311d4b26b28e9dac6a5711ee4cbdc4299418b6e679/diff:/var/lib/docker/overlay2/82876758285be9e8f72c1e8d88e5a952ea5c8045c66646ed55fa1c222012886c/diff:/var/lib/docker/overlay2/2fc26640db012aebf8033d0bce279a4a5a15339e9217e907e85720bf07961baa/diff:/var/lib/docker/overlay2/baf30c19c9ab01b2c2d003bdd4fa7cd6fd7357c2c7c57f1fe32a00b3110c8cd5/diff:/var/lib/docker/overlay2/17c67789c96c99a9202fa8e294fc9c6208714daa4a434d82f55bc03dd4a74a0f/diff:/var/lib/docker/overlay2/68e58c9454013c76a1118dfaf0e6ca66d6ef2947df07181460fbfcb8b12abc4a/diff:/var/lib/docker/overlay2/0e68c90e7c5ed73276173756e2fe5374a4ff51aca5ddff6cd1ef0261d4b01eb6/diff:/var/lib/docker/overlay2/4398c8256326851b2dcff50609fa246a6fe4c85071baffa2ff73f10366ed28e6/diff",
+                "MergedDir": "/var/lib/docker/overlay2/46ce76c57763968197a41b1d235ab567fad859f3c7a8759b57bd69ecaccce68e/merged",
+                "UpperDir": "/var/lib/docker/overlay2/46ce76c57763968197a41b1d235ab567fad859f3c7a8759b57bd69ecaccce68e/diff",
+                "WorkDir": "/var/lib/docker/overlay2/46ce76c57763968197a41b1d235ab567fad859f3c7a8759b57bd69ecaccce68e/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:dc0585a4b8b71f7f4eb8f2e028067f88aec780d9ab40c948a8d431c1aeadeeb5",
+                "sha256:298b93936c7f1e639785acd305c901b90624f741463682be32e9f2088f3968c8",
+                "sha256:0b548214e80101b3bd998c7c3f6844cf33d788889a1e5d8da1f555f9f6c0451f",
+                "sha256:967e9c742c3e324732cb664be7a607077f56c835f36de3aa7727314522df0770",
+                "sha256:1f5a39ed14fdd8015295b609974ec65158857d4f2a3a38aae433a9cc47a0d072",
+                "sha256:b9a3c3aca1baee73d85df8ef38d7eab35e009044353c230e0df7a9eef6f5cc34",
+                "sha256:807bb13c2a9b554f6b2ac2b26ed9fd2aea893f72c3dc4f628c196a93e8555a3c",
+                "sha256:d85396ac4c21b69c83971b98054894841bd10ef11bfa00c2b5e6cef5c50ad2c5",
+                "sha256:0e719b215f69ba2d08e625e5a58f5ca3299f7690289831f9209717bab699b9e2",
+                "sha256:6b4eded467a2294a4f3af90d9366bae89a74e23603120c1a513940bb338a2e51",
+                "sha256:741a1419204b6f39dcb21cedb5adade585a4384c97ffde8b9b945960db3f69d7",
+                "sha256:9fdde940fa2546a51857e05c34b00feddfc0e097ce58163e06178ec7b1524e3f",
+                "sha256:cbc3ea5878c0d20d2e1c701a377d821ca03f68cc4e033595d28a0979934512f0",
+                "sha256:e19132361ea97cc90c2f844f7c87ffb41b48edbd5e28a8a161d0257bc1799779"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
