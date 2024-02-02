@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:e5487b692c172432e8bcffde465203370bcbb8be5ec55b1a4cf5f6c7b22de988",
+        "Id": "sha256:b71cb9068b0d7145f81a3f47d11bfc8abc0da70b15f9ccbaab3b6c839cd366e1",
         "RepoTags": [
             "abcdesktopio/powershell.d:3.2"
         ],
         "RepoDigests": [
-            "abcdesktopio/powershell.d@sha256:e771dd2fde8d78f4e540c9f68776fb238f6a8ec855cf62ae6e20bcc0682938da"
+            "abcdesktopio/powershell.d@sha256:5f5a786f76835f2829ab8d19aee1b4974c523b3c37e442b8af01f34b78fd7f35"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2024-02-02T14:56:37.423596764Z",
+        "Created": "2024-02-02T15:57:57.1979434Z",
         "Container": "",
         "ContainerConfig": {
             "Hostname": "",
@@ -50,10 +50,10 @@
                 "BGROUP=balloon",
                 "BUID=4096",
                 "BGID=4096",
-                "ARGS=--class=powershell -- /usr/bin/pwsh",
+                "ARGS=--name powershell -e /usr/bin/pwsh",
                 "APPNAME=powershell",
-                "APPBIN=/usr/bin/gnome-terminal",
-                "APP=/usr/bin/gnome-terminal"
+                "APPBIN=/usr/bin/konsole",
+                "APP=/usr/bin/konsole"
             ],
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
@@ -66,32 +66,31 @@
             "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
-                "oc.args": "--class=powershell -- /usr/bin/pwsh",
+                "oc.args": "--name powershell -e /usr/bin/pwsh",
                 "oc.cat": "utilities",
                 "oc.displayname": "Powershell",
-                "oc.fileextensions": "hlp;",
+                "oc.fileextensions": "ps1;",
                 "oc.icon": "powershell.svg",
                 "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlBvd2VyU2hlbGwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyMDQuNjkxcHgiIGhlaWdodD0iMTU0LjUyMXB4IiB2aWV3Qm94PSIwIDAgMjA0LjY5MSAxNTQuNTIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMDQuNjkxIDE1NC41MjE7IgoJIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIHN0eWxlPSJkaXNwbGF5Om5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojMjY3MUJFOyIgZD0iTS00Ny41NDcsMjI2Ljg3MgoJCWMwLTk3LjEyOSwwLjA5NC0xOTQuMjU5LTAuMTk1LTI5MS4zODdjLTAuMDIxLTYuOTgyLDEuNDA0LTguNDExLDguMzg4LTguMzg5Yzk0LjM5NywwLjI5MiwxODguNzk4LDAuMjkyLDI4My4xOTUsMAoJCWM2Ljk4NC0wLjAyMiw4LjQxLDEuNDA3LDguMzg5LDguMzg5Yy0wLjI4OSw5Ny4xMjgtMC4xOTUsMTk0LjI1OC0wLjE5NSwyOTEuMzg3Yy0zLjIzOCwyLjAwOC02LjgzNywxLjEyOS0xMC4yNjgsMS4xMzEKCQljLTkzLjAxNSwwLjA0OS0xODYuMDMxLDAuMDQ5LTI3OS4wNDcsMEMtNDAuNzExLDIyOC4wMDEtNDQuMzEsMjI4Ljg4LTQ3LjU0NywyMjYuODcyeiIvPgoJPHBhdGggc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I0UwRUFGNTsiIGQ9Ik0xMjAuMTQsMC4wMzJjMjMuMDExLTAuMDA4LDQ2LjAyMy0wLjA3OCw2OS4wMzQsMC4wMTkKCQljMTMuNjgsMC4wNTYsMTcuNTM3LDQuNjI3LDE0LjU4OCwxOC4xMzdjLTguNjM2LDM5LjU2Ni0xNy40NjYsNzkuMDkyLTI2LjQxNSwxMTguNTg5Yy0yLjgzLDEyLjQ4NC05LjMzMiwxNy41OTgtMjIuNDY1LDE3LjYzNwoJCWMtNDYuMDIzLDAuMTM3LTkyLjA0NiwwLjE1Mi0xMzguMDY4LTAuMDA2Yy0xNS4wNDMtMC4wNTMtMTktNS4xNDgtMTUuNzU5LTE5LjQwNEM5Ljg0OSw5Ni4yODcsMTguNjksNTcuNTgyLDI3LjYwMiwxOC44OTIKCQlDMzAuOTk3LDQuMTQ4LDM2LjA5OSwwLjEsNTEuMTA0LDAuMDU3Qzc0LjExNi0wLjAwOCw5Ny4xMjgsMC4wNCwxMjAuMTQsMC4wMzJ6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojMjY3MUJFOyIgZD0iTTg1LjM2NSwxNDkuODEzYy0yMy4wMTQtMC4wMDgtNDYuMDI5LDAuMDk4LTY5LjA0Mi0wLjA1MwoJCWMtMTEuNjctMC4wNzYtMTMuNzkyLTIuODMtMTEuMTY1LTE0LjI0NGM4LjkwNi0zOC43MSwxOC4wOTktNzcuMzU1LDI2LjgwNy0xMTYuMTA5QzM0LjMsOS4wMTMsMzkuMzM3LDQuNDE5LDUwLjQ3Myw0LjUyMgoJCWM0Ni4wMjQsMC40MjcsOTIuMDU2LDAuMTM3LDEzOC4wODMsMC4xODRjMTEuNTQzLDAuMDExLDEzLjQ4MSwyLjQ4LDEwLjg5LDE0LjE4N2MtOC40MTMsMzguMDA3LTE2Ljg3OSw3Ni4wMDMtMjUuNDk0LDExMy45NjUKCQljLTMuMjI0LDE0LjIwNy02LjkzOCwxNi45MTgtMjEuODg1LDE2Ljk1MUMxMjkuODMzLDE0OS44NTYsMTA3LjU5OCwxNDkuODIxLDg1LjM2NSwxNDkuODEzeiIvPgoJPHBhdGggc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I0ZERkRGRTsiIGQ9Ik0xMDQuOTQ4LDczLjk1MWMtMS41NDMtMS44MS0zLjIzNy0zLjg5NC01LjAzMS01Ljg4NgoJCWMtMTAuMTczLTExLjMtMjAuMjU2LTIyLjY4NC0zMC42MS0zMy44MTVjLTQuNzM4LTUuMDk0LTYuMjQ4LTEwLjA0MS0wLjU1OC0xNS4wNjljNS42MjMtNC45NywxMS4xNDgtNC41MywxNi4zMDYsMS4xODgKCQljMTQuMzY1LDE1LjkxOSwyOC43MTMsMzEuODU2LDQzLjMxNiw0Ny41NTZjNS40NTIsNS44NjQsNC4xODIsOS44NTEtMS44MjMsMTQuMTk2Yy0yMy4wNDksMTYuNjgzLTQ1Ljk2OCwzMy41NDctNjguODYyLDUwLjQ0MwoJCWMtNS4xNDYsMy43OTktMTAuMDUyLDQuNzUtMTQuMjA5LTAuODYxYy00LjU4Ni02LjE4OS0wLjM0My05Ljg3MSw0LjQxNC0xMy4zMzVjMTcuMDEzLTEyLjM5MiwzMy45OTMtMjQuODMsNTAuOS0zNy4zNjYKCQlDMTAxLjE0Niw3OS4yNTYsMTA0LjUyNyw3OC4yMzgsMTA0Ljk0OCw3My45NTF6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojRkNGREZEOyIgZD0iTTExMi4yMzUsMTMzLjgxOWMtNi4xOTYsMC0xMi40MDEsMC4yMTMtMTguNTgzLTAuMDY4CgkJYy00LjkzMi0wLjIyMy03LjktMi45NzktNy44MzgtOC4xNzRjMC4wNi00LjkxMiwyLjUzNi04LjYwNSw3LjQ2My04LjczOGMxMy41NDItMC4zNjMsMjcuMTA0LTAuMjg1LDQwLjY1MS0wLjAyCgkJYzQuMzA1LDAuMDg0LDcuNDgzLDIuODg5LDcuNDU3LDcuMzc1Yy0wLjAzMSw1LjE0Ni0yLjczOSw5LjEzMy04LjI1LDkuNDY1Yy02Ljk0NCwwLjQyLTEzLjkzMSwwLjEwNC0yMC44OTksMC4xMDQKCQlDMTEyLjIzNSwxMzMuNzgsMTEyLjIzNSwxMzMuOCwxMTIuMjM1LDEzMy44MTl6Ii8+CjwvZz4KPC9zdmc+",
                 "oc.keyword": "powershell,powershell",
-                "oc.launch": "gnome-terminal-server.powershell",
-                "oc.mimetype": "application/hlp;",
+                "oc.launch": "powershell.console",
                 "oc.name": "powershell",
-                "oc.path": "/usr/bin/gnome-terminal",
+                "oc.path": "/usr/bin/konsole",
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
-                "oc.template": "abcdesktopio/oc.template.alpine.wine",
+                "oc.template": "abcdesktopio/oc.template.alpine",
                 "oc.type": "app"
             }
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 1027657549,
-        "VirtualSize": 1027657549,
+        "Size": 690687211,
+        "VirtualSize": 690687211,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/0a5fd2dd4e7c0614a892a3d20eeb6ab483f5292ae90a7824069ce8d4dfe057b4/diff:/var/lib/docker/overlay2/5f74bded69739f7bd3c3a3dc25668d6c8ef9f965552d6131e1b0d123d222a9ef/diff:/var/lib/docker/overlay2/e877ffa076240140a817c9471be57a2857e70d62f2a143e096aa4138c27ab27d/diff:/var/lib/docker/overlay2/4522f62d24a9d9278f55d760742a7416037703a0f2aa6e30d155bdcc53c365c9/diff:/var/lib/docker/overlay2/cbb53a17016730a2d00bcc176211f2654d3790fe75fdaa7cc6f11a76839587fb/diff:/var/lib/docker/overlay2/2b3286cef98fa24cdf051e2f366292435f696da79598146ffa762d1fb546fb10/diff:/var/lib/docker/overlay2/8564e240c0406baee3c826f4275667cf89565d7d000c01bf5fda43be5204b55d/diff:/var/lib/docker/overlay2/7c83195c3b640ce3250bf3891d43baee973742ba96bdcda1bf37a8e56b69792b/diff:/var/lib/docker/overlay2/4c84f516df02fa68aff982673ce106bd29e5cbaf77c76b49126ba9a7d9ef237a/diff:/var/lib/docker/overlay2/22e5f32b9a4de91b1ba1aca5fee2019d1707d59d69be200949d49b8792acfb50/diff:/var/lib/docker/overlay2/2797cebd0c3f63c41a97e0a4ce81b1c68dbdc31ce6d45d03ee199e91c28c4af9/diff:/var/lib/docker/overlay2/ff7d7949e857ca51efa4f5a8397ee52f500a16dea573929e17c85ee6feaa6d00/diff:/var/lib/docker/overlay2/f719ababd26dce23c1e1bbd7150481a89164fe4cf620c405301bddf52afce270/diff:/var/lib/docker/overlay2/34f3268c5bb252969b0a74c2e9e93c51176d4688375eded97a9b8778d8b2e714/diff:/var/lib/docker/overlay2/4a0af60e622e9201bba2339380ce4baa559b48db1241d70d78f27046453f7ed7/diff:/var/lib/docker/overlay2/434447bc21799866b55ca390382747b9dcd59055bcef53471cd178781d47e00a/diff",
-                "MergedDir": "/var/lib/docker/overlay2/679f71f52b6a54afdff2be543cc919880e79b82d42c030f85ecda9135cfb18f1/merged",
-                "UpperDir": "/var/lib/docker/overlay2/679f71f52b6a54afdff2be543cc919880e79b82d42c030f85ecda9135cfb18f1/diff",
-                "WorkDir": "/var/lib/docker/overlay2/679f71f52b6a54afdff2be543cc919880e79b82d42c030f85ecda9135cfb18f1/work"
+                "LowerDir": "/var/lib/docker/overlay2/3df83f9d14fc3d34d197dd2eba55351d69b950f1f6403284c91515dc43413e1d/diff:/var/lib/docker/overlay2/fc39c3fcd3a4a30b3336769c9327cc424380ea34ba34d262ca95fab7d12fa1d0/diff:/var/lib/docker/overlay2/3bab907748c05bc6af1a23a0d60252a600a8168033a1c63320a94d545aa1ecda/diff:/var/lib/docker/overlay2/58627bcb6f6d13df6abec5586d18495e6d178caa7a85b1b511a2a8c27e7d588c/diff:/var/lib/docker/overlay2/9967a15e3edd89114cd8fa5a005e27457e78249dcf3e640a8aac76f1e165979a/diff:/var/lib/docker/overlay2/074ec5a6a40cc4b618cd521c3450b79e020635afe51d47ef30ad6ff31aa22d8b/diff:/var/lib/docker/overlay2/6798da3eb15451955efc1dfd6b3a70816c7d4cdcc073ef23b5c465fcbb39cf4e/diff:/var/lib/docker/overlay2/cfb8aaa768da090075d6627e0136e9942304dd0af30bd2a0598bc8480ef0661f/diff:/var/lib/docker/overlay2/b9f354095710980cc9845678aca8641c7727d3d9f85022feffab7c999ad5448d/diff:/var/lib/docker/overlay2/019b9ca73cf6932e5d462889f95de5dad2f535a79ba7c85f34977013001b0633/diff:/var/lib/docker/overlay2/0870c3e93520e4655efc0364fda2e426c3a801dce687cd04b20d078e7b667e38/diff:/var/lib/docker/overlay2/2e525cd73c31275a6bbcb1aab6f9342bbdd51dda5a2001ce9ae9f2db58b89f8c/diff:/var/lib/docker/overlay2/d86681ed8af7f6301d72b535ae89f2585f22bcc56c28326c8e1eaa1c47af264c/diff:/var/lib/docker/overlay2/434447bc21799866b55ca390382747b9dcd59055bcef53471cd178781d47e00a/diff",
+                "MergedDir": "/var/lib/docker/overlay2/bc933f2cd16a168da3065d067940d38b96180e246c411348f721a87dac004806/merged",
+                "UpperDir": "/var/lib/docker/overlay2/bc933f2cd16a168da3065d067940d38b96180e246c411348f721a87dac004806/diff",
+                "WorkDir": "/var/lib/docker/overlay2/bc933f2cd16a168da3065d067940d38b96180e246c411348f721a87dac004806/work"
             },
             "Name": "overlay2"
         },
@@ -110,11 +109,9 @@
                 "sha256:897b5e335962e25abf93ef8e03419d565b846e4f811bba06e0668e7b3e0a8160",
                 "sha256:65396ae97310ddef859060401ed045a28faa1c1c50ace2b5fb30e9a7ce40ff7a",
                 "sha256:df34c6081e3bb00f0b0dd0da8dea94c5351abd32126cd19e9c566115889d5dce",
-                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:d764c553a0dd3b9cafa4643a1f3460a972b9c3d55ce9064912ca99129a6201df",
-                "sha256:71c0df90e5ac509da43ca1358dd17a947f05240d5209ee73285184815a1a82ec",
-                "sha256:34fb4d2d9835ebedd5bd560cc9b9591b79692a6b7d5d6c7934f50e12bb60ca68",
-                "sha256:171d7f8195930348600cc2feccb57342059a102e922d26a9fe97aefc3315fbfc"
+                "sha256:115c2c561691eb571bf256292abcd2ec846c5a193de7105b78b32589900aa1b2",
+                "sha256:1e287474faf485d43365d24b50a571060c6091005451d0dfe92d5808ab10ea6e",
+                "sha256:d3f47457e0638024550e2b5dda64f5561edfb8c2a380fd2bdaa52d078e6d848d"
             ]
         },
         "Metadata": {
