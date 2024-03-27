@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:24830e29edb3bff98de67ee7690e103ad91fdeeacadd36dfbbf094c52b9e1ad3",
+        "Id": "sha256:e82f014777ee301d14f5432705ebc9f34d3f1e2015bca937b85e2bffa46b348b",
         "RepoTags": [
             "abcdesktopio/cuda.rockylinux.d:3.2"
         ],
         "RepoDigests": [
-            "abcdesktopio/cuda.rockylinux.d@sha256:8c6557a5f58d8a0549bd568994a4476d7380aa7bf020c492ff93ca6645de4000"
+            "abcdesktopio/cuda.rockylinux.d@sha256:e97eb19a430019531a972b71e11ad4824ab5a6978106fc25ad0ec1d59989bb75"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2024-03-27T16:29:42.76025903Z",
+        "Created": "2024-03-27T17:21:00.782994244Z",
         "Container": "",
         "ContainerConfig": {
             "Hostname": "",
@@ -55,8 +55,8 @@
                 "BUSER=balloon",
                 "ARGS=--name=cudarockylinux",
                 "APPNAME=cuda.rockylinux",
-                "APPBIN=/usr/bin/konsole",
-                "APP=/usr/bin/konsole"
+                "APPBIN=/usr/bin/gnome-terminal",
+                "APP=/usr/bin/gnome-terminal"
             ],
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
@@ -72,14 +72,14 @@
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.args": "--name=cudarockylinux",
                 "oc.cat": "development",
-                "oc.desktopfile": "org.kde.konsole.desktop",
+                "oc.desktopfile": "org.gnome.Terminal.desktop",
                 "oc.displayname": "cuda.rockylinux",
                 "oc.icon": "nvidia.svg",
                 "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InN2ZzIiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzUxLjQ2cHgiDQoJIGhlaWdodD0iMjU4Ljc4NXB4IiB2aWV3Qm94PSIzNS4xODggMzEuNTEyIDM1MS40NiAyNTguNzg1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDM1LjE4OCAzMS41MTIgMzUxLjQ2IDI1OC43ODUiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHRpdGxlICBpZD0idGl0bGU0Ij5nZW5lcmF0ZWQgYnkgcHN0b2VkaXQgdmVyc2lvbjozLjQ0IGZyb20gTlZCYWRnZV8yRC5lcHM8L3RpdGxlPg0KPHBhdGggaWQ9InBhdGgxNyIgZD0iTTM4NC4xOTUsMjgyLjEwOWMwLDMuNzcxLTIuNzY5LDYuMzAyLTYuMDQ3LDYuMzAydi0wLjAyM2MtMy4zNzEsMC4wMjMtNi4wODktMi41MDgtNi4wODktNi4yNzgNCgljMC0zLjc2OSwyLjcxOC02LjI5Myw2LjA4OS02LjI5M0MzODEuNDI3LDI3NS44MTYsMzg0LjE5NSwyNzguMzQsMzg0LjE5NSwyODIuMTA5eiBNMzg2LjY0OCwyODIuMTA5YzAtNS4xNzUtNC4wMi04LjE3OS04LjUtOC4xNzkNCgljLTQuNTExLDAtOC41MzEsMy4wMDQtOC41MzEsOC4xNzljMCw1LjE3Miw0LjAyMSw4LjE4OCw4LjUzMSw4LjE4OEMzODIuNjI5LDI5MC4yOTcsMzg2LjY0OCwyODcuMjgxLDM4Ni42NDgsMjgyLjEwOQ0KCSBNMzc2LjczOCwyODIuODAxaDAuOTFsMi4xMDksMy43MDNoMi4zMTZsLTIuMzM2LTMuODU5YzEuMjA3LTAuMDg2LDIuMi0wLjY2MSwyLjItMi4yODZjMC0yLjAxOS0xLjM5Mi0yLjY2OC0zLjc1LTIuNjY4aC0zLjQxMQ0KCXY4LjgxM2gxLjk2MVYyODIuODAxIE0zNzYuNzM4LDI4MS4zMDl2LTIuMTIyaDEuMzY0YzAuNzQyLDAsMS43NTMsMC4wNiwxLjc1MywwLjk2NWMwLDAuOTg1LTAuNTIzLDEuMTU3LTEuMzk4LDEuMTU3SDM3Ni43MzgiLz4NCjxwYXRoIGlkPSJwYXRoMTkiIGQ9Ik0zMjkuNDA2LDIzNy4wMjdsMTAuNTk4LDI4Ljk5M0gzMTguNDhMMzI5LjQwNiwyMzcuMDI3eiBNMzE4LjA1NiwyMjUuNzM4bC0yNC40MjMsNjEuODhoMTcuMjQ2bDMuODYzLTEwLjkzNA0KCWgyOC45MDNsMy42NTYsMTAuOTM0aDE4LjcyMmwtMjQuNjA1LTYxLjg4OEwzMTguMDU2LDIyNS43Mzh6IE0yNjkuMDIzLDI4Ny42NDFoMTcuNDk3di02MS45MjJsLTE3LjUtMC4wMDRMMjY5LjAyMywyODcuNjQxeg0KCSBNMTQ3LjU1NiwyMjUuNzE1bC0xNC41OTgsNDkuMDc4bC0xMy45ODQtNDkuMDc0bC0xOC44NzktMC4wMDRsMTkuOTcyLDYxLjkyNmgyNS4yMDdsMjAuMTMzLTYxLjkyNkgxNDcuNTU2eiBNMjE4LjI4MSwyMzkuMTk5aDcuNTINCgljMTAuOTEsMCwxNy45NjYsNC44OTgsMTcuOTY2LDE3LjYwOWMwLDEyLjcxNC03LjA1NiwxNy42MTMtMTcuOTY2LDE3LjYxM2gtNy41MlYyMzkuMTk5eiBNMjAwLjkzMSwyMjUuNzE1djYxLjkyNmgyOC4zNjYNCgljMTUuMTEzLDAsMjAuMDQ4LTIuNTEyLDI1LjM4NC04LjE0OGMzLjc2OS0zLjk1Nyw2LjIwNy0xMi42NDEsNi4yMDctMjIuMTM0YzAtOC43MDctMi4wNjMtMTYuNDY4LTUuNjYtMjEuMzA0DQoJYy02LjQ4MS04LjY0OS0xNS44MTctMTAuMzQtMjkuNzUtMTAuMzRIMjAwLjkzMXogTTM1LjE4OCwyMjUuNjI5djYyLjAxMmgxNy42NDV2LTQ3LjA4NmwxMy42NzIsMC4wMDQNCgljNC41MjcsMCw3Ljc1NCwxLjEyOCw5LjkzNCwzLjQ1N2MyLjc2NSwyLjk0NSwzLjg5NCw3LjY5OSwzLjg5NCwxNi4zOTV2MjcuMjNoMTcuMDk4di0zNC4yNjJjMC0yNC40NTMtMTUuNTg2LTI3Ljc1LTMwLjgzNi0yNy43NQ0KCUgzNS4xODh6IE0xNzIuNzcxLDIyNS43MTVsMC4wMDcsNjEuOTI2aDE3LjQ4OXYtNjEuOTI2SDE3Mi43NzF6Ii8+DQo8cGF0aCBpZD0icGF0aDIxIiBmaWxsPSIjNzdCOTAwIiBkPSJNODIuMjExLDEwMi40MTRjMCwwLDIyLjUwNC0zMy4yMDMsNjcuNDM3LTM2LjYzOFY1My43Mw0KCWMtNDkuNzY5LDMuOTk3LTkyLjg2Nyw0Ni4xNDktOTIuODY3LDQ2LjE0OXMyNC40MSw3MC41NjUsOTIuODY3LDc3LjAyNnYtMTIuODA0Qzk5LjQxMSwxNTcuNzgxLDgyLjIxMSwxMDIuNDE0LDgyLjIxMSwxMDIuNDE0eg0KCSBNMTQ5LjY0OCwxMzguNjM3djExLjcyNmMtMzcuOTY4LTYuNzY5LTQ4LjUwNy00Ni4yMzctNDguNTA3LTQ2LjIzN3MxOC4yMy0yMC4xOTUsNDguNTA3LTIzLjQ3djEyLjg2Nw0KCWMtMC4wMjMsMC0wLjAzOS0wLjAwNy0wLjA1OC0wLjAwN2MtMTUuODkxLTEuOTA3LTI4LjMwNSwxMi45MzgtMjguMzA1LDEyLjkzOFMxMjguMjQzLDEzMS40NDUsMTQ5LjY0OCwxMzguNjM3IE0xNDkuNjQ4LDMxLjUxMg0KCVY1My43M2MxLjQ2MS0wLjExMiwyLjkyMi0wLjIwNyw0LjM5MS0wLjI1N2M1Ni41ODItMS45MDcsOTMuNDQ5LDQ2LjQwNiw5My40NDksNDYuNDA2cy00Mi4zNDMsNTEuNDg4LTg2LjQ1Nyw1MS40ODgNCgljLTQuMDQzLDAtNy44MjgtMC4zNzUtMTEuMzgzLTEuMDA1djEzLjczOWMzLjA0LDAuMzg2LDYuMTkyLDAuNjEzLDkuNDgxLDAuNjEzYzQxLjA1MSwwLDcwLjczOC0yMC45NjUsOTkuNDg0LTQ1Ljc3OA0KCWM0Ljc2NiwzLjgxNywyNC4yNzgsMTMuMTAzLDI4LjI4OSwxNy4xNjhjLTI3LjMzMiwyMi44ODMtOTEuMDMxLDQxLjMyOS0xMjcuMTQ0LDQxLjMyOWMtMy40ODEsMC02LjgyNC0wLjIxMS0xMC4xMS0wLjUyOHYxOS4zMDYNCgloMTU2LjAzMlYzMS41MTJIMTQ5LjY0OHogTTE0OS42NDgsODAuNjU2VjY1Ljc3N2MxLjQ0Ni0wLjEwMSwyLjkwMy0wLjE3OSw0LjM5MS0wLjIyNmM0MC42ODgtMS4yNzgsNjcuMzgyLDM0Ljk2NSw2Ny4zODIsMzQuOTY1DQoJcy0yOC44MzIsNDAuMDQzLTU5Ljc0Niw0MC4wNDNjLTQuNDQ5LDAtOC40MzgtMC43MTUtMTIuMDI4LTEuOTIyVjkzLjUyM2MxNS44NCwxLjkxNCwxOS4wMjgsOC45MTEsMjguNTUxLDI0Ljc4NmwyMS4xOC0xNy44NTkNCgljMCwwLTE1LjQ2MS0yMC4yNzctNDEuNTI0LTIwLjI3N0MxNTUuMDIxLDgwLjE3MiwxNTIuMzEsODAuMzcxLDE0OS42NDgsODAuNjU2Ii8+DQo8L3N2Zz4NCg==",
                 "oc.keyword": "cuda.rockylinux,cuda nvidia rockylinux",
-                "oc.launch": "cudarockylinux.konsole",
+                "oc.launch": "cudarockylinux.gnome-terminal",
                 "oc.name": "cuda.rockylinux",
-                "oc.path": "/usr/bin/konsole",
+                "oc.path": "/usr/bin/gnome-terminal",
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
                 "oc.template": "abcdesktopio/oc.template.rockylinux.nvidia.8",
                 "oc.type": "app"
@@ -91,10 +91,10 @@
         "VirtualSize": 668331946,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/a26d6d64ebad216db960f28a2766611a4ba678391343a28e36cb007aad95eaa8/diff:/var/lib/docker/overlay2/b971682bf94a40e77106eecbbed5742c49053cbaa1482269441f9cc040d4bda8/diff:/var/lib/docker/overlay2/1294c6887006a1334dff9f55fe65d7d81060ade9a6677ffa125b77fe643d9b98/diff:/var/lib/docker/overlay2/ce1b969420473b610c216bc3a9c48d37510b5d4f0a7d7994c7d39d8541d7b79b/diff:/var/lib/docker/overlay2/5e1f45a76e92f2d40ea055857c6f0cb73c4b41a1242ba50eac0ca24efa4d5877/diff:/var/lib/docker/overlay2/f4a69aa30b3829c4bdc551097786f18e2327c0768d04cfb9b7e0e78dc5aacb04/diff:/var/lib/docker/overlay2/ce0f6514834de40dd64112758be1791818100657cb77b26a13e1e323639b3411/diff:/var/lib/docker/overlay2/1eecedd9437f6d4bd9c215c0ba01ece9b09b0d94324439efd3734a10d0b81c47/diff:/var/lib/docker/overlay2/84ea9934518736f9f9c70959a7bcae0743a99f802b8ae78b28d64ce21d879771/diff:/var/lib/docker/overlay2/93ec77b43b0092ea577f1e949c7d34b36c12105a2b09fdff676e791b7df5f07e/diff:/var/lib/docker/overlay2/f44e7f10168fadfa2137833397a4a7d8d33fe29210fdecbf1a38dfbced3dfa3b/diff:/var/lib/docker/overlay2/fcc48baa39a823b3a7f69698dd973b51f2053d827dd963e1d5b830afc437d1da/diff:/var/lib/docker/overlay2/f4be6fd2e95cbb8c5508061d85a42c8fbc05bf365cc6f858b02922a22c0eacc5/diff:/var/lib/docker/overlay2/408fa5cc39d7f60ef3abc6f486b875523b86186262403ba6fb85f884372c88d6/diff:/var/lib/docker/overlay2/c44dc14c2085c64acc50f34ada19b6b3f6e73a90b354319b6467f179b129bf27/diff:/var/lib/docker/overlay2/e9ed8e94f9bc5b7310de666e176a56270ff6c30984538cceb5e110bd15633156/diff:/var/lib/docker/overlay2/cfb1becbf2c69415cacfd806cee601fa23c48fafb5e042d52f0bb2158fd0dd1d/diff",
-                "MergedDir": "/var/lib/docker/overlay2/39966681bec3692c7877512223910abd337b9a40bc492dc4f4e36c0c0de11d53/merged",
-                "UpperDir": "/var/lib/docker/overlay2/39966681bec3692c7877512223910abd337b9a40bc492dc4f4e36c0c0de11d53/diff",
-                "WorkDir": "/var/lib/docker/overlay2/39966681bec3692c7877512223910abd337b9a40bc492dc4f4e36c0c0de11d53/work"
+                "LowerDir": "/var/lib/docker/overlay2/3f14837137778e934cb64da243e61f640d27a8642e4672f01fc22f70ac33d6b5/diff:/var/lib/docker/overlay2/f9c8be190ec75e483d7fe31f8a358a275715faf79562bdaf9ab6362b93982275/diff:/var/lib/docker/overlay2/e97ef6e8f1f457454d3b2e46d8476ccbdee4af98b81c58c9e543ae98ba0d4343/diff:/var/lib/docker/overlay2/f7f9357ba48cf64ac3116159b1520d2dce993fdb89fd4df98cfec2a188f57bac/diff:/var/lib/docker/overlay2/e16c1711ffb6476c7bc2c360c10ad9451f633b560a28b16f336926efa8be5005/diff:/var/lib/docker/overlay2/bef560c60f22003107edc071aabc6204facd794914e1f09735d82aa057dc6ca5/diff:/var/lib/docker/overlay2/80f036b7d9ddfcab255f38f10c05e0843fc261ffc8f2b3dfba3104ca13c7345c/diff:/var/lib/docker/overlay2/0681d6b2a0ee03c03f13a2bc2d8fa46474e5860142173bff26ecbe00be84ea2d/diff:/var/lib/docker/overlay2/6fc6c8a1b509f6272399a8c4842f118129d4e82653ef49d5a18a875a01ca1b33/diff:/var/lib/docker/overlay2/958bce75b634afd076a5b5944adafb782d754333c6c9edc86f552bced3ed23d7/diff:/var/lib/docker/overlay2/63895f66536c20e75f3e83be82cebfe7f793ad8e82333b72471e9ae6575253c5/diff:/var/lib/docker/overlay2/857971544b4d1b2d39248038271ab2786c7f073be6a97aa126cf24fa590eb2a7/diff:/var/lib/docker/overlay2/e8adc7c72170e93ca0b657036e4dd85a0f7f899f689f816278403fd437aa194f/diff:/var/lib/docker/overlay2/47c153e8ef95c4b2ccaf809e382642402f107cd4f3f4e2648d54ea36291162b3/diff:/var/lib/docker/overlay2/c952536b008625269a5b602a958e245ce3fb8d0c589d6e4ec14ce17e2701770d/diff:/var/lib/docker/overlay2/1d7f3e2f6c4614e776dba306af06906f15cf2ef7e7fd91b89f4068ffdfc55f50/diff:/var/lib/docker/overlay2/55cc0250f89828c51a10d10e2785255867eed3114cd2170a8e25d7143af71482/diff",
+                "MergedDir": "/var/lib/docker/overlay2/5c8b1ea04365d95bc695c298b86efd267dd6dfe73afa7bc36641d1909e7b674e/merged",
+                "UpperDir": "/var/lib/docker/overlay2/5c8b1ea04365d95bc695c298b86efd267dd6dfe73afa7bc36641d1909e7b674e/diff",
+                "WorkDir": "/var/lib/docker/overlay2/5c8b1ea04365d95bc695c298b86efd267dd6dfe73afa7bc36641d1909e7b674e/work"
             },
             "Name": "overlay2"
         },
@@ -117,8 +117,8 @@
                 "sha256:87603a49450308f6b5ee67a8188c9f9098be1b5a7e950416c3498458dadc00c3",
                 "sha256:d7f0ec916777f8abd9c3f368de6ef73cea878dd629ae33da71f93f6504f03e90",
                 "sha256:45fa0d8d82e3bb276b52f3209608ca4da6aaa97fbaeb29e4d667e98ffa582691",
-                "sha256:6bf2d08a5c87fba8eba2e5125e34da56cc73270cf07f7a649641906f163d496d",
-                "sha256:7472303af8c6ad77f61cb06bfc2c606e6bff62366e1eafb2c571e91e96ee5f77"
+                "sha256:4b82316cbcedc7ea2238d5992af73a72bae95c42a7e833bf8190140b40d6fe1c",
+                "sha256:79c24bf351c97263a9e81a7399247763e9e48f20515d3c9d2801428cfd45e2e5"
             ]
         },
         "Metadata": {
