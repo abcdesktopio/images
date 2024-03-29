@@ -68,6 +68,9 @@ jobs:
 
 
       - uses: actions/download-artifact@v4
+        env: 
+          image: ${{ github.event.client_payload.image }}
+          imagetag: ${{ github.event.client_payload.tag }}
         with:
            #artifact.base.d.3.2
            name: artifact.${{ env.image }}.${{ env.imagetag }}  
