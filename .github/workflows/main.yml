@@ -29,9 +29,11 @@ jobs:
       # Runs a dump-github-event-client_payload command using the runners shell
       - name: dump-github-event-client_payload
         run: |
-          echo "current image is ${{ github.event.client_payload.image }}"
-          echo "current image tag is ${{ github.event.client_payload.tag }}"
-    
+          echo "event current ref_name is ${{ github.event.client_payload.ref_name }}"
+          echo "event current image is ${{ github.event.client_payload.image }}"
+          echo "event current image tag is ${{ github.event.client_payload.tag }}"
+          echo "event current run_id is ${{ github.event.client_payload.run_id }}"
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
        
@@ -41,7 +43,9 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
           
-      - run: mkdir -p artifact/${{ github.event.client_payload.tag }}
+      - run: |
+          mkdir -p artifact/${{ github.event.client_payload.tag }}
+          mkdir -p artifact/${{ github.event.client_payload.tag }}/Dockerfile
       
       - name: Docker inspect
         id: set-jsonimage
