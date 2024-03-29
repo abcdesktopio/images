@@ -5,7 +5,7 @@ name: CI
 # Controls when the workflow will run
 on:
   repository_dispatch:
-    types: dispatch-from-oc.apps
+    types: dispatch-json-from-oc.apps
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -45,7 +45,6 @@ jobs:
           
       - run: |
           mkdir -p artifact/${{ github.event.client_payload.tag }}
-          mkdir -p artifact/${{ github.event.client_payload.tag }}/Dockerfile
       
       - name: Docker inspect
         id: set-jsonimage
@@ -65,19 +64,6 @@ jobs:
           name: artifact-${{ env.image }}
           path: artifact/${{ env.imagetag }}/${{ env.image }}.${{ env.imagetag }}.json
           if-no-files-found: warn # 'error' or 'ignore' are also available, defaults to `warn`
-
-
-      - uses: actions/download-artifact@v4
-        env: 
-          image: ${{ github.event.client_payload.image }}
-          imagetag: ${{ github.event.client_payload.tag }}
-        with:
-           #artifact.base.d.3.2
-           name: artifact.${{ env.image }}.${{ env.imagetag }}  
-           repository: abcdesktopio/oc.apps
-           run-id: ${{ github.event.client_payload.run_id }}
-           path: artifact/${{ env.imagetag }}/Dockerfile
-
       
       - name: Commit build artifacts 
         env: 
