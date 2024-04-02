@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:ff709b3b96fce03a06d45c141f3ce4a4aa49be128db1cd6cf0421704770bb463",
+        "Id": "sha256:6cb095f08453822ac671014252c0b550dfb049a02b78ddd78173f228820c3ad4",
         "RepoTags": [
             "abcdesktopio/cuda.rockylinux.d:3.2"
         ],
         "RepoDigests": [
-            "abcdesktopio/cuda.rockylinux.d@sha256:68bcb12a9890e3c2be1d59071b6a2ab1a7ffbb7d0f4fa6882a1614690c756b25"
+            "abcdesktopio/cuda.rockylinux.d@sha256:9010664e05ec9b2174e0fcacaf3752e68757fd2308bacad2b267008300869c89"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2024-04-02T09:23:38.731133359Z",
+        "Created": "2024-04-02T12:35:17.006172352Z",
         "Container": "",
         "ContainerConfig": {
             "Hostname": "",
@@ -53,6 +53,7 @@
                 "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
                 "LANG=en_US.utf8",
                 "BUSER=balloon",
+                "ARGS=--wait",
                 "APPNAME=cuda.rockylinux",
                 "APPBIN=/usr/bin/gnome-terminal",
                 "APP=/usr/bin/gnome-terminal",
@@ -70,13 +71,14 @@
             "Labels": {
                 "maintainer": "NVIDIA CORPORATION <sw-cuda-installer@nvidia.com>",
                 "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--wait",
                 "oc.cat": "development",
                 "oc.desktopfile": "org.gnome.Terminal.desktop",
                 "oc.displayname": "cuda.rockylinux",
                 "oc.icon": "nvidia.svg",
                 "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InN2ZzIiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzUxLjQ2cHgiDQoJIGhlaWdodD0iMjU4Ljc4NXB4IiB2aWV3Qm94PSIzNS4xODggMzEuNTEyIDM1MS40NiAyNTguNzg1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDM1LjE4OCAzMS41MTIgMzUxLjQ2IDI1OC43ODUiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHRpdGxlICBpZD0idGl0bGU0Ij5nZW5lcmF0ZWQgYnkgcHN0b2VkaXQgdmVyc2lvbjozLjQ0IGZyb20gTlZCYWRnZV8yRC5lcHM8L3RpdGxlPg0KPHBhdGggaWQ9InBhdGgxNyIgZD0iTTM4NC4xOTUsMjgyLjEwOWMwLDMuNzcxLTIuNzY5LDYuMzAyLTYuMDQ3LDYuMzAydi0wLjAyM2MtMy4zNzEsMC4wMjMtNi4wODktMi41MDgtNi4wODktNi4yNzgNCgljMC0zLjc2OSwyLjcxOC02LjI5Myw2LjA4OS02LjI5M0MzODEuNDI3LDI3NS44MTYsMzg0LjE5NSwyNzguMzQsMzg0LjE5NSwyODIuMTA5eiBNMzg2LjY0OCwyODIuMTA5YzAtNS4xNzUtNC4wMi04LjE3OS04LjUtOC4xNzkNCgljLTQuNTExLDAtOC41MzEsMy4wMDQtOC41MzEsOC4xNzljMCw1LjE3Miw0LjAyMSw4LjE4OCw4LjUzMSw4LjE4OEMzODIuNjI5LDI5MC4yOTcsMzg2LjY0OCwyODcuMjgxLDM4Ni42NDgsMjgyLjEwOQ0KCSBNMzc2LjczOCwyODIuODAxaDAuOTFsMi4xMDksMy43MDNoMi4zMTZsLTIuMzM2LTMuODU5YzEuMjA3LTAuMDg2LDIuMi0wLjY2MSwyLjItMi4yODZjMC0yLjAxOS0xLjM5Mi0yLjY2OC0zLjc1LTIuNjY4aC0zLjQxMQ0KCXY4LjgxM2gxLjk2MVYyODIuODAxIE0zNzYuNzM4LDI4MS4zMDl2LTIuMTIyaDEuMzY0YzAuNzQyLDAsMS43NTMsMC4wNiwxLjc1MywwLjk2NWMwLDAuOTg1LTAuNTIzLDEuMTU3LTEuMzk4LDEuMTU3SDM3Ni43MzgiLz4NCjxwYXRoIGlkPSJwYXRoMTkiIGQ9Ik0zMjkuNDA2LDIzNy4wMjdsMTAuNTk4LDI4Ljk5M0gzMTguNDhMMzI5LjQwNiwyMzcuMDI3eiBNMzE4LjA1NiwyMjUuNzM4bC0yNC40MjMsNjEuODhoMTcuMjQ2bDMuODYzLTEwLjkzNA0KCWgyOC45MDNsMy42NTYsMTAuOTM0aDE4LjcyMmwtMjQuNjA1LTYxLjg4OEwzMTguMDU2LDIyNS43Mzh6IE0yNjkuMDIzLDI4Ny42NDFoMTcuNDk3di02MS45MjJsLTE3LjUtMC4wMDRMMjY5LjAyMywyODcuNjQxeg0KCSBNMTQ3LjU1NiwyMjUuNzE1bC0xNC41OTgsNDkuMDc4bC0xMy45ODQtNDkuMDc0bC0xOC44NzktMC4wMDRsMTkuOTcyLDYxLjkyNmgyNS4yMDdsMjAuMTMzLTYxLjkyNkgxNDcuNTU2eiBNMjE4LjI4MSwyMzkuMTk5aDcuNTINCgljMTAuOTEsMCwxNy45NjYsNC44OTgsMTcuOTY2LDE3LjYwOWMwLDEyLjcxNC03LjA1NiwxNy42MTMtMTcuOTY2LDE3LjYxM2gtNy41MlYyMzkuMTk5eiBNMjAwLjkzMSwyMjUuNzE1djYxLjkyNmgyOC4zNjYNCgljMTUuMTEzLDAsMjAuMDQ4LTIuNTEyLDI1LjM4NC04LjE0OGMzLjc2OS0zLjk1Nyw2LjIwNy0xMi42NDEsNi4yMDctMjIuMTM0YzAtOC43MDctMi4wNjMtMTYuNDY4LTUuNjYtMjEuMzA0DQoJYy02LjQ4MS04LjY0OS0xNS44MTctMTAuMzQtMjkuNzUtMTAuMzRIMjAwLjkzMXogTTM1LjE4OCwyMjUuNjI5djYyLjAxMmgxNy42NDV2LTQ3LjA4NmwxMy42NzIsMC4wMDQNCgljNC41MjcsMCw3Ljc1NCwxLjEyOCw5LjkzNCwzLjQ1N2MyLjc2NSwyLjk0NSwzLjg5NCw3LjY5OSwzLjg5NCwxNi4zOTV2MjcuMjNoMTcuMDk4di0zNC4yNjJjMC0yNC40NTMtMTUuNTg2LTI3Ljc1LTMwLjgzNi0yNy43NQ0KCUgzNS4xODh6IE0xNzIuNzcxLDIyNS43MTVsMC4wMDcsNjEuOTI2aDE3LjQ4OXYtNjEuOTI2SDE3Mi43NzF6Ii8+DQo8cGF0aCBpZD0icGF0aDIxIiBmaWxsPSIjNzdCOTAwIiBkPSJNODIuMjExLDEwMi40MTRjMCwwLDIyLjUwNC0zMy4yMDMsNjcuNDM3LTM2LjYzOFY1My43Mw0KCWMtNDkuNzY5LDMuOTk3LTkyLjg2Nyw0Ni4xNDktOTIuODY3LDQ2LjE0OXMyNC40MSw3MC41NjUsOTIuODY3LDc3LjAyNnYtMTIuODA0Qzk5LjQxMSwxNTcuNzgxLDgyLjIxMSwxMDIuNDE0LDgyLjIxMSwxMDIuNDE0eg0KCSBNMTQ5LjY0OCwxMzguNjM3djExLjcyNmMtMzcuOTY4LTYuNzY5LTQ4LjUwNy00Ni4yMzctNDguNTA3LTQ2LjIzN3MxOC4yMy0yMC4xOTUsNDguNTA3LTIzLjQ3djEyLjg2Nw0KCWMtMC4wMjMsMC0wLjAzOS0wLjAwNy0wLjA1OC0wLjAwN2MtMTUuODkxLTEuOTA3LTI4LjMwNSwxMi45MzgtMjguMzA1LDEyLjkzOFMxMjguMjQzLDEzMS40NDUsMTQ5LjY0OCwxMzguNjM3IE0xNDkuNjQ4LDMxLjUxMg0KCVY1My43M2MxLjQ2MS0wLjExMiwyLjkyMi0wLjIwNyw0LjM5MS0wLjI1N2M1Ni41ODItMS45MDcsOTMuNDQ5LDQ2LjQwNiw5My40NDksNDYuNDA2cy00Mi4zNDMsNTEuNDg4LTg2LjQ1Nyw1MS40ODgNCgljLTQuMDQzLDAtNy44MjgtMC4zNzUtMTEuMzgzLTEuMDA1djEzLjczOWMzLjA0LDAuMzg2LDYuMTkyLDAuNjEzLDkuNDgxLDAuNjEzYzQxLjA1MSwwLDcwLjczOC0yMC45NjUsOTkuNDg0LTQ1Ljc3OA0KCWM0Ljc2NiwzLjgxNywyNC4yNzgsMTMuMTAzLDI4LjI4OSwxNy4xNjhjLTI3LjMzMiwyMi44ODMtOTEuMDMxLDQxLjMyOS0xMjcuMTQ0LDQxLjMyOWMtMy40ODEsMC02LjgyNC0wLjIxMS0xMC4xMS0wLjUyOHYxOS4zMDYNCgloMTU2LjAzMlYzMS41MTJIMTQ5LjY0OHogTTE0OS42NDgsODAuNjU2VjY1Ljc3N2MxLjQ0Ni0wLjEwMSwyLjkwMy0wLjE3OSw0LjM5MS0wLjIyNmM0MC42ODgtMS4yNzgsNjcuMzgyLDM0Ljk2NSw2Ny4zODIsMzQuOTY1DQoJcy0yOC44MzIsNDAuMDQzLTU5Ljc0Niw0MC4wNDNjLTQuNDQ5LDAtOC40MzgtMC43MTUtMTIuMDI4LTEuOTIyVjkzLjUyM2MxNS44NCwxLjkxNCwxOS4wMjgsOC45MTEsMjguNTUxLDI0Ljc4NmwyMS4xOC0xNy44NTkNCgljMCwwLTE1LjQ2MS0yMC4yNzctNDEuNTI0LTIwLjI3N0MxNTUuMDIxLDgwLjE3MiwxNTIuMzEsODAuMzcxLDE0OS42NDgsODAuNjU2Ii8+DQo8L3N2Zz4NCg==",
-                "oc.keyword": "cuda.rockylinux,cuda nvidia rockylinux",
-                "oc.launch": "cudarockylinux.gnome-terminal",
+                "oc.keyword": "cuda.rockylinux,cuda nvidia rockylinux terminal",
+                "oc.launch": "gnome-terminal-server.Gnome-terminal",
                 "oc.name": "cuda.rockylinux",
                 "oc.path": "/usr/bin/gnome-terminal",
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
@@ -86,14 +88,14 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 984901421,
-        "VirtualSize": 984901421,
+        "Size": 984903237,
+        "VirtualSize": 984903237,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/bfc9d7a2914e2bcc9fc3d193e82720962d8c49bee9e937f0348c47e8cbb678f1/diff:/var/lib/docker/overlay2/3a6b940552ba822eac8dda9dce40af22ae44c4e5da01c360940a75dc0a08c130/diff:/var/lib/docker/overlay2/0e5ab37be79a6693fecb0703b08092ed6c12e31a0e9d1dacef683ad9281a98d5/diff:/var/lib/docker/overlay2/4426148512de152118def20c77f6083c6339738b690bc02c2257d34b17e6b4cd/diff:/var/lib/docker/overlay2/ec219429e7212f0e45df8cd09fe20bef6ae681b43d850ebcd26d7363974dff64/diff:/var/lib/docker/overlay2/18b67c36db439a0a2788ef6006774b2971d0126fc487a005d7f07d6a0c62c84e/diff:/var/lib/docker/overlay2/d13585868e7cf41f8aeb108a3aa521079b1d5458f087d270a61d983320eb4db0/diff:/var/lib/docker/overlay2/fe8d8005fddd59e723242a4baec70340cf9eac06cce569540c7c8bc116805815/diff:/var/lib/docker/overlay2/0165c4d01916352e6b47bac11ffe502132c0d51bc11a2d2546aa8d860302457b/diff:/var/lib/docker/overlay2/d28f4e627571eec32a33f519abdffa24d287539cd32063e5bb7b538555039175/diff:/var/lib/docker/overlay2/11b780751a9b21953ad10e4e263c6ad3d2d84af518ded2b9d8e0985f563e0f87/diff:/var/lib/docker/overlay2/8b93dc55fe3fac806027f8086d1b71e2800f94457f9a482ee741951e6a572f14/diff:/var/lib/docker/overlay2/46fe5032dfd001b1f3cfede9ae90b6a19241f12307560db6766cef234a285685/diff:/var/lib/docker/overlay2/2187e01387679280d899279d12bec1f34c94e71347fcb5f94dc9c8c1fa29c747/diff:/var/lib/docker/overlay2/a67714bc360df2e237b84eb055897edaf1c14d8d8871047f0b1cf53556542028/diff:/var/lib/docker/overlay2/d59aee531d62d4766a1122f7000509cb7eb6f6f426702403508c5a54067569cf/diff:/var/lib/docker/overlay2/46149f45e7481f9a48a7573f84d0dacfc1a43a124290105e7cf4684fd70413f9/diff:/var/lib/docker/overlay2/41f12c037bca5e9fc8bde804f6abf8180a22c15721d4942ee6572e5cac82a344/diff:/var/lib/docker/overlay2/e0a3357e42d7b370a4225790492901753ea14d501f29ca01fa95fff5f5c141a5/diff:/var/lib/docker/overlay2/3f7f02446ba8617939802763e98365f8a2314657cffc76cd11f91b04ed02e542/diff",
-                "MergedDir": "/var/lib/docker/overlay2/f3c4af706120fd9b8397262fb4ca298f6ede139a749ef057850dbd75383f14fd/merged",
-                "UpperDir": "/var/lib/docker/overlay2/f3c4af706120fd9b8397262fb4ca298f6ede139a749ef057850dbd75383f14fd/diff",
-                "WorkDir": "/var/lib/docker/overlay2/f3c4af706120fd9b8397262fb4ca298f6ede139a749ef057850dbd75383f14fd/work"
+                "LowerDir": "/var/lib/docker/overlay2/1859ce1036848de1647f53d9730076a9342dec6703b6361ad8bae4efff7854b3/diff:/var/lib/docker/overlay2/e2a0644d5c17a6c9943b79b79e773e86aa3948a4cc3411ad53b5bb75d5298067/diff:/var/lib/docker/overlay2/13393d56f249b4780f9d55935a947992563d3c1c7f028e609ea94c8b21d5eabe/diff:/var/lib/docker/overlay2/7b0aef80e8d77dc4168cd31984f37d93c605965fa73ad553c904c202f6620207/diff:/var/lib/docker/overlay2/efbfd43a3d096bfdfc60e97c8605463c06771ee8e44051cfc9e9cde2fc0cb033/diff:/var/lib/docker/overlay2/be1f7a74dcb56a96a4bc823e3c7ab54eb8e9aef9e46b49671280ebce7a2dfec2/diff:/var/lib/docker/overlay2/aa15a43fbd38ab73b4543a785c5fa670611f033a64908c14da3d4b021c50036c/diff:/var/lib/docker/overlay2/7f7fe33fb2564cf94ad01e46c68ed93afea2f3e60c7ca2e5000b796fecb2280e/diff:/var/lib/docker/overlay2/1740c0a106098663025730f8b71ded62a0387a592622226e34a67a8ca9c9ec5c/diff:/var/lib/docker/overlay2/38aa5e322147d68c8256252d1bc516dad8b3b1173240fbe73a3b38bbc65ffddd/diff:/var/lib/docker/overlay2/c080870ec874c89e21e97bbab31ce95f830c1483539abae81fcf1a2645a31c6d/diff:/var/lib/docker/overlay2/aaae144e8a103c05df6b8a4bef411ba1caf6f0c2da3d9d729e93c88f50e989c2/diff:/var/lib/docker/overlay2/7d636a3a82ee7ce53a1ffb99cf6d4b6f2033a09e4051ddcec905afc0d670ca04/diff:/var/lib/docker/overlay2/3d8f1c4d6dcffc8b8db43e2445bd2b1709078fa19474d9c8c789766e4588eb19/diff:/var/lib/docker/overlay2/11c9649b4cd31c7751b13925a86f752c452255676ea1158d16d7fbbaefc7120a/diff:/var/lib/docker/overlay2/e600f605d3ba9d6bc386bbaa0a2d9f015d1924f07dc03519668c1d3a45206e04/diff:/var/lib/docker/overlay2/fdc13b613a7befc0cc2ef580495f0c304901da8067cf1e72c27d246050d5a6c3/diff:/var/lib/docker/overlay2/8f35ada105009862e0c01882357aed782d012d963a2c9ae8d0539f31e087bf55/diff:/var/lib/docker/overlay2/3a2461d146cfb34df8d2384e9201cbed1309d2cd35cdfd640fa6a21e38410d8f/diff:/var/lib/docker/overlay2/6e464a5d0f87bab1469eae309be17b828f140cf36256409d9dda20a71e75e30f/diff",
+                "MergedDir": "/var/lib/docker/overlay2/bdb68985ab555342a57134180bdcc248a3f62f02e38540befce11d5093e6e207/merged",
+                "UpperDir": "/var/lib/docker/overlay2/bdb68985ab555342a57134180bdcc248a3f62f02e38540befce11d5093e6e207/diff",
+                "WorkDir": "/var/lib/docker/overlay2/bdb68985ab555342a57134180bdcc248a3f62f02e38540befce11d5093e6e207/work"
             },
             "Name": "overlay2"
         },
@@ -116,11 +118,11 @@
                 "sha256:41ad27f0e206ad98831c593da58347a2e527726fd4bc9caa7f1f054009f33faf",
                 "sha256:85e90ca6362c7846fd330f383643b7111080209eb7118072257df9887ee96e9b",
                 "sha256:4b616f19da2bd1edb0e32fdb15cf5b6ab35cbc648a822ef06db7af38c44ac2a8",
-                "sha256:e38122e05fdbec8fee6b07f2bdc5d9be0904955821a21dd7017373636f3f342a",
-                "sha256:86c4719821be97dafcdf40617296330d6f1d65244a61e13b6214172aa38b27d9",
-                "sha256:bd5aa13ba3c804037b603bb113ea48faa9e073fc1aa1fc3306f15e44bb1ece11",
-                "sha256:36af4432c11c87ecda46afb68aa1f758df41fd5b42945a0201489f0fe1ce97ca",
-                "sha256:39f2691d90afe91acbdbaf151a2cb97e67b1ab26124dc38b1fbb8ceb7852d96d"
+                "sha256:10f2aaa12839f773552b1dce807a06eb6de99ac12a6cc70fbd04cddfe1f2a165",
+                "sha256:96a456d1d89960d59bea522882f6028729f6802bd78f423e82cc38731a736405",
+                "sha256:43797dcaf411a04b415e89b94a45eb1a7898a775292b2f6bfe43ba71c5d50bbc",
+                "sha256:70917975519ab60796b9569850b68393dba25809a1c8dedb8768209ed67d4dd1",
+                "sha256:2d09019d4f6915924ef496881307e5dfbd297bb50345b8493b0eaeecca8d985e"
             ]
         },
         "Metadata": {
