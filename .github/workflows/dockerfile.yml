@@ -32,16 +32,30 @@ jobs:
           echo "event current ref_name is ${{ github.event.client_payload.ref_name }}"
           echo "event current artifact is ${{ github.event.client_payload.artifact }}"
           echo "event current run_id is ${{ github.event.client_payload.run_id }}"
+          echo "event current run_number is ${{ github.event.client_payload.run_number }}"
+          echo "event current workflow is ${{ github.event.client_payload.workflow }}"
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       
-      - uses: actions/download-artifact@v4
+      #- uses: actions/download-artifact@v4
+      #  with:
+      #     name: ${{ github.event.client_payload.artifact }}
+      #     repository: abcdesktopio/oc.apps
+      #     run-id: ${{ github.event.client_payload.run_id }}
+      #     path: artifact/${{ github.event.client_payload.ref_name }}
+
+
+      - name: Download artifact
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v3
         with:
-           name: ${{ github.event.client_payload.artifact }}
-           repository: abcdesktopio/oc.apps
-           run-id: ${{ github.event.client_payload.run_id }}
-           path: artifact/${{ github.event.client_payload.ref_name }}
+          workflow: ${{ github.event.client_payload.workflow }}
+          repo: abcdesktopio/oc.apps
+          run_id: ${{ github.event.client_payload.run_id }}
+          run_number: ${{ github.event.client_payload.run_number }}
+          name: ${{ github.event.client_payload.artifact }}
+          path: artifact/${{ github.event.client_payload.ref_name }}
           
       - name: Commit build artifacts 
         env: 
