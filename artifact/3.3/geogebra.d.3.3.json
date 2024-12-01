@@ -1,0 +1,99 @@
+[
+    {
+        "Id": "sha256:2f0ad0f92b7e239f67d43ffe94a78f2116e04f34b14ec7b9f6677615aaea2a3e",
+        "RepoTags": [
+            "abcdesktopio/geogebra.d:3.3"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/geogebra.d@sha256:b70f4daaad94982659c63441d2226c9f82424df9d3044be2984c348d6f82eea3"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-12-01T12:16:57.109199223Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "APPNAME=Geogebra",
+                "APPBIN=/usr/bin/geogebra",
+                "APP=/usr/bin/geogebra"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "education",
+                "oc.displayname": "Geogebra",
+                "oc.fileextensions": "ggb;ggt",
+                "oc.icon": "geogebra.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHZlcnNpb249IjEuMCIKICAgd2lkdGg9IjI4IgogICBoZWlnaHQ9IjI4IgogICBpZD0ic3ZnMiIKICAgdmlld0JveD0iMCAwIDI4IDI4Ij4KICA8ZGVzYwogICAgIGlkPSJkZXNjNiI+Q3JlYXRvcjogRnJlZUhFUCBHcmFwaGljczJEIERyaXZlciBQcm9kdWNlcjogZ2VvZ2VicmEuZC5hIFJldmlzaW9uOiAxLjEwICBTb3VyY2U6ICBEYXRlOiBTYW1zdGFnLCA3LiBBdWd1c3QgMjAxMCAxNDowNiBVaHIgTUVTWjwvZGVzYz4KICA8ZGVmcwogICAgIGlkPSJkZWZzODUiIC8+CiAgPGcKICAgICBpZD0iZzI0OTgiPgogICAgPGcKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEuNTA4ODg3NywwLDAsMS41MDg4ODc3LC0wLjQ1NTEwNDQsMC42NzA0MDU2KSIKICAgICAgIGlkPSJsYXllcjAiCiAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCI+CiAgICAgIDxnCiAgICAgICAgIHRyYW5zZm9ybT0ic2NhbGUoMC41NjY5MjkxLDAuNTY2OTI5MSkiCiAgICAgICAgIGlkPSJnMTgiPgogICAgICAgIDxnCiAgICAgICAgICAgaWQ9ImcyMCIKICAgICAgICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoyLjU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1vcGFjaXR5OjEiPgogICAgICAgICAgPHBhdGgKICAgICAgICAgICAgIGQ9Im0gNC42NTMwNDUsMjEuNzE1Mzk4IGMgMi41NTI4NzIzLDUuMzM3NzQ2IDkuOTk5OTMxLDcuMDkyOTM2IDE2LjYzMzQ3MSwzLjkyMDMyOCA2LjYzMzU0LC0zLjE3MjYwOSA5Ljk0MTU3NSwtMTAuMDcxNjE1IDcuMzg4NzAzLC0xNS40MDkzNjEgQyAyNi4xMjIzNDcsNC44ODg2MTg1IDE4LjY3NTI4OCwzLjEzMzQyODEgMTIuMDQxNzQ4LDYuMzA2MDM3MSA1LjQwODIwNzYsOS40Nzg2NDYxIDIuMTAwMTcyNywxNi4zNzc2NTIgNC42NTMwNDUsMjEuNzE1Mzk4IHoiCiAgICAgICAgICAgICBpZD0icGF0aDIyIiAvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuNTY2OTI5MSwwLjU2NjkyOTEpIgogICAgICAgICBpZD0iZzI0Ij4KICAgICAgICA8ZwogICAgICAgICAgIGlkPSJnMjYiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6Izk5OTlmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSI+CiAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgZD0ibSAxOSw1IGMgMCwxLjY1Njg1NDIgLTEuMzQzMTQ2LDMgLTMsMyAtMS42NTY4NTQsMCAtMywtMS4zNDMxNDU4IC0zLC0zIDAsLTEuNjU2ODU0MiAxLjM0MzE0NiwtMyAzLC0zIDEuNjU2ODU0LDAgMywxLjM0MzE0NTggMywzIHoiCiAgICAgICAgICAgICBpZD0icGF0aDI4IiAvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuNTY2OTI5MSwwLjU2NjkyOTEpIgogICAgICAgICBpZD0iZzMwIj4KICAgICAgICA8ZwogICAgICAgICAgIGlkPSJnMzIiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW9wYWNpdHk6MSI+CiAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgZD0ibSAxOSw1IGMgMCwxLjY1Njg1NDIgLTEuMzQzMTQ2LDMgLTMsMyAtMS42NTY4NTQsMCAtMywtMS4zNDMxNDU4IC0zLC0zIDAsLTEuNjU2ODU0MiAxLjM0MzE0NiwtMyAzLC0zIDEuNjU2ODU0LDAgMywxLjM0MzE0NTggMywzIHoiCiAgICAgICAgICAgICBpZD0icGF0aDM0IiAvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuNTY2OTI5MSwwLjU2NjkyOTEpIgogICAgICAgICBpZD0iZzM2Ij4KICAgICAgICA8ZwogICAgICAgICAgIGlkPSJnMzgiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6Izk5OTlmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSI+CiAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgZD0ibSA4LDEzIGMgMCwxLjY1Njg1NCAtMS4zNDMxNDU4LDMgLTMsMyAtMS42NTY4NTQyLDAgLTMsLTEuMzQzMTQ2IC0zLC0zIDAsLTEuNjU2ODU0IDEuMzQzMTQ1OCwtMyAzLC0zIDEuNjU2ODU0MiwwIDMsMS4zNDMxNDYgMywzIHoiCiAgICAgICAgICAgICBpZD0icGF0aDQwIiAvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuNTY2OTI5MSwwLjU2NjkyOTEpIgogICAgICAgICBpZD0iZzQyIj4KICAgICAgICA8ZwogICAgICAgICAgIGlkPSJnNDQiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW9wYWNpdHk6MSI+CiAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgZD0ibSA4LDEzIGMgMCwxLjY1Njg1NCAtMS4zNDMxNDU4LDMgLTMsMyAtMS42NTY4NTQyLDAgLTMsLTEuMzQzMTQ2IC0zLC0zIDAsLTEuNjU2ODU0IDEuMzQzMTQ1OCwtMyAzLC0zIDEuNjU2ODU0MiwwIDMsMS4zNDMxNDYgMywzIHoiCiAgICAgICAgICAgICBpZD0icGF0aDQ2IiAvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuNTY2OTI5MSwwLjU2NjkyOTEpIgogICAgICAgICBpZD0iZzQ4Ij4KICAgICAgICA8ZwogICAgICAgICAgIGlkPSJnNTAiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6Izk5OTlmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSI+CiAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgZD0ibSAxMiwyNiBjIDAsMS42NTY4NTQgLTEuMzQzMTQ2LDMgLTMsMyAtMS42NTY4NTQyLDAgLTMsLTEuMzQzMTQ2IC0zLC0zIDAsLTEuNjU2ODU0IDEuMzQzMTQ1OCwtMyAzLC0zIDEuNjU2ODU0LDAgMywxLjM0MzE0NiAzLDMgeiIKICAgICAgICAgICAgIGlkPSJwYXRoNTIiIC8+CiAgICAgICAgPC9nPgogICAgICA8L2c+CiAgICAgIDxnCiAgICAgICAgIHRyYW5zZm9ybT0ic2NhbGUoMC41NjY5MjkxLDAuNTY2OTI5MSkiCiAgICAgICAgIGlkPSJnNTQiPgogICAgICAgIDxnCiAgICAgICAgICAgaWQ9Imc1NiIKICAgICAgICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utb3BhY2l0eToxIj4KICAgICAgICAgIDxwYXRoCiAgICAgICAgICAgICBkPSJtIDEyLDI2IGMgMCwxLjY1Njg1NCAtMS4zNDMxNDYsMyAtMywzIC0xLjY1Njg1NDIsMCAtMywtMS4zNDMxNDYgLTMsLTMgMCwtMS42NTY4NTQgMS4zNDMxNDU4LC0zIDMsLTMgMS42NTY4NTQsMCAzLDEuMzQzMTQ2IDMsMyB6IgogICAgICAgICAgICAgaWQ9InBhdGg1OCIgLz4KICAgICAgICA8L2c+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJzY2FsZSgwLjU2NjkyOTEsMC41NjY5MjkxKSIKICAgICAgICAgaWQ9Imc2MCI+CiAgICAgICAgPGcKICAgICAgICAgICBpZD0iZzYyIgogICAgICAgICAgIHN0eWxlPSJmaWxsOiM5OTk5ZmY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiPgogICAgICAgICAgPHBhdGgKICAgICAgICAgICAgIGQ9Im0gMjcsMjQgYyAwLDEuNjU2ODU0IC0xLjM0MzE0NiwzIC0zLDMgLTEuNjU2ODU0LDAgLTMsLTEuMzQzMTQ2IC0zLC0zIDAsLTEuNjU2ODU0IDEuMzQzMTQ2LC0zIDMsLTMgMS42NTY4NTQsMCAzLDEuMzQzMTQ2IDMsMyB6IgogICAgICAgICAgICAgaWQ9InBhdGg2NCIgLz4KICAgICAgICA8L2c+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJzY2FsZSgwLjU2NjkyOTEsMC41NjY5MjkxKSIKICAgICAgICAgaWQ9Imc2NiI+CiAgICAgICAgPGcKICAgICAgICAgICBpZD0iZzY4IgogICAgICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1vcGFjaXR5OjEiPgogICAgICAgICAgPHBhdGgKICAgICAgICAgICAgIGQ9Im0gMjcsMjQgYyAwLDEuNjU2ODU0IC0xLjM0MzE0NiwzIC0zLDMgLTEuNjU2ODU0LDAgLTMsLTEuMzQzMTQ2IC0zLC0zIDAsLTEuNjU2ODU0IDEuMzQzMTQ2LC0zIDMsLTMgMS42NTY4NTQsMCAzLDEuMzQzMTQ2IDMsMyB6IgogICAgICAgICAgICAgaWQ9InBhdGg3MCIgLz4KICAgICAgICA8L2c+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJzY2FsZSgwLjU2NjkyOTEsMC41NjY5MjkxKSIKICAgICAgICAgaWQ9Imc3MiI+CiAgICAgICAgPGcKICAgICAgICAgICBpZD0iZzc0IgogICAgICAgICAgIHN0eWxlPSJmaWxsOiM5OTk5ZmY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiPgogICAgICAgICAgPHBhdGgKICAgICAgICAgICAgIGQ9Im0gMzIsMTEgYyAwLDEuNjU2ODU0IC0xLjM0MzE0NiwzIC0zLDMgLTEuNjU2ODU0LDAgLTMsLTEuMzQzMTQ2IC0zLC0zIDAsLTEuNjU2ODU0MiAxLjM0MzE0NiwtMyAzLC0zIDEuNjU2ODU0LDAgMywxLjM0MzE0NTggMywzIHoiCiAgICAgICAgICAgICBpZD0icGF0aDc2IiAvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuNTY2OTI5MSwwLjU2NjkyOTEpIgogICAgICAgICBpZD0iZzc4Ij4KICAgICAgICA8ZwogICAgICAgICAgIGlkPSJnODAiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW9wYWNpdHk6MSI+CiAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgZD0ibSAzMiwxMSBjIDAsMS42NTY4NTQgLTEuMzQzMTQ2LDMgLTMsMyAtMS42NTY4NTQsMCAtMywtMS4zNDMxNDYgLTMsLTMgMCwtMS42NTY4NTQyIDEuMzQzMTQ2LC0zIDMsLTMgMS42NTY4NTQsMCAzLDEuMzQzMTQ1OCAzLDMgeiIKICAgICAgICAgICAgIGlkPSJwYXRoODIiIC8+CiAgICAgICAgPC9nPgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K",
+                "oc.keyword": "geogebra,geogebra,math",
+                "oc.launch": "geogebra-GeoGebra.geogebra-GeoGebra",
+                "oc.legacyfileextensions": "ggb;ggt",
+                "oc.name": "Geogebra",
+                "oc.path": "/usr/bin/geogebra",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 807416785,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/7f71f902ac19e3298ae7be74c03ca6e1ac22e07ced89949f9711c64afec1a196/diff:/var/lib/docker/overlay2/0e1fe2dd37bc18c86dd33a8717da3dd3abe6a80bcc858e615ddcf64494136c3f/diff:/var/lib/docker/overlay2/7a2f6b648129129f3436a04935e95bcbfe7b34aba981ab90be0820d906476177/diff:/var/lib/docker/overlay2/7db92f2c6b3a052b9e25d6437b5e513808ce07e24114aa53442eb828e30d2aff/diff:/var/lib/docker/overlay2/686189ea883e11e10ac96606a601ac91883b4fc9e1f2715a272db1dc6ad43702/diff:/var/lib/docker/overlay2/ad7b1061e589d6db81af13b858a89a9951412550e8f9c0f9b95b7d8946d16bf5/diff:/var/lib/docker/overlay2/f275a6a9df48dd123d5fa959b3a5224d3088a41b918e7ca849fb3522c091f52a/diff:/var/lib/docker/overlay2/e5f7db9c9f7291e891d1559b6d1bbec1b8ae20d8f54f71de66cc8e7b2af8d8a4/diff:/var/lib/docker/overlay2/1b9101ac38ac69dc2509c603de3b1db98679731a8e7cbf50da35547058c4b94b/diff:/var/lib/docker/overlay2/623d5d04bf901b44604d125096904028caa52c50c21086b24effdd835fba265b/diff:/var/lib/docker/overlay2/89d74538a367c92f952b21c93ccd577d1e6b4af9fa39b93a6a5e59d7aa59fb7a/diff:/var/lib/docker/overlay2/70a2939cb9793c0face2043003cfaf3593437033d55a15a6aa9b22eda2cfb8d0/diff:/var/lib/docker/overlay2/eb232088018726ea1421f80c64f27385f71de4221cf0c5c2ff7e98381481a748/diff:/var/lib/docker/overlay2/d951c9e2f32b67c598ec32814b9ddd2861e1b45fcc232e527c01a0510843a6c1/diff",
+                "MergedDir": "/var/lib/docker/overlay2/9c57e3a4da111deefd346e5b913222308153bc77f2d81bc0b6f7c11a99ace071/merged",
+                "UpperDir": "/var/lib/docker/overlay2/9c57e3a4da111deefd346e5b913222308153bc77f2d81bc0b6f7c11a99ace071/diff",
+                "WorkDir": "/var/lib/docker/overlay2/9c57e3a4da111deefd346e5b913222308153bc77f2d81bc0b6f7c11a99ace071/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:2573e0d8158209ed54ab25c87bcdcb00bd3d2539246960a3d592a1c599d70465",
+                "sha256:48fb5353035cbdabe4e011bca63d61c5da1347c285e2e313e81fe291bf6e438d",
+                "sha256:6dc4e68225e78e3182aec7b8143baa5c22a9f3d0fb4fec6d6d2ae62bf3f75e9c",
+                "sha256:589f812fa774482a9970e78a335a4ba8878ce2b44512d0eb088f23177887ea77",
+                "sha256:2b9df4e20599be412413879bd4508cc66ed92b4083619b49c098e749da45a335",
+                "sha256:43c9e32ba900d3e65bbf71efd1669c79f790daa7b4394db654817df4f04a5a05",
+                "sha256:cbf0f2cd65d25b4302e3fdc43dc82315d6b0b26e2351404035d5d96827166b0e",
+                "sha256:6fd9c5fc0d89ec86a774c40cd6e975fe99251106f36d03802d60188582b9bf60",
+                "sha256:89e76a1dcbe0dac9f94b38d2aed289a7eea1de9cbe059ce02d548a6f89747ba8",
+                "sha256:bc5a81bc7690397582d746279cbed6f9fda0362fdbfc26396855613f13b9a335",
+                "sha256:74c177da6b882d6b15003ed6005f1690f1e78da5c9793d1562b70105e978be86",
+                "sha256:a7fd0a36c43fde22475f5d630fe568bc0b21a157f24fd44559eda7e2982c76ac",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:c65936fc3875016925fde5eeee0256c3c4c91ee6f7cd138f026814a63b0dccbe",
+                "sha256:af83fa4543aaed2012615799e59fd4fe3c0ed9bf4bccc031c04ff656cd0da4fa"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
