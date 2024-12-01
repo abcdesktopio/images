@@ -1,0 +1,110 @@
+[
+    {
+        "Id": "sha256:f7b10d8b4094ec2919c807501e619e1fe3738ec18d3269cfaa0fa3be7eac8032",
+        "RepoTags": [
+            "abcdesktopio/winhelp-wine.d:3.3"
+        ],
+        "RepoDigests": [
+            "abcdesktopio/winhelp-wine.d@sha256:f1323a0dbe2366f9c9b2170432715c28f48c7ac16dd2668402e119153c831850"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-12-01T12:26:35.316090683Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "WINEARCH=win64",
+                "WINEDLLOVERRIDES=mscoree,mshtml=",
+                "WINEPREFIX=/composer/.wine",
+                "ARGS=winhelp",
+                "APPNAME=winhelp-wine",
+                "APPBIN=/usr/bin/wine",
+                "APP=/usr/bin/wine"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "winhelp",
+                "oc.cat": "utilities",
+                "oc.displayname": "Winhelp Wine",
+                "oc.fileextensions": "hlp;",
+                "oc.icon": "winhelp.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0OCA0OC4wMDAwMDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyR3JhZGllbnQ0NTM3IiB4MT0iLTQ3IiB4Mj0iLTEiIHkxPSIyNCIgeTI9IjI0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiMzMGEwZDQiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjNDFhOGQ3IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogPC9kZWZzPgogPG1ldGFkYXRhPgogIDxyZGY6UkRGPgogICA8Y2M6V29yayByZGY6YWJvdXQ9IiI+CiAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgIDxkYzp0eXBlIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiLz4KICAgIDxkYzp0aXRsZS8+CiAgIDwvY2M6V29yaz4KICA8L3JkZjpSREY+CiA8L21ldGFkYXRhPgogPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzLjk0OWUtNSkiPgogIDxwYXRoIGQ9Im0xIDQzdjAuMjVjMCAyLjIxNiAxLjc4NCA0IDQgNGgzOGMyLjIxNiAwIDQtMS43ODQgNC00di0wLjI1YzAgMi4yMTYtMS43ODQgNC00IDRoLTM4Yy0yLjIxNiAwLTQtMS43ODQtNC00em0wIDAuNXYwLjVjMCAyLjIxNiAxLjc4NCA0IDQgNGgzOGMyLjIxNiAwIDQtMS43ODQgNC00di0wLjVjMCAyLjIxNi0xLjc4NCA0LTQgNGgtMzhjLTIuMjE2IDAtNC0xLjc4NC00LTR6IiBvcGFjaXR5PSIuMDIiLz4KICA8cGF0aCBkPSJtMSA0My4yNXYwLjI1YzAgMi4yMTYgMS43ODQgNCA0IDRoMzhjMi4yMTYgMCA0LTEuNzg0IDQtNHYtMC4yNWMwIDIuMjE2LTEuNzg0IDQtNCA0aC0zOGMtMi4yMTYgMC00LTEuNzg0LTQtNHoiIG9wYWNpdHk9Ii4wNSIvPgogIDxwYXRoIGQ9Im0xIDQzdjAuMjVjMCAyLjIxNiAxLjc4NCA0IDQgNGgzOGMyLjIxNiAwIDQtMS43ODQgNC00di0wLjI1YzAgMi4yMTYtMS43ODQgNC00IDRoLTM4Yy0yLjIxNiAwLTQtMS43ODQtNC00eiIgb3BhY2l0eT0iLjEiLz4KIDwvZz4KIDxyZWN0IHRyYW5zZm9ybT0icm90YXRlKC05MCkiIHg9Ii00NyIgeT0iMSIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjQ2IiByeD0iNCIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDQ1MzcpIi8+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMuOTQ5ZS01KSI+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMTAwNC40KSI+CiAgIDxwYXRoIGQ9Im0xIDEwNDMuNHY0YzAgMi4yMTYgMS43ODQgNCA0IDRoMzhjMi4yMTYgMCA0LTEuNzg0IDQtNHYtNGMwIDIuMjE2LTEuNzg0IDQtNCA0aC0zOGMtMi4yMTYgMC00LTEuNzg0LTQtNHoiIG9wYWNpdHk9Ii4xIi8+CiAgPC9nPgogPC9nPgogPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEsLTEpIj4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICAgPGcgb3BhY2l0eT0iLjEiPjwhLS0gY29sb3I6ICM0MWE4ZDggLS0+CiAgICA8cGF0aCBkPSJtMjQgOWMtOC4yODUgMC0xNSA2LjcxNS0xNSAxNXM2LjcxNSAxNSAxNSAxNSAxNS02LjcxNSAxNS0xNS02LjcxNS0xNS0xNS0xNW0wIDZjNC45NjkgMCA5IDQuMDMgOSA5IDAgNC45NjktNC4wMyA5LTkgOS00Ljk2OSAwLTktNC4wMy05LTkgMC00Ljk2OSA0LjAzLTkgOS05Ii8+CiAgICA8cGF0aCBkPSJtMjQgOWMtOC4yODUgMC0xNSA2LjcxNS0xNSAxNSAwIDQuMzk4IDEuOTIyIDguMzIgNC45MzggMTEuMDYtMi40MjYtMi42NjQtMy45MzgtNi4xNzYtMy45MzgtMTAuMDYgMC04LjI4NSA2LjcxNS0xNSAxNS0xNSAzLjg4NyAwIDcuMzk4IDEuNTEyIDEwLjA2IDMuOTM4LTIuNzQyLTMuMDItNi42NjQtNC45MzgtMTEuMDYtNC45MzgiIGZpbGwtb3BhY2l0eT0iLjE0OSIvPgogICAgPHBhdGggZD0ibTM1LjA1IDIzLjg1Yy0wLjE2MjY0IDIuMDYzMy0xLjAzMDMgNC4wNzkzLTIuNjA3OCA1LjY1NjktMy41MTM2IDMuNTEzNi05LjIxMzYgMy41MTQzLTEyLjcyOCAwLTEuNTc2OC0xLjU3NjgtMi40NDQ1LTMuNTk0Mi0yLjYwNzgtNS42NTY5LTAuMTk2NTggMi41MzI5IDAuNjcxMDQgNS4xMzQzIDIuNjA3OCA3LjA3MTEgMy41MTM2IDMuNTEzNiA5LjIxMzYgMy41MTQzIDEyLjcyOCAwIDEuOTM2MS0xLjkzNjEgMi44MDMtNC41MzgyIDIuNjA3OC03LjA3MTEiIGZpbGwtb3BhY2l0eT0iLjE0OSIvPgogICA8L2c+CiAgPC9nPgogPC9nPgogPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwtMSkiPjwhLS0gY29sb3I6ICM0MWE4ZDggLS0+CiAgPHBhdGggZD0ibTI0IDljLTguMjg1IDAtMTUgNi43MTUtMTUgMTVzNi43MTUgMTUgMTUgMTUgMTUtNi43MTUgMTUtMTUtNi43MTUtMTUtMTUtMTVtMCA2YzQuOTY5IDAgOSA0LjAzIDkgOSAwIDQuOTY5LTQuMDMgOS05IDktNC45NjkgMC05LTQuMDMtOS05IDAtNC45NjkgNC4wMy05IDktOSIgZmlsbD0iI2VhNWM1MyIvPgogIDxnIGZpbGw9IiNlZWVjZTAiPgogICA8cGF0aCBkPSJtMTAuMzc1IDE3Ljc4MWMtMC44NjcgMS44OTUtMS4zNzUgNC0xLjM3NSA2LjIxOXMwLjUwOCA0LjMyNCAxLjM3NSA2LjIxOWw1LjI1LTNjLTAuMzgzLTEtMC42MjUtMi4wODItMC42MjUtMy4yMTlzMC4yNDItMi4yMTkgMC42MjUtMy4yMTltLTUuMjUtMyIvPgogICA8cGF0aCBkPSJtMzcuNjI1IDE3Ljc4MS01LjI1IDNjMC4zODMgMSAwLjYyNSAyLjA4MiAwLjYyNSAzLjIxOXMtMC4yNDIgMi4yMTktMC42MjUgMy4yMTlsNS4yNSAzYzAuODY3LTEuODk1IDEuMzc1LTQgMS4zNzUtNi4yMTlzLTAuNTA4LTQuMzI0LTEuMzc1LTYuMjE5Ii8+CiAgIDxwYXRoIGQ9Im0yMC43ODEgMzIuMzc1LTMgNS4yNWMxLjg5NSAwLjg2NyA0IDEuMzc1IDYuMjE5IDEuMzc1czQuMzI0LTAuNTA4IDYuMjE5LTEuMzc1bC0zLTUuMjVjLTEgMC4zODMtMi4wODIgMC42MjUtMy4yMTkgMC42MjVzLTIuMjE5LTAuMjQyLTMuMjE5LTAuNjI1Ii8+CiAgIDxwYXRoIGQ9Im0yNCA5Yy0yLjIxOSAwLTQuMzI0IDAuNTA4LTYuMjE5IDEuMzc1bDMgNS4yNWMxLTAuMzgzIDIuMDgyLTAuNjI1IDMuMjE5LTAuNjI1czIuMjE5IDAuMjQyIDMuMjE5IDAuNjI1bDMtNS4yNWMtMS44OTUtMC44NjctNC0xLjM3NS02LjIxOS0xLjM3NSIvPgogIDwvZz4KIDwvZz4KIDxwYXRoIGQ9Im0zMi45NzkgMjMuNDI0YTkgOSAwIDAgMSAtOC45Nzg1IDguNTc2MiA5IDkgMCAwIDEgLTguOTc4NSAtOC40MjM4IDkgOSAwIDAgMCAtMC4wMjE0ODQgMC40MjM4MyA5IDkgMCAwIDAgOSA5IDkgOSAwIDAgMCA5IC05IDkgOSAwIDAgMCAtMC4wMjE0ODQgLTAuNTc2MTd6IiBvcGFjaXR5PSIuMSIgc3Ryb2tlLXdpZHRoPSIuOTk4MjciLz4KIDxwYXRoIGQ9Ik0gMjQgOCBBIDE1IDE1IDAgMCAwIDkgMjMgQSAxNSAxNSAwIDAgMCA5LjAxOTUzMTIgMjMuNTg1OTM4IEEgMTUgMTUgMCAwIDEgMjQgOSBBIDE1IDE1IDAgMCAxIDM4Ljk4MDQ2OSAyMy40MTQwNjIgQSAxNSAxNSAwIDAgMCAzOSAyMyBBIDE1IDE1IDAgMCAwIDI0IDggeiAiIG9wYWNpdHk9Ii4xIiBzdHJva2Utd2lkdGg9IjQuMjYyMyIvPgo8L3N2Zz4K",
+                "oc.keyword": "winhelp-wine,wine,winhelp,text,hlp,help,wine",
+                "oc.launch": "winhlp32.exe.Wine",
+                "oc.mimetype": "application/hlp;",
+                "oc.name": "winhelp-wine",
+                "oc.path": "/usr/bin/wine",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.alpine.wine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1033438230,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/3d486e2db21473f805955d6d10b413c16e711e847beba3c7c07812aa6e2e785f/diff:/var/lib/docker/overlay2/b170a9c94687c51086706e9be41e3c363292a96fd858ac7e2f48b26ace307b7b/diff:/var/lib/docker/overlay2/ee0306b09a81f9ecf2de9ba731efda8d9f8e49b98dd4d41b014271baf17ac5ef/diff:/var/lib/docker/overlay2/71ba434aaaad162b6f687c2b4304ac541d0c2e8a96a85ec701a34bb140d426f2/diff:/var/lib/docker/overlay2/8faa767609b773a51c2d4f6e918f19130dc84b0a66daa1cbd02be81b03b0036d/diff:/var/lib/docker/overlay2/f5af05d53dba17b15fde671bc4545e4c554c6f4e9dd5c75ca028c4931bbba52d/diff:/var/lib/docker/overlay2/3d8736eed12786fbde185f91e09d73b71e506cb9527410ca698914df33d78a58/diff:/var/lib/docker/overlay2/9f5a79313216ffb4491e51516d2b970a7fa749799e28da068df22270070bae39/diff:/var/lib/docker/overlay2/40ba4fd5816f1c1ba65b69642169837cd3c52c7ba90a2e569ccdb54b496df438/diff:/var/lib/docker/overlay2/302f4ce764fcd5c499799d8adff91b60cc093802391c5cf40527b01bfc58ee61/diff:/var/lib/docker/overlay2/926ada5961565caabf9f0802044de8c12c01f5c8ca61248f65b437fc475db8e9/diff:/var/lib/docker/overlay2/2a0ffc758de8f9e669609d017d8e99640e2bab20d4973413e30a727c693b938f/diff:/var/lib/docker/overlay2/c01dc78cb7686dd8afa22dc28c20f840ef838d789154ff7997ebabe10912269f/diff:/var/lib/docker/overlay2/136762635d12376b9c7c7c888cac9ca98ef10dd7dd81159de8a3c5680643a2ad/diff:/var/lib/docker/overlay2/b5b502acc8a56c6f6af4d5d6a2526a2f9b7c312930112e8170372af9d0517446/diff:/var/lib/docker/overlay2/8013b252eec28e65168bd8df58a55e3afa978ffafe632d772453bb954d827424/diff:/var/lib/docker/overlay2/386abf5b2edaba86d4b18ccd91675c102cb7fa987d09559ff470e1a5289e0ded/diff:/var/lib/docker/overlay2/6850be1c672b904b945772302b6737c430f538d61e80078b92fc8e8a701e2d59/diff:/var/lib/docker/overlay2/ed3879fc98262d91c82c933c44e06972f3e122c8bdd0c58ff5fe108c93c92aba/diff:/var/lib/docker/overlay2/16bc068d68ff832bf19219b24fb4f1aca4c0600f7f02a0f44c3e4d695f8dd21c/diff",
+                "MergedDir": "/var/lib/docker/overlay2/d01cab7acfd9ab1e72b1e47dfa338be591e05940a7f831e56b4d32180bd4e23c/merged",
+                "UpperDir": "/var/lib/docker/overlay2/d01cab7acfd9ab1e72b1e47dfa338be591e05940a7f831e56b4d32180bd4e23c/diff",
+                "WorkDir": "/var/lib/docker/overlay2/d01cab7acfd9ab1e72b1e47dfa338be591e05940a7f831e56b4d32180bd4e23c/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:75654b8eeebd3beae97271a102f57cdeb794cc91e442648544963a7e951e9558",
+                "sha256:4f62c447d76b206b3e85666b1364ca70de872711b24e5f6c428d258e377d5327",
+                "sha256:534968ab7a95e0b7a9a840b9c127ed12b7977d953cc34a1afa8ef2d564f78928",
+                "sha256:d6edd661c8c30869e7d72bee47939a2a5774eda2d36d39252c159708e5a534ca",
+                "sha256:083e32793d20e7c9ab409b3caee718f874b5b3cf50d0b27a30746afd060a4043",
+                "sha256:09f05b2b65569cd79fab82528a3c29a2a0e6e813446fc20187f4f04cf8031ec4",
+                "sha256:93bea0e9aa360734751667d63f49d6c10e32cb975dba7121a768f5df47fb6154",
+                "sha256:02fdd6fc8104ca5d52695831262c3132bb6e65d8161da356922b230e3db85607",
+                "sha256:cde0b3a6489e3cb40c55d33a57e6e345e8b8b69a4ad0b652efe7db7d9affb673",
+                "sha256:4acc0d8247291dc41dd2854f7786ce60f00fb9b90b5f5913539d56d382b76e31",
+                "sha256:a8e79773313669812c7e90290e779593f4c8f4a272533bceff9eb6f0d1b82f04",
+                "sha256:fa422fa2816181edf07f495b434d3a492c2840b49c2b512f23c0fb271ddd617f",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:0f74081f7eee4b4c47ca49f62ad5b0820e8882f9272514cc58bb34f462dc6cf9",
+                "sha256:55c1b9634fcb5039d31cc30cc248445af5069d3762588b7ff69f939c644fc58f",
+                "sha256:65be9d50b89a39b4d6c778e8ea7226693c9268e82ff97b3e65bdacd0ca93eee6",
+                "sha256:f64d61c43396c4d873771f527c9532e75fdd6ba3759252ff88f04b74bc783ff1",
+                "sha256:a8a5657cee7a89c70060f1266b8861a6e432a1502e908e94177e7deb6ce270e5",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:d278163c4f8029cabaf04d4be155511b7e85fe14e3534bcac0296da499974fc7",
+                "sha256:94f056b9a003efd963ec6dd1f4944015f0b65978ff54b44e8cca36019fcc876e"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
