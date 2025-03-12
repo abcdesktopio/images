@@ -1,0 +1,104 @@
+[
+    {
+        "Id": "sha256:4d9c56b936f3189ecbf4044250b6b135d2a384e844d8b8cf6d207ccef7514c33",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/leocad.d:4.0"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/leocad.d@sha256:9539481a102fca20fd7a64a6521b00ee7da87bc3e922804b013df32b4da90a08"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-03-12T16:05:41.586847369Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ARGS=-l /usr/bin/leocad.library.bin",
+                "APPNAME=Leocad",
+                "APPBIN=/usr/bin/leocad",
+                "APP=/usr/bin/leocad"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "-l /usr/bin/leocad.library.bin",
+                "oc.cat": "games",
+                "oc.displayname": "Leocad",
+                "oc.fileextensions": "lcd",
+                "oc.icon": "leocad.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSIwIiB4MT0iMjcuNDU2IiB5MT0iNDcuMzkiIHgyPSIyNi40NDIiIHkyPSIxLjAxNyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNlMWUxZTEiLz48c3RvcCBzdG9wLWNvbG9yPSIjZjRmNGZmIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iMSIgeDE9IjI0LjE0IiB5MT0iNDAuNjgzIiB4Mj0iMjMuODYiIHkyPSI2LjMxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2M1MjgyOCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZjU0NTQiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Im0yLjk4LS4wMDJoNDIuMDRjMS42NTIgMCAyLjk4MiAxLjMzIDIuOTgyIDIuOTgydjQyLjA0YzAgMS42NTItMS4zMyAyLjk4Mi0yLjk4MiAyLjk4MmgtNDIuMDRjLTEuNjUyIDAtMi45ODItMS4zMy0yLjk4Mi0yLjk4MnYtNDIuMDRjMC0xLjY1MiAxLjMzLTIuOTgyIDIuOTgyLTIuOTgyIiBmaWxsPSJ1cmwoIzApIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJtMjQuMTcgN2MtMS43MSAwLTIuOTk5Ljc0NS0zIDEuNzMydjEuMjU0Yy0uMDI2LjAwMS0uMDUzLjAwOS0uMDc4LjAyMWwtMS45MzggMWMtLjA4My4wNDMtLjE1Mi4xMDItLjIwOS4xNjgtLjQ5MS0uMjAyLTEuMDk2LS4zMjItMS43NzMtLjMyMi0xLjcwOSAwLTIuOTk4Ljc0My0yLjk5OCAxLjczdjEuMDY4Yy0uMTA4LjAwMy0uMjE2LjAyMy0uMzE2LjA3OGwtMy43MDEgMi4wMWMtLjEyOC4wNjktLjIxNC4xNzctLjI3Ny4yOTctLjAxOC4wMjctLjAyOS4wNTMtLjA0My4wODItLjAxMi4wMzQtLjAyLjA2Ny0uMDI3LjEwMi0uMDIuMDY2LS4wNTMuMTI4LS4wNTMuMTk5djE2LjI5M2MwIC4yNTUuMTM4LjQ5MS4zNjEuNjE3bDEzLjQ1OSA3LjU3NmMuMDA5LjAwNS4wMi4wMDMuMDI5LjAwOC4wOTEuMDQ2LjE4OS4wNzIuMjg5LjA3Ni4wMDEgMCAuMDE5LjAwOC4wMjkuMDA4LjA4OSAwIC4xNzEtLjAzOC4yNTQtLjA3LjAzLS4wMTIuMDY1LS4wMDcuMDk0LS4wMjNsLjAwNC0uMDAyYy4wMDItLjAwMDEuMDA0LS4wMDAxLjAwNi0uMDAyLjAwMi0uMDAwMS4wMDItLjAwMy4wMDQtLjAwNGwxMy41OC03LjYyNWMuMjI0LS4xMjUuMzYxLS4zNjIuMzYxLS42MTdsLjAxNC0xNi4yMDVjMC0uMjUxLS4xMzItLjQ4NS0uMzUtLjYxMS0uMDIzLS4wMTQtLjA1Mi0uMDExLS4wNzYtLjAyMS0uMDMyLS4wMjUtLjA1NS0uMDU2LS4wOTItLjA3NmwtMy43MDMtMi4wMWMtLjAxNi0uMDA5LS4wMzMtLjAwOC0uMDQ5LS4wMTZ2LTEuMTQzYzAtLjk4OC0xLjI4OS0xLjczMi0yLjk5OC0xLjczMi0uNzI2IDAtMS4zNjcuMTM5LTEuODc1LjM2OS0uMDM1LS4wMjgtLjA2NC0uMDYyLS4xMDUtLjA4NGwtMS43NjItLjkxYy0uMDItLjAwMS0uMDQyLS4wMDktLjA2My0uMDE4di0xLjQ2NWMwLS45ODgtMS4yODktMS43MzItMi45OTgtMS43MzJtLTEuOTM4IDMuMDYzYy41MTcuMjQ4IDEuMTgxLjM5OCAxLjkzOC4zOTguNzU2IDAgMS40MTktLjE1MSAxLjkzNi0uMzk4djEuOTYzYzAgLjIwNS0uNzMxLjY3LTEuOTM2LjY3LTEuMjA1IDAtMS45MzgtLjQ2NS0xLjkzOC0uNjd2LTEuOTYzbS0xLjA2MyAxLjQ5OHYuNDY1YzAgLjk4NyAxLjI5IDEuNzMgMyAxLjczIDEuNzExIDAgMi45OTktLjc0MyAyLjk5OC0xLjczdi0uMjVsLjg2MS40NDVjLS4wMzcuMTEzLS4wNTcuMjMtLjA1Ny4zNTJ2My4yOTNjMCAuOTg3IDEuMjkgMS43MyAzIDEuNzMgMS43MSAwIDIuOTk5LS43NDMgMi45OTgtMS43M3YtLjU1MWwyLjEgMS4xNDMtMTIuMTQzIDYuNzk5LTEyLjA0LTYuODQyIDIuMjkxLTEuMjQ2di43MDljMCAuOTg3IDEuMjg5IDEuNzMyIDIuOTk4IDEuNzMyIDEuNzA5IDAgMi45OTgtLjc0NSAyLjk5OC0xLjczMnYtMy4yOTNjMC0uMTU5LS4wNDQtLjMwOS0uMTA3LS40NTNsMS4xMDctLjU3bTcuODY1IDIuMzQyYy41MTYuMjQ4IDEuMTgxLjQgMS45MzguNC43NTYgMCAxLjQxOS0uMTUzIDEuOTM2LS40djEuOTYzYzAgLjE5NC0uNjc4LjY2OC0xLjkzNi42NjgtMS4yMDUgMC0xLjkzOC0uNDYzLTEuOTM4LS42Njh2LTEuOTYzbS0xMy44MDEuMDEyYy41MTcuMjQ4IDEuMTgxLjQgMS45MzguNC43NTUgMCAxLjQxOS0uMTUxIDEuOTM2LS4zOTh2MS45NjFjMCAuMTk0LS42NzguNjctMS45MzYuNjctMS4yNTggMC0xLjkzOC0uNDc2LTEuOTM4LS42N3YtMS45NjNtOC44OTEuNzIxYy0xLjcwOSAwLTMgLjc0NS0zIDEuNzMydjMuMjkzYzAgLjk4NyAxLjI5MSAxLjczMiAzIDEuNzMyIDEuNzA5IDAgMi45OTYtLjc0NSAyLjk5Ni0xLjczMnYtMy4yOTNjMC0uOTg3LTEuMjg3LTEuNzMyLTIuOTk2LTEuNzMybS0xLjkzOCAzLjA2MmMuNTE3LjI0OCAxLjE4MS40IDEuOTM4LjQuNzU1IDAgMS40MTgtLjE1MSAxLjkzNC0uMzk4djEuOTYxYzAgLjE5NC0uNjc2LjY3LTEuOTM0LjY3LTEuMjA1IDAtMS45MzgtLjQ2NS0xLjkzOC0uNjd2LTEuOTYzIiBmaWxsPSJ1cmwoIzEpIi8+PC9zdmc+Cg==",
+                "oc.keyword": "leocad,cad,lego",
+                "oc.launch": "leocad.Leocad",
+                "oc.legacyfileextensions": "lcd",
+                "oc.mimetype": "application/vnd.leocad;application/x-ldraw;application/x-multi-part-ldraw;application/x-ldlite;",
+                "oc.name": "Leocad",
+                "oc.path": "/usr/bin/leocad",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 607856769,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/906fc4966c71c30794a7843c74cb7c3696ec14c40929c398d441cba20456a251/diff:/var/lib/docker/overlay2/248b78b6d263e32a3e4a8b4762c6e542e40366d59ecd0c2284d375213faace0c/diff:/var/lib/docker/overlay2/638ece18ac1602c6401d4d8e697e641d89c2c2de22b12c4b31b4289dc2e282c9/diff:/var/lib/docker/overlay2/0932b845c6aad0fdc921870fc50277406a267a8815976f5815aaa33f93d7b280/diff:/var/lib/docker/overlay2/4e34441c664f37adda1f2e9449eda95b5f67c2035ddcb96e3a690b0fb2c171f9/diff:/var/lib/docker/overlay2/c44c2d7c982c140068e5c6c0b01df08a72faddf04d614c9011af0d459fe2eb51/diff:/var/lib/docker/overlay2/e7fd1208e363fa8cab06d77d720c2d82127dc0f39a79e834c158b4ac99d20fad/diff:/var/lib/docker/overlay2/5442fad7b129d9defdd4f0e15b13e0b4134a48d97ddfc3e0168186685b1fcc4e/diff:/var/lib/docker/overlay2/8bc9c3580f3f3e4903add37afc957ccd839e090e173c74d47d3dbfec5055b4af/diff:/var/lib/docker/overlay2/fd897149838670909b08013ace3f7b5ecfa3c1fc2be2e67758148992b372b26c/diff:/var/lib/docker/overlay2/6d38e58a1b428b8b094e05d8c8b5860c0ea27fb28c6556ae3e255847c5dc0bcb/diff:/var/lib/docker/overlay2/a38269fbffc23e343986cd948d659cb6ad9822d7d77a8b12cf48df343a1761bb/diff:/var/lib/docker/overlay2/9922055fbb094fda232288b79415b7c5a4ababbdf1c6faed8713b4909ba47dde/diff:/var/lib/docker/overlay2/67e8baf33dee815a6dc77234151ea7dc2388d9277be52477d11436db13736798/diff:/var/lib/docker/overlay2/db0ce21b0a2d8a05104afc7be5a6e3ac8cccca704cad947c5cd7c9994fe4a640/diff:/var/lib/docker/overlay2/ecd116fd3306ca1ec6942f86389426d6248a7d2b3221b7c0c9780a6664c5a968/diff",
+                "MergedDir": "/var/lib/docker/overlay2/de557346369ab3daa5fa4ab64d979584132bbca57efe878daf61896269a1e646/merged",
+                "UpperDir": "/var/lib/docker/overlay2/de557346369ab3daa5fa4ab64d979584132bbca57efe878daf61896269a1e646/diff",
+                "WorkDir": "/var/lib/docker/overlay2/de557346369ab3daa5fa4ab64d979584132bbca57efe878daf61896269a1e646/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af",
+                "sha256:b66d9e0022d117f13078eaffd470a69ef2388583044d1cc777516655fbcc83d5",
+                "sha256:553269352024ffbcfaaa1a78ff377f0da092f89fc703ee469116b848554f342f",
+                "sha256:fa667988f8d4bf73465d2880ff8b13020de84cbffb0075d2a7d54aef0287a154",
+                "sha256:6b2d98667352a61263f78f6f80136510d400021e4f109bf317921079d2af263f",
+                "sha256:ec80b9ecaded0b7f4dcc7c2f5f35c9a1daeb1ebcb33ba7ebb9aed594afbcde35",
+                "sha256:ce87edf97ab6f2b6e00a35e17ff585079feae0543677adcadb5f109ff6a8bf22",
+                "sha256:d859c5b78149f562582210a62fedd757fa15aeca9d44402a900c25533c4f6a56",
+                "sha256:c7545ac6789f3800cdc647912807fcf3b1a5fb8c168defc9cc77589e04f9b137",
+                "sha256:4af7e3716d569d58ef938cf597e2b4ebdd1e4c9d21bc569f61db2b1538b19d89",
+                "sha256:7c1da0fa65ab0942ecf995d8e10026cd8b16168f0c51ddb31859868dade08ca2",
+                "sha256:7758503068b209ae496230be062d8865d0cf770e140fd7c1b36020258604c0c3",
+                "sha256:ce66c6032ffe247eab1117c5434876dff780f9b685cc03ad5c7bc6e04ebdd9b6",
+                "sha256:90821cb6b53c47bcc2035d4fcd3482ff3e558892ce3bf1029af46e291c13d540",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:9e8d5226d5b78da62ad67ea481fd06d46459dd2c2532a7b71f8d070c50de98b5",
+                "sha256:7ff93979fe168d5fb4234de15167f4dd3bfdea7fa99121ab398bffb29a6bce66"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
