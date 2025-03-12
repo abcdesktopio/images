@@ -33,6 +33,7 @@ jobs:
           echo "event current image is ${{ github.event.client_payload.image }}"
           echo "event current image tag is ${{ github.event.client_payload.tag }}"
           echo "event current run_id is ${{ github.event.client_payload.run_id }}"
+          echo "event current registry is ${{ github.event.client_payload.registry }}"
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
@@ -52,8 +53,8 @@ jobs:
           image: ${{ github.event.client_payload.image }}
           imagetag: ${{ github.event.client_payload.tag }}
         run: |
-          docker pull gcrio.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} 
-          docker image inspect gcrio.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} > artifact/${{ env.imagetag }}/${{ env.image }}.${{ env.imagetag }}.json
+          docker pull ghcr.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} 
+          docker image inspect ghcr.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} > artifact/${{ env.imagetag }}/${{ env.image }}.${{ env.imagetag }}.json
           cat artifact/${{ env.imagetag }}/${{ env.image }}.${{ env.imagetag }}.json
           
       - uses: actions/upload-artifact@v4
