@@ -1,0 +1,103 @@
+[
+    {
+        "Id": "sha256:82f8940348233a3c334dab9752f95657f66ff9ae9e38ba89d22e26512eea59c7",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/chromium.d:4.0"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/chromium.d@sha256:bd63887975ffc6d61155814e381fc1900c5c0b82a5fc8cd0285910156363c51d"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-03-12T16:01:42.87118209Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "APPNAME=chromium",
+                "APPBIN=/usr/bin/chromium-browser",
+                "APP=/usr/bin/chromium-browser"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "office",
+                "oc.desktopfile": "chromium-browser.desktop",
+                "oc.displayname": "chromium (alpine)",
+                "oc.fileextensions": "html;xml;gif",
+                "oc.icon": "circle_chromium.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiA8ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImQiIHgxPSI5NS45NyIgeDI9Ijk1Ljk3IiB5MT0iMi4yOTIyIiB5Mj0iMTk4LjQ0IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuNzE5MSAwIDAgMS43MTkxIDM0MC4wOSAzNjguNDUpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiM4ZGI2ZmYiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjNTlmIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjExNC43NSIgeDI9IjExNC43NSIgeTE9IjU2LjY4MSIgeTI9IjE4OC45MyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCg1LjEgMCAwIDUuMSAyIDIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiM3NmE3ZjYiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjYTJjMmY4IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjEwMy42NyIgeDI9IjEwMy42NyIgeTE9Ii00LjY2MjMiIHkyPSIyMDYuNSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgyLjE2OTkgMCAwIDIuMTY5OSAyOTUuMDEgMzIzLjM3KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZmZmIiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Q3ZDdkNyIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8ZmlsdGVyIGlkPSJnIiB4PSItLjAzNiIgeT0iLS4wMzYiIHdpZHRoPSIxLjA3MiIgaGVpZ2h0PSIxLjA3MiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNi41MDk3Nzg5Ii8+CiAgPC9maWx0ZXI+CiAgPGZpbHRlciBpZD0iZiIgeD0iLS4wMzYiIHk9Ii0uMDM2IiB3aWR0aD0iMS4wNzIiIGhlaWdodD0iMS4wNzIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjE0LjExNSIvPgogIDwvZmlsdGVyPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iZSIgeDE9IjQxIiB4Mj0iOTgyIiB5MT0iNTQwLjg2IiB5Mj0iNTQwLjg2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiM2NDlhZjUiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjNGI4YWY1IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjExNy4wNSIgeDI9IjkyNi45NSIgeTE9IjMyNi4zMyIgeTI9IjMyNi4zMyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjM2I2YmQ0IiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzY2OGJkZSIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KIDwvZGVmcz4KIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTk4OC4zNikiPgogIDxnIHRyYW5zZm9ybT0ibWF0cml4KC4wNjM3NjIgMCAwIC4wNjM3NjIgLS42MTQyNCA5ODUuODgpIiBzdHJva2Utd2lkdGg9IjE1LjY4MyI+CiAgIDxjaXJjbGUgY3g9IjUxMS41IiBjeT0iNTQwLjg2IiByPSI0NzAuNSIgY29sb3I9IiMwMDAwMDAiIGZpbHRlcj0idXJsKCNmKSIgb3BhY2l0eT0iLjI1Ii8+CiAgIDxjaXJjbGUgY3g9IjUxMS41IiBjeT0iNTQwLjg2IiByPSI0NzAuNSIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjZSkiLz4KICAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyOC4zNjIpIiBkPSJtODEzLjQxIDE1MS43NGMtOTYuNzI2IDIzLjAzMi01NTQuMTcgMTM2LjQ1LTMwMC4xNCAxNjMuOTEgMjgzLjA1IDMwLjYgMTc1LjMxIDMxNy40NyAxNzUuMzEgMzE3LjQ3bC0yMDcuMjYgMzQ4LjM3YTQ3MC41IDQ3MC41IDAgMCAwIDMwLjE2OCAxLjUwOTggNDcwLjUgNDcwLjUgMCAwIDAgNDcwLjUtNDcwLjUgNDcwLjUgNDcwLjUgMCAwIDAtMTY4LjU5LTM2MC43NnoiIGZpbGw9InVybCgjYykiLz4KICAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyOC4zNjIpIiBkPSJtNTExLjUgNDJhNDcwLjUgNDcwLjUgMCAwIDAtMzk0LjQ1IDIxNC44MmwyMTAuMzUgMzUzLjg0cy01LjYzMzgtMTcwLjQ1IDguNDUzMS0xODcuMzZjMTQuMDg3LTE2LjkwNCA4My4xMTMtODEuNzAzIDgzLjExMy04MS43MDNsOTQuMzgxLTI4LjE3NC01LjEwNTUtMTguMzEyIDQxOC43MS0yLjc1MzlhNDcwLjUgNDcwLjUgMCAwIDAtNDE1LjQ2LTI1MC4zNnoiIGNvbG9yPSIjMDAwMDAwIiBmaWxsPSJ1cmwoI2EpIi8+CiAgIDxjaXJjbGUgY3g9IjUxMiIgY3k9IjU1MC4zNiIgcj0iMjE2Ljk5IiBjb2xvcj0iIzAwMDAwMCIgZmlsbD0iIzExMSIgZmlsdGVyPSJ1cmwoI2cpIiBvcGFjaXR5PSIuMiIvPgogICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI1NDAuMzYiIHI9IjIxNi45OSIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjYikiLz4KICAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTQwLjM2IiByPSIxNzEuOTEiIGNvbG9yPSIjMDAwMDAwIiBmaWxsPSJ1cmwoI2QpIi8+CiAgPC9nPgogPC9nPgo8L3N2Zz4K",
+                "oc.keyword": "chromium,web,browser,internet",
+                "oc.launch": "chromium.Chromium",
+                "oc.legacyfileextensions": "html;xml",
+                "oc.mimetype": "text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;video/webm;",
+                "oc.name": "chromium",
+                "oc.path": "/usr/bin/chromium-browser",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.edge.gtk",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1097556581,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/2d40a02dba424993be725b7789b09299cbdfb9044aa0ee0828ee8527edecd595/diff:/var/lib/docker/overlay2/bd027c39b6abb3baef73135b4b6cceafcdbc992a5f99a7469c8ca22be90b51d3/diff:/var/lib/docker/overlay2/5426dc4396c08ae77b9a3cd3978fb432527c656a8ae74f8e17e4c431f1a13c3d/diff:/var/lib/docker/overlay2/cba4692b8bc10be6190e4672b83425316d5f573c59f5e1d2655495a3673bc523/diff:/var/lib/docker/overlay2/88757f9de65c4120ae6f23d708fd4194a1baeaae57167a93a770160f2760fb33/diff:/var/lib/docker/overlay2/fab53f9699606cb3328ab5e659ffd38ff0f133006602fd697f083b3ad5ab4e3e/diff:/var/lib/docker/overlay2/6c19a0200c0ff95d38d648ec8e0782cf9576726c3ec2842825c721e67a5e51be/diff:/var/lib/docker/overlay2/f42b749dc71cd88aadc25dfe5ba16e290ea0cadd214120291879722955f181fe/diff:/var/lib/docker/overlay2/5c1b94f8adb782aa23126df258923bd4c2cdd7f77a17c61843da0db9d8efa5b9/diff:/var/lib/docker/overlay2/c1a07a79d6c816587b4ab54da79037f2988dd8cb780c101aa89369ac39102021/diff:/var/lib/docker/overlay2/ac6eb4fa44b7ecc96b9b15b464b549f32e56f773d1aaf11f8630df41dd789c94/diff:/var/lib/docker/overlay2/8b03bcc3e8596718f7d06174c077a0e847b9adf73abaf6a12c4b6a835700c641/diff:/var/lib/docker/overlay2/4372a38ea23d94a4b331c62ecde8997d5141a42585bd83978594ffc53e78c7f3/diff:/var/lib/docker/overlay2/55a7ae2b874956265376f80ddecbd2d5d6a23b91185d977aeacbf328861c92a4/diff:/var/lib/docker/overlay2/900d8b0807da1d73035485c5ddea82fe0c515b5a37503fc14fb3f472fa9aa473/diff:/var/lib/docker/overlay2/b889010ad0f0287e221cd08c14aae93574f8e0df2ef1486beec49370f2e5fb43/diff",
+                "MergedDir": "/var/lib/docker/overlay2/92002e75ed62c977320bf314b570074fbc1da0df80703f631ca6c2ffbd0d9385/merged",
+                "UpperDir": "/var/lib/docker/overlay2/92002e75ed62c977320bf314b570074fbc1da0df80703f631ca6c2ffbd0d9385/diff",
+                "WorkDir": "/var/lib/docker/overlay2/92002e75ed62c977320bf314b570074fbc1da0df80703f631ca6c2ffbd0d9385/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:e21721183b10fa6d84b263043a2e6a3f972aab36fcbdb9640aeeb21044a8c8c1",
+                "sha256:d4644f8ffe2f903f11203ef286577f8ea0b53a46404e209ce2009ff2f38f163c",
+                "sha256:f3c75b74f6a9031c5866473206319b9447f48cfbcecb54efc111d372a3be84de",
+                "sha256:c83457c50a4a4abef998964ebb8572bbecb8cfda096976b2f0225c6d351f950f",
+                "sha256:a12d9887b88c865de5d4940ae91b8c223d02d2386d142ab61457d7bb6119bbd5",
+                "sha256:fcd3e5126c306034d8073a8ee38928a2740c9d3ff7396f144a33ef513aa7cdcf",
+                "sha256:1d60a376817c9ea35332a9f9f9b50cc3097b699022fc7f0b33e7e88ac30bddc4",
+                "sha256:ad422f07468da61f86a8db26aa6666266383097e28094696d154db10d40f74a6",
+                "sha256:6be3fff515e1dd1a6438c03e30fa4dfd0834783dfb74f8254841cc8e8862f638",
+                "sha256:5d30059ce8de73253f32917d82043c05cba7acb3504f2bf588d044903d859434",
+                "sha256:6c75eae5b35202214df7d83e0363e8da60fcf5184e012113465a25cf9eae6736",
+                "sha256:afdc3adc0364080bf5435d822f9d31580f62c81757b4b88c582f7d97ec625530",
+                "sha256:8821a7f88239d6a8388c254b1e58446a38c63e2bfb7471fefb6080a6cbe74854",
+                "sha256:2787e1e117d6d281a44010d6b8a11e8dd084a5f739e31bc29ed1d7211075f45f",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:18c44f924d5db57870cfc59a15b46c03f285255476b63bb784c4c38861600ed3",
+                "sha256:7bdac3abdda7ac8e7afeaca90197d135b252d7cfa20958994cb5539925668d7b"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
