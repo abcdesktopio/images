@@ -1,0 +1,111 @@
+[
+    {
+        "Id": "sha256:e145627cd3cfa4e6f338da1c7d99daa9dc1d6a7ae6f72c761f3c1e258a2121f8",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/tetravex.d:4.0"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/tetravex.d@sha256:f4ea689723a3f49b94340887c38e5dbabd2193988de6b35e9e2c6632718e3db9"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-03-12T16:07:23.862506104Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "APPNAME=Tetravex",
+                "APPBIN=/usr/games/gnome-tetravex",
+                "APP=/usr/games/gnome-tetravex"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.displayname": "Tetravex",
+                "oc.host_config": "{\"mem_limit\":\"384M\",\"shm_size\":\"128M\",\"pid_mode\":false}",
+                "oc.icon": "gnome-tetravex.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnIHN0YW5kYWxvbmU9J25vJz8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZyB4bWxuczpjYz0naHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjJyB4bWxuczpkYz0naHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8nIHNvZGlwb2RpOmRvY25hbWU9J2dub21lLXRldHJhdmV4LXN5bWJvbGljLnN2ZycgaGVpZ2h0PScxNicgaWQ9J3N2ZzczODQnIHhtbG5zOmlua3NjYXBlPSdodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlJyB4bWxuczpvc2I9J2h0dHA6Ly93d3cub3BlbnN3YXRjaGJvb2sub3JnL3VyaS8yMDA5L29zYicgeG1sbnM6cmRmPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjJyB4bWxuczpzb2RpcG9kaT0naHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQnIHhtbG5zOnN2Zz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgaW5rc2NhcGU6dmVyc2lvbj0nMC45MSByMTM3MjUnIHdpZHRoPScxNicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxtZXRhZGF0YSBpZD0nbWV0YWRhdGE5MCc+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsgcmRmOmFib3V0PScnPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlIHJkZjpyZXNvdXJjZT0naHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UnLz4KICAgICAgICA8ZGM6dGl0bGU+R25vbWUgU3ltYm9saWMgSWNvbiBUaGVtZTwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcgaW5rc2NhcGU6YmJveC1wYXRocz0ndHJ1ZScgYm9yZGVyY29sb3I9JyM2NjY2NjYnIGJvcmRlcm9wYWNpdHk9JzEnIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9J2xheWVyOScgaW5rc2NhcGU6Y3g9JzIwOS42ODE0OScgaW5rc2NhcGU6Y3k9JzguOTU0NDEnIGdyaWR0b2xlcmFuY2U9JzEwJyBpbmtzY2FwZTpndWlkZS1iYm94PSd0cnVlJyBndWlkZXRvbGVyYW5jZT0nMTAnIGlkPSduYW1lZHZpZXc4OCcgaW5rc2NhcGU6b2JqZWN0LW5vZGVzPSdmYWxzZScgaW5rc2NhcGU6b2JqZWN0LXBhdGhzPSdmYWxzZScgb2JqZWN0dG9sZXJhbmNlPScxMCcgcGFnZWNvbG9yPScjNTU1NzUzJyBpbmtzY2FwZTpwYWdlb3BhY2l0eT0nMScgaW5rc2NhcGU6cGFnZXNoYWRvdz0nMicgc2hvd2JvcmRlcj0nZmFsc2UnIHNob3dncmlkPSdmYWxzZScgc2hvd2d1aWRlcz0ndHJ1ZScgaW5rc2NhcGU6c25hcC1iYm94PSd0cnVlJyBpbmtzY2FwZTpzbmFwLWJib3gtbWlkcG9pbnRzPSdmYWxzZScgaW5rc2NhcGU6c25hcC1nbG9iYWw9J3RydWUnIGlua3NjYXBlOnNuYXAtZ3JpZHM9J3RydWUnIGlua3NjYXBlOnNuYXAtbm9kZXM9J3RydWUnIGlua3NjYXBlOnNuYXAtb3RoZXJzPSdmYWxzZScgaW5rc2NhcGU6c25hcC10by1ndWlkZXM9J3RydWUnIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9JzEzNzYnIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9JzEnIGlua3NjYXBlOndpbmRvdy13aWR0aD0nMjU2MCcgaW5rc2NhcGU6d2luZG93LXg9JzAnIGlua3NjYXBlOndpbmRvdy15PScyNycgaW5rc2NhcGU6em9vbT0nMzInPgogICAgPGlua3NjYXBlOmdyaWQgZW1wc3BhY2luZz0nMicgZW5hYmxlZD0ndHJ1ZScgaWQ9J2dyaWQ0ODY2JyBvcmlnaW54PSctODAuOTk5OTk4JyBvcmlnaW55PSctMzYyJyBzbmFwdmlzaWJsZWdyaWRsaW5lc29ubHk9J3RydWUnIHNwYWNpbmd4PScxcHgnIHNwYWNpbmd5PScxcHgnIHR5cGU9J3h5Z3JpZCcgdmlzaWJsZT0ndHJ1ZScvPgogIDwvc29kaXBvZGk6bmFtZWR2aWV3PgogIDx0aXRsZSBpZD0ndGl0bGU5MTY3Jz5Hbm9tZSBTeW1ib2xpYyBJY29uIFRoZW1lPC90aXRsZT4KICA8ZGVmcyBpZD0nZGVmczczODYnPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSdsaW5lYXJHcmFkaWVudDcyMTInIG9zYjpwYWludD0nc29saWQnPgogICAgICA8c3RvcCBpZD0nc3RvcDcyMTQnIG9mZnNldD0nMCcgc3R5bGU9J3N0b3AtY29sb3I6IzAwMDAwMDtzdG9wLW9wYWNpdHk6MTsnLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnIGlua3NjYXBlOmdyb3VwbW9kZT0nbGF5ZXInIGlkPSdsYXllcjknIGlua3NjYXBlOmxhYmVsPSdhcHBzJyBzdHlsZT0nZGlzcGxheTppbmxpbmUnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zMjIuMDAwMiwxNDUpJz4KCiAgICA8cGF0aCBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPScwJyBkPSdtIDMyNC4zNDM5NSwtMTQ0IDUuNjI1LDUuNjI1IDUuNjI1LC01LjYyNSAtMTEuMjUsMCB6IG0gNS42NTYyNSwxIGMgMC41NTIyOCwwIDEsMC40NDc3MiAxLDEgMCwwLjU1MjI4IC0wLjQ0NzcyLDEgLTEsMSAtMC41NTIyOCwwIC0xLC0wLjQ0NzcyIC0xLC0xIDAsLTAuNTUyMjggMC40NDc3MiwtMSAxLC0xIHogbSA3LDAuNDA2MjUgLTUuNjI1LDUuNjI1IDUuNjI1LDUuNjI1IDAsLTExLjI1IHogbSAtMTQsMC4wNjI1IDAsMTEuMTI1IDUuNTYyNSwtNS41NjI1IC01LjU2MjUsLTUuNTYyNSB6IG0gMiw0LjUzMTI1IGMgMC41NTIyOCwwIDEsMC40NDc3MiAxLDEgMCwwLjU1MjI4IC0wLjQ0NzcyLDEgLTEsMSAtMC41NTIyOCwwIC0xLC0wLjQ0NzcyIC0xLC0xIDAsLTAuNTUyMjggMC40NDc3MiwtMSAxLC0xIHogbSAxMCwwIGMgMC41NTIyOSwwIDEsMC40NDc3MiAxLDEgMCwwLjU1MjI4IC0wLjQ0NzcxLDEgLTEsMSAtMC41NTIyOCwwIC0xLC0wLjQ0NzcyIC0xLC0xIDAsLTAuNTUyMjggMC40NDc3MiwtMSAxLC0xIHogbSAtNS4wMzEyNSwyLjQzNzUgLTUuNTYyNSw1LjU2MjUgMTEuMTI1LDAgLTUuNTYyNSwtNS41NjI1IHogbSAwLjAzMTIsMi41NjI1IGMgMC41NTIyOCwwIDEsMC40NDc3MiAxLDEgMCwwLjU1MjI4IC0wLjQ0NzcyLDEgLTEsMSAtMC41NTIyOCwwIC0xLC0wLjQ0NzcyIC0xLC0xIDAsLTAuNTUyMjggMC40NDc3MiwtMSAxLC0xIHonIGlkPSdyZWN0NzAyNicgc3R5bGU9J2ZpbGw6I2JlYmViZTtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZScvPgogIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "tetravex,game",
+                "oc.launch": "gnome-tetravex.Gnome-tetravex",
+                "oc.name": "Tetravex",
+                "oc.path": "/usr/games/gnome-tetravex",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.24.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 878592228,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/23c40ea1308882c020bc8cdf82834e440bf249ae010c66f2c495409c34c3b101/diff:/var/lib/docker/overlay2/62f5d6289d41e1c9735800ea83abc97d9fbf4549602a09820aec82b86343a81d/diff:/var/lib/docker/overlay2/9593741e0e021e39806efd92ccb3c6c4b77f98767f289995c69bfc94d906a831/diff:/var/lib/docker/overlay2/00dcfc2f045513d0b67f61fb5d8ee2eaac90491dd004442a9f042715471c5cf9/diff:/var/lib/docker/overlay2/817dad799def2ca4b6906e54860007d26f397ab873762b49623541d1503692b5/diff:/var/lib/docker/overlay2/63aa4c50392b57ada4ea857c1868160ff9b8f4eaa8c56afc68b8990010bd17db/diff:/var/lib/docker/overlay2/8cc0c98ab84061d7c08fcbd576cee0ed9e9777f63880a19e19f029ca9c35f630/diff:/var/lib/docker/overlay2/d2516e714dd7d24dff6fd0c0c8afe3f63bc8503410cccaff3f918808dbdcc14c/diff:/var/lib/docker/overlay2/7038c1c8e89da1dec72776202b5dc36fc68e4e7fd2f31f08799521faa7098eab/diff:/var/lib/docker/overlay2/8cbe21ea02d4ac574165df9094cc849dcee68b0b1e3d5723f47028ffd3be07c1/diff:/var/lib/docker/overlay2/6f8973b95fcec2bf04e6fe3e1ec4cb60a08de59fcbbbef9fad2c0258ff2fde2b/diff:/var/lib/docker/overlay2/7518fb089b974e10d067388c3e5dd75db408330730bd8cfd4a88e2a434c137fd/diff:/var/lib/docker/overlay2/19163f41923794e60dd888c1da7d971684cdd029448d0d88811f20c74da640bf/diff:/var/lib/docker/overlay2/03b1007da9a95168bb4875b5b53ace36c641924866aa1291478e77bd22ecefbc/diff:/var/lib/docker/overlay2/395179f34879f2a90b43cc25881855f9858da577d53164e3caf791b9fd4cf7f5/diff:/var/lib/docker/overlay2/4fbbb81e02e3305d7f626011c0aa091bce3acb09a0ea962baa3a68769e2d2f5b/diff:/var/lib/docker/overlay2/a085adc85d709287973e7dc9751c33592921ddb15254f0b3677712fe5d70e013/diff:/var/lib/docker/overlay2/40bb17b1d9898ec303cbf9a7def948517bf325427df136249edc2aa44e4e3ea6/diff:/var/lib/docker/overlay2/e5a60eb2ead29d0cceec61fc0b49dc7f40fa6f428c8064555cf52817a24cb587/diff:/var/lib/docker/overlay2/e0a2e71400d9271974ab6921a5b6f0ca1826943f39a976dfa48d05e00dd001fd/diff:/var/lib/docker/overlay2/259dfdbdd034ef5ef3bb48a19e477ed8a5e410b397a94791d7b8fa441fdbeef9/diff:/var/lib/docker/overlay2/dbe1131061e11174024a94eb2f86c5fa71f16522c6f65ffa25f3d701d0146a11/diff:/var/lib/docker/overlay2/1ced1a7096df686eddd27e702b92dd12807f377ba17262c6d502574d9fe41083/diff:/var/lib/docker/overlay2/1275a7ad909ccef4c4b0aa8ce1db17d4004ed011d52ceddb0437058eec697078/diff:/var/lib/docker/overlay2/d5072d50dcee475b27cdabb8f30416ab0fabed3fdbad547b53919e639284b69a/diff:/var/lib/docker/overlay2/41bf7e10735589eeeb2ec88a0c258dd910387a327335bf815510fa096cc0c741/diff:/var/lib/docker/overlay2/8b598e6cccbad8fb12bff093699f1ed96987b3e80fa27b8e23c54c3af7d664f1/diff",
+                "MergedDir": "/var/lib/docker/overlay2/6e10cc5d4b93e25a18b0ea5bea3476269f3e23f707d5b9832b850de2b41f00b7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/6e10cc5d4b93e25a18b0ea5bea3476269f3e23f707d5b9832b850de2b41f00b7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/6e10cc5d4b93e25a18b0ea5bea3476269f3e23f707d5b9832b850de2b41f00b7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:4b7c01ed0534d4f9be9cf97d068da1598c6c20b26cb6134fad066defdb6d541d",
+                "sha256:36b4faa3f765637fae6bca6b3b5a03b0f3e1ef62742b43abb411ecf2b91d510f",
+                "sha256:553269352024ffbcfaaa1a78ff377f0da092f89fc703ee469116b848554f342f",
+                "sha256:693960fdcd25dcc1075992625f66880bcfe460fe7fe63e3ebd1bd3ca036c5b26",
+                "sha256:bf121ec93ee620202fcf2fd2fd06c7c36e6a672e847c5466e33fe969a88ae648",
+                "sha256:bf655a22d58e3df04a11e3afcb1cd5858898f02692794222e66ea8cfe7adcd44",
+                "sha256:df3ba5563ab4b2c3ef8530a553af617298376ed495527daa9f21121b535522c7",
+                "sha256:d32bae6a947d25db98ed9110db088021121ffc504ebcb9335a047fb7493b44c5",
+                "sha256:bbee441631ae9efe87c7c5bb8c9c252f48c1511d4222dbf1df461fe9c889e113",
+                "sha256:efe83e0dda8692f875bef3b6f8e940195d505456932787e17e094e021d91584c",
+                "sha256:3dab0abfe8a3cb44ea8610354b782e0eb559a2b23ddee63fde41c97956bd0f60",
+                "sha256:e46d3ad39da0f53dac3f39542504665e7f3d36b3f72e4fa28bcfd864c2246d15",
+                "sha256:558c5f553903681d3d5973ce29cf9640f57e18a6dbbd83c7668e3a7e65f1e31a",
+                "sha256:2696189002b411c41fd55c77dd07f710c6eeecae4ddfa0b2e84895587557a199",
+                "sha256:95fb324964ab543d8eee983e6d535b43e01ddec26012d00082776babef098b96",
+                "sha256:0589f3acbc34fffb21ba83dec5834b1d4c20f7f265e060628943a896981d6f56",
+                "sha256:7c7475e40afb574aadd019897f1ae2b6438c76f86d379f667addd23aa4d6d605",
+                "sha256:ae76ded82fda1bae32c89efa24331400e60ad5173c96728d531517ab7feb8f3d",
+                "sha256:8b0baad478f79453bffb9bb79f841eca8f60474755eb65d29ec7764a92ab2c2a",
+                "sha256:98177b4f4db46b5cae9752752b822765ec7aa3011d9ba5f496f29dc58cc2c06c",
+                "sha256:133d3833424aaf8424c6c6a25dc5a213da7ba5a7fc9dc373dbce5aa95297a91a",
+                "sha256:30d4696d915913d45842a1fa43bfd05b47c0454116a87e04695323621fb20286",
+                "sha256:09863c7aeef7e53d4dba0b1990e5e38a2bc5daa335432be2ac9163a5cac78254",
+                "sha256:849c457e65e7fc7b34f8d5a8b95895c95ae501ceee1c4b6ea46fe2ad2fbc1043",
+                "sha256:042c63945148980dd0fbf57066ceea41bae8c5d28dff54bc7847dd8102e06df6",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:12f0e00cc579f902f44983261bf1dd44e8690cf04bee00bd97afb62c26c9e3d7",
+                "sha256:dadb5a6aa63cb3320618ef25ef992c60bdd95b9349cb0d058628a4307e16a0db"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
