@@ -52,8 +52,8 @@ jobs:
           image: ${{ github.event.client_payload.image }}
           imagetag: ${{ github.event.client_payload.tag }}
         run: |
-          docker pull docker.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} 
-          docker image inspect docker.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} > artifact/${{ env.imagetag }}/${{ env.image }}.${{ env.imagetag }}.json
+          docker pull gcrio.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} 
+          docker image inspect gcrio.io/abcdesktopio/${{ env.image }}:${{ env.imagetag }} > artifact/${{ env.imagetag }}/${{ env.image }}.${{ env.imagetag }}.json
           cat artifact/${{ env.imagetag }}/${{ env.image }}.${{ env.imagetag }}.json
           
       - uses: actions/upload-artifact@v4
