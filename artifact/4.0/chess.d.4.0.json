@@ -1,0 +1,100 @@
+[
+    {
+        "Id": "sha256:267fe8b72b66c4b732d7161e327c7a2970cbc59972ced8f3f8f920b02ab0ce5d",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/chess.d:4.0"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/chess.d@sha256:76dcc181b9514474333c25512775732b6c05f05f40f634e689d91872f1a7c26f"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-03-13T11:35:17.698977367Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "APPNAME=chess",
+                "APPBIN=/usr/bin/gnome-chess",
+                "APP=/usr/bin/gnome-chess"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.desktopfile": "org.gnome.Chess.desktop",
+                "oc.displayname": "chess",
+                "oc.icon": "circle_chess.svg",
+                "oc.icondata": "PHN2ZyBpZD0ic3ZnNDciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzIGlkPSJkZWZzMjUiPgogIDxmaWx0ZXIgaWQ9ImciIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgaWQ9ImZlR2F1c3NpYW5CbHVyMiIgc3RkRGV2aWF0aW9uPSIxNC4zNDM3NDkiLz4KICA8L2ZpbHRlcj4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIzMiIgeDI9IjMyIiB5MT0iMiIgeTI9IjYyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIGlkPSJzdG9wNSIgc3RvcC1jb2xvcj0iIzFkMjEyMyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIGlkPSJzdG9wNyIgc3RvcC1jb2xvcj0iIzNlNDU0YSIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8ZmlsdGVyIGlkPSJmaWx0ZXI5MTQiIHg9Ii0uMDY2IiB5PSItLjA1NSIgd2lkdGg9IjEuMTMyIiBoZWlnaHQ9IjEuMTEiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBpZD0iZmVHYXVzc2lhbkJsdXI5MTYiIHN0ZERldmlhdGlvbj0iMC42NDE2NjY2OCIvPgogIDwvZmlsdGVyPgogPC9kZWZzPgogPGNpcmNsZSBpZD0iY2lyY2xlMjciIHRyYW5zZm9ybT0ibWF0cml4KC4wNjI3NDUgMCAwIC4wNjI3NDUgLS4xMjU0OSAtLjEyNTQ5KSIgY3g9IjUxMiIgY3k9IjUxMiIgcj0iNDc4LjEyIiBmaWx0ZXI9InVybCgjZykiIG9wYWNpdHk9Ii4yNSIgc3Ryb2tlLXdpZHRoPSIxNS45MzgiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgbWFya2VycyBmaWxsIi8+CiA8Y2lyY2xlIGlkPSJjaXJjbGUyOSIgY3g9IjMyIiBjeT0iMzIiIHI9IjMwIiBmaWxsPSJ1cmwoI2IpIiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIG1hcmtlcnMgZmlsbCIvPgogPHBhdGggaWQ9InBhdGg4NjQiIGQ9Im0yNC40OSAxOGMtMC4zNjUxNyAwLTAuNjYwMzMgMC4yODctMC42NjAzMyAwLjY1NTY3djUuNjg3NWMwIDAuMzY1MTcgMC4yOTE2NyAwLjY1NjgzIDAuNjYwMzMgMC42NTY4M2gwLjUwNjMzbC0xLjE2NjcgMS4xNjY3IDEuMTY2NyAxLjE2NjctMS4xNjMyIDEyLjgzM2MtMS4yOTM4IDAtMi4zMzIyIDEuMDM5NS0yLjMzMjIgMi4zMjg3IDAgMC40MjM1IDAuMTI3MTcgMC44MjAxNyAwLjMyMzE3IDEuMTY2N2wtMC4zMjQzMyAwLjAwNDYtMS4xNjY3IDIuMzMzNGgyMy4zMzNsLTEuMTY2Ny0yLjMzMzMtMC4zMjY2Ny0wLjAwNDZjMC4yMDA2Ny0wLjM0NjUgMC4zMjc4My0wLjc0MzE3IDAuMzI3ODMtMS4xNjY3IDAtMS4yOTM4LTEuMDQ1My0yLjMyODctMi4zMzQ1LTIuMzI4N2wtMS4xNjU1LTEyLjgzMyAxLjE2NjctMS4xNjY3LTEuMTY2Ny0xLjE2NjdoMC41MTFjMC4zNjg2NyAwIDAuNjYwMzMtMC4yODcgMC42NjAzMy0wLjY1Njgzdi01LjY4NzVjMC0wLjM2NTE3LTAuMjg3LTAuNjU1NjctMC42NjAzMy0wLjY1NTY3aC0xLjY3ODh2Mi4zMzMzaC0yLjMzMzN2LTIuMzMzM2gtMi4zMzMzdjIuMzMzM2gtMi4zMzMzdi0yLjMzMzRoLTIuMzMzM3YyLjMzMzNoLTIuMzMzM3YtMi4zMzMzIiBmaWx0ZXI9InVybCgjZmlsdGVyOTE0KSIgb3BhY2l0eT0iLjUiIHN0cm9rZS13aWR0aD0iMS4xNjY3Ii8+CiA8cGF0aCBpZD0icGF0aDI5IiBkPSJtMjQuNDkgMThjLTAuMzY1MTcgMC0wLjY2MDMzIDAuMjg3LTAuNjYwMzMgMC42NTU2N3Y1LjY4NzVjMCAwLjM2NTE3IDAuMjkxNjcgMC42NTY4MyAwLjY2MDMzIDAuNjU2ODNoMC41MDYzM2wtMS4xNjY3IDEuMTY2NyAxLjE2NjcgMS4xNjY3LTEuMTYzMiAxMi44MzNjLTEuMjkzOCAwLTIuMzMyMiAxLjAzOTUtMi4zMzIyIDIuMzI4NyAwIDAuNDIzNSAwLjEyNzE3IDAuODIwMTcgMC4zMjMxNyAxLjE2NjdsLTAuMzI0MzMgMC4wMDQ2LTEuMTY2NyAyLjMzMzRoMjMuMzMzbC0xLjE2NjctMi4zMzMzLTAuMzI2NjctMC4wMDQ2YzAuMjAwNjctMC4zNDY1IDAuMzI3ODMtMC43NDMxNyAwLjMyNzgzLTEuMTY2NyAwLTEuMjkzOC0xLjA0NTMtMi4zMjg3LTIuMzM0NS0yLjMyODdsLTEuMTY1NS0xMi44MzMgMS4xNjY3LTEuMTY2Ny0xLjE2NjctMS4xNjY3aDAuNTExYzAuMzY4NjcgMCAwLjY2MDMzLTAuMjg3IDAuNjYwMzMtMC42NTY4M3YtNS42ODc1YzAtMC4zNjUxNy0wLjI4Ny0wLjY1NTY3LTAuNjYwMzMtMC42NTU2N2gtMS42Nzg4djIuMzMzM2gtMi4zMzMzdi0yLjMzMzNoLTIuMzMzM3YyLjMzMzNoLTIuMzMzM3YtMi4zMzM0aC0yLjMzMzN2Mi4zMzMzaC0yLjMzMzN2LTIuMzMzMyIgZmlsbD0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjE2NjciLz4KPC9zdmc+Cg==",
+                "oc.keyword": "chess,chess gnuchess",
+                "oc.launch": "gnome-chess.gnome-chess",
+                "oc.mimetype": "application/x-chess-pgn",
+                "oc.name": "chess",
+                "oc.path": "/usr/bin/gnome-chess",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 700870405,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/e07804f1286d959ba03a387211ebd885f431ecc2d07a399b6b7ff71013bc05fa/diff:/var/lib/docker/overlay2/1cff503236c92afa4f6e9a2e4f6443a462c59efd455f06c484cf2bab9174a2c4/diff:/var/lib/docker/overlay2/3f3c9a1fe1001a6f838c4afad37b659638b66acf1a392fcc3a6ba5852f4e19a0/diff:/var/lib/docker/overlay2/86f74e4c730f3a64aef4ab2727f0d640a7a67b4f7c4831bacec3642ae65faeb9/diff:/var/lib/docker/overlay2/d0605238f6e6a177e52de527369e4c1213968f7323ef67aa136899e0e02e73ab/diff:/var/lib/docker/overlay2/5f9cd2234a4855239b7afbcd99f92561741d12eb6fabb7aa776a94a50b2f62f5/diff:/var/lib/docker/overlay2/259f47f71301ca4d6d08a163f131fe20abaf9ae1080bd7c6e60f57a162c00b25/diff:/var/lib/docker/overlay2/540cde86770b82b63d62ce7d277b4ef40b0dd3d1049dab0b43acbc3c1c20f789/diff:/var/lib/docker/overlay2/6c4cb88ee36c957fd4613975d7d4cd0484bbce93f3d8204c2a1bbe8af67a1451/diff:/var/lib/docker/overlay2/fbcec1d7738fcca2179d104bf46077b1fb1b314fe09dd9060964975eedd80a53/diff:/var/lib/docker/overlay2/e5dc1af8a3eaf9e8b3b66de2f02518587c475348ecf9c8d28dadb48b4666ee5d/diff:/var/lib/docker/overlay2/b2963f923cdc1b7d34647482b10decd8909bb5f22ef0297efd9deda5b53bcd97/diff:/var/lib/docker/overlay2/01c509999df6677a5720a863c2397e182a289a456eb41f096f6d67fcc6f37ffb/diff:/var/lib/docker/overlay2/963ad737ceb809024c53b9835b22793f1646692e34149062e5a8f1118b575813/diff:/var/lib/docker/overlay2/74bf801ff3b2ca547b0078b2911d1dce2e0e695c812295f1ed5d4b1f66057d17/diff",
+                "MergedDir": "/var/lib/docker/overlay2/d31cf47610920c2021fda7176cdfbd51df30a09d92078113a9a643a94e0cd064/merged",
+                "UpperDir": "/var/lib/docker/overlay2/d31cf47610920c2021fda7176cdfbd51df30a09d92078113a9a643a94e0cd064/diff",
+                "WorkDir": "/var/lib/docker/overlay2/d31cf47610920c2021fda7176cdfbd51df30a09d92078113a9a643a94e0cd064/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:08000c18d16dadf9553d747a58cf44023423a9ab010aab96cf263d2216b8b350",
+                "sha256:a29e0972e4f3dfe4b62997b34d73f7167344271e3a1767e3ad6c0ad35cbb08a1",
+                "sha256:fbd4266ef609efeca7aa0fa2ee1b3aed5cf02f491a71dc025e135039781a00d0",
+                "sha256:19beb686b0f2cf7566f1db17b7da833493a58ccbc1948c6f6f66c81af3fad4a2",
+                "sha256:e99e166fc05c252e4264998c3ae8f6c033e7f6799b1eadbc791cad8800cae68e",
+                "sha256:3d906f8e338ea3514dd5183f6811786a0bab1002340ebd52b0158afd4cd441d6",
+                "sha256:a5f48b4ded14d4f0aad7e78e3e1d8362fc095ca26cc061c937cddd68119f7620",
+                "sha256:05b0c5c72b8a3c1a8d8da8846411e47e435eddde50e1708a8f447c388abdabe7",
+                "sha256:eefb16397116e0419aba0a79ca5ad332f36b4b4fd57f65f67bbd436405c239d7",
+                "sha256:7a7fa3054ac08591de5a74f36c5f06fc33119b108bf68dbd2fccec30d781b92c",
+                "sha256:d86bf2805b579692dbe6b2c652c44e0e6b137ef93aeb5339df84e66e8f989968",
+                "sha256:7a0879c22d18df55119b93bc305aba0baeb26b8618ef73021a5b08a9f4c6a50d",
+                "sha256:b295bfa3ced25c66293b824444833f0d3b5afbe7a0ab9402640aa4298aa90707",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:6bde2772ca0b875864f28b6efad43e928e5027f5e7a2cce1c3e6b275b100d05a",
+                "sha256:02ed5e1f1f6e1932723d371a3fad1d22a418e72f2991da55fe68af2e7a0bc2ae"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
