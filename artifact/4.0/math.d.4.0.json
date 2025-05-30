@@ -1,21 +1,21 @@
 [
     {
-        "Id": "sha256:52412285cba8f153757c8c3e48b22e6678aaabe55bcbd682031f7edd85346b22",
+        "Id": "sha256:744246daffaed7c574dc0d574ba990f911ccbc3e7a668546d3219b68d5a14dd6",
         "RepoTags": [
             "ghcr.io/abcdesktopio/math.d:4.0"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/math.d@sha256:c3a25cd74692e71b97c45a19f5ebdba20b62794d14df8f849df1175d2098ddbf"
+            "ghcr.io/abcdesktopio/math.d@sha256:ce517c21bf19921d7d03a40fb20fde4e17d7d0dba3146e904958520455137a48"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2025-05-23T12:06:08.002238737Z",
+        "Created": "2025-05-30T10:52:56.659096638Z",
         "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
             "Hostname": "",
             "Domainname": "",
-            "User": "balloon",
+            "User": "root",
             "AttachStdin": false,
             "AttachStdout": false,
             "AttachStderr": false,
@@ -30,6 +30,7 @@
                 "BGROUP=balloon",
                 "BUID=4096",
                 "BGID=4096",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
                 "ARGS=--math",
                 "APPNAME=math",
                 "APPBIN=/usr/lib/libreoffice/program/soffice",
@@ -71,10 +72,10 @@
         "Size": 1540046931,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/4e68fa96da5cc1ee381583b5ade9ee227db6d65a39654f34425567a2643b9375/diff:/var/lib/docker/overlay2/703fa831e0a98eec3583be9782ae11f94a3bcf7ef31fe30f3c539969d9995ed8/diff:/var/lib/docker/overlay2/09bd17a0c31e095b05c58cf44a89b42f37a23a91787343695d4e353915284e6c/diff:/var/lib/docker/overlay2/8452feff9d4bbb6ccd7209c8a435a10ed3c106cf4ffad28f1e4a4e0f69cd954d/diff:/var/lib/docker/overlay2/5adf47485009519088851268f3b85a85dd5f042dc644602c302f26e8209e0a6c/diff:/var/lib/docker/overlay2/b42927e8ebb33c9c120c7420ef5484996be3bfdfa1b2d912ebf0c674ff582d89/diff:/var/lib/docker/overlay2/2635708d04ac3ae7f003d0740a7079a7a2f8758d7d6b57089e56758b7937c6c2/diff:/var/lib/docker/overlay2/bfb1eaaa381754881a783c781730c5e19781167e419c180fe6a07faf84304804/diff:/var/lib/docker/overlay2/4da52d5e96241e169b5c14a81653e4cfab59d26d10e62b2327f5abfac1d38033/diff:/var/lib/docker/overlay2/38916637c7dd6c53b2b30893e9f1ecb959ae4db0416f96c7ea84f2c66406a723/diff:/var/lib/docker/overlay2/3020b73f45281ea1373f6afe835816651a501211ba7784e5f96307649f4ac00e/diff:/var/lib/docker/overlay2/fdb8f129efed0f87d0bd450057850d79861b90c64ebf38a5fc519ea18fd90049/diff:/var/lib/docker/overlay2/56e3cc76a772eb243544990b002f7612c79c16a3afb317104404114f66bb1cfa/diff:/var/lib/docker/overlay2/3237c2e8f432112662b496e486bb61c6f9ea14b280d5bcd5447cf4723f226c9e/diff:/var/lib/docker/overlay2/c0d63785b52bd9c2d7dae8451a57b59534cbc2e7ab65e45616744ba2c0bcadbb/diff:/var/lib/docker/overlay2/50da2004c5cc7999b8045ff6fc1d3a8f599b5f3675eef69503aeae2b311b0cad/diff",
-                "MergedDir": "/var/lib/docker/overlay2/25029e6fd4bb12a618a6052a6ae33e7fcee66aba27f926aa41083af8b5944a52/merged",
-                "UpperDir": "/var/lib/docker/overlay2/25029e6fd4bb12a618a6052a6ae33e7fcee66aba27f926aa41083af8b5944a52/diff",
-                "WorkDir": "/var/lib/docker/overlay2/25029e6fd4bb12a618a6052a6ae33e7fcee66aba27f926aa41083af8b5944a52/work"
+                "LowerDir": "/var/lib/docker/overlay2/53a0fe5d28cec3c3736e570f6ab3b87b0528c759557bdcdc26e4581443f4edf2/diff:/var/lib/docker/overlay2/ed82df0f5d0e00637b30419fed89306cc11b45595be63c094fa7d34f2f3a5a4c/diff:/var/lib/docker/overlay2/286577f1399b50ef6d8346c766267196f68548c7751515f7b6ed5f61ef9a1313/diff:/var/lib/docker/overlay2/76b018f6aff672562d10ff9df15e92b6ad9c773ce2491b1738ba4483127cea37/diff:/var/lib/docker/overlay2/8a05264639ceb37f928d104b5cc0f26deb273bbc0e7d655de48aab3aa9cf94f0/diff:/var/lib/docker/overlay2/a938ae1d82708530e2752b06aff88ba0e9e07cc800e1561b47db5c8b452ca804/diff:/var/lib/docker/overlay2/3d9a053bbd843f6e796a11a3153c7b1befb4d7627c3f3c3ebef38bbacab49b34/diff:/var/lib/docker/overlay2/402de5668d24c913096200fc725b3d888c21c67291515a6774fcb8feaaa6601d/diff:/var/lib/docker/overlay2/b9160c670d82ab1a374517c5b630ed8e99ff0caa645c088c1dd2f2f084bfbef0/diff:/var/lib/docker/overlay2/e4607c49903c220d383c67ad167bd5950bd0aa911dded8bf4ca50140f2ae0250/diff:/var/lib/docker/overlay2/9fd4d041ece66c8ebb6189ff5437323e6413c4ea0c8a57e0aa46b2e01cab4fe3/diff:/var/lib/docker/overlay2/d993e15dc42885cd45b5cebd45bdcda9f5b015d338a22dc3209159a6f5f2f3e2/diff:/var/lib/docker/overlay2/f3a4d39d2f742316fc2eacbe1bb5111fb1dfb3e96d018bfc9bba132bf01d8e27/diff:/var/lib/docker/overlay2/56f73b465dd3beca1db6dbe6d7e2e0aa54bc6173a22d86360ab71d97c67d615e/diff:/var/lib/docker/overlay2/d01841e1a7d10a5cd73972de662aa5815073f5a2a17cde60d5f9450688a7a64b/diff:/var/lib/docker/overlay2/ee708545d240d7f96474f6cf2ba160b63e394906a604da5f35df120bc3d43fdb/diff:/var/lib/docker/overlay2/dbae5ca9188c9348d80d0f0f0f421712f7480150566bc7b2c7f7585fbee913ff/diff",
+                "MergedDir": "/var/lib/docker/overlay2/810fc48873e557f57675c26f055855fae7d4b4e9d13a481a2a22990df01e3a90/merged",
+                "UpperDir": "/var/lib/docker/overlay2/810fc48873e557f57675c26f055855fae7d4b4e9d13a481a2a22990df01e3a90/diff",
+                "WorkDir": "/var/lib/docker/overlay2/810fc48873e557f57675c26f055855fae7d4b4e9d13a481a2a22990df01e3a90/work"
             },
             "Name": "overlay2"
         },
@@ -94,10 +95,11 @@
                 "sha256:6a55586af67597d8182746bdbfba1bf21a97c6dbffcb9a0ff24b025b550130c2",
                 "sha256:48c07a966c2392874f89ec9e6e2717c8d4488959c6fd8cc2c549b34653a9f158",
                 "sha256:aff094948a89c6940c403f3e6b7dc52bf9489d4a9b0ac5f969b87ee0b89fe3e3",
-                "sha256:bb57fe74dd9eeb7e9ea959bbb2001eac490d6988bef7c119a48e5410378ac0c6",
+                "sha256:a2d988336d8a031ef5fc9b02f63d2f4f21aa7f309660e71b14098d4c806ce6d1",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:54200880de6a6c736c2e64d8ca8994f4a6cf703cfb9805e9cd4b7c134bb3ce2f",
-                "sha256:c1ed312b1f70298fb7afc776760001ac45381f51e93b755f896ec6cf22216da1"
+                "sha256:9b8df57f47f461b56acab489f75c26e4f3ce0705090021ee36240b153afcba9a",
+                "sha256:dadb2b14821a53611bf6e1a6b347427252a06543b68228bbf51fe68f4e45eb80",
+                "sha256:a6036dcdf081b61bdb8bfe0201846be4e316be4c6327c6a07bc34e7a81fc208b"
             ]
         },
         "Metadata": {
