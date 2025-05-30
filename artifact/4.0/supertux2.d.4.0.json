@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:d4fd9aebd62f7c9818d78f23a991bda4242ae80622d97b763bff921a06d8d30f",
+        "Id": "sha256:273adc51cdc779a04c10c26620d076cb54989660492d9ebfbb1c6d9934092e1a",
         "RepoTags": [
             "ghcr.io/abcdesktopio/supertux2.d:4.0"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/supertux2.d@sha256:b95445767fba799c1786301eca3cfc65d585d0abc17094951635ed1765b8a0de"
+            "ghcr.io/abcdesktopio/supertux2.d@sha256:e7d348551184a7dd02e71e548723d61fa389dc4900dda6f99976d8f4181269d2"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2025-05-27T11:15:13.775195499Z",
+        "Created": "2025-05-30T10:57:23.742201438Z",
         "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
@@ -30,6 +30,7 @@
                 "BGROUP=balloon",
                 "BUID=4096",
                 "BGID=4096",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
                 "APPNAME=supertux2",
                 "APPBIN=/usr/games/supertux2",
                 "APP=/usr/games/supertux2"
@@ -63,10 +64,10 @@
         "Size": 660545436,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/efd067191047d9ca94323298a4f025ca6351ced58220108899c1142d60f706ec/diff:/var/lib/docker/overlay2/0b2fc97e6a426eb2781c74caf7db307bb1312ee0d987a8267588e2142fe5b4a6/diff:/var/lib/docker/overlay2/68554b120f785b4632a9713e34cce4032d204fae3629323125546b891126c3e5/diff:/var/lib/docker/overlay2/435e82b63d9f70c84ba2ed4e7cf1b4d103324e1223d984f088da000b005cfcf7/diff:/var/lib/docker/overlay2/daa5f88ab2a5c0858d0f2d298ffee50d606d605ca62beebfeb7926a831252d2f/diff:/var/lib/docker/overlay2/3f97447f34e62758f326ce07927a542e81ff3935d091e7efec78e49d372e9f41/diff:/var/lib/docker/overlay2/5faeb18d0d86a314ef4fcedad912a48cede6768abe8032e3fb1b7c4209962e9c/diff:/var/lib/docker/overlay2/7115a58944e132b8b01f7ea44a9d65e1c6cea8f26dbbebf35913b3b723134d8f/diff:/var/lib/docker/overlay2/6a940ee801b3fd2d1e28085612f34c077b42670825b8ba328dcbdc707cc80565/diff:/var/lib/docker/overlay2/ba08f5d2f06748c16b6739ac83c186b5906dbdfbc0a12ba852df2847707bca6d/diff:/var/lib/docker/overlay2/53a0831dfbd8468ab8d8f78e46118560a0922163d51a388440cc7c2d1c14f1d3/diff:/var/lib/docker/overlay2/ae61a2ad8a625c46de0011d3c7ecc586e911f1bb447e86041bcdf64102f79a6d/diff:/var/lib/docker/overlay2/8c668bb324c0352b9e6cf97f95cf0310ca6adfb53019e3a015d2eb2d23f26d9d/diff:/var/lib/docker/overlay2/389769ab1c91d4f63db5720f8e2035f5b24a5ba87dd9ddf3fd84bd418ee2915d/diff:/var/lib/docker/overlay2/84d7ccc4104595cf84001c593e67bf59a3a48c469580a7bdc9a2ce587c06f2df/diff",
-                "MergedDir": "/var/lib/docker/overlay2/c4b3a4d7a864468bebe6a2a6b5ad814d804c0dfe19c36c13bc8adef6d7b45f77/merged",
-                "UpperDir": "/var/lib/docker/overlay2/c4b3a4d7a864468bebe6a2a6b5ad814d804c0dfe19c36c13bc8adef6d7b45f77/diff",
-                "WorkDir": "/var/lib/docker/overlay2/c4b3a4d7a864468bebe6a2a6b5ad814d804c0dfe19c36c13bc8adef6d7b45f77/work"
+                "LowerDir": "/var/lib/docker/overlay2/6d2aa912c80bc94baf2fc6cfbeb9f0d64721572565348a0486da09745dc1ddc4/diff:/var/lib/docker/overlay2/8c2029a2f29a484c57a7e11348367843e38981d61bc6cc3166b36bea239bfcab/diff:/var/lib/docker/overlay2/07cc7672d078d72ad73895700ff95694beaf1a46448f2fed5f89f81b51007c29/diff:/var/lib/docker/overlay2/11a25d31a289f21d7706ea6e94d59387b61323fa3e525cade3631f6c2145131b/diff:/var/lib/docker/overlay2/e9b3e20ffdbde16cce6eaee90bfd911ddd18402752b8ccb38f87ab39e6503d32/diff:/var/lib/docker/overlay2/b6c4f88cf192b541c052389b68d66008b5b604eeed9b85b14a950b7dd720cf39/diff:/var/lib/docker/overlay2/0a5f76298b3402df6e8701459277d2f8764f3795bf666faa5b7baa6be8561154/diff:/var/lib/docker/overlay2/9a4e0324e588924312f6ad98ec00a7cc9b9d5a24cf4798306bab4e621b886af1/diff:/var/lib/docker/overlay2/c2adc043fa237a1998ad94edffdb716717e9f0a65b8d611b286153ac8cd32077/diff:/var/lib/docker/overlay2/7b303d2c07838c05e10bab335b3a5546fc41f08701b451bc980b2bc1d74704a6/diff:/var/lib/docker/overlay2/01c51e2af6e5a5b5bfc67dd284a211b028aeaaa25227dfcc8175bd2578b5cca2/diff:/var/lib/docker/overlay2/501ddd87edbee3077bd03ebe63331f2a82f7a9970bffc4a48ad5ec9342d96c29/diff:/var/lib/docker/overlay2/f8b5a7a304a9cf08b4147e5753f7c1fa944338cdef4ff09a9918f7120c9679fb/diff:/var/lib/docker/overlay2/6686a011639edd835a7e7e14c1577494aded7796bb65f597ebd05878eb400a3c/diff:/var/lib/docker/overlay2/47a0ed914d9b829af4198e4832776e80f71ff0cd01070700d9c6f2011ba4a43d/diff",
+                "MergedDir": "/var/lib/docker/overlay2/7d3e46ba53b02b616ce9fda496e350cb07b3987cb417d0290dc446b645da723d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/7d3e46ba53b02b616ce9fda496e350cb07b3987cb417d0290dc446b645da723d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/7d3e46ba53b02b616ce9fda496e350cb07b3987cb417d0290dc446b645da723d/work"
             },
             "Name": "overlay2"
         },
@@ -84,11 +85,11 @@
                 "sha256:8d82df1e18c6f71c3bdb1298966735c7513f8f2c231f1b7e8be879b220de8a2a",
                 "sha256:c5254c7dc482cfc186262e7f4fed5dc2280c33b1424740704e5b041fbaa40bb3",
                 "sha256:6a55586af67597d8182746bdbfba1bf21a97c6dbffcb9a0ff24b025b550130c2",
-                "sha256:0764708c7463017026013d8e6d3b1de4a44febe64d14b54579f21ee0ed4f5c5b",
+                "sha256:73e38d195eb56cf01421707c7c789b082bb4fda8ed7a4cfe6b3d913a753ec6b8",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:8eebfc5284b7aec612611a77223ceee0191c8872404fb03592b64e86d5e6c23a",
-                "sha256:f925fc3efbdfa5c6276b3fac76db8b371a0fae92cce73bb270055a0dbe8a9b4f",
-                "sha256:b984792d2072ffa809aa3f2e0f1561e9e6d874c7da44c395c263aa687ede2bdf"
+                "sha256:3b2990e4c93dca6401a173184436f79c5779d0e33b21dbfe51873ead47ce05cd",
+                "sha256:349b383d148fb39a0f6066f4a6e255e328b6684e3d607cceb38e7adc0230a67e",
+                "sha256:2ad8d8043838d6431b0798282b81aaee591c820ac3d464c8511fea6bd99c95e8"
             ]
         },
         "Metadata": {
