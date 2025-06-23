@@ -1,0 +1,113 @@
+[
+    {
+        "Id": "sha256:b42c2272579d4e1a23726f1bf027e1e0e4d7dd73feb7c86192e88aa3a32e38eb",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/chrome.d:4.1"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/chrome.d@sha256:5d98b29c6640aa8e9cdf465b5dbadbfe99bfa71ae077270ff417a02f98ac65d3"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-06-23T14:07:30.482148425Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=chrome",
+                "APPBIN=/usr/bin/google-chrome-stable",
+                "APP=/usr/bin/google-chrome-stable"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "office",
+                "oc.desktopfile": "google-chrome.desktop",
+                "oc.displayname": "Chrome",
+                "oc.fileextensions": "html;xml;gif",
+                "oc.icon": "circle_google-chrome.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiA8ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImUiIHgxPSIxNy4xODciIHgyPSIxNy4xODciIHkxPSI0Ni43MzciIHkyPSIxOTkuOTgiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoNC43MDUgMCAwIDQuNzA1IDQxIDcwLjM2MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1QzEzMCIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNEJEMzAiIG9mZnNldD0iLjM0ODMiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzMxQjIzMSIgb2Zmc2V0PSIuNjgwOSIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMkM5RjMyIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iZCIgeDE9Ijk1Ljk3IiB4Mj0iOTUuOTciIHkxPSIyLjI5MjIiIHkyPSIxOTguNDQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS43MTkxIDAgMCAxLjcxOTEgMzQwLjA5IDM2OC40NSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ3QjlGRiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiMzRDhBRkYiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJjIiB4MT0iMTE0Ljc1IiB4Mj0iMTE0Ljc1IiB5MT0iNTYuNjgxIiB5Mj0iMTg4LjkzIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDUuMSAwIDAgNS4xIDIgMikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmY2UwMCIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNlNmJjMDAiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4MT0iMTAzLjY3IiB4Mj0iMTAzLjY3IiB5MT0iLTQuNjYyMyIgeTI9IjIwNi41IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDIuMTY5OSAwIDAgMi4xNjk5IDI5NS4wMSAzMjMuMzcpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmZmYiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZDdkN2Q3IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImciIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI2LjUwOTc3ODkiLz4KICA8L2ZpbHRlcj4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI5Ny40MjUiIHgyPSI5Ny40MjUiIHkxPSItOS4wMDcxIiB5Mj0iMjA5Ljg3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQuNzA1IDAgMCA0LjcwNSA0MSA0MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI0Y2NTAzQiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNGMjQ3MzUiIG9mZnNldD0iLjIxNzQiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI0U2MkYyNSIgb2Zmc2V0PSIuNTcxOSIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjRDQwOTBEIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImYiIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxNC4xMTUiLz4KICA8L2ZpbHRlcj4KIDwvZGVmcz4KIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTk4OC4zNikiPgogIDxnIHRyYW5zZm9ybT0ibWF0cml4KC4wNjM3NjIgMCAwIC4wNjM3NjIgLS42MTQyNCA5ODUuODgpIiBzdHJva2Utd2lkdGg9IjE1LjY4MyI+CiAgIDxjaXJjbGUgY3g9IjUxMS41IiBjeT0iNTQwLjg2IiByPSI0NzAuNSIgY29sb3I9IiMwMDAwMDAiIGZpbHRlcj0idXJsKCNmKSIgb3BhY2l0eT0iLjI1Ii8+CiAgIDxjaXJjbGUgY3g9IjUxMS41IiBjeT0iNTQwLjg2IiByPSI0NzAuNSIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjZSkiLz4KICAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyOC4zNjIpIiBkPSJtODEzLjQxIDE1MS43NGMtOTYuNzI2IDIzLjAzMi01NTQuMTcgMTM2LjQ1LTMwMC4xNCAxNjMuOTEgMjgzLjA1IDMwLjYgMTc1LjMxIDMxNy40NyAxNzUuMzEgMzE3LjQ3bC0yMDcuMjYgMzQ4LjM3YTQ3MC41IDQ3MC41IDAgMCAwIDMwLjE2OCAxLjUwOTggNDcwLjUgNDcwLjUgMCAwIDAgNDcwLjUtNDcwLjUgNDcwLjUgNDcwLjUgMCAwIDAtMTY4LjU5LTM2MC43NnoiIGZpbGw9InVybCgjYykiLz4KICAgPGc+CiAgICA8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDI4LjM2MikiIGQ9Im01MTEuNSA0MmE0NzAuNSA0NzAuNSAwIDAgMC0zOTQuNDUgMjE0LjgybDIxMC4zNSAzNTMuODRzLTUuNjMzOC0xNzAuNDUgOC40NTMxLTE4Ny4zNmMxNC4wODctMTYuOTA0IDgzLjExMy04MS43MDMgODMuMTEzLTgxLjcwM2w5NC4zODEtMjguMTc0LTUuMTA1NS0xOC4zMTIgNDE4LjcxLTIuNzUzOWE0NzAuNSA0NzAuNSAwIDAgMC00MTUuNDYtMjUwLjM2eiIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjYSkiLz4KICAgIDxjaXJjbGUgY3g9IjUxMiIgY3k9IjU1MC4zNiIgcj0iMjE2Ljk5IiBjb2xvcj0iIzAwMDAwMCIgZmlsbD0iIzExMSIgZmlsdGVyPSJ1cmwoI2cpIiBvcGFjaXR5PSIuMiIvPgogICAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTQwLjM2IiByPSIyMTYuOTkiIGNvbG9yPSIjMDAwMDAwIiBmaWxsPSJ1cmwoI2IpIi8+CiAgICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI1NDAuMzYiIHI9IjE3MS45MSIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjZCkiLz4KICAgPC9nPgogIDwvZz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "chrome,web,browser,internet",
+                "oc.launch": "google-chrome.Google-chrome",
+                "oc.legacyfileextensions": "html;xml",
+                "oc.mimetype": "text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;video/webm;",
+                "oc.name": "chrome",
+                "oc.path": "/usr/bin/google-chrome-stable",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.24.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1449109185,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/5015b5b190290ab884af55651342ec2ff267056e92349ee1b6644e98ef32610b/diff:/var/lib/docker/overlay2/5d14309dce87d0735b80af58d3ffb6eb6628312642df6563ed0f7a31d4306d52/diff:/var/lib/docker/overlay2/c1fc343aa37b9afcfcf6dd75c7b9820225477c87c81b90a45445bc0414482a84/diff:/var/lib/docker/overlay2/46f3d6d7117d98fa2a6a777c2d12a0fd7f38436f826a8c450f3d3b487dc2232f/diff:/var/lib/docker/overlay2/27183278c74e2dc0e17f9fd7865d4646bba6d87002cfb323a062452b993bd0f5/diff:/var/lib/docker/overlay2/267a6d763a16839854b9cbdd65b45156cde78aafbf9948255035ac97ef4fe51c/diff:/var/lib/docker/overlay2/8139e164aa0d9731243e179f665bd24b85dd5cbb31be8329cc375c2031431f02/diff:/var/lib/docker/overlay2/8fed84456b507e1b26eed05baece15ab0ab3881727d1f100dee9ef1c534c3a57/diff:/var/lib/docker/overlay2/007b5860d9a75d2d35ba8ed6f04272b8c98cd483a0ec95328fa62af76fe461b1/diff:/var/lib/docker/overlay2/c80f4370b22f888cda84e9ae9faa262fc925d771f6c1304e806312437d8f6b92/diff:/var/lib/docker/overlay2/7782a232f1cda9fce90f8e137ab8c0f96630dafac341f1a45086d5c747f749a8/diff:/var/lib/docker/overlay2/a9be69c92ea7c0b0270b612f467b5d057b5442fa3509046d780b3f7a65ec36a6/diff:/var/lib/docker/overlay2/2a69d738d157d22b10c42f672cf426dc8f79e300f01c838373ee97d8c8ce33d3/diff:/var/lib/docker/overlay2/da4aa8f57727854dd82a7ac546867f6618ecf4f5dd08eb55528fa542fe3b8ff1/diff:/var/lib/docker/overlay2/34be938d05a33828c2fd93c3a4bc07ebaebc3efa8ce5cc9c9ea6bf1bbdeb0bd6/diff:/var/lib/docker/overlay2/46e3236e309fc85547a981af2663b08da1e3ece125d0b45391821a1238b93aad/diff:/var/lib/docker/overlay2/cde8456db41a32f531e2846aa00d799d53533aae0645b98a5353b3864a16c621/diff:/var/lib/docker/overlay2/77f49602082dabd92e441735f838908e853ec843a79f13a06b1eafa763d59912/diff:/var/lib/docker/overlay2/e476d8040ade63ea397ea1fff1c13f2b47ec570348ae3d2dcbe353c36e9970fd/diff:/var/lib/docker/overlay2/fb37f9c96be69cd730438bea2e85ed76e029b078e59b5206d2b2c1f9ca125172/diff:/var/lib/docker/overlay2/dafbb50e74fcf5855e08e11ca77da4e7667d284f7a03f80b3caa6fdfc59275bb/diff:/var/lib/docker/overlay2/5485c2fce40aaa0e832a27a99e4a4cc180b615b07daa0c9742958c734038e098/diff:/var/lib/docker/overlay2/568d4a56c970753670b96f74bc9799b0a36e52d09c01fa3fe3021b655614a2f5/diff:/var/lib/docker/overlay2/1f837b2039e6bb682d840ecf0de3cfd271ca0e135858fa6fda5dc8de7b86b528/diff:/var/lib/docker/overlay2/f3d8ee417445a8cd4a0fb390664c5812da198789e49dc70dac1d98c439e5b26e/diff:/var/lib/docker/overlay2/39c0becb0a353a5d44ab9e12f750ebcc33de7a7f7c2802eba8e2927d8eeafa10/diff",
+                "MergedDir": "/var/lib/docker/overlay2/9bbfded2baa85d186f5ff2961154c27aad6136ce10eade12defcd4cf417e2917/merged",
+                "UpperDir": "/var/lib/docker/overlay2/9bbfded2baa85d186f5ff2961154c27aad6136ce10eade12defcd4cf417e2917/diff",
+                "WorkDir": "/var/lib/docker/overlay2/9bbfded2baa85d186f5ff2961154c27aad6136ce10eade12defcd4cf417e2917/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:a8346d259389bc6221b4f3c61bad4e48087c5b82308e8f53ce703cfc8333c7b3",
+                "sha256:cb747b95fb93f7aea284a31ede90c5a0b6ede3f01433226ddc52e6bd366097de",
+                "sha256:55a8ea8f185da6de6d1f2cd17a8a892d112496d1ad7c6434e23ee370225ebfdf",
+                "sha256:0fa38f724fcef2a30672e00f05bcd789ae053fad13451790c1540ebd9a9ed251",
+                "sha256:a26861e4d384f1dc2f8bbbcf66ef042343d17765dad5ab142e6ebe224c97eec7",
+                "sha256:39b4331d6d8dcc1fcad31f354f84a294a0ce7cd7d372199d292e111e56af0019",
+                "sha256:1eba82aee411a07f2a8fb5e70fe900377218c7f66f2abf65931ba36c4fba184c",
+                "sha256:3e4113fa0f15da430f676acaf4424227191bc0111b7bb353fa1595c8eb523e3f",
+                "sha256:d252a72d148398663f3f22716914dbd5852c1e0fd0f3796c4ca5eb4efb2dcf0c",
+                "sha256:f37678d91ec6c6ab54556dab62dae43fe6e39a6d061f9c57eeabebf9414d4e89",
+                "sha256:de3cd144d69d482f79510619269ad36ad5659344af1b5b478f1816cc469f88a0",
+                "sha256:9d8e805de401456ac12077e28fb35c3e2e9a1103e1f948697af059f212b39133",
+                "sha256:e4f4203fe8254aa6db383ca46fb2ddbdbe4244e2140445040a1e2e457972c62f",
+                "sha256:aef71ba278e3b1049c90b380e93e0afa15e1b2460e410869fc196960e6f4ee8a",
+                "sha256:c15083211830681ecd7a83928080805d7729b2baee69efc6a2c306c9f7845981",
+                "sha256:f956bed9be52c510e523f3a168367edb335fce0ec61ec608b6580f9d58ed4f9e",
+                "sha256:6b43572048ef7680966d39a53cf4f5cb081fd8b17146b2ccba9456d39361d628",
+                "sha256:f1c4f4b7219dc1a2c72b3696e66094ff1ae18d6226918a74d9889744ca55ca19",
+                "sha256:47014d68df52482a53e70a902470ef3c43775846372454ec7a2e3ab261137a9c",
+                "sha256:b832999a4c9eebd7a8728ffc889f3bd59a3fc74e83f3717af4416309aedd7889",
+                "sha256:3c27d6a790d8e1abf6f2a6f7aae7b01ac618be2abf4d12e604467b326b5fe4c1",
+                "sha256:f3042e4a809d2c0399a78f5766c5a6711a390a20dc9c66100a62639c0275c48a",
+                "sha256:d3153d13b217a72ddf922b8da8a8be31d3905ea80ef98d037768426a630be29a",
+                "sha256:f1001c07058da2d83793fbb6b9e596965945c93e72db2e3d1e1996f482906269",
+                "sha256:25ef4970fdaa4b5c11790fbe25506e2ab77a8deb07ad9ef42dfbb11a8e26a88a",
+                "sha256:83d2cfaecfd879a29bb287b1abb64f848f0c0093e3747032546aff8dcd2ec5f7",
+                "sha256:3da46a2e98a60c3dcc9ce4ec467af3b2b88adc17c85b5434c23e104411447ce0"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
