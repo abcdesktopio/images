@@ -1,0 +1,110 @@
+[
+    {
+        "Id": "sha256:a1f0958d1aba76cbdeb41720c2bae575fb1b482c50e664a111e478156a2962b8",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/remmina.d:4.1"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/remmina.d@sha256:66a47d887fc8ecd46984d375023a3a48592b353a44ca7c131c5fafc0e3e11216"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-06-23T13:56:02.426990385Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=remmina",
+                "APPBIN=/usr/bin/remmina",
+                "APP=/usr/bin/remmina"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "office",
+                "oc.desktopfile": "remmina-file.desktop",
+                "oc.displayname": "Remmina",
+                "oc.icon": "remmina.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmVyc2lvbj0iMS4xIj4KIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTMwOC4zKSI+CiAgPGNpcmNsZSBzdHlsZT0iZmlsbDojZmZmZmZmIiBjeD0iMTIiIGN5PSIzMjAuMyIgcj0iOSIvPgogIDxwYXRoIHN0eWxlPSJvcGFjaXR5OjAuMSIgZD0ibSA4LDMxNS4xMzM5NyB2IDIuNDI1NzggTCA5Ljg2MTMyODEsMzE4Ljc5OTk4IDgsMzIwLjA0MDIyIHYgMi40MjU3OCBsIDUuNSwtMy42NjYwMiB6Ii8+CiAgPHBhdGggc3R5bGU9ImZpbGw6IzIwYWE3MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwzMDguMykiIGQ9Ik0gOCA2LjMzMzk4NDQgTCA4IDguNzU5NzY1NiBMIDkuODYxMzI4MSAxMCBMIDggMTEuMjQwMjM0IEwgOCAxMy42NjYwMTYgTCAxMy41IDEwIEwgOCA2LjMzMzk4NDQgeiIvPgogIDxwYXRoIHN0eWxlPSJvcGFjaXR5OjAuMSIgZD0ibSAxNiwzMTkuMTMzOTcgLTUuNSwzLjY2NjAxIDUuNSwzLjY2NjAyIHYgLTIuNDI1NzggTCAxNC4xNDA2MjUsMzIyLjc5OTk4IDE2LDMyMS41NTk3NSBaIi8+CiAgPHBhdGggc3R5bGU9ImZpbGw6IzM5ODlkYSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwzMDguMykiIGQ9Ik0gMTYgMTAuMzMzOTg0IEwgMTAuNSAxNCBMIDE2IDE3LjY2NjAxNiBMIDE2IDE1LjI0MDIzNCBMIDE0LjE0MDYyNSAxNCBMIDE2IDEyLjc1OTc2NiBMIDE2IDEwLjMzMzk4NCB6Ii8+CiAgPHBhdGggc3R5bGU9Im9wYWNpdHk6MC4yIiBkPSJtIDIwLjc0OTAyNCwzMTUuOTcyODUgLTEuNjgxNjQxLDEuMTE5MTQgQSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDIwLDMyMC43OTk5OSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDEyLDMyOC44IDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgNS44NDQ3MjY1LDMyNS44ODg4NiBMIDQuMTY4OTQ1MiwzMjcuMDA0MSBDIDYuMDAyMTQ2NSwzMjkuMzEzNjMgOC44MjkxMTc0LDMzMC44IDEyLDMzMC44IGMgNS41MTM5NTYsMCAxMCwtNC40ODU3OCAxMCwtMTAuMDAwMDEgMCwtMS43NTA3MSAtMC40NTcwMDEsLTMuMzk0NDUgLTEuMjUwOTc2LC00LjgyNzE0IHoiLz4KICA8cGF0aCBzdHlsZT0iZmlsbDojMjBhYTczIiBkPSJtIDIwLjc0OTAyNCwzMTUuNDcyODUgLTEuNjgxNjQxLDEuMTE5MTQgQSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDIwLDMyMC4yOTk5OSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDEyLDMyOC4zIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgNS44NDQ3MjY1LDMyNS4zODg4NiBMIDQuMTY4OTQ1MiwzMjYuNTA0MSBDIDYuMDAyMTQ2NSwzMjguODEzNjMgOC44MjkxMTc0LDMzMC4zIDEyLDMzMC4zIGMgNS41MTM5NTYsMCAxMCwtNC40ODU3OCAxMCwtMTAuMDAwMDEgMCwtMS43NTA3MSAtMC40NTcwMDEsLTMuMzk0NDUgLTEuMjUwOTc2LC00LjgyNzE0IHoiLz4KICA8cGF0aCBzdHlsZT0ib3BhY2l0eTowLjIiIGQ9Im0gMTIsMzEwLjc5OTk5IGMgLTUuNTE0MjE2OSwwIC0xMCw0LjQ4NTc5IC0xMCwxMCAwLDEuNjI3MzYgMC4zOTIwMjYzLDMuMTY0MTEgMS4wODQ5NjA5LDQuNTIzNDUgTCA0Ljc3NDQxNCwzMjQuMTk5NDEgQSA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDQsMzIwLjc5OTk5IGEgNy45OTk5OTk4LDcuOTk5OTk5OCAwIDAgMSA4LC04IDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgNS45Mjc3MzQsMi42NDc0NyBsIDEuNjg1NTQ3LC0xLjEyMTEgQyAxNy43Nzc4MiwzMTIuMTcwNzIgMTUuMDQ2MDQ5LDMxMC43OTk5OSAxMiwzMTAuNzk5OTkgWiIvPgogIDxwYXRoIHN0eWxlPSJmaWxsOiMzOTg5ZGEiIGQ9Im0gMTIsMzEwLjMgYyAtNS41MTQyMTY5LDAgLTEwLDQuNDg1NzggLTEwLDkuOTk5OTkgMCwxLjYyNzM2IDAuMzkyMDI2MywzLjE2NDExIDEuMDg0OTYwOSw0LjUyMzQ1IEwgNC43NzQ0MTQsMzIzLjY5OTQxIEEgNy45OTk5OTk4LDcuOTk5OTk5OCAwIDAgMSA0LDMyMC4yOTk5OSBhIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgOCwtOCA3Ljk5OTk5OTgsNy45OTk5OTk4IDAgMCAxIDUuOTI3NzM0LDIuNjQ3NDcgbCAxLjY4NTU0NywtMS4xMjExIEMgMTcuNzc3ODIsMzExLjY3MDcyIDE1LjA0NjA0OSwzMTAuMyAxMiwzMTAuMyBaIi8+CiAgPHBhdGggc3R5bGU9Im9wYWNpdHk6MC4yO2ZpbGw6I2ZmZmZmZiIgZD0ibSAxMiwzMTAuMyBjIC01LjUxNDIxNjksMCAtMTAsNC40ODU3OCAtMTAsOS45OTk5OSAwLDAuMDc1MSAwLjAwNTE3LDAuMTQ4OSAwLjAwNjg0LDAuMjIzNjQgMC4xNDczNDM4LC01LjM4NjU1IDQuNTcxNjU5MSwtOS43MjM2NCA5Ljk5MzE2NCwtOS43MjM2NCAyLjg5NTE0MiwwIDUuNTA0NDUsMS4yNDAzMSA3LjMzMjAzMSwzLjIxMzg3IGwgMC4yODEyNSwtMC4xODc1IEMgMTcuNzc3ODIsMzExLjY3MDcyIDE1LjA0NjA0OSwzMTAuMyAxMiwzMTAuMyBaIE0gNC4wMDg3ODksMzIwLjYyNTE5IEEgNy45OTk5OTk4LDcuOTk5OTk5OCAwIDAgMCA0LDMyMC43OTk5OSBhIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDAgMC42MTEzMjgxLDMuMDA3ODIgbCAwLjE2MzA4NTksLTAuMTA4NCBhIDcuOTk5OTk5OCw3Ljk5OTk5OTggMCAwIDEgLTAuNzY1NjI1LC0zLjA3NDIyIHoiLz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "remmina,rdp,tsclient",
+                "oc.launch": "remmina.Remmina",
+                "oc.mimetype": "application/x-remmina;",
+                "oc.name": "remmina",
+                "oc.path": "/usr/bin/remmina",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.24.04",
+                "oc.type": "app",
+                "oc.usedefaultapplication": "true",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 644366109,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/1a720b9ab062102fc1586fe8e6e562097ec2500621ae5d90f3002860b81457d4/diff:/var/lib/docker/overlay2/8aa9c2878534a8926eb38e4cf964e5c8524a51c7d5bffc661b274794e8fbe22f/diff:/var/lib/docker/overlay2/7502e0154560348ca2222ed46f025cedb95219cb0963e1c86dc8360fa37ab48e/diff:/var/lib/docker/overlay2/d4806f1a303e245a4f61094a755936a51915eecc5df28c91b2cce516663dc3ce/diff:/var/lib/docker/overlay2/5bdbf5b56f33e667e3c884bcd05c66909cd809219cb9c0855486526fb53b582f/diff:/var/lib/docker/overlay2/0bf0b8a0a0679cc346fb1b74791268da5b139480f117fa4caa5ebf3cd74a3335/diff:/var/lib/docker/overlay2/c2eb8a52ab24854685e6c6fe5da780cb98231d7a98df7c6e0b8992ccd06b705a/diff:/var/lib/docker/overlay2/da1723718b394841d0e00b77a677e39c8d0e6ec31171d2f006b6b794537b677a/diff:/var/lib/docker/overlay2/4c245fe334ae7f615502093f2c7280aab89be8e00ce5dfe107c71eed43073bd3/diff:/var/lib/docker/overlay2/169d8a9926acdfce0fa88b3d5d58485a0d0fb55a2b0350b79a4da2c10b7043cb/diff:/var/lib/docker/overlay2/c3bd2a16caac226c4dc59f7d6a367ae339b8aca357444d1ae5155ede3fb48e17/diff:/var/lib/docker/overlay2/3b294bee0af899039e7ab7c76b07c8bc0162a9c9f8248d36a2e351314512d555/diff:/var/lib/docker/overlay2/0d5260334e2c1639ebf2c2952da903dbc5d06dad04c115185a14955549601486/diff:/var/lib/docker/overlay2/ee8d72896475cfb9587b866a7a77c4689843dd16aba34b6627d2022ba2b10402/diff:/var/lib/docker/overlay2/f41452b6aa511437e03980c7b2344336c3b8b69eb4808fab2c36b9eec31c8423/diff:/var/lib/docker/overlay2/7684a93b7c8a4c9e8a4a21d603633c0329b166c7213466b7bd79a553252d18aa/diff:/var/lib/docker/overlay2/0dd9e769bbaf6027ddf4cf4ae9297b19f062a9c35d0fe629cb3d941357365094/diff:/var/lib/docker/overlay2/fe920ae0563d1f19955dd555fdbab5d90cc9638b8a1eaf3f7613f0c4d0201ab1/diff:/var/lib/docker/overlay2/c3541028c0b65895d7f26ea04e39c85ab632ce2c48603b840259cdc477b16346/diff:/var/lib/docker/overlay2/94db5889cd57015d297a529d729752033a5572155a6659c3d9760773dd96c9aa/diff:/var/lib/docker/overlay2/a0eee3e8a1b21714cd2790dd69b6b9f0e1ca2856a3973b05e79d0da810694eac/diff:/var/lib/docker/overlay2/e6626cdb68979a8561114816f15536fba00a02c93e504aa5df5f7bb75e8d1d81/diff:/var/lib/docker/overlay2/572cb1a306954f11c5acbc2ec65e366f829950e3244e5f26444dca298129aee1/diff:/var/lib/docker/overlay2/cb0cab033973a10ca2588b5431f2ff6f613a3fb6e4563af724dd5499e875429b/diff",
+                "MergedDir": "/var/lib/docker/overlay2/db9fda5e59dec01479d93cbfb804b9c333011f00539d65389cf04139cfb99e2c/merged",
+                "UpperDir": "/var/lib/docker/overlay2/db9fda5e59dec01479d93cbfb804b9c333011f00539d65389cf04139cfb99e2c/diff",
+                "WorkDir": "/var/lib/docker/overlay2/db9fda5e59dec01479d93cbfb804b9c333011f00539d65389cf04139cfb99e2c/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:a8346d259389bc6221b4f3c61bad4e48087c5b82308e8f53ce703cfc8333c7b3",
+                "sha256:cb747b95fb93f7aea284a31ede90c5a0b6ede3f01433226ddc52e6bd366097de",
+                "sha256:55a8ea8f185da6de6d1f2cd17a8a892d112496d1ad7c6434e23ee370225ebfdf",
+                "sha256:0fa38f724fcef2a30672e00f05bcd789ae053fad13451790c1540ebd9a9ed251",
+                "sha256:a26861e4d384f1dc2f8bbbcf66ef042343d17765dad5ab142e6ebe224c97eec7",
+                "sha256:39b4331d6d8dcc1fcad31f354f84a294a0ce7cd7d372199d292e111e56af0019",
+                "sha256:1eba82aee411a07f2a8fb5e70fe900377218c7f66f2abf65931ba36c4fba184c",
+                "sha256:3e4113fa0f15da430f676acaf4424227191bc0111b7bb353fa1595c8eb523e3f",
+                "sha256:d252a72d148398663f3f22716914dbd5852c1e0fd0f3796c4ca5eb4efb2dcf0c",
+                "sha256:f37678d91ec6c6ab54556dab62dae43fe6e39a6d061f9c57eeabebf9414d4e89",
+                "sha256:de3cd144d69d482f79510619269ad36ad5659344af1b5b478f1816cc469f88a0",
+                "sha256:9d8e805de401456ac12077e28fb35c3e2e9a1103e1f948697af059f212b39133",
+                "sha256:e4f4203fe8254aa6db383ca46fb2ddbdbe4244e2140445040a1e2e457972c62f",
+                "sha256:aef71ba278e3b1049c90b380e93e0afa15e1b2460e410869fc196960e6f4ee8a",
+                "sha256:c15083211830681ecd7a83928080805d7729b2baee69efc6a2c306c9f7845981",
+                "sha256:f956bed9be52c510e523f3a168367edb335fce0ec61ec608b6580f9d58ed4f9e",
+                "sha256:6b43572048ef7680966d39a53cf4f5cb081fd8b17146b2ccba9456d39361d628",
+                "sha256:f1c4f4b7219dc1a2c72b3696e66094ff1ae18d6226918a74d9889744ca55ca19",
+                "sha256:47014d68df52482a53e70a902470ef3c43775846372454ec7a2e3ab261137a9c",
+                "sha256:96153314c3b8bf301e459b17107f5f6fa2c45a627e5618b6da65b117ab5df007",
+                "sha256:8ad7f9e318c2bb5d9ad931b825b587537015279cb09a20e565f8ad744933e7db",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:47b2f2e5344db627fb297f3aff5a6ca62f65acc6d95fec76131a37f072a37a88",
+                "sha256:9a284f61b18971478aed3cefdea0874beff8b1410deb911988fc050540da754e",
+                "sha256:02e534dc04945948323528a4424303a9d5688089d23e039eecb548a91a75eb7c"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
