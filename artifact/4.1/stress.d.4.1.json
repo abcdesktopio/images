@@ -1,0 +1,103 @@
+[
+    {
+        "Id": "sha256:8cbca70e8dc05c5e888a773e82fae9e1b0956d589ecbdd1c0f762728b2c5150b",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/stress.d:4.1"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/stress.d@sha256:a975a94739ec645a426f97624a8b4c84c24747c4de7084430ac4a942d36f8831"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-06-23T14:12:55.218410768Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "ARGS=--name stress",
+                "APPNAME=stress",
+                "APPBIN=/usr/bin/konsole",
+                "APP=/usr/bin/konsole"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--name stress",
+                "oc.cat": "development",
+                "oc.desktopfile": "org.kde.konsole.desktop",
+                "oc.displayname": "stress",
+                "oc.host_config": "{\"mem_limit\":\"256M\",\"shm_size\":\"128M\",\"pid_mode\":false,\"ipc_mode\":false}",
+                "oc.icon": "stress.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNDk2LjgiIGhlaWdodD0iNDk2LjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlkPSJzdmdfMSIgZmlsbD0iIzZlYzZmMCIgZD0ibTE1Miw0ODRjMCw2LjQgLTUuNiwxMiAtMTIsMTJsMCwwYy02LjQsMCAtMTIsLTUuNiAtMTIsLTEybDAsLTQ3MmMwLC02LjQgNS42LC0xMiAxMiwtMTJsMCwwYzYuNCwwIDEyLDUuNiAxMiwxMmwwLDQ3MnoiLz4KICA8cGF0aCBpZD0ic3ZnXzMiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im0yMDgsNDg0YzAsNi40IC01LjYsMTIgLTEyLDEybDAsMGMtNi40LDAgLTEyLC01LjYgLTEyLC0xMmwwLC00NzJjMCwtNi40IDUuNiwtMTIgMTIsLTEybDAsMGM2LjQsMCAxMiw1LjYgMTIsMTJsMCw0NzJ6Ii8+CiAgPHBhdGggaWQ9InN2Z181IiBmaWxsPSIjNmVjNmYwIiBkPSJtMzEyLDQ4NGMwLDYuNCAtNS42LDEyIC0xMiwxMmwwLDBjLTYuNCwwIC0xMiwtNS42IC0xMiwtMTJsMCwtNDcyYzAsLTYuNCA1LjYsLTEyIDEyLC0xMmwwLDBjNi40LDAgMTIsNS42IDEyLDEybDAsNDcyeiIvPgogIDxwYXRoIGlkPSJzdmdfNyIgZmlsbD0iIzZlYzZmMCIgZD0ibTM2OCw0ODRjMCw2LjQgLTUuNiwxMiAtMTIsMTJsMCwwYy02LjQsMCAtMTIsLTUuNiAtMTIsLTEybDAsLTQ3MmMwLC02LjQgNS42LC0xMiAxMiwtMTJsMCwwYzYuNCwwIDEyLDUuNiAxMiwxMmwwLDQ3MnoiLz4KICA8cGF0aCBpZD0ic3ZnXzkiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im0yNjAsNDg0YzAsNi40IC01LjYsMTIgLTEyLDEybDAsMGMtNi40LDAgLTEyLC01LjYgLTEyLC0xMmwwLC00NzJjMCwtNi40IDUuNiwtMTIgMTIsLTEybDAsMGM2LjQsMCAxMiw1LjYgMTIsMTJsMCw0NzJ6Ii8+CiAgPHBhdGggaWQ9InN2Z18xMSIgZmlsbD0iIzZlYzZmMCIgZD0ibTEyLjgsMTUyYy03LjIsMCAtMTIuOCwtNC44IC0xMi44LC0xMmwwLDBjMCwtNy4yIDUuNiwtMTIgMTIuOCwtMTJsNDcxLjIsMGM3LjIsMCAxMi44LDQuOCAxMi44LDEybDAsMGMwLDcuMiAtNS42LDEyIC0xMi44LDEybC00NzEuMiwweiIvPgogIDxwYXRoIGlkPSJzdmdfMTMiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im00OTYsMTk2YzAsNi40IC01LjYsMTIgLTEyLDEybC00NzIsMGMtNi40LDAgLTEyLC01LjYgLTEyLC0xMmwwLDBjMCwtNi40IDUuNiwtMTIgMTIsLTEybDQ3MiwwYzYuNCwwIDEyLDUuNiAxMiwxMmwwLDB6Ii8+CiAgPHBhdGggaWQ9InN2Z18xNSIgZmlsbD0iIzZlYzZmMCIgZD0ibTQ5NiwzMDBjMCw2LjQgLTUuNiwxMiAtMTIsMTJsLTQ3MiwwYy02LjQsMCAtMTIsLTUuNiAtMTIsLTEybDAsMGMwLC02LjQgNS42LC0xMiAxMiwtMTJsNDcyLDBjNi40LDAgMTIsNS42IDEyLDEybDAsMHoiLz4KICA8cGF0aCBpZD0ic3ZnXzE3IiBmaWxsPSIjNmVjNmYwIiBkPSJtNDk2LDI1MWMwLDYuNCAtNS42LDEyIC0xMiwxMmwtNDcyLDBjLTYuNCwwIC0xMiwtNS42IC0xMiwtMTJsMCwwYzAsLTYuNCA1LjYsLTEyIDEyLC0xMmw0NzIsMGM2LjQsMCAxMiw1LjYgMTIsMTJsMCwweiIvPgogIDxwYXRoIGlkPSJzdmdfMTkiIGZpbGw9IiM2ZWM2ZjAiIGQ9Im0xMi44LDM2OGMtNy4yLDAgLTEyLjgsLTQuOCAtMTIuOCwtMTJsMCwwYzAsLTcuMiA1LjYsLTEyIDEyLjgsLTEybDQ3MS4yLDBjNy4yLDAgMTIuOCw0LjggMTIuOCwxMmwwLDBjMCw3LjIgLTUuNiwxMiAtMTIuOCwxMmwtNDcxLjIsMHoiLz4KICA8cGF0aCBpZD0ic3ZnXzIxIiBmaWxsPSIjMzYzRjNFIiBkPSJtNDA4LDM4MS42YzAsMTQuNCAtMTIsMjYuNCAtMjYuNCwyNi40bC0yNTkuMiwwYy0xNC40LDAgLTI2LjQsLTEyIC0yNi40LC0yNi40bDAsLTI1OS4yYzAsLTE0LjQgMTIsLTI2LjQgMjYuNCwtMjYuNGwyNTkuMiwwYzE0LjQsMCAyNi40LDEyIDI2LjQsMjYuNGwwLDI1OS4yeiIvPgogIDxwYXRoIGlkPSJzdmdfMjIiIGQ9Im05NiwxMjIuNGMwLC0xNC40IDEyLC0yNi40IDI2LjQsLTI2LjRsMjU5LjIsMGMxNC40LDAgMjYuNCwxMiAyNi40LDI2LjRsMCwyNTkuMmMwLDE0LjQgLTEyLDI2LjQgLTI2LjQsMjYuNCIvPgogIDxwYXRoIGlkPSJzdmdfMjMiIGZpbGw9IiM0OTUxNTAiIGQ9Im0zNTIsMzM1LjJjMCw5LjYgLTcuMiwxNi44IC0xNi44LDE2LjhsLTE2Ni40LDBjLTkuNiwwIC0xNi44LC03LjIgLTE2LjgsLTE2LjhsMCwtMTY2LjRjMCwtOS42IDcuMiwtMTYuOCAxNi44LC0xNi44bDE2Ni40LDBjOS42LDAgMTYuOCw3LjIgMTYuOCwxNi44bDAsMTY2LjR6Ii8+CiAgPGcgaWQ9InN2Z18yOSIvPgogIDxnIGlkPSJzdmdfMzAiLz4KICA8ZyBpZD0ic3ZnXzMxIi8+CiAgPGcgaWQ9InN2Z18zMiIvPgogIDxnIGlkPSJzdmdfMzMiLz4KICA8ZyBpZD0ic3ZnXzM0Ii8+CiAgPGcgaWQ9InN2Z18zNSIvPgogIDxnIGlkPSJzdmdfMzYiLz4KICA8ZyBpZD0ic3ZnXzM3Ii8+CiAgPGcgaWQ9InN2Z18zOCIvPgogIDxnIGlkPSJzdmdfMzkiLz4KICA8ZyBpZD0ic3ZnXzQwIi8+CiAgPGcgaWQ9InN2Z180MSIvPgogIDxnIGlkPSJzdmdfNDIiLz4KICA8ZyBpZD0ic3ZnXzQzIi8+CiA8L2c+Cjwvc3ZnPg==",
+                "oc.keyword": "stress,stress,cpu,shell",
+                "oc.launch": "stress.konsole",
+                "oc.name": "stress",
+                "oc.path": "/usr/bin/konsole",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.20.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 839401666,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/dea539f580864596475f6f1bf36793384e8f6c6f7c4e71fad597a2031961a284/diff:/var/lib/docker/overlay2/c1d4abc8c191b1ebfb6f67c12e80f813582529d8189bc9651fe5400b7acd59fa/diff:/var/lib/docker/overlay2/165756a539b18c8538f3217f4a8313397279670efa764952b74de7456e164ca6/diff:/var/lib/docker/overlay2/92deb6ef1a13ec7548252bff055c8dd356042f72abbcb9e7ade670e92435ddd3/diff:/var/lib/docker/overlay2/a8fdd0140c17ec269897675cddacdab6d6258da8e7786554732aa296c0743ebc/diff:/var/lib/docker/overlay2/8d95538234a670098e5c3a73689c95ab7b478edc9322451ba03c9715e4634167/diff:/var/lib/docker/overlay2/9a8bb5e35016a4b964da6fa29365abafa29e729800188d62e8a80ec6eb0d1cea/diff:/var/lib/docker/overlay2/07306846f2447f1d2f3f371ed192a42aa056c65d0ec1ffb12f6779b8bb86f594/diff:/var/lib/docker/overlay2/1b2f6891c93737d2f746c93a76170f93da74623a860cfaee3c38488d49dcb2c3/diff:/var/lib/docker/overlay2/854626e4372b766d5876efda2ef5a76253427a0f1bb0c80668adf0e5ec8887d7/diff:/var/lib/docker/overlay2/be1e24368d6e10317b0ed857dc985608104a7646f119319359f79047cbed1e01/diff:/var/lib/docker/overlay2/77ef2f9f7bbd13b1d2d2a01872a70dba014c381d8ea0ce22af984d2551d444b7/diff:/var/lib/docker/overlay2/f06066a8b4ae07aa01951411191e1db3a527ef66244c21b29b621f7ce72b6415/diff:/var/lib/docker/overlay2/60482b1d453c439456786a290ac79cbbbd53f6dd645d011b713a3c0585964db6/diff:/var/lib/docker/overlay2/350c814e2f4c1b3e815042d637b605dba796ac7c188db4b8486082329b9291cd/diff:/var/lib/docker/overlay2/a312082e627aa0cadcf9788445af87b37bdb0e70b947c1b7048924e12b1933aa/diff",
+                "MergedDir": "/var/lib/docker/overlay2/579bc3f269df1e4c0ddd89fa4b0e54781fafb72510c3c56bca1b0a16c61eedf9/merged",
+                "UpperDir": "/var/lib/docker/overlay2/579bc3f269df1e4c0ddd89fa4b0e54781fafb72510c3c56bca1b0a16c61eedf9/diff",
+                "WorkDir": "/var/lib/docker/overlay2/579bc3f269df1e4c0ddd89fa4b0e54781fafb72510c3c56bca1b0a16c61eedf9/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6",
+                "sha256:cb747b95fb93f7aea284a31ede90c5a0b6ede3f01433226ddc52e6bd366097de",
+                "sha256:55a8ea8f185da6de6d1f2cd17a8a892d112496d1ad7c6434e23ee370225ebfdf",
+                "sha256:269a20621b64cdd094e8844723f6f4f45b93be586c0aadea85a967929bca2ab0",
+                "sha256:b5e2f99787b2d7ab0b00e47758b45d620af6240fa554f4d1dd67c194fb187310",
+                "sha256:4eb16d4e1500b9e283a8d67d2c11901800b58032ac940544173768cde97f897f",
+                "sha256:fef396211229a02857ea45b031b8396d352b8a8d95dbd387faf31f1bfed70f77",
+                "sha256:6a4a36641cf11b8c9a30fbdaa88be5fa4255a7e520b7fc8165ea7b4c749732d7",
+                "sha256:a656145f79a5589bcbacdacca4512d870752b532f7c1c52bc6c51a31dbff8cb3",
+                "sha256:35ea10bfbd8e5f83811d381d9c825f32c668d7cf8f504c5ea0c247a519bd8df7",
+                "sha256:38e27c9c85ccbdadf890275f247025a23401a66359e499a7ce2c567371e73c83",
+                "sha256:31af49eff28e7bdfeb2ca7d5fd6c1098648db7033d3b26b1f21e38725e538e37",
+                "sha256:2ef80adee0d86698e07ab11e89506536878e1905431bd0cae921270e88d95e76",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:d7630dc1634328f449d190ac7e08450241a954e68d12ecbfe7d3b2e9973f9bad",
+                "sha256:fda77f6f6e1147927e9a76250f3aeee795dd2c381de2f571d476bfa084263af2",
+                "sha256:006136cd8ab9752079403fa5bcd672ee2de721c405d0b9027ddd16f92ea96a3e"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
