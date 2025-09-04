@@ -1,0 +1,107 @@
+[
+    {
+        "Id": "sha256:2bdb2b2632f97f03da8fac0fa690033b73ee12d11de34d9d44fc9f2b84ad3dbd",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/mahjongg.d:4.2"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/mahjongg.d@sha256:c77a9d606cec2a6e9ec57f14b5ce8e4392e7759d4168def5164793402ca4628d"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-09-04T14:17:01.135081306Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=mahjongg",
+                "APPBIN=/usr/games/gnome-mahjongg",
+                "APP=/usr/games/gnome-mahjongg"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.desktopfile": "gnome-mahjongg.desktop",
+                "oc.displayname": "mahjongg",
+                "oc.icon": "circle_gnome-mahjongg.svg",
+                "oc.icondata": "PHN2ZyBpZD0ic3ZnNzgiIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzIGlkPSJkZWZzMzgiPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjM5OS41NyIgeDI9IjM5OS41NyIgeTE9IjU0NS44IiB5Mj0iNTE3LjgiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMi4xNDI5IDAgMCAyLjE0MjkgLTgyNi4zNiAtMTEwNy41KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBpZD0ic3RvcDIiIHN0b3AtY29sb3I9IiMzODg5ZTkiIG9mZnNldD0iMCIvPgogICA8c3RvcCBpZD0ic3RvcDQiIHN0b3AtY29sb3I9IiM1ZWE1ZmIiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0iYyIgeD0iLS4wMzYiIHk9Ii0uMDM2IiB3aWR0aD0iMS4wNzIiIGhlaWdodD0iMS4wNzIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBpZD0iZmVHYXVzc2lhbkJsdXI3IiBzdGREZXZpYXRpb249IjAuNDE5OTk4NzQiLz4KICA8L2ZpbHRlcj4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhckdyYWRpZW50OTEyIiB4MT0iMzAuNzY1IiB4Mj0iMzEuMTA2IiB5MT0iNTYuOTkzIiB5Mj0iNy4zNjYiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMjQ0LjY1IDAgMCAyMjguMzQgMTUyLjY2IC0xMTMuNjUpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIGlkPSJzdG9wMzMiIHN0b3AtY29sb3I9IiM2MjYyNjIiIG9mZnNldD0iMCIvPgogICA8c3RvcCBpZD0ic3RvcDM1IiBzdG9wLWNvbG9yPSIjMzgzODM4IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImZpbHRlcjkzMiIgeD0iLS4wNzE1MzgiIHk9Ii0uMDUxNjY3IiB3aWR0aD0iMS4xNDMxIiBoZWlnaHQ9IjEuMTAzMyIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KICAgPGZlR2F1c3NpYW5CbHVyIGlkPSJmZUdhdXNzaWFuQmx1cjkzNCIgc3RkRGV2aWF0aW9uPSIwLjc3NSIvPgogIDwvZmlsdGVyPgogPC9kZWZzPgogPGNpcmNsZSBpZD0iY2lyY2xlNDAiIHRyYW5zZm9ybT0ibWF0cml4KDIuMTQyOSAwIDAgMi4xNDI5IC04MjYuMzYgLTExMDcuNSkiIGN4PSI0MDAuNTciIGN5PSI1MzEuOCIgcj0iMTQiIGZpbHRlcj0idXJsKCNjKSIgb3BhY2l0eT0iLjI1IiBzdHJva2Utd2lkdGg9Ii43MzMzMyIvPgogPGcgaWQ9Imc0OCIgc3Ryb2tlLXdpZHRoPSIxLjU3MTUiPgogIDxjaXJjbGUgaWQ9ImNpcmNsZTQyIiBjeD0iMzIuMDIiIGN5PSIzMi4wNDQiIHI9IjMwLjAwMSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDkxMikiLz4KICA8Y2lyY2xlIGlkPSJjaXJjbGU0NCIgY3g9IjMyLjAyIiBjeT0iMzIuMDQ0IiByPSIzMC4wMDEiIGZpbGwtb3BhY2l0eT0iMCIvPgogIDxjaXJjbGUgaWQ9ImNpcmNsZTQ2IiBjeD0iMzIuMDIiIGN5PSIzMi4wNDQiIHI9IjAiIGZpbGw9InVybCgjYikiLz4KIDwvZz4KIDxnPgogIDxyZWN0IGlkPSJyZWN0OTE0IiB4PSIxOSIgeT0iMTQiIHdpZHRoPSIyNiIgaGVpZ2h0PSIzNiIgcng9IjIiIHJ5PSIyIiBmaWx0ZXI9InVybCgjZmlsdGVyOTMyKSIgb3BhY2l0eT0iLjUiLz4KICA8cmVjdCBpZD0icmVjdDg5NCIgeD0iMTkiIHk9IjE0IiB3aWR0aD0iMjYiIGhlaWdodD0iMzYiIHJ4PSIyIiByeT0iMiIgZmlsbD0iI2YyZjJmMiIvPgogIDxwYXRoIGlkPSJwYXRoNCIgZD0ibTI5LjAyIDIwLjUyNWMtMC4yMDg4MiAwLjE1MzUyLTAuMjYxMDggMC4zODM1Ny0wLjI2MTA4IDAuNjUyMzUgMCAwLjQ5ODg4IDAuMjA4ODIgMS4xMTI4IDAuMzEzMjUgMS4zNDMxIDAgMCAwLjE1NjYyIDIuNjg2MiAwLjIwODg0IDIuOTkzMi0wLjQ2OTg4IDAuMDM4MzctMS4zMDUyIDAuMDc2NzYtMS42MTg0IDAuMTUzNWgtMC40MTc2NmMtMC44ODc1NCAwLjAzODUtMS43MjI4IDAuMDc2NzYtMi4wODg0IDAuMzQ1MzFsLTAuMTU2NjMgMC4xMTUxMiAwLjE1NjYzIDAuMTUzNWMwLjI2MTAzIDAuMjMwMjQgMC4zNjU0NyAwLjg4MjYxIDAuNDY5ODggMS41NzM0IDAuMjYxMDMgMS40MTk4IDAuNTc0MjggMy4xODUgMi4xNDA2IDMuODc1OWwwLjMxMzI1IDAuMTE1MTJ2LTAuMjY4NjJzMC4wNTIzLTAuMTE1MTIgMC4wNTIzLTAuMjY4NjJjMC0wLjExNTEyLTAuMDUyMy0wLjMwNy0wLjEwNDM2LTAuNTc1NjIgMC40MTc2NiAwLjAzODM3IDEuMzA1MiAwLjExNTEyIDEuNjE4NCAwLjExNTEyIDAuMDUyMjYgMC4zMDcwNSAxLjQwOTcgMTIuODE4IDEuNDA5NyAxMi44MThoMC41MjIxNnMwLjU3NDMxLTEyLjM1NiAwLjU3NDMxLTEyLjc0YzAuMzY1NDQgMCAxLjk4MzkgMC4wMzgzNSAyLjQ1MzggMC4wNzY3Ni0wLjEwNDI5IDAuMjMwMjgtMC41MjE5MyAxLjE4OTctMC41MjE5MyAxLjE4OTdsMC43MzA3NS0wLjQ5ODgzYzAuMjA4ODItMC4xMTUyNiA0Ljc1MDgtMy4xNDY3IDQuMTI1NS01LjE0MjMtMC4yMDk5OC0wLjY1MjM1LTAuOTQwMjctMS4xMTI5LTIuMTQxOC0xLjM0M2gtMC4xMDQ2NmMtMC42Nzg3MiAwLTIuNzY3MSAwLjAzODM3LTQuMzMzNCAwLjExNTEyIDAuMDUyMzQtMC45OTc3MyAwLjA1MjM0LTEuNTM1IDAuMDUyMzQtMS44MDM3di0wLjM0NTM4YzAtMC4xOTE4OCAwLjI2MTAzLTAuNDYwNSAwLjQ2OTg4LTAuNjUyMzggMC4yMDg4NC0wLjIzMDI0IDAuNDY5OS0wLjQyMjEyIDAuNDY5OS0wLjY1MjM4IDAtMC4wNzY3Ni0wLjA1MjMxLTAuMTUzNS0wLjEwNDM2LTAuMjMwMjQtMC4zMTI0MS0wLjM0NTU0LTIuNjA5Ni0xLjIyODItMy42MDE1LTEuMzA0OS0wLjMxMzM0IDAuMDM4MjYtMC41MjIxNiAwLjA3Njc2LTAuNjI2NjkgMC4xOTE3OHptMC4wNTIzMiA2LjI5MzVoMC4yNjEwM2MwIDAuMzQ1MzggMC4xNTY2MyAyLjc2MjkgMC4yMDg4MiAzLjEwODItMC40MTc2NC0wLjAzODUtMS40MDk1LTAuMTE1MjYtMS43MjI4LTAuMTE1MjYtMC4xNTY3OS0wLjQ5ODgzLTAuMjA4ODItMS4wMzYyLTAuMjYxMDgtMS41NzMzLTAuMDUyMjYtMC40NjA1Ny0wLjEwNDI5LTAuOTIxMTQtMC4yMDg4Mi0xLjM0MzIgMC40Njk4OCAwIDEuNzIyOS0wLjA3Njc2IDEuNzIyOS0wLjA3Njc2em0zLjE4NDggMS4xODk0czAuMDUyMTctMC45MjEgMC4wNTIxNy0xLjIyOGMwLjY3ODcgMC4wNzY3NiAxLjU2NjIgMC4xMTUxMiAyLjQwMTUgMC4xMTUxMmgwLjkzOTc1YzAgMC4xNTM1LTAuMDUyMzIgMC4zNDUzOC0wLjA1MjMyIDAuMzQ1MzgtMC4xMDQzNiAwLjg0NDIzLTAuMjYxMDMgMS44NDE5LTAuNzMwOTQgMi44Mzk3LTAuMzEzMjMgMC0yLjI0NDktMC4wNzY3Ni0yLjY2MjYtMC4xMTUxMiAwLTAuMjY4NjIgMC4wNTIzMi0xLjk1NzEgMC4wNTIzMi0xLjk1NzF6IiBmaWxsPSIjZTY0YzRjIiBzdHJva2Utd2lkdGg9IjIuMzMzMiIvPgogPC9nPgo8L3N2Zz4K",
+                "oc.keyword": "mahjongg,gnome mahjongg,game mahjongg,mahjongg",
+                "oc.launch": "gnome-mahjongg.Gnome-mahjongg",
+                "oc.name": "mahjongg",
+                "oc.path": "/usr/games/gnome-mahjongg",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.24.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 636364227,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/61a5566f7d07c3f515fb49afe885928ee290890a2b2b5e4077bb2b842293ba8d/diff:/var/lib/docker/overlay2/9db058ccb672dd0e2193ac76d1c854777cdf3824c2819b861a17cf609d86043c/diff:/var/lib/docker/overlay2/1f53e81fe859b3aa055a3b391bffdd9ba9a3347a5db488f1fd794436fafd08d9/diff:/var/lib/docker/overlay2/cbbae0a6a3baa1e9d7a07c3913d727790c066755193473ab5b4f1ed2e3f0da9c/diff:/var/lib/docker/overlay2/0c3b9f9b54ab24ab29fc0ea1a490be799fc0e83abf0d6e33d6ea293e721026d8/diff:/var/lib/docker/overlay2/1793499b80796fb6340e1291669d879d6c60a431aa575ed9eff2bd47cb6d2472/diff:/var/lib/docker/overlay2/786ff76e28e9f3d6fc9f59d2f67d7291dac703a5a58c26239ee965e7a3c77743/diff:/var/lib/docker/overlay2/9c7b4f3e91528e29e6c37438b4b431fc67685e7f30f7af3e586d1d2e0aa79d60/diff:/var/lib/docker/overlay2/dd73976674f65e92d17ffa361ed71a09b315b2e172dfc7179d9933dc5324b209/diff:/var/lib/docker/overlay2/a5771e73f0b49e96883d2e538b6144e699587941120124eb52b8890484b36391/diff:/var/lib/docker/overlay2/2846b1ec8294a07212e46b079ea10cdedad7ceb6ce2306b2d549ea6669abae47/diff:/var/lib/docker/overlay2/5bf140d0621af4b0fdcdbe8074f89fd5b49265381b763ac4414caa11d182371d/diff:/var/lib/docker/overlay2/240ec4c0679bf82913f112096f7b1f44efe34103a915805d2332d37fe109d4c4/diff:/var/lib/docker/overlay2/9a9402a9d727102e9ef62823019c45279e1d612de82ab13aeee2005ba53f4181/diff:/var/lib/docker/overlay2/d0cea90721740703aae72f774fbc26968f3f90eb282334c4d94d6a44e31dee45/diff:/var/lib/docker/overlay2/947d0e1f3b326a18cd7f4aede488dda45ff09316c67d84d12e13e7fe3eac2ec1/diff:/var/lib/docker/overlay2/ed2366421e40aaf9b424c56dbf0f3a8a2a17a43e28b08701f2dc6238831effc3/diff:/var/lib/docker/overlay2/c063efb94ce0e696fb9322ea8f09e71c0a14861efa985e99e40821698906b119/diff:/var/lib/docker/overlay2/0217090310b57cab1d098839a66f9ad9040270aacc8ac78f4a46b0f900327717/diff:/var/lib/docker/overlay2/8b1b947999d65d545162113c32f4649f2aec69c49e5c2f75f0f177e0ad3901ca/diff:/var/lib/docker/overlay2/449e4175822e1570a8fb869db1f4d7588071fceac649e867c4dcc556945dafb3/diff:/var/lib/docker/overlay2/2ab67e0b90f6d187d707135064b8b2c491f7dd0ffbe9a00b023d16603b3c928c/diff:/var/lib/docker/overlay2/f639de1512dd1d966484876853f135f2966b852879b4dd243ccd228545a9e4c1/diff:/var/lib/docker/overlay2/56d7686b7f916f53a628bc099681c1af4bcb97e93ff513ccef8ab65d8044eea4/diff",
+                "MergedDir": "/var/lib/docker/overlay2/b77f83de577d5723c84e207f6178043a2942d6004d161f024d65ccfc65b6c373/merged",
+                "UpperDir": "/var/lib/docker/overlay2/b77f83de577d5723c84e207f6178043a2942d6004d161f024d65ccfc65b6c373/diff",
+                "WorkDir": "/var/lib/docker/overlay2/b77f83de577d5723c84e207f6178043a2942d6004d161f024d65ccfc65b6c373/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:9d592720ced4a7a4ddf16adef8a126e4c8c49f22114de769343320b37674321e",
+                "sha256:9b38a638b1ac4740ddd4c7632cbd5a4be4207801bc008ab74d7c0bf5657735b2",
+                "sha256:0e9768af322807f9397c926cdd3948cd4eec2251c2122fc1c9706ecfda993048",
+                "sha256:68d09a991822bdcaa5e5e4ac14517ce2d1967cde37ca1a8cf81bce133d796225",
+                "sha256:7b0a48170e61af996de1d43238638dd7e2644697a8c96e3a811baf4d7cbe0300",
+                "sha256:e4068f67145103fadcf9bd5b45cf1b1caf16bc60b017dc908b22fefcdb1a1a0b",
+                "sha256:52799f45d3d6423228a22f3b759827f53344ff3880fc9fa1fb18db1781f90154",
+                "sha256:849eb0594379a543b57a8b31b013ea5d2552c4df38c4847846b6d36bed1b334a",
+                "sha256:f93934277c551dd4bc39bcea7dd716631bb0aa048a3e2113fcbb73d2cd8a9086",
+                "sha256:32b32f611987ba2bb342986a9fcf8415b70dd4fb5fd84d9a7c963d53944ce358",
+                "sha256:e73f2774942da4e61b6fd710ce820105adfda676eae89b9d84bbf4e56bbff3b8",
+                "sha256:3fdda4fa188e45f17b77d1ab5b64a207c7ab55b99c313b76a623eb78109352e9",
+                "sha256:eae17e9acc62b40002fda20e06bcf7c5445fa4f5a3171443291143d56a9089db",
+                "sha256:b20e4a83ae177eb21630a7f184d8de1dfb1f4507d3fba7cde8f09dd1c8544c30",
+                "sha256:db3c1efee9b74d2a29b7dc1d17e8edf0585f298c8525ede1ba515d55fc75526c",
+                "sha256:a54a9a4483d367641dfc1e72a3ece2e053005b96bc269c20a7c2e760c49e6287",
+                "sha256:8eb947bf4ca7c837ff8653d5838bcc80fdc183a5a10819d17c3b8b02ab8bb7bb",
+                "sha256:615c789730a51db0c5a05297d7f110fe08a92a121ed4d716fac1163bf5cc00b6",
+                "sha256:9183297f339bde522240897be9351db4147d58bc41650e105c52cacc2ccdc9ed",
+                "sha256:b86594fed38cdcf52fb24ffe383ca1b13b53d51eac140e6809bce2e5ad8381ee",
+                "sha256:8f33f76740a0b6eeae9646f1593c398ca81a1a8458d4fae4da839e6a30d74a39",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:e27ec99d8a1f7d358df60a9b257d59dc6b39415b0d04742076ba46022639876a",
+                "sha256:524ee42b47a0091df1d218703eba494a9d397d81aeb3eaed0367b324a91ed4e2",
+                "sha256:33fa67aa3c8d86af33eb10256724fab0a2f537ce84592dafbbf15a15ac2a8383"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
