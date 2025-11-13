@@ -1,0 +1,95 @@
+[
+    {
+        "Id": "sha256:61910d7a6a11a3f2ffc76868de08fad7b732c5118521eb284f9ef1781799da32",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/filezilla.d:4.3"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/filezilla.d@sha256:72476ec194b152f0a921db26fb3c50a36edaddb0ff20a8bc631b751bde46422c"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-11-13T22:31:58.827489992Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=filezilla",
+                "APPBIN=/usr/bin/filezilla",
+                "APP=/usr/bin/filezilla"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities",
+                "oc.desktopfile": "filezilla.desktop",
+                "oc.displayname": "filezilla (alpine)",
+                "oc.icon": "circle_filezilla.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGZpbHRlciBpZD0iYSIgeD0iLS4wMzYiIHk9Ii0uMDM2IiB3aWR0aD0iMS4wNzIiIGhlaWdodD0iMS4wNzIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iLjQyIi8+PC9maWx0ZXI+PGZpbHRlciBpZD0iYyIgeD0iLS4wNiIgeT0iLS4wNiIgd2lkdGg9IjEuMTIiIGhlaWdodD0iMS4xMiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIuNiIvPjwvZmlsdGVyPjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjQwMC41NyIgeDI9IjQwMC41NyIgeTE9IjU0NS44IiB5Mj0iNTE3LjgiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2My42NyAtMjM1LjkxKSBzY2FsZSgxLjQyODYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2UwMmQyZCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2Y3NTE1MSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGNpcmNsZSB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODI2LjM2IC0xMTA3LjUpIHNjYWxlKDIuMTQyOSkiIGN4PSI0MDAuNTciIGN5PSI1MzEuOCIgcj0iMTQiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjI1Ii8+PHJlY3QgeD0iMzg4LjU3IiB5PSI1MDMuOCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeT0iMjAiIGZpbGw9InVybCgjYikiIHRyYW5zZm9ybT0ibWF0cml4KDEuNTAwMDggMCAwIDEuNTAwMDggLTU4MC44NSAtNzUzLjY5MykiIHN0cm9rZS13aWR0aD0iLjk2NiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQgNCkgc2NhbGUoMS4xNjY3KSIgZmlsdGVyPSJ1cmwoI2MpIiBvcGFjaXR5PSIuMTUiPjxwYXRoIGQ9Im0xNyAxMi01IDIxaDQuMWwyLjE1LTlIMjlsLTEwLjA3MSA4Ljk2MkwyMS41NjIgMzZsMS4zNDgtLjcwM2MyLjU1MS0xLjMwOSAzLjYyMS0uNTQzIDUuNTU1LS4wMDggMS44ODMuNTIgMy42NTYgMS4wNzggNy4zMjgtMS4wMzVsLS43My0zLjczNGMtNCAyLjg0OC01LjI3My4zMDktOC4xMjkuMjAzTDM1IDI0bDEtNEgxOS4ybC45OC00SDMxbDEtNCIvPjwvZz48cGF0aCBkPSJNMjMuODM0IDE4IDE4IDQyLjUwMWg0Ljc4NGwyLjUwOC0xMC41aDEyLjU0MmwtMTEuNzUgMTAuNDU2TDI5LjE1NiA0NmwxLjU3My0uODJjMi45NzYtMS41MjcgNC4yMjUtLjYzNCA2LjQ4MS0uMDEgMi4xOTcuNjA3IDQuMjY2IDEuMjU4IDguNTUtMS4yMDdsLS44NTItNC4zNTZjLTQuNjY3IDMuMzIyLTYuMTUyLjM2LTkuNDg0LjIzN0w0NC44MzQgMzJsMS4xNjctNC42NjdoLTE5LjZsMS4xNDMtNC42NjdoMTIuNjI0TDQxLjMzNCAxOCIgZmlsbD0iI2Y5ZjlmOSIvPjwvc3ZnPg==",
+                "oc.keyword": "filezilla,ftp,client",
+                "oc.launch": "filezilla.Filezilla",
+                "oc.name": "filezilla",
+                "oc.path": "/usr/bin/filezilla",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.edge.gtk",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 729521351,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/10e272a58791dea2f0c4878148d78d632c3e3a208abb73136e26bc6b10cca192/diff:/var/lib/docker/overlay2/e092eda83bfdffce91fef356fdb7cfb5e05fd9c1a285b2247207f11c282932af/diff:/var/lib/docker/overlay2/800360cd703cb4dd3272d40cdd3238f5092c15a724b8aeb5870b6e92974e4ed7/diff:/var/lib/docker/overlay2/7120eacaf5a94f74a2764b1c562c991017859311037f038c608f3fb862093e6c/diff:/var/lib/docker/overlay2/862c80ac9466e34644d69f884506a2ed8650895a48ef9ee0b382e511bb03ce3c/diff:/var/lib/docker/overlay2/4dab324489fd06d135310e4eed30ebe37048ba929477ae1cec9eb373da50254c/diff:/var/lib/docker/overlay2/13b8d8a0f6d9606337d4831339aa2920c81a1ba81aef288aed1b8c1f5c23ea9f/diff:/var/lib/docker/overlay2/7a2647f531a0ee05d23620bd482c8aad0886ed57ad30bd62101dec0f59cc8802/diff:/var/lib/docker/overlay2/ad6df2b98fe2d8c702cbc713477499da01869f3acff02aa63ac03af79ebfbb9a/diff:/var/lib/docker/overlay2/b2c434dccca87c34707493a18da19faaef5b69899b9455ca69a35dae77c5ab8e/diff:/var/lib/docker/overlay2/56b9c43b48138db4ea6eaa8e641e41ff37dd498f265513e8003fb294dc2470f1/diff:/var/lib/docker/overlay2/438852c833789b6c04f7a1650264ec4902d382ceb9ebcdc77f7e5a7871d5f4b3/diff:/var/lib/docker/overlay2/daa42f42516fd076c4f47d95309a9b06f8bc38545e1aa6fa4030e6a5b95ecb70/diff:/var/lib/docker/overlay2/93e1e354839e98a01c2fa1352b2ad1116b5bd5a79798be49fd4f3e8737885a88/diff",
+                "MergedDir": "/var/lib/docker/overlay2/4ec3a1e2855d7056dbad8f06d939e48ac81d5dd7b103188b6e6e7e4ff376cc34/merged",
+                "UpperDir": "/var/lib/docker/overlay2/4ec3a1e2855d7056dbad8f06d939e48ac81d5dd7b103188b6e6e7e4ff376cc34/diff",
+                "WorkDir": "/var/lib/docker/overlay2/4ec3a1e2855d7056dbad8f06d939e48ac81d5dd7b103188b6e6e7e4ff376cc34/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:e21721183b10fa6d84b263043a2e6a3f972aab36fcbdb9640aeeb21044a8c8c1",
+                "sha256:8e7daef2b7016066742f7e22e822e3e79cccd531616f60c9568312ceb4a78f48",
+                "sha256:3205cbbbf39c2f17aed1c833111e1558f324bf886c25cbe3ff65f0be0967418b",
+                "sha256:3f7134435f76b5c8ad4d095522f257e09c3e799d3769486005140b35c952f576",
+                "sha256:d2c64294770557f72535096e330e925738765388d74cb3d2aa44a1bd79a90abc",
+                "sha256:885c859a4a22dfc9ac935632897e95c9e51f449cfdc14af83585399bc99d1dda",
+                "sha256:240e48187109938a6e4499d06248e81d087e260d477d0ca59299bb9962fc1cef",
+                "sha256:6374f27e9a835c6429c048852afa99a88552168f61d831b337961d9e352eafcb",
+                "sha256:1820900db3cdbe158367a2de7d26e3f1475f5f8314f9c4e656e66888ff5b6fba",
+                "sha256:16a74b597c37eeff50e640a1be8e90aebdc546255441824af91c21a3eb0d1808",
+                "sha256:b6426986889a882885a901b7697958fac1bdde712b2ba75d3f3f4705349dcd7e",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:c6cd3870ab4f2d6bcafc93101f18976759e20423c2f26da9c1614137f12000e5",
+                "sha256:f4262b3e46de022fee56c028ccda0492661a9a7d4bec1febcdf41e56d8dd217a",
+                "sha256:3d9b77e0c4ebb447bc747f066db918f9cc59b44f59c891104dd0fbc2aa9d8fd2"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
