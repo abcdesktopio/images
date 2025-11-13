@@ -1,0 +1,96 @@
+[
+    {
+        "Id": "sha256:71dd656ae9965ce0ee8f64568c3c3dc173d62e3d93ee377988d1da5208c841bb",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/cmd.exe.d:4.3"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/cmd.exe.d@sha256:426bd7d127d46fffd3bc6c974db758445853fdc1c64e6b0229d860c08f251eed"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-11-13T22:24:28.279514612Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "WINEDLLOVERRIDES=mscoree,mshtml=",
+                "APPNAME=cmd.exe",
+                "APPBIN=/usr/bin/wineconsole",
+                "APP=/usr/bin/wineconsole"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities",
+                "oc.displayname": "cmd.exe wine (alpine)",
+                "oc.icon": "cmd.svg",
+                "oc.icondata": "PHN2ZyBoZWlnaHQ9IjEwMjQiIHdpZHRoPSI4OTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTgzMSAxMjdINjNjLTM1LjM1IDAtNjQgMjguNjUtNjQgNjR2NjQwYzAgMzUuMzUgMjguNjUgNjQgNjQgNjRoNzY4YzM1LjM1IDAgNjQtMjguNjUgNjQtNjRWMTkxQzg5NSAxNTUuNjQ5OTk5OTk5OTk5OTggODY2LjM1IDEyNyA4MzEgMTI3ek0xMjcgNTc1bDEyOC0xMjhMMTI3IDMxOWw2NC02NCAxOTIgMTkyTDE5MSA2MzkgMTI3IDU3NXpNNjM5IDYzOUgzODN2LTY0aDI1NlY2Mzl6IiAvPgo8L3N2Zz4K",
+                "oc.keyword": "cmd.exe,wine,command,cmd.exe",
+                "oc.launch": "conhost.exe.conhost.exe",
+                "oc.name": "cmd.exe",
+                "oc.path": "/usr/bin/wineconsole",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.wine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1046475833,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/1b09fdd6855d057bb9b93113ab8acc7baef008d685ba1a921ce3ac1262d4e855/diff:/var/lib/docker/overlay2/7558308283d5a914016661e5ecf8053a71d429284de23066d35f27ee3cbfeb72/diff:/var/lib/docker/overlay2/ba7c3d8d271f738a26e331ea21169803615698c52a17218cc512f20b37d7376c/diff:/var/lib/docker/overlay2/7130c98955dfc388e9058789163ad2c956cc33b09476f0776465da7eca04173b/diff:/var/lib/docker/overlay2/a302fac84c34894f13ddcb8b758be8886be179eeaa74b979945fb29504467b04/diff:/var/lib/docker/overlay2/8ff223b3090853848ba28e4758a68bf694d1e420b302e0680a82c724fa2f74f0/diff:/var/lib/docker/overlay2/2f4fc83e8eb108ffd18c7369e4c4c699f78bda3c2d0a7ef3aa94111a24a955a3/diff:/var/lib/docker/overlay2/5cad7e238597c170c5bc70d5851b82655b2535dc31d4b77ebfae0de6eab632ef/diff:/var/lib/docker/overlay2/b0018422ff8bc67d04a60b9fd59b19c747467aa5d100e90486a78cce14f2190c/diff:/var/lib/docker/overlay2/c682eb4394fc50ee99f1e55623cfb3dd9f79932e7efb8641507c6df890627404/diff:/var/lib/docker/overlay2/df5cf31200788528a8c799ae4b497f28b11e03a9db5be6283b51255c8b3ed60e/diff:/var/lib/docker/overlay2/5f0ff29b66f6cc89f79d866f5bd11b3f8205fae200c5e89b857351976aee1174/diff:/var/lib/docker/overlay2/3a9d61ec73628c43f90edebfdc3fc6915887f9bcdb4bf7d401a799c028fda6df/diff:/var/lib/docker/overlay2/f1ee352b5ac3a54cdee2da02f0571692488141dfbcb5c56fb153d041e8a3df51/diff:/var/lib/docker/overlay2/6388441e09babe6a910547f2ecfa0a7cd22745aead1eaeec7ef53bc11253ad11/diff",
+                "MergedDir": "/var/lib/docker/overlay2/df96d6e6d5580f2580baa6b4ced6fde423751d08e81ad52240fcbc0365f76564/merged",
+                "UpperDir": "/var/lib/docker/overlay2/df96d6e6d5580f2580baa6b4ced6fde423751d08e81ad52240fcbc0365f76564/diff",
+                "WorkDir": "/var/lib/docker/overlay2/df96d6e6d5580f2580baa6b4ced6fde423751d08e81ad52240fcbc0365f76564/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2bc3e313ad12f8bde9d1",
+                "sha256:b76ea25285090d06c1cffb252fc1c57bae060558d06a112fb607f14776ba8f46",
+                "sha256:527c731ceb3b30c9c52923ac6f8e16286f19dd7b3de9e1b2115d20bfd7c118d2",
+                "sha256:9f00146df79e17641a4cad84fb00ce248b5cf33b07d89d75f91a269fbb982dc4",
+                "sha256:44810fccd6b854e5b35df87a758a71521731614ba3d7f1dc97a7b327ea054378",
+                "sha256:e4222d78d12bb9cd3350fb728c45584db6019bf2b0521a78829ada16a76b05e8",
+                "sha256:5799225a9bf38644e921efa6c46ead63f7d70ba84a71432d08e80156363814d3",
+                "sha256:ffed5186e75429a0d3e2eb635124ad04bc178f56e2212160f301a9e70155616a",
+                "sha256:61c46a79706060ddc1702ac20d7ee31d367fdfbee3c854ea555dfb0e48be5ec6",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:f43e4f4c9b343cc0e79fb6897e6ce6cfd356c6015edc9bafbcf582d5da412ec4",
+                "sha256:1d789cfddbb0463421ec8370ba091d32c02bf1dfb127433d5214666b649a88b6",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:df2e53f4b2f8b72142cbc3581f56dcbbba5e0fd13a884f545dcebc32b8b75b57",
+                "sha256:36277a33adaaa905ad902136f3b20a5690f7d874de4554e5bc8e72f69aebaf09",
+                "sha256:093f1b798bc9f3fd2bfe279fbc91ac92316b2c956fd6cfee99435bc598b3b8be"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
