@@ -1,0 +1,91 @@
+[
+    {
+        "Id": "sha256:83b8c79d563a2134a31ae0b93fdb577f4ac89cfa3e9400270df026ba7f831414",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/sudoku.d:4.4"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/sudoku.d@sha256:bd2ddab24e685eda2ec54a42cc0ca7f7370949dcfef484fb486044f1d3923a43"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-10T22:00:38.869649469Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=sudoku",
+                "APPBIN=/usr/bin/gnome-sudoku",
+                "APP=/usr/bin/gnome-sudoku"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.desktopfile": "org.gnome.Sudoku.desktop",
+                "oc.displayname": "sudoku",
+                "oc.icon": "org.gnome.Sudoku.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMjQgMTAyNCIgaW1hZ2UtcmVuZGVyaW5nPSJvcHRpbWl6ZVNwZWVkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZSIgeDE9IjMxLjIyMiIgeDI9IjMxLjYyOCIgeTE9IjYxLjE0NyIgeTI9IjIuODUzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzlhOWE5YSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0ic2lsdmVyIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjMxLjY0MSIgeDI9IjMyLjE2OCIgeTE9IjYxLjMzOSIgeTI9IjMuODEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2VmYjUyOCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2U2OWM3NiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIzMS43MjIiIHgyPSIzMi4yNzgiIHkxPSI2Mi44NzMiIHkyPSIuNzQzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ViZWJlYiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJhIiB4PSItLjAzNiIgeT0iLS4wMzYiIHdpZHRoPSIxLjA3MiIgaGVpZ2h0PSIxLjA3MiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxNC4xNiIvPjwvZmlsdGVyPjxmaWx0ZXIgaWQ9ImQiIHg9Ii0uMTUzIiB5PSItLjA5OCIgd2lkdGg9IjEuMzA2IiBoZWlnaHQ9IjEuMTk2IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249Ii4zNiIvPjwvZmlsdGVyPjwvZGVmcz48cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCguMDYzNTYgMCAwIC4wNjM1NiAtLjU0NiAtLjU0NikiIGQ9Ik05MjkuODUgMjg5LjY1Yy0yLjM1LTQuMzUtNC45NS05LTcuNjUtMTMuNi0yMC4zLTM0LjUtNDUuOC02Ny4yLTc2LjM1LTk3Ljc1Qzc3My4yNSAxMDUuNyA2ODguNyA2MS42NSA1OTIuMiA0Ni4yNWMtMTYuMjUtMi42LTMyLjgtNC40LTUwLjA1LTUuMzUtOS43LS41NS0xOS44NS0uODUtMzAuMS0uODUtOS4zNSAwLTE4LjYuMjUtMjcuOS43NS0xMTguMzUgNi4xLTIyMC4zIDUxLjk1LTMwNS44NSAxMzcuNS0yMC41IDIwLjUtMzguNzUgNDEuOTUtNTQuNyA2NC40LTE1LjM1IDIxLjU1LTI4LjU1IDQ0LTM5LjYgNjcuMmwtLjAyNS0uMDI1UTQwLjA1IDQwMS44NzMgNDAuMDUgNTEyLjA1NWMwIDEzMC4zNSA0Ni4xIDI0MS42NSAxMzguMjUgMzMzLjggNTYuNyA1Ni42NSAxMjAuNTUgOTUuOSAxOTEuMSAxMTcuNTUgMzYuNzUgMTEuMjUgNzQuOCAxNy44NSAxMTQuNzUgMTkuOTVoLjRjOC41LjQ1IDE2LjYuNyAyNC41LjdoM2MxMC4zIDAgMjAuNS0uMyAzMC4xLS44IDIuNS0uMTUgNC43NS0uMyA2Ljk1LS40NSAyMC4yLTEuNDUgMzkuOS00LjA1IDU4LjctNy43IDcuOTUtMS41NSAxNS44LTMuMyAyMy40LTUuMTUgODAuOC0yMC4zIDE1Mi4xNS02MS42IDIxNC42NS0xMjQuMSA0OC42LTQ4LjYgODQuNC0xMDIuNSAxMDcuMzUtMTYxLjggMTguNDUtNDcuNjUgMjguNjUtOTguOCAzMC41NS0xNTMuNS4yLTYuMDUuMy0xMi4yNS4zLTE4LjV2LTNjLS4yLTQwLjY1LTQuOTUtNzkuNS0xNC4zLTExNy0xLjEtNC4zNS0yLjM1LTktMy42NS0xMy42LTEtMy40LTItNi44NS0zLjE1LTEwLjUtMS42LTUuMTUtMy40LTEwLjUtNS4zLTE1Ljg1LTUuMDUtMTQuMjUtMTAuODUtMjguMjUtMTcuNDUtNDIuMTUtMS44NS0zLjgtMy43NS03LjY1LTUuNy0xMS41LTEuNDUtMi44NS0yLjk1LTUuNy00LjY1LTguOHoiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjI1Ii8+PHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMzAiIHJ5PSIzMCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHg9IjIxLjI4NiIgeT0iMjEuMjg2IiB3aWR0aD0iMjEuNDI5IiBoZWlnaHQ9IjIxLjQyOSIgcnk9IjAiIGZpbGw9InVybCgjYykiLz48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjYuNjE2IDIxLjI2NnEwIC44NjQtLjQ5MiAxLjM4LS40OC41MDQtMS4yODQuNjcydi4wNDhxMS4wMi4xMiAxLjUyNC42NDguNTE2LjUyOC41MTYgMS4zOCAwIC43NTYtLjM0OCAxLjMzMnQtMS4wOC45cS0uNzIuMzI0LTEuODYuMzI0LS42NzIgMC0xLjI0OC0uMTA4LS41NzYtLjA5Ni0xLjEwNC0uMzZ2LS45ODRxLjU0LjI3NiAxLjE2NC40MnQxLjIuMTQ0cTEuMTUyIDAgMS42NTYtLjQ0NC41MTYtLjQ1Ni41MTYtMS4yNDggMC0uODA0LS42MzYtMS4xNTItLjYyNC0uMzYtMS43NjQtLjM2aC0uODI4di0uOWguODRxMS4wNTYgMCAxLjU5Ni0uNDQ0LjU1Mi0uNDQ0LjU1Mi0xLjE3NiAwLS42MjQtLjQyLS45Ni0uNDItLjM0OC0xLjE0LS4zNDgtLjY5NiAwLTEuMTg4LjIwNHQtLjk3Mi41MTZsLS41MjgtLjcycS40NTYtLjM2IDEuMTI4LS42MjQuNjg0LS4yNjQgMS41NDgtLjI2NCAxLjM0NCAwIDEuOTkyLjYuNjYuNi42NiAxLjUyNHoiIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNkKSIgb3BhY2l0eT0iLjI1IiB0cmFuc2Zvcm09Im1hdHJpeCgxLjUxOTggMCAwIDEuNDU5NyAtNC41NjUgLTIuMzcpIi8+PHBhdGggZD0iTTM1Ljg4NiAyOC42NzJxMCAxLjI2LS43NDggMi4wMTQtLjczLjczNi0xLjk1Mi45OHYuMDcxcTEuNTUuMTc1IDIuMzE3Ljk0Ni43ODQuNzcuNzg0IDIuMDE0IDAgMS4xMDQtLjUzIDEuOTQ1dC0xLjY0IDEuMzEzcS0xLjA5NS40NzMtMi44MjcuNDczLTEuMDIyIDAtMS44OTctLjE1Ny0uODc1LS4xNC0xLjY3OC0uNTI2VjM2LjMxcS44Mi40MDMgMS43Ny42MTN0MS44MjMuMjFxMS43NSAwIDIuNTE3LS42NDguNzg0LS42NjYuNzg0LTEuODIyIDAtMS4xNzMtLjk2Ny0xLjY4MS0uOTQ4LS41MjYtMi42OC0uNTI2aC0xLjI1OXYtMS4zMTRoMS4yNzdxMS42MDUgMCAyLjQyNS0uNjQ4Ljg0LS42NDguODQtMS43MTYgMC0uOTExLS42NC0xLjQwMi0uNjM3LS41MDgtMS43MzItLjUwOC0xLjA1NyAwLTEuODA1LjI5OHQtMS40NzcuNzUzbC0uODAzLTEuMDVxLjY5My0uNTI2IDEuNzE0LS45MTEgMS4wNC0uMzg2IDIuMzUzLS4zODYgMi4wNDMgMCAzLjAyOC44NzYgMS4wMDMuODc2IDEuMDAzIDIuMjI1eiIvPjwvZz48cGF0aCBkPSJNMjEuMjg2IDMuOTkyQTI5LjkxMyAyOS45MTMgMCAwIDAgMy45OTIgMjEuMjg2aDE3LjI5NHptMjEuNDI5IDB2MTcuMjk0aDE3LjI5NEEyOS45MTMgMjkuOTEzIDAgMCAwIDQyLjcxNSAzLjk5MnpNMy45OTMgNDIuNzE0YTI5LjkxMyAyOS45MTMgMCAwIDAgMTcuMjk0IDE3LjI5NFY0Mi43MTR6bTM4LjcyMiAwdjE3LjI5NGEyOS45MTMgMjkuOTEzIDAgMCAwIDE3LjI5NC0xNy4yOTR6IiBmaWxsPSJ1cmwoI2UpIi8+PC9zdmc+",
+                "oc.keyword": "sudoku,sudoku",
+                "oc.launch": "org.gnome.Sudoku.org.gnome.Sudoku",
+                "oc.name": "sudoku",
+                "oc.path": "/usr/bin/gnome-sudoku",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 681725498,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/46da19b642e5bd4d3a8f3e911b367fee446f9c6f001498f3636f32c0966c72db/diff:/var/lib/docker/overlay2/0fab4a579e6b98d83ce43b2f3d633469cb4f7381ae812a1b1f3e835d1f72a81b/diff:/var/lib/docker/overlay2/49ca009c6076cc4e5a39714c71f2e8dc6a37c3919ae3901f3f874ba2e6e125e1/diff:/var/lib/docker/overlay2/4e73b2d7fe3f565b580cfe3daef3ad378a0a01a2e6f688a152d48d7087a1a02e/diff:/var/lib/docker/overlay2/ca174d5749aee134982aaa11fdb40293dd7e61eee4cc61f428105aa476ff6798/diff:/var/lib/docker/overlay2/0bb01efa2ecb0315bf105710e320b0afd75b934d089b6a9542376962fb5b7e6f/diff:/var/lib/docker/overlay2/1122ebdf01504ebffe82f901c72bf6b87da0ac57f7ddaf68211aaae69851ced7/diff:/var/lib/docker/overlay2/adf4caac066ee815a156213f78ba965c4f67408078971b894566e2baea82bc60/diff:/var/lib/docker/overlay2/242ae02dcd076316324c57c5ae80f93d55abb927e18c9c8b52b1f1634e0150d4/diff:/var/lib/docker/overlay2/59e5ee12aa1ce383189f0b946816de9e47b38d227cea5f6408b4c2d9c769fb58/diff",
+                "MergedDir": "/var/lib/docker/overlay2/6593a2b45aa03962c52646e11484598309023c6a76d65c26e445202401d62bfd/merged",
+                "UpperDir": "/var/lib/docker/overlay2/6593a2b45aa03962c52646e11484598309023c6a76d65c26e445202401d62bfd/diff",
+                "WorkDir": "/var/lib/docker/overlay2/6593a2b45aa03962c52646e11484598309023c6a76d65c26e445202401d62bfd/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+                "sha256:9d10624609653b16b6b5e579f4ad87baad1297c1b0b0bfce5432f39262a83880",
+                "sha256:6a140e4447ddd97dfaf0fc0b4b3b10269b11fdab78d1b1cbb072ea8a1ed877ee",
+                "sha256:8f8ae0f1fcda92a268f49f65f859ad31040cd1b228775a1d3faaf44172202393",
+                "sha256:8ef783e17d570f23fe3ad82dd40f5a31e1aa66b8d278aa8c46c18567b1273ce4",
+                "sha256:f6d2d9008195600be2ddb949714ce2de9a400ad4192cba0caafdbb4afc046d6d",
+                "sha256:ce654f5dc11e976501173ef20f0890e0604af69480c58e7feb5ecbeb66258ec9",
+                "sha256:4a1ff60c08ee7d213c71bdbc614a86667ad99296823941c5b3400f0eb04a2a20",
+                "sha256:fc6eb9d5a6683f1ecc4c027bf0409b3fc0e9c1a69b2d13c2b2e669b393a5e13e",
+                "sha256:10ad407f9476df69c0ea5b164b792eaa9ca62cd125066ea225033c417d10cbf6",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
