@@ -1,0 +1,95 @@
+[
+    {
+        "Id": "sha256:2664b94e502f2b9c3a1879922e28a3dbaa87b84cf43a095245a2996b945eb0b6",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/wireshark.d:4.4"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/wireshark.d@sha256:5bf7001f104f9e0560f896319d291245b8d46936cd99570e095fffaba8c3f7d7"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-10T22:02:20.24774747Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "QT_XCB_NO_MITSHM=1",
+                "APPNAME=wireshark",
+                "APPBIN=/usr/bin/wireshark",
+                "APP=/usr/bin/wireshark"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities",
+                "oc.desktopfile": "org.wireshark.Wireshark.desktop",
+                "oc.displayname": "wireshark (alpine)",
+                "oc.fileextensions": "cap,pcap",
+                "oc.icon": "wireshark.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgo8c3ZnCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly93ZWIucmVzb3VyY2Uub3JnL2NjLyIKICAgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iOTkuOTk2MzYxIgogICBoZWlnaHQ9Ijk5Ljg0MTkyNyIKICAgaWQ9InN2ZzEzMTUiCiAgIHNvZGlwb2RpOnZlcnNpb249IjAuMzIiCiAgIGlua3NjYXBlOnZlcnNpb249IjAuNDQiCiAgIHNvZGlwb2RpOmRvY25hbWU9IndzaWNvbi5zdmciCiAgIGlua3NjYXBlOmV4cG9ydC14ZHBpPSIyMzAuNDEiCiAgIGlua3NjYXBlOmV4cG9ydC15ZHBpPSIyMzAuNDEiCiAgIHZlcnNpb249IjEuMCI+CiAgPGRlZnMKICAgICBpZD0iZGVmczEzMTciPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzOTUzIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3AzOTU1IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNkOGQ4ZDg7c3RvcC1vcGFjaXR5OjAuODE5NjcyMTEiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wMzk1NyIKICAgICAgICAgb2Zmc2V0PSIxLjAwMDAwMDAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZmZmZmY7c3RvcC1vcGFjaXR5OjAuMDEwOTI4OTYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzNTAwIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmZmZmZjtzdG9wLW9wYWNpdHk6MC43NDIyNjgwMzsiCiAgICAgICAgIG9mZnNldD0iMC4wMDAwMDAwIgogICAgICAgICBpZD0ic3RvcDM1MDIiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZmZmZmY7c3RvcC1vcGFjaXR5OjAuMjc4MzUwNTA7IgogICAgICAgICBvZmZzZXQ9IjEuMDAwMDAwMCIKICAgICAgICAgaWQ9InN0b3AzNTA0IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MjAzMiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM0MGIyZTc7c3RvcC1vcGFjaXR5OjEuMDAwMDAwMDsiCiAgICAgICAgIG9mZnNldD0iMC4wMDAwMDAwIgogICAgICAgICBpZD0ic3RvcDIwMzQiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wMjA0MCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMTY3OWE3O3N0b3Atb3BhY2l0eTowLjkzODE0NDMzOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDIwMzIiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQyNzcwIgogICAgICAgY3g9IjE4Ni44Njg1IgogICAgICAgY3k9IjMxOS42MjQ2OSIKICAgICAgIGZ4PSIxODYuODY4NSIKICAgICAgIGZ5PSIzMTkuNjI0NjkiCiAgICAgICByPSI0OS45OTgxOCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMC45OTg0NTYsMCwwLjUwMTI1NCkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzUwMCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM1MDYiCiAgICAgICB4MT0iMTY4Ljg4NDkzIgogICAgICAgeTE9IjI4My4zNjIxOCIKICAgICAgIHgyPSIxNzMuNjM4ODQiCiAgICAgICB5Mj0iMzE3LjQzODIzIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMDIzNjg0LDAsMCwxLC00LjM4Njg5MiwtMSkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM5NTMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzOTUxIgogICAgICAgeDE9IjE3MS40ODYzNiIKICAgICAgIHkxPSIyNzguNzUxMTMiCiAgICAgICB4Mj0iMTcxLjY5NjgyIgogICAgICAgeTI9IjI4Ni41Mzc3MiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjAwNDcwNSwwLDAsMS4zMDc3MDksLTAuNjc4MDc5LC04NS43MzMxNSkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM5NTMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxMzMwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMDA0NzA1LDAsMCwxLjMwNzcwOSwtMC42NzgwNzksLTg1LjczMzE1KSIKICAgICAgIHgxPSIxNzEuNDg2MzYiCiAgICAgICB5MT0iMjc4Ljc1MTEzIgogICAgICAgeDI9IjE3Mi4wNjg2MiIKICAgICAgIHkyPSIyODkuODcwMjQiIC8+CiAgPC9kZWZzPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIyLjAwNzgyMjUiCiAgICAgaW5rc2NhcGU6Y3g9IjE2OS4yNzkzNCIKICAgICBpbmtzY2FwZTpjeT0iMzUuNDY0NTg0IgogICAgIGlua3NjYXBlOmRvY3VtZW50LXVuaXRzPSJweCIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllcjEiCiAgICAgc2hvd2dyaWQ9InRydWUiCiAgICAgc2hvd2d1aWRlcz0idHJ1ZSIKICAgICBpbmtzY2FwZTpncmlkLXBvaW50cz0idHJ1ZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9Ijg5MyIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI3MzMiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjgzIgogICAgIGlua3NjYXBlOndpbmRvdy15PSItMTMiIC8+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMTMyMCI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMy44NzY4LC0yNzQuNjQxOCkiPgogICAgPHJlY3QKICAgICAgIHN0eWxlPSJvcGFjaXR5OjE7ZmlsbDp1cmwoI3JhZGlhbEdyYWRpZW50Mjc3MCk7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOmJsYWNrO3N0cm9rZS13aWR0aDo0LjU1Mzk5OTk7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBpZD0icmVjdDU4MTEiCiAgICAgICB3aWR0aD0iOTUuNDQyMzYiCiAgICAgICBoZWlnaHQ9Ijk1LjI4NzkyNiIKICAgICAgIHg9IjEzNi4xNTM4MiIKICAgICAgIHk9IjI3Ni45MTg3OSIKICAgICAgIHJ4PSIxMCIKICAgICAgIHJ5PSIxMCIKICAgICAgIGlua3NjYXBlOmV4cG9ydC1maWxlbmFtZT0iL2hvbWUvZ2VyYWxkL2RldmVsL3dzd2ViL2ltYWdlL3dzaWNvbjI1Ni5wbmciCiAgICAgICBpbmtzY2FwZTpleHBvcnQteGRwaT0iMjMwLjQxIgogICAgICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjIzMC40MSIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtb3BhY2l0eTowLjc1O2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6NC4yOTcyMzY5MjtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIgogICAgICAgZD0iTSAxMzYuODgwNDUsMzQ3LjM2MjE4IEwgMTYwLjg4MDQ1LDM0Ny4zNjIxOCBDIDE2MC44ODA0NSwzNDcuMzYyMTggMTY0LjY2MzY1LDI5OS4xNzQ0OSAyMDYuNzMxODMsMjk4LjUxMDggQyAxOTMuMTYxNDYsMzE5Ljc0ODY4IDIwNS44ODA0NSwzNDcuMzYyMTggMjA1Ljg4MDQ1LDM0Ny4zNjIxOCBMIDIzMC44ODA0NSwzNDcuMzYyMTgiCiAgICAgICBpZD0icGF0aDEzMjgiCiAgICAgICBzb2RpcG9kaTpub2RldHlwZXM9ImNjY2NjIgogICAgICAgaW5rc2NhcGU6ZXhwb3J0LWZpbGVuYW1lPSIvaG9tZS9nZXJhbGQvZGV2ZWwvd3N3ZWIvaW1hZ2Uvd3NpY29uMjAwLnBuZyIKICAgICAgIGlua3NjYXBlOmV4cG9ydC14ZHBpPSIxODAuMDA5OTkiCiAgICAgICBpbmtzY2FwZTpleHBvcnQteWRwaT0iMTgwLjAwOTk5IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOnVybCgjbGluZWFyR3JhZGllbnQxMzMwKTtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2Utb3BhY2l0eToxIgogICAgICAgZD0iTSAxNDEsMjc3LjM2MjE4IEMgMTQ4LjQzMzU4LDI3NS44NDQ2NSAyMTcuNDEwMjEsMjc1LjM2MjE4IDIyNiwyNzcuMzYyMTggQyAyMzQuMDMxMzksMjc5LjIzMjE2IDIwNCwzMDUuMzYyMTggMTg0LDMwNS4zNjIxOCBDIDE2NCwzMDUuMzYyMTggMTMzLjQ1NzYzLDI3OC45MDE5MiAxNDEsMjc3LjM2MjE4IHogIgogICAgICAgaWQ9InJlY3QzMDcwIgogICAgICAgc29kaXBvZGk6bm9kZXR5cGVzPSJjenp6IiAvPgogICAgPHJlY3QKICAgICAgIHN0eWxlPSJvcGFjaXR5OjE7ZmlsbDp3aGl0ZTtmaWxsLW9wYWNpdHk6MC4wMTA5Mjg5NDtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGlkPSJyZWN0NTcwNSIKICAgICAgIHdpZHRoPSIxIgogICAgICAgaGVpZ2h0PSIwIgogICAgICAgeD0iMTU3IgogICAgICAgeT0iMjg1LjM2MjE4IgogICAgICAgcng9IjguOTQ5NjkzNyIKICAgICAgIHJ5PSIwIiAvPgogIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "wireshark,capture,network,analyzer",
+                "oc.launch": "wireshark.Wireshark",
+                "oc.legacyfileextensions": "cap",
+                "oc.mimetype": "application/vnd.tcpdump.pcap;application/x-pcapng;application/x-snoop;application/x-iptrace;application/x-lanalyzer;application/x-nettl;application/x-radcom;application/x-etherpeek;application/x-visualnetworks;application/x-netinstobserver;application/x-5view;application/x-tektronix-rf5;",
+                "oc.name": "wireshark",
+                "oc.path": "/usr/bin/wireshark",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 850561879,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/80c50d461ef8b45eadc9b5ffa6c96578b595fc0432936da34febf384557b36dc/diff:/var/lib/docker/overlay2/0e560214879bb3c83404fbfc56f0d8c18446a211494c38767a606208c2e55c7a/diff:/var/lib/docker/overlay2/4455bb83c2294a6baa8a792c5d432ed321603af2bde5a786b64dcc14a6171ca6/diff:/var/lib/docker/overlay2/9d1fda861a31febc7a425443855abb01234d28a332e5dbc3f8dd6a8be501154a/diff:/var/lib/docker/overlay2/840be001772c6b7bdc78d9b51deded496bb8f9bd3bdece2652e79634ba30f7a0/diff:/var/lib/docker/overlay2/e15deff1800890b12a74298c61d8b139966a6c201f8f9b301674bf0cc290ddd7/diff:/var/lib/docker/overlay2/71724ce3ed7b440eb5ef941c9d8f7626de3e6e4ffe4f85b6ae66550b841b376d/diff:/var/lib/docker/overlay2/b2c41e79829f84a5f80be06da6dc5354ff868bb818a48064143ae5441a7d7800/diff:/var/lib/docker/overlay2/de00c7efdd5ed98a4776091f53abc4020649eb1146dc1acf1287fad42e1665c1/diff:/var/lib/docker/overlay2/30d2ff7c777dbe6bc4cf26e99681b0f53c9dc3aede2f1ed334426ac849367986/diff",
+                "MergedDir": "/var/lib/docker/overlay2/8e96f0bd0115750dc7b2d00113ba5a88992b0ed31dc02ac673c9633291e6042f/merged",
+                "UpperDir": "/var/lib/docker/overlay2/8e96f0bd0115750dc7b2d00113ba5a88992b0ed31dc02ac673c9633291e6042f/diff",
+                "WorkDir": "/var/lib/docker/overlay2/8e96f0bd0115750dc7b2d00113ba5a88992b0ed31dc02ac673c9633291e6042f/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+                "sha256:9d10624609653b16b6b5e579f4ad87baad1297c1b0b0bfce5432f39262a83880",
+                "sha256:6a140e4447ddd97dfaf0fc0b4b3b10269b11fdab78d1b1cbb072ea8a1ed877ee",
+                "sha256:8f8ae0f1fcda92a268f49f65f859ad31040cd1b228775a1d3faaf44172202393",
+                "sha256:8ef783e17d570f23fe3ad82dd40f5a31e1aa66b8d278aa8c46c18567b1273ce4",
+                "sha256:f6d2d9008195600be2ddb949714ce2de9a400ad4192cba0caafdbb4afc046d6d",
+                "sha256:ce654f5dc11e976501173ef20f0890e0604af69480c58e7feb5ecbeb66258ec9",
+                "sha256:4a1ff60c08ee7d213c71bdbc614a86667ad99296823941c5b3400f0eb04a2a20",
+                "sha256:fc6eb9d5a6683f1ecc4c027bf0409b3fc0e9c1a69b2d13c2b2e669b393a5e13e",
+                "sha256:f01a62ef0e103b24c544b5d1db0a70751f39dbba9c9d2a53c38f3708b3d74e03",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
