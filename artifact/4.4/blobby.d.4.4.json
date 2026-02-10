@@ -1,0 +1,94 @@
+[
+    {
+        "Id": "sha256:ea2d284491073d50c9448e6692d03dc8972b683bdd75891d49f6539dedd6756d",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/blobby.d:4.4"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/blobby.d@sha256:6184c0d13fdc6d128bbb94bdb5f4880bc0a3b0e0e4c8b3b6b4966c775958ac0b"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-10T21:54:18.523778891Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=blobby",
+                "APPBIN=/usr/games/blobby",
+                "APP=/usr/games/blobby"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.desktopfile": "blobby.desktop",
+                "oc.displayname": "blobby",
+                "oc.icon": "blobby.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik0zNy45LDIyLjRDMjQuOCw0NC42LC0yNyw0NSwtMzkuNywyM0MtNTIuNCwxLC0yNi4yLC00My40LC0wLjQsLTQzLjZDMjUuNSwtNDMuOCw1MSwwLjIsMzcuOSwyMi40WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=",
+                "oc.keyword": "blobby,game",
+                "oc.launch": "blobby.blobby",
+                "oc.name": "blobby",
+                "oc.path": "/usr/games/blobby",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 559106662,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/267a1888568fc142aca394b1e14c3d278ca73618ac5f67d273a81dc55e1919fd/diff:/var/lib/docker/overlay2/1d91b89153e40ba59aeaf837daf6b1de31e1c5d7b905905c12f9d964196a9db6/diff:/var/lib/docker/overlay2/e9ad0fe0dbd803780606ca65d3410cb2318076b98e3493efdb33106bcdaba0e8/diff:/var/lib/docker/overlay2/a55296eface1517c86660f46d7052f0d283f7d1a3df189567dfd8b634f3bfaec/diff:/var/lib/docker/overlay2/a4ca599c35f1314c848e5681ff3f93a76f1e15663b7adf163f98d4b1e386f933/diff:/var/lib/docker/overlay2/551141406a93134c7ac89eeea61f136816be4b7a45f4acfaf24225171c10c0e2/diff:/var/lib/docker/overlay2/e980390861c2e2a67b35e2b31d66abb4f25db30d8855f7e4f8f1a67ddb21c47c/diff:/var/lib/docker/overlay2/2cf93f46f76cd7122fa996ef3d300c0fe04d8cf630f32177b5abcf1bab22bf0a/diff:/var/lib/docker/overlay2/2d2668d65f7c75a6f19a568d4102e34ad958847c1acaa2086ade6d6c691aebf7/diff:/var/lib/docker/overlay2/a629a0c3ab5f4a319e8ee4df77317a12b49e71d9e0a78760f9968bc361c1f311/diff",
+                "MergedDir": "/var/lib/docker/overlay2/f6d4b3e18b2d87f827c50b2c7043023ab8d8e7ac2d6a93855386c36096421842/merged",
+                "UpperDir": "/var/lib/docker/overlay2/f6d4b3e18b2d87f827c50b2c7043023ab8d8e7ac2d6a93855386c36096421842/diff",
+                "WorkDir": "/var/lib/docker/overlay2/f6d4b3e18b2d87f827c50b2c7043023ab8d8e7ac2d6a93855386c36096421842/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac",
+                "sha256:f6f1532cd0e0d03e730b9e22f207ee3f07524a2c9e41900d14fee0dcad21c154",
+                "sha256:ff01f7ce54c21320db15f7432b45ab5e0599f214b382fae8f524e1ca3cc5f8c9",
+                "sha256:f2e7b09f85225bf7e68d0f09295c3c15f78b61e3cd9d7db72d0601e4a56b0aec",
+                "sha256:9c2aec389d0ea3eb88efd4224352937805a2b319b11060d6aac748288b938a91",
+                "sha256:404c10025bc7cd5710449e8c93f392794102f25e18be467790e86befcd9f3e7e",
+                "sha256:b7937fe96c2b0e9bd5938984f22763be5f139f161a7d3e9d7d384f9b5baf04cc",
+                "sha256:161e046c31ce91bd0b4b8c503ce5d682015079801da9c6ff59aab0c4ea95a6e0",
+                "sha256:3a6f0481d4c1ed2d5a52ae2fdb241a9cc1d87f06e46aa159a5f99f5f3b224f3c",
+                "sha256:a24280b27119467881fa49d7f14b1d65f10e7859bde35845995abd3196ad1e10",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
