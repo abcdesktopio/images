@@ -1,27 +1,16 @@
 [
     {
-        "Id": "sha256:356c1eba111f08d104ebb03e12fc1e871027cc7d0ca79847edba0314da452713",
+        "Id": "sha256:b323d5f70a27d0ae86c93b30c9cee75714f2f0f800b04d9f50b2dec97a0638ce",
         "RepoTags": [
             "ghcr.io/abcdesktopio/cuda.rockylinux.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/cuda.rockylinux.d@sha256:c84637a68322a5c364af32464c8cb889d6df82de7ed00aa8039466cfa4ce0b51"
+            "ghcr.io/abcdesktopio/cuda.rockylinux.d@sha256:b323d5f70a27d0ae86c93b30c9cee75714f2f0f800b04d9f50b2dec97a0638ce"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-02-12T13:57:11.36563053Z",
-        "DockerVersion": "",
-        "Author": "",
+        "Created": "2026-02-17T10:46:34.681329047Z",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
             "User": "root",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "NVARCH=x86_64",
@@ -32,7 +21,6 @@
                 "NVIDIA_VISIBLE_DEVICES=all",
                 "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
                 "LANG=en_US.utf8",
-                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
                 "ARGS=--wait",
                 "APPNAME=cuda.rockylinux",
                 "APPBIN=/usr/bin/gnome-terminal",
@@ -42,12 +30,6 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
-            "Volumes": null,
-            "WorkingDir": "",
-            "Entrypoint": null,
-            "OnBuild": null,
             "Labels": {
                 "maintainer": "NVIDIA CORPORATION <sw-cuda-installer@nvidia.com>",
                 "oc.acl": "{\"permit\":[\"all\"]}",
@@ -64,20 +46,12 @@
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
                 "oc.template": "ghcr.io/abcdesktopio/oc.template.rockylinux.nvidia.8",
                 "oc.type": "app"
-            }
+            },
+            "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 1429902019,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/eb8838761b127d7ce08cda835156aeb6e793db82d7f61c32c993609316b57c2e/diff:/var/lib/docker/overlay2/0ae07cc8f1a5efa29883ac0bd353e16a1a51021e4b8252e762ba0edb98d75407/diff:/var/lib/docker/overlay2/fbe2b000fd6076349c935fe0155235ede231a26ea3185a47626933dadb34b887/diff:/var/lib/docker/overlay2/18712afe83b3b413c75c1d5a367bb606326dad7e45016bb9c3025c4fa083fe9d/diff:/var/lib/docker/overlay2/950d19c7626e987e3c863636a4f38a578b72c307535007f51f3b53a14ff4b9f6/diff:/var/lib/docker/overlay2/0d33b2fdc7228f86f0a1659e8b85f50ee65f6fb89b8cfd8d2f66f80953a07b52/diff:/var/lib/docker/overlay2/707b9bf404e1daa32e362d2bab2c1238ccd0c4d179106ea6fe67c111b53f3c31/diff:/var/lib/docker/overlay2/7f3e1b15b52e4f7cf37efa9e1385dec9a16148a8e966152c112daef9c9e4e3c5/diff:/var/lib/docker/overlay2/fef58bda9253929e594b18b444dfaad376a3b32b75c5edb1a8a62c76722f41ee/diff:/var/lib/docker/overlay2/599e4889038596a8e7407cca9430e587bb88b9b552a362f95650c81a8113dfad/diff:/var/lib/docker/overlay2/150df706e70aaf71c0ef61ae18ca18ddaa28e7ad50d98913fb60181532624ce3/diff:/var/lib/docker/overlay2/57a6c86f7dd754e193bc4aad5605c7e703c7ba39b2322721210194d0cb7f1127/diff:/var/lib/docker/overlay2/b7b785c109c9db824c4feb9ab56d696a791191faf7c9725685a4117aae34e960/diff:/var/lib/docker/overlay2/6036e392c2c578b9cba6a767980b1de58055e6d81d81bebc19ec9f5d6339b666/diff:/var/lib/docker/overlay2/849aa728d3d3448b1ee333092735866167e4ee3cbf517463d66a8bea91684427/diff:/var/lib/docker/overlay2/3f7f302bd487a7ea57af6781984f6d136213e2e712e7799998f9e463d0b5ebb4/diff:/var/lib/docker/overlay2/b4d047dbd7a76be0e7df865e160772e369aef35b17d49c1ab47f6b04d5cae222/diff",
-                "MergedDir": "/var/lib/docker/overlay2/39a1e0810bdd7c51c27051c242e10ed89493849be85ff1c8d7d6f29313b99fee/merged",
-                "UpperDir": "/var/lib/docker/overlay2/39a1e0810bdd7c51c27051c242e10ed89493849be85ff1c8d7d6f29313b99fee/diff",
-                "WorkDir": "/var/lib/docker/overlay2/39a1e0810bdd7c51c27051c242e10ed89493849be85ff1c8d7d6f29313b99fee/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 502701781,
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -96,13 +70,18 @@
                 "sha256:7a7153d9bdb807286d4655bdb3f8d1dd1d0e19e3d5b883d3f550d44b03002ddd",
                 "sha256:bb65348a1b63dbc5f4a779c730dad8ea2623a694e22b6cbc618e1de422e400c1",
                 "sha256:be7a1b8d4338135541400b0c7f6b4a2b90d5a4f0bb9dc82d85e01deffee34ee8",
-                "sha256:c26b513981a98ce8b87f7da531e5b1f7118bf18afbb41e46d078ecc2a7fd80e7",
-                "sha256:4b9bb2e453a99c8a30f774b5c64d9b04f74523dea853706bfb5a63337dd80605",
-                "sha256:0066eed8d1747dba46361243776ce57ceede2b2d17ae1e5fbfc333730e2d9c85"
+                "sha256:d3260dbeb7e0e3d4652d350412b6109eb8082a019d819cf945a8bcfd7f1eee32",
+                "sha256:9dac7df541f0c4e5f952e91fad2fda23f81d8d4f7ba3677634cffc48d6dd484a",
+                "sha256:45ada9261469955029ee5c907419ef0a736b182857211a20f302db20109bb26e"
             ]
         },
         "Metadata": {
-            "LastTagTime": "0001-01-01T00:00:00Z"
+            "LastTagTime": "2026-02-17T10:49:15.097406352Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:b323d5f70a27d0ae86c93b30c9cee75714f2f0f800b04d9f50b2dec97a0638ce",
+            "size": 856
         }
     }
 ]
