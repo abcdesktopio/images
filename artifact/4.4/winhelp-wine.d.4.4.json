@@ -1,27 +1,17 @@
 [
     {
-        "Id": "sha256:3717c5c939ae0bdc05ccf72a58c893ee95fa84f60708dee28faca6756957e44f",
+        "Id": "sha256:1913bc3d6ce1ce8d5f2efef3c83f202183711fe3f8ba988d779bdc58aee25481",
         "RepoTags": [
             "ghcr.io/abcdesktopio/winhelp-wine.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/winhelp-wine.d@sha256:df0e9b4442d13346d5877899386713c95fb870ccbd620766bc0ef615d4142e55"
+            "ghcr.io/abcdesktopio/winhelp-wine.d@sha256:1913bc3d6ce1ce8d5f2efef3c83f202183711fe3f8ba988d779bdc58aee25481"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-02-12T13:56:27.069468747Z",
-        "DockerVersion": "",
+        "Created": "2026-02-17T09:23:50.448534264Z",
         "Author": "Alexandre DEVELY",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
             "User": "root",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "TERM=linux",
@@ -38,12 +28,7 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
-            "Volumes": null,
             "WorkingDir": "/",
-            "Entrypoint": null,
-            "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.args": "winhelp",
@@ -60,20 +45,12 @@
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
                 "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.wine",
                 "oc.type": "app"
-            }
+            },
+            "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 1835933854,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/b61d7bf32c7e6f6054ceeaabd35964bf43a411b7eec7289ddd29b608f04bc4cb/diff:/var/lib/docker/overlay2/60e3c4615f811bbaf5b78c594e9d3760c0e4b94bce975bc051f0b36281cd542b/diff:/var/lib/docker/overlay2/5e7f84e9259a14cc39181d596344819e1dbf01a4229373be5b8d1ec74bacf1fc/diff:/var/lib/docker/overlay2/fd8a888c83f3124841ababf77773108ebdf2ae6c169899923ceed74b81dd30bc/diff:/var/lib/docker/overlay2/1ca53e5b5dcccad6bcf55ed30444367b8d4ee79694f0e5f1b1aba4987db16a8e/diff:/var/lib/docker/overlay2/8d69b277cabc4b5a58b7b1747717b7bb7c7d5aa58a827b8e147999a56b6e5950/diff:/var/lib/docker/overlay2/938941a5acf80913b6376542067a01783a5fa03d81c36a8bb99a0506cdbc7854/diff:/var/lib/docker/overlay2/dd36b0001123365ba5c74977b8b0fa07c6cf42c674a5ed3de757b8df5b26b034/diff:/var/lib/docker/overlay2/2c1d43302e61344a3c963df799f6e7555b27ba311c44fce5f4c7b71e77f3a888/diff:/var/lib/docker/overlay2/25fb3f9321ed8d70ae7f1b5e3dd13152d2cc010d665ce7f0eac47c6975789f7d/diff:/var/lib/docker/overlay2/8099db76798f6e6d51eadc760b4ae4bbef7a426f0514e374472b8df20a96e13f/diff:/var/lib/docker/overlay2/a650a1554e22731167b2a8a3db7624f71b51fec56b192ac22aa8ce51ee7e6de3/diff:/var/lib/docker/overlay2/6933c9e19734fea6c0874ff6c35024f4d0edba834f3e3ac7f6cdf1f498cb4fd2/diff:/var/lib/docker/overlay2/9b7934be48e55684f958831c1312e194eca0640dcb44e3488718a9922c585886/diff:/var/lib/docker/overlay2/d5b9e946363236e3a41d9abb808dcbcd05d5de8e904f4a2bc7e17f19b9a4b980/diff:/var/lib/docker/overlay2/c6630fdf8b5ab128483200898b6c07130f7bafe4ccbf287ca33e511180cb387f/diff",
-                "MergedDir": "/var/lib/docker/overlay2/a815aaad6339dab1ccec648dd7d9587dd26926e3925b85c964f3e9630fcef2a0/merged",
-                "UpperDir": "/var/lib/docker/overlay2/a815aaad6339dab1ccec648dd7d9587dd26926e3925b85c964f3e9630fcef2a0/diff",
-                "WorkDir": "/var/lib/docker/overlay2/a815aaad6339dab1ccec648dd7d9587dd26926e3925b85c964f3e9630fcef2a0/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 645453351,
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -88,16 +65,21 @@
                 "sha256:d72c0c27347f4e0bb6cdd270714e056c414cb9beb5682cdb7fe3650a74c3110f",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
                 "sha256:e9c66b17379932836691380b1e3ee2f6a713143fe1a5ae4a7fb507728952bd7f",
-                "sha256:a75c6a1b3eed7f04bada42586ab7021cb434e29c89ddae612177c5a2105bc4bb",
-                "sha256:d6e4e6d39f77b96df91e0cd0d05bbad925fbfb02954d7f8452fcb26c65c5977a",
-                "sha256:b75c981b7d32b1df023f9d395a216b4fd1f5fd082945370a3de4e1ea1848c836",
-                "sha256:046ee2d242f39b7369c73106c579ed878c20fb4812bdb47476f939a52696bc4f",
-                "sha256:172617622338b137c6012b8792648be368ce60feaa87ed6fbbe48c66d9c10c99",
+                "sha256:6c9eb6fd1bdcfee2e2242f587a9104855c1525c054d7bb840cbca31425952170",
+                "sha256:0cedcdcb7f167d2fa200d78ad77ba55e7a6fd53659814b23d547ec9749d9484f",
+                "sha256:e309cf8b1f011e4f2f2b025a0da07ae4ba12a3cb67e66586a3eb1b9b6167cfaa",
+                "sha256:f87a2e3cddebf0698fc060d4f195de1edfc11cc2c50a228d4cc3730c7a33faba",
+                "sha256:4686dcb468be3dfdeb16938676b91dd75f55fe12119c8f36dbfd6bb225958486",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "0001-01-01T00:00:00Z"
+            "LastTagTime": "2026-02-17T09:45:01.441808421Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:1913bc3d6ce1ce8d5f2efef3c83f202183711fe3f8ba988d779bdc58aee25481",
+            "size": 856
         }
     }
 ]
