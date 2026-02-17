@@ -1,22 +1,22 @@
 [
     {
-        "Id": "sha256:0fe2fab3603d387526696b8a8c8e5cc7a81fde5aac14385192a4b543a11bb2ab",
+        "Id": "sha256:b5936ac7eb1d2bff27477e43cb34cde485397419f714294f1bda473c5b8bb1a3",
         "RepoTags": [
             "ghcr.io/abcdesktopio/eog.d:4.3"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/eog.d@sha256:0fe2fab3603d387526696b8a8c8e5cc7a81fde5aac14385192a4b543a11bb2ab"
+            "ghcr.io/abcdesktopio/eog.d@sha256:b5936ac7eb1d2bff27477e43cb34cde485397419f714294f1bda473c5b8bb1a3"
         ],
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-02-17T01:13:37.717451062Z",
+        "Created": "2026-02-17T10:18:22.905895771Z",
         "Author": "Alexandre DEVELY",
         "Config": {
             "User": "root",
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
                 "TERM=linux",
                 "LANG=en_US.utf8",
-                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
                 "APPNAME=eog",
                 "APPBIN=/usr/bin/eog",
                 "APP=/usr/bin/eog"
@@ -24,7 +24,6 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "WorkingDir": "/",
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "graphics",
@@ -40,38 +39,48 @@
                 "oc.name": "eog",
                 "oc.path": "/usr/bin/eog",
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
-                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.edge.gtk",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.24.04",
                 "oc.type": "app",
-                "oc.usedefaultapplication": "true"
+                "oc.usedefaultapplication": "true",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
             },
             "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 290009046,
+        "Size": 419213686,
         "RootFS": {
             "Type": "layers",
             "Layers": [
-                "sha256:be441fb38fffc0abc85b02e37a155be4181dd02af05d4cbc64e0c042acf62a37",
-                "sha256:2351bc1340aff372959d59306eb8a00d91b38b035b05750758f3894a2a615140",
+                "sha256:e8bce0aabd687e9ee90e0bada33884f40b277196f72aac9934357472863a80ae",
+                "sha256:984e4961b484584e7106abcf562f449887606c64b846dbdf7d5298729591bad4",
                 "sha256:eb5ee5764234dec5b0912304f2cd8c4f58fb54f00278a919a16c8c071cc572a8",
-                "sha256:5f310772315ecdafb6775df90bc8c8d77ff75aa687ca4acf2e64af4b648410da",
+                "sha256:b102613a3eda302ed350818517679b877e35bc541252c4dda9e6e4295cecd611",
+                "sha256:5dd68bacf60f51d8a40631d40f9f2e19bd9e35fa69d380c435baef1c8b65a1a7",
                 "sha256:ad10fd6b478ab1f9b7cfb00ffafebb038ec406347c5ae70bfa559ce3fde3c14b",
-                "sha256:6ca426bae35e07399ddb4302e1d70f13394d1b778a1520fcc3baf4909f126299",
-                "sha256:4c76e978fd441f52ad3a9fd5cdb603d61d62fe071bd4e290bffa52368237e8a3",
-                "sha256:63f74dcab82038b93091d87ab90a24413da799a638354946754ca02b783b1be7",
-                "sha256:d1582987477d21ffa1b325cd7f7759bd8a82139db9bb073a2b4833d0b87ed309",
-                "sha256:6109b4c1a76e7b7c82abc81adeb70ac54b6c7cf363d8058f966ed7abd4c2bcb7",
-                "sha256:bb3f0057c9016f32848c7033b5bc0bd2f0f162088e0a1a87386bd05fc5e4e73d",
+                "sha256:c2fe1f701d1453ce0f166538dfef451cac9d59b1a4b50b70578aaf1db2a1e38e",
+                "sha256:60163c092136a661ece92d790b543521e8629f7738dc2151bacff402bb199c99",
+                "sha256:f2069b119bf6c7e4ebe4d686d58908560a34898659405ad428ea9ac26b05e6ce",
+                "sha256:ae6f0bac1a2130eef1588436f0ef00f7bf1134ef4ca63dbae67e3506a4f6f3e2",
+                "sha256:d5ef3fa18458e51f46442ed7af5d5b5811237259fbf009b8a0b55b71311fee21",
+                "sha256:95fc6048059c323e1ed1f443bb23d9f93d06ed1bc9a97623467d63a95e4a90b2",
+                "sha256:836b63372345cd087743f0a047979bb257fdeb742c48a5e93b42db24f3855faf",
+                "sha256:077e4024c810b2644f40929cb9e0d744add632d2449b8b4bacd09994c52cc2d4",
+                "sha256:106ab655b98d5e40f1dcca4709f1eb4a692730ae2fe629ba0a19a24ab89b2579",
+                "sha256:78a8b273b0c6cfa6e27b56264a1d4459fe378bc551699b3302a0c1b9f035875d",
+                "sha256:ad0ac68cc7a359762a06df9fa4ae62035a6d654250763e9344c7a63b29a363ba",
+                "sha256:8c191d4d978061366dca0597ff2f4a9584c5a3123876e88144feaae78ad32aee",
+                "sha256:82e50a0dc6de849269a14a1079562aed2ebe322b91e7d1c5471fb18b957a73a1",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "2026-02-17T01:16:38.75548625Z"
+            "LastTagTime": "2026-02-17T10:31:46.357131213Z"
         },
         "Descriptor": {
             "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:0fe2fab3603d387526696b8a8c8e5cc7a81fde5aac14385192a4b543a11bb2ab",
+            "digest": "sha256:b5936ac7eb1d2bff27477e43cb34cde485397419f714294f1bda473c5b8bb1a3",
             "size": 1609
         }
     }
