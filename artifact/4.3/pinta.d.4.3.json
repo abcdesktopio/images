@@ -1,17 +1,27 @@
 [
     {
-        "Id": "sha256:b25eee5f68c943a5801bb07125c55eebec5f102164f36a072266b3d8b68bbedf",
+        "Id": "sha256:137cac79f08a3c86e06b66ad8e23e42ca11c080dfe5e021564cba768c5f52e7b",
         "RepoTags": [
             "ghcr.io/abcdesktopio/pinta.d:4.3"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/pinta.d@sha256:b25eee5f68c943a5801bb07125c55eebec5f102164f36a072266b3d8b68bbedf"
+            "ghcr.io/abcdesktopio/pinta.d@sha256:d3c18ed895c7d4d1275ad22fe2297313d7e90ffa6f4352efc195db594e336582"
         ],
+        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-02-19T01:17:20.221306344Z",
+        "Created": "2026-02-20T01:10:37.349581433Z",
+        "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
+            "Hostname": "",
+            "Domainname": "",
             "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "DEBCONF_FRONTEND=noninteractive",
@@ -24,6 +34,12 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "utilities,office",
@@ -41,12 +57,20 @@
                 "oc.type": "app",
                 "org.opencontainers.image.ref.name": "ubuntu",
                 "org.opencontainers.image.version": "24.04"
-            },
-            "ArgsEscaped": true
+            }
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 423994587,
+        "Size": 1107956772,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/ee67433e92497181fa0f7c096b2fdac20fef245014acc1a4d98f8b2dc9e60ff5/diff:/var/lib/docker/overlay2/a07a91bdabf3b709dc43447f0f52b8e8e43abf69be5531af39dd346bed0f72f4/diff:/var/lib/docker/overlay2/9005b5de405f1fad6aa9fa22794d05c4f838f57d63f3507ecd8531c4f318435e/diff:/var/lib/docker/overlay2/ba228f6ed3481d644202b15a173065d7947732435e3c01afb75eae1226796967/diff:/var/lib/docker/overlay2/18640fda2f44650959e4ea0f2ca41039329a7a291e452188eb51d64feaa9f2b6/diff:/var/lib/docker/overlay2/64a8523ff45117c6e899be00d9805247cea295fde7b4dd0795af763f286f8fba/diff:/var/lib/docker/overlay2/6cad006804ee32b90c715513acf004ba95453e346ebc15d3f87914f7bea49c04/diff:/var/lib/docker/overlay2/aaff2467a815047b858f926af8f0daefea53f95ff6c9bb0bc0f42c507a939483/diff:/var/lib/docker/overlay2/111eeca21fd598ca70e4cb2e12dc46f932940da3367282778ba6f553a73a8ffd/diff:/var/lib/docker/overlay2/34240019c3d8e6b42e4cfd38abcd26fe6021886d9fa34481e9e0978beb3859c3/diff:/var/lib/docker/overlay2/3fa74912a4236ba64d03b97a33c54a6aec79521b090efe47c2e7d903193ad586/diff:/var/lib/docker/overlay2/f0f24a428fd76215f2841807d97c0450c35ee808d8293a1e217f9858e13b11cc/diff:/var/lib/docker/overlay2/40dc29bcd41dfdce021ea1c80ad4ee159545d0014fbcd552bc2349d4404d58d9/diff:/var/lib/docker/overlay2/cbaa145757938cae700960b14869e02f1a0f9664c252c9d0dce19be51329eeb5/diff:/var/lib/docker/overlay2/e1057654cf73c63d0396609c9cdcd8cfda5cd8ad3025e8c7b542f3a106c92910/diff:/var/lib/docker/overlay2/0eceea5cdff29aa5eafd9b94a73692c6f7d5eb967d35f1036a1ae22df47dff9d/diff:/var/lib/docker/overlay2/9a1364e846d4d5146d15a74dab3e8999722e319df12f2f91d3d7e5001e3dd382/diff:/var/lib/docker/overlay2/b6c01e05e4db036a38e7455a905303d6f21b0648e12de2eb31db26a4248c6d0d/diff:/var/lib/docker/overlay2/e92f6d47bcc500236cbe3dfd97ed60a0a80febc8f664b69428836fa037355fd6/diff:/var/lib/docker/overlay2/2760502a200f9289060d9b7c6f2f7431574db5848f39c999f67cc856251bde46/diff:/var/lib/docker/overlay2/355a7a5a20a014cf07e42e6292c17ca434b72d9522346c115f7b5adfd240fb42/diff",
+                "MergedDir": "/var/lib/docker/overlay2/fde9fbe3b117f0a12f9c2b11d91e49e54e0c2433516fdf9b08496af7cdec4a59/merged",
+                "UpperDir": "/var/lib/docker/overlay2/fde9fbe3b117f0a12f9c2b11d91e49e54e0c2433516fdf9b08496af7cdec4a59/diff",
+                "WorkDir": "/var/lib/docker/overlay2/fde9fbe3b117f0a12f9c2b11d91e49e54e0c2433516fdf9b08496af7cdec4a59/work"
+            },
+            "Name": "overlay2"
+        },
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -67,20 +91,15 @@
                 "sha256:106ab655b98d5e40f1dcca4709f1eb4a692730ae2fe629ba0a19a24ab89b2579",
                 "sha256:78a8b273b0c6cfa6e27b56264a1d4459fe378bc551699b3302a0c1b9f035875d",
                 "sha256:ad0ac68cc7a359762a06df9fa4ae62035a6d654250763e9344c7a63b29a363ba",
-                "sha256:f5f448dbdb69221b8500367f4b761dc2dbe8c9c99cc1051d76cce52314dbfd6e",
-                "sha256:a489d7ea8d0aa03f470027016c75071bd0e95ca50744764e67d931efa09c6d23",
-                "sha256:8df62e912afa84e5a843bebd2067a7a38b422ac366d402ef2638e73499a06f25",
-                "sha256:2d429125967d803c19ea1d76ad58088cf510db6deb6cc8547eec2d66fddf46ed",
+                "sha256:129723dd2cc9655887a542dce3dbd7ccda392e99dfa1facb5fb7d300a2c69d2d",
+                "sha256:50bd5422180ff1b511281c08197bc2894b09dc5b4f6141b0938d96d7a323ae5b",
+                "sha256:16392bf3187ed5be0cb3ba5d7837f539ef75a819a97c8700f4b6d4a9532ef5b9",
+                "sha256:dd03038851ff7058f467c0b52036e1e30ad52ca0a861d17ae2bdaee0f64495a4",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "2026-02-19T01:20:02.709778516Z"
-        },
-        "Descriptor": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:b25eee5f68c943a5801bb07125c55eebec5f102164f36a072266b3d8b68bbedf",
-            "size": 856
+            "LastTagTime": "0001-01-01T00:00:00Z"
         }
     }
 ]
