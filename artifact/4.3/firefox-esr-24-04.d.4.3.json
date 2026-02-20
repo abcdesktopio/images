@@ -1,17 +1,27 @@
 [
     {
-        "Id": "sha256:0200ef07989735f5cf7fe9cd4d841249b212c7757ebcb04f98918d03c71682ca",
+        "Id": "sha256:7ec3e53aedc6fda54f436acd8606f5c7bcefe4b94086de549fe3f34c10d8b18d",
         "RepoTags": [
             "ghcr.io/abcdesktopio/firefox-esr-24-04.d:4.3"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/firefox-esr-24-04.d@sha256:0200ef07989735f5cf7fe9cd4d841249b212c7757ebcb04f98918d03c71682ca"
+            "ghcr.io/abcdesktopio/firefox-esr-24-04.d@sha256:126d9a601d1864a32b8739109bed43a9b86e3fdf898e0885ce2c91ac08f2027a"
         ],
+        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-02-19T01:14:41.422006997Z",
+        "Created": "2026-02-20T01:05:48.124602027Z",
+        "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
+            "Hostname": "",
+            "Domainname": "",
             "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "DEBCONF_FRONTEND=noninteractive",
@@ -25,6 +35,12 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.args": "--no-remote --class firefoxubuntu2404",
@@ -48,12 +64,20 @@
                 "oc.usedefaultapplication": "true",
                 "org.opencontainers.image.ref.name": "ubuntu",
                 "org.opencontainers.image.version": "24.04"
-            },
-            "ArgsEscaped": true
+            }
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 435488194,
+        "Size": 1166835444,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/158a2a155dc4ebbde6a33557dad7cbec9511aa6363488541b5fa45852c887670/diff:/var/lib/docker/overlay2/957204790bcd5cad51e4a5cc796beeae725ad7a69a6eacfbe05a049041b1566f/diff:/var/lib/docker/overlay2/1c46c50310b8c9c890279956eeb82682c289b0f8458a6706e0826d54ea36c331/diff:/var/lib/docker/overlay2/5a939d82a7396ea7cf3a02ccddbc08258e5481b96eb3948304fc8efd1860361d/diff:/var/lib/docker/overlay2/454452a4087671eed012e6f4b970f5ab9c496ff5f925292d47c9d17dff882d41/diff:/var/lib/docker/overlay2/4c5ee7f444ff271b738866fa4cdb89bcae4af9616eecb418b6e993cbd8801a23/diff:/var/lib/docker/overlay2/1296ef22d0d66e3d107e29983637802f123c3e4ac83d65b24b2e70e94a6efb01/diff:/var/lib/docker/overlay2/ee2479e93493b6544dfd153b41165d192804a504cf255819a3f350fa42d629a7/diff:/var/lib/docker/overlay2/44084700f4c1977936abedc90c499f19c4d0b2315a97c726618bd799154519d8/diff:/var/lib/docker/overlay2/b763d5e5ef7a09ee4f003ebe040429f993f8f5eb138b9e0481b3d604203d02c2/diff:/var/lib/docker/overlay2/184d544352efa05b15fb53b47768a763a0258c38d82193251acf692dcf692520/diff:/var/lib/docker/overlay2/f3e6edafce9904233184c0805c0ce898a885a5d7c92f982e1863d0b1583ca56f/diff:/var/lib/docker/overlay2/90340de97dcec667f5d15d1fef2e6eaa112625fb4d8ab7ad7e259e68b5f7a755/diff:/var/lib/docker/overlay2/41f597087c12e602ae475de64d37e3fdaa85ada1cb38a72db265b13157f8e95d/diff:/var/lib/docker/overlay2/9fcf8bcbf3f21a401a488b4ba38b34a54406f43f21cd62f5c86d87ae24c975bb/diff:/var/lib/docker/overlay2/ec19b634f6c95d1538751f29902146f07075efa762d7c88e0eadbf8d1866be5c/diff:/var/lib/docker/overlay2/9c1dccb4b556828bfec680e3c79af1a214f23a96cc9e651aa513295505bed00b/diff:/var/lib/docker/overlay2/8ec1dc7b434a2ba5aebb927e9c52bccbde95dc913a247516ee1fed4ce216a8b2/diff:/var/lib/docker/overlay2/b19a209a3414420f2b116a223ae3e2ad35f3d3f98964aa1420b2ecc35db2beb8/diff:/var/lib/docker/overlay2/adba335e9522eef7f2be53068fb775576afb27be396e2b02468cc2db94379158/diff:/var/lib/docker/overlay2/214fe31beb7b27acdf639fe0902acd20b8a1c3467594649754b45e0c7155d2ce/diff:/var/lib/docker/overlay2/ce61ee62c2fc70905cd1bf82f668feedc91bb3eb9765a18cceac15c8e2f9fdc4/diff:/var/lib/docker/overlay2/e30689990cbad41da9f0419bff94ac849baa7e6538114c29420e9bb153cada88/diff:/var/lib/docker/overlay2/0be082e2ff1ae76e10b10b10bc681f4efd83be9caaa66f95a8d95050de5e13f4/diff",
+                "MergedDir": "/var/lib/docker/overlay2/e1b6618a8307791b196ed5ce5625731a4be229444fee7b77e4e7200908b7f630/merged",
+                "UpperDir": "/var/lib/docker/overlay2/e1b6618a8307791b196ed5ce5625731a4be229444fee7b77e4e7200908b7f630/diff",
+                "WorkDir": "/var/lib/docker/overlay2/e1b6618a8307791b196ed5ce5625731a4be229444fee7b77e4e7200908b7f630/work"
+            },
+            "Name": "overlay2"
+        },
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -67,30 +91,25 @@
                 "sha256:60163c092136a661ece92d790b543521e8629f7738dc2151bacff402bb199c99",
                 "sha256:f2069b119bf6c7e4ebe4d686d58908560a34898659405ad428ea9ac26b05e6ce",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:9620cd3f3841ca8c6aca082d8eff08d9041741a2a51bea4e21849b121d8c7541",
-                "sha256:8d6229fa377e101a3931567d182db591a87dad6a95dffb5f5361931b091b20e4",
-                "sha256:9feb363063b1c90c05083019860720a8da432e6e014b44fd4be09142bc5ef7ac",
-                "sha256:2f2c35d4e325b1fbafd52e6468707688dcf5f9908234234aa0434a49f8e583a6",
+                "sha256:6cf8170cefc3b35f7f35adfe5b1d62a251751a98e6602a9239d6ae7222f321d1",
+                "sha256:601e70ddb10ca2fb16fe08c957f79bb64663b3ec5268df0e4bbdc37a66ef6f70",
+                "sha256:cd052cb42c6e3ac9660292d83a3818ce0d603c390c76e089a5d9eddf51b71512",
+                "sha256:79e88bf0058820f6e8feffea1fb60f581db4154d8d1ce2aa1baf230e711cdf4a",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:125a20a3f330149591668868bd8c4fe4682d66e5522aaad7d47f84cfbdd0e871",
-                "sha256:fb556368c4c0b19a8ff6d7208a1b30d9ac23e5b8161c7b93ca0478ee945bf325",
-                "sha256:17a7786dcb81c708b933f9411ec5fb5749174e0a027f8fa257505605887ec787",
-                "sha256:e2cb37386126d8a2554fc3a81dcf851d8a7d252ca144e3808f4dc81862ce501c",
-                "sha256:e4563ffdc07278dbcb5018b439f654bbd3fecfcc14fa4fdb9b90f82add062b63",
-                "sha256:3c4c36bbf8fbb17531f288e742bacab4138589136833b67e8d6543491a69a17a",
+                "sha256:5127ebd3bc4b3883ae1ad6dec10a6a84ab2bfada3c1bdedb45b1b9aaa1d9269b",
+                "sha256:ef0800bf11011b4820cd4fe50eb80420267c954825ded3b8887585d5bec34844",
+                "sha256:346d5054057808a74c9adbad3237db300b18ce4b089c99789061eb79210bcfdf",
+                "sha256:1e7888b76454001f585691338f080e08823f9f1f3653f52d93a0b5c77f598286",
+                "sha256:3decd610260f6beadacc769184cbd2fa01e17045eb3a1ce746a2dee6bd685a10",
+                "sha256:5fcbd1b7a91cb5cddb0fd14d6d28a69988be58f85cef34f2057dffbb0646b09c",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:e028b3668aa74f7844ea217f743e51a8aa19a7a62d5d8669e6205578be784add",
-                "sha256:dd95629539aad352e40493fdc67ce87e3bd0bb75435084a91197c569b013ea03",
+                "sha256:db1347838f1ff4e1398eee2c91983e7ae50296b61db56b754ec98c00e562c317",
+                "sha256:d55d1d72a6551c4a1a5641173fe12c117901c7ee66a0ed7b9f3abc65a0123e80",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "2026-02-19T01:17:24.477380251Z"
-        },
-        "Descriptor": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:0200ef07989735f5cf7fe9cd4d841249b212c7757ebcb04f98918d03c71682ca",
-            "size": 856
+            "LastTagTime": "0001-01-01T00:00:00Z"
         }
     }
 ]
