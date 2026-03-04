@@ -2,12 +2,12 @@ name: CI build app list
 
 on:
   schedule:
-    - cron: '0 0 * * 6'
+    - cron: '0 0 * * 0-6'
 
   workflow_dispatch:
 
 jobs:
-  build:
+  build_app_list:
     runs-on: ubuntu-latest
     steps:
 
@@ -21,17 +21,41 @@ jobs:
         run: |
           ./buildAppList.sh
 
-      # - name: Upload app list
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: appLists
-      #     path: ./appLists
-
-      - name: Upload app to release 
-        uses: svenstaro/upload-release-action@v2
+      - name: Upload app list
+        uses: actions/upload-artifact@v4
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./appLists/*
-          file_glob: true
-          tag: appLists
-          overwrite: true
+          name: appLists
+          path: ./appLists
+
+      # - name: Upload app to release 
+      #   uses: svenstaro/upload-release-action@v2
+      #   with:
+      #     repo_token: ${{ secrets.GITHUB_TOKEN }}
+      #     file: ./appLists/*
+      #     file_glob: true
+      #     tag: appLists
+      #     overwrite: true
+
+  commit_current_repo:
+    runs-on: ubuntu-latest
+    needs: build_app_list
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download app list
+        uses: actions/download-artifact@v4
+        with:
+          name: appLists
+
+      - name: Test downloaded artifact
+        run: ls -R
+
+      - name: Add and commit to main
+        run: |
+          git config user.name "applists-builder[bot]"
+          git config user.email "41898282+applists-builder[bot]@users.noreply.github.com"
+          git add appLists/*
+          git commit -m "Update app lists"
+          git push
