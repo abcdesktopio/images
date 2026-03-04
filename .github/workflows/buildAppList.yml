@@ -1,0 +1,26 @@
+name: CI build app list
+
+on:
+  schedule:
+    - cron: '0 12 * * 0-6'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install jq cli
+        run: sudo apt-get install -y jq
+
+      - name: Build app list
+        run: |
+          jq -s '.' ./artifact/4.4/*.json > appList.json
+
+      - name: Upload app list
+        uses: actions/upload-artifact@v3
+        with:
+          name: appList
+          path: appList.json
