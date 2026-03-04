@@ -1,0 +1,101 @@
+[
+    {
+        "Id": "sha256:ee41ed9660f9f45d9d328503bfdf37036a19663ceae66ed1160e524f4a77c44d",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/librecad.d:4.2"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/librecad.d@sha256:c6a2de850126f09e90021eb5ac0fb224aa2e8ec6d60eb8549182881c0be31167"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-10T01:24:24.472958745Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=LibreCAD",
+                "APPBIN=/usr/bin/librecad",
+                "APP=/usr/bin/librecad"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "development",
+                "oc.displayname": "LibreCAD",
+                "oc.fileextensions": "dxf;dwg",
+                "oc.icon": "librecad.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48dGl0bGU+TGlicmVDQUQgSWNvbjwvdGl0bGU+PHBhdGggZmlsbD0iIzhlZDkwMCIgZD0iTTAgMGgxMi4xMzh2MTIuMTRIMHoiLz48cGF0aCBmaWxsPSIjOGVkOTAwIiBkPSJNMCA4Ny44NjJoMTIuMTM4djEyLjE0SDB6Ii8+PHBhdGggZmlsbD0iIzhlZDkwMCIgZD0iTTg3Ljg2IDBIMTAwdjEyLjE0SDg3Ljg2eiIvPjxwYXRoIGZpbGw9IiM4ZWQ5MDAiIGQ9Ik04Ny44NiA4Ny44NjJIMTAwdjEyLjE0SDg3Ljg2eiIvPjxwYXRoIGQ9Ik01MCAuMDMyQzIyLjM4Ni4wMzIgMCAyMi4zODYgMCA1MGMwIDI3LjYxNSAyMi4zODYgNTAgNTAgNTBzNTAtMjIuMzg1IDUwLTUwQzEwMCAyMi4zODYgNzcuNjE0LjAzMiA1MCAuMDMyem0wIDEyYzIwLjk4NyAwIDM4IDE2Ljk4MiAzOCAzNy45NjggMCAyMC45ODctMTcuMDEzIDM4LjAzMi0zOCAzOC4wMzItMjAuOTg2IDAtMzgtMTcuMDQ1LTM4LTM4LjAzMiAwLTIwLjk4NiAxNy4wMTQtMzcuOTY4IDM4LTM3Ljk2OHoiIGZpbGw9IiM4ZWQ5MDAiLz48cGF0aCBmaWxsPSIjNGQ0ZDRkIiBkPSJNMTAwIDU2SDI0djZIMFYzOGgyNHY2aDc2eiIvPjwvc3ZnPg==",
+                "oc.keyword": "librecad,librecad,modeling",
+                "oc.launch": "librecad.Librecad",
+                "oc.legacyfileextensions": "dxf;dwg",
+                "oc.mimetype": "image/vnd.dxf;",
+                "oc.name": "LibreCAD",
+                "oc.path": "/usr/bin/librecad",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 717346210,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/7bbc95471c970623289605f6039bc4712a40012f76d10850905b835d7d4d2880/diff:/var/lib/docker/overlay2/91bdae6c6d02480ad82903666a8e0d97bf0f073eb9c5bbba2ad78c0a75fc2cbf/diff:/var/lib/docker/overlay2/23dbb0deb29f45fc501dcd01c1651445fc0b4e3a1da55a2b6d2325ed42d71199/diff:/var/lib/docker/overlay2/3e0664541fd35f5e8b39f994180461530fd9b69f34b8bc39d22fbb350999d8ef/diff:/var/lib/docker/overlay2/73f2df9cab7c1954660b2c16545462c9993f482ff1e1e25c9f5b5cff6a5e9873/diff:/var/lib/docker/overlay2/fc696694410671822dc08081d2283e670a994822b3619a1afdcf80f0e7157f71/diff:/var/lib/docker/overlay2/32f53e4089e76176b7343222225643c268f0cdb50a160fb9f9a5008ee8b54e32/diff:/var/lib/docker/overlay2/183cf519b398f1fcd747002300b0fd3d173d617ea3e9b95af209622e1d190d74/diff:/var/lib/docker/overlay2/ec299d04809f91ec0724a5e0c5a93e7f7d59ce8aafcfa2cf496a82b1520326f5/diff:/var/lib/docker/overlay2/711fbe2d34b686224f41dec1f13402149106b7479034902ea39e453eb9f020fa/diff:/var/lib/docker/overlay2/6ffa8b542e07acef0073c2c4d1f4f764f8d2bcd9e49bfd22888a76ca5183f4db/diff:/var/lib/docker/overlay2/49f805067d793c59fde04979e13e9f184f05bc43513e2a0b2ca48f8da469f13f/diff:/var/lib/docker/overlay2/59a749df9ef65701a4e1376dc599563e77dbd40bb433c0c2c57a1467029801b7/diff:/var/lib/docker/overlay2/4d85e424f375ac7a5c157fb37bcf4e33e7e98e6d428376d19632681850d0caa7/diff:/var/lib/docker/overlay2/c8e2896408442724454d9df888ff9ac90ff7fe51b0f13d229ba5c727769926cb/diff",
+                "MergedDir": "/var/lib/docker/overlay2/31ba0d6c9ad5523ee26700dc4ffb9e7acaf3079e4a42a39a6b5747a34a9b151f/merged",
+                "UpperDir": "/var/lib/docker/overlay2/31ba0d6c9ad5523ee26700dc4ffb9e7acaf3079e4a42a39a6b5747a34a9b151f/diff",
+                "WorkDir": "/var/lib/docker/overlay2/31ba0d6c9ad5523ee26700dc4ffb9e7acaf3079e4a42a39a6b5747a34a9b151f/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b",
+                "sha256:4c5117a109994e26d393862987fc3aa09324792e96a1757be821aa7d59df6209",
+                "sha256:fb24bc5d588c25d898de1e7da4fbc6828b96454180c28e2ee72f01e18063059c",
+                "sha256:e5017e904ef6f80bd3e5df3e141a514e1840fb3c538bc32558697625eaf2d8e3",
+                "sha256:b3c72ed19d9aab7a6b4715b2172b01deb648e25f94d70c577e98872aab2c28a9",
+                "sha256:cd53f62392391a539d27c79532e9ef20839cf27c85f779fd7677b27a930c9637",
+                "sha256:579fdfae65612cdb454824d3cb2d496f5296e793cf759893bed0423131b83c55",
+                "sha256:12088554408380d93bb1e9f02246b1db093b560a4ffe5fb16946c3ed6a4e9ea1",
+                "sha256:e322b9389cd81ba5fc2aa2c926c2da883de8288b3fe4933f2b91c484a6217554",
+                "sha256:5e57c58745ff077863c39deedaa8b61de628dba40b5de2d648e44f73f7887587",
+                "sha256:c7f02946b7c8c8ed5b89f240963c1d6453a90daf7b9b46406b4ca28554c7a088",
+                "sha256:7fab4ffc2835d80aa67654167efc428985ea0ecc7c21a44870d163f758d14ea3",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:62c01740616f5e81bc515fee3b2c2756823319b1482d9826ee28d45f71032fbd",
+                "sha256:fce4b473f2571573c9ce791618f3f2e36c6222080a07b5d6bcaeed441fb6ade3",
+                "sha256:8b88d9a68617836ded5af125fa09434a74a7c7486200ef519ff9e0e62514d09c"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "Id": "sha256:1eccc0eaea568f856b9d9692bdfaf005cb17b5a322fd404416cdb02afc9ecb8b",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/whatsdesk.d:4.2"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/whatsdesk.d@sha256:f5f5d552518bb9dcdedc7c76ad9c38a523ecb737943b08ef7fe74864d66882d9"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-01-03T01:00:34.185066433Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=whatsdesk",
+                "APPBIN=/opt/whatsdesk/whatsdesk",
+                "APP=/opt/whatsdesk/whatsdesk"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities,office",
+                "oc.desktopfile": "whatsdesk.desktop",
+                "oc.displayname": "whatsdesk",
+                "oc.icon": "whatsapp.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzUuMjE2IDE3NS41NTIiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9Ijg1LjkxNSIgeDI9Ijg2LjUzNSIgeTE9IjMyLjU2NyIgeTI9IjEzNy4wOTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM1N2QxNjMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyM2IzM2EiLz48L2xpbmVhckdyYWRpZW50PjxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxLjExNSIgaGVpZ2h0PSIxLjExNCIgeD0iLS4wNTciIHk9Ii0uMDU3IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMuNTMxIi8+PC9maWx0ZXI+PC9kZWZzPjxwYXRoIGZpbGw9IiNiM2IzYjMiIGQ9Im01NC41MzIgMTM4LjQ1IDIuMjM1IDEuMzI0YzkuMzg3IDUuNTcxIDIwLjE1IDguNTE4IDMxLjEyNiA4LjUyM2guMDIzYzMzLjcwNyAwIDYxLjEzOS0yNy40MjYgNjEuMTUzLTYxLjEzNS4wMDYtMTYuMzM1LTYuMzQ5LTMxLjY5Ni0xNy44OTUtNDMuMjUxQTYwLjc1IDYwLjc1IDAgMCAwIDg3Ljk0IDI1Ljk4M2MtMzMuNzMzIDAtNjEuMTY2IDI3LjQyMy02MS4xNzggNjEuMTNhNjAuOTggNjAuOTggMCAwIDAgOS4zNDkgMzIuNTM1bDEuNDU1IDIuMzEyLTYuMTc5IDIyLjU1OHptLTQwLjgxMSAyMy41NDRMMjQuMTYgMTIzLjg4Yy02LjQzOC0xMS4xNTQtOS44MjUtMjMuODA4LTkuODIxLTM2Ljc3Mi4wMTctNDAuNTU2IDMzLjAyMS03My41NSA3My41NzgtNzMuNTUgMTkuNjgxLjAxIDM4LjE1NCA3LjY2OSA1Mi4wNDcgMjEuNTcyczIxLjUzNyAzMi4zODMgMjEuNTMgNTIuMDM3Yy0uMDE4IDQwLjU1My0zMy4wMjcgNzMuNTUzLTczLjU3OCA3My41NTNoLS4wMzJjLTEyLjMxMy0uMDA1LTI0LjQxMi0zLjA5NC0zNS4xNTktOC45NTR6bTAgMCIgZmlsdGVyPSJ1cmwoI2EpIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0ibTEyLjk2NiAxNjEuMjM4IDEwLjQzOS0zOC4xMTRhNzMuNDIgNzMuNDIgMCAwIDEtOS44MjEtMzYuNzcyYy4wMTctNDAuNTU2IDMzLjAyMS03My41NSA3My41NzgtNzMuNTUgMTkuNjgxLjAxIDM4LjE1NCA3LjY2OSA1Mi4wNDcgMjEuNTcyczIxLjUzNyAzMi4zODMgMjEuNTMgNTIuMDM3Yy0uMDE4IDQwLjU1My0zMy4wMjcgNzMuNTUzLTczLjU3OCA3My41NTNoLS4wMzJjLTEyLjMxMy0uMDA1LTI0LjQxMi0zLjA5NC0zNS4xNTktOC45NTR6Ii8+PHBhdGggZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDE3ODApIiBkPSJNODcuMTg0IDI1LjIyN2MtMzMuNzMzIDAtNjEuMTY2IDI3LjQyMy02MS4xNzggNjEuMTNhNjAuOTggNjAuOTggMCAwIDAgOS4zNDkgMzIuNTM1bDEuNDU1IDIuMzEyLTYuMTc5IDIyLjU1OSAyMy4xNDYtNi4wNjkgMi4yMzUgMS4zMjRjOS4zODcgNS41NzEgMjAuMTUgOC41MTggMzEuMTI2IDguNTI0aC4wMjNjMzMuNzA3IDAgNjEuMTQtMjcuNDI2IDYxLjE1My02MS4xMzVhNjAuNzUgNjAuNzUgMCAwIDAtMTcuODk1LTQzLjI1MSA2MC43NSA2MC43NSAwIDAgMC00My4yMzUtMTcuOTI5eiIvPjxwYXRoIGZpbGw9InVybCgjYikiIGQ9Ik04Ny4xODQgMjUuMjI3Yy0zMy43MzMgMC02MS4xNjYgMjcuNDIzLTYxLjE3OCA2MS4xM2E2MC45OCA2MC45OCAwIDAgMCA5LjM0OSAzMi41MzVsMS40NTUgMi4zMTMtNi4xNzkgMjIuNTU4IDIzLjE0Ni02LjA2OSAyLjIzNSAxLjMyNGM5LjM4NyA1LjU3MSAyMC4xNSA4LjUxNyAzMS4xMjYgOC41MjNoLjAyM2MzMy43MDcgMCA2MS4xNC0yNy40MjYgNjEuMTUzLTYxLjEzNWE2MC43NSA2MC43NSAwIDAgMC0xNy44OTUtNDMuMjUxIDYwLjc1IDYwLjc1IDAgMCAwLTQzLjIzNS0xNy45Mjh6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNjguNzcyIDU1LjYwM2MtMS4zNzgtMy4wNjEtMi44MjgtMy4xMjMtNC4xMzctMy4xNzZsLTMuNTI0LS4wNDNjLTEuMjI2IDAtMy4yMTguNDYtNC45MDIgMi4zcy02LjQzNSA2LjI4Ny02LjQzNSAxNS4zMzIgNi41ODggMTcuNzg1IDcuNTA2IDE5LjAxMyAxMi43MTggMjAuMzgxIDMxLjQwNSAyNy43NWMxNS41MjkgNi4xMjQgMTguNjg5IDQuOTA2IDIyLjA2MSA0LjZzMTAuODc3LTQuNDQ3IDEyLjQwOC04Ljc0IDEuNTMyLTcuOTcxIDEuMDczLTguNzQtMS42ODUtMS4yMjYtMy41MjUtMi4xNDYtMTAuODc3LTUuMzY3LTEyLjU2Mi01Ljk4MS0yLjkxLS45MTktNC4xMzcuOTIxLTQuNzQ2IDUuOTc5LTUuODE5IDcuMjA2LTIuMTQ0IDEuMzgxLTMuOTg0LjQ2Mi03Ljc2LTIuODYxLTE0Ljc4NC05LjEyNGMtNS40NjUtNC44NzMtOS4xNTQtMTAuODkxLTEwLjIyOC0xMi43M3MtLjExNC0yLjgzNS44MDgtMy43NTFjLjgyNS0uODI0IDEuODM4LTIuMTQ3IDIuNzU5LTMuMjJzMS4yMjQtMS44NCAxLjgzNi0zLjA2NS4zMDctMi4zMDEtLjE1My0zLjIyLTQuMDMyLTEwLjAxMS01LjY2Ni0xMy42NDciLz48L3N2Zz4=",
+                "oc.keyword": "whatsdesk,whatsapp,whatsdesk",
+                "oc.launch": "whatsdesk.whatsdesk",
+                "oc.mimetype": "x-scheme-handler/whatsapp;",
+                "oc.name": "whatsdesk",
+                "oc.path": "/opt/whatsdesk/whatsdesk",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.20.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 780098361,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/165876c0e53b8d068833b57ba08b8195054f3083044ce75217ae07e00dccfa86/diff:/var/lib/docker/overlay2/f80a63171730947e9cedd08114e36e186ebc853e8518052c69f009e62d250ba6/diff:/var/lib/docker/overlay2/7c4752b3acda96e84e333e8eca4598622bcfdfec5ecb0d387d6edb221b3d278d/diff:/var/lib/docker/overlay2/c6faaa7aaea0125839bfa67c118bcfbb0eec03402050e5695d15f28a7e729ffd/diff:/var/lib/docker/overlay2/1c68a32ed41352153d957982a854fd58718656fa3d06084d0a51f901cc805d06/diff:/var/lib/docker/overlay2/6e74f0e62b8fb5333f529da160250b378df4e667e8924c632ebff8b9226ba05d/diff:/var/lib/docker/overlay2/8bacf30880c02dbcb2e237af18cdb4b440bf9b6786f88b9e2b276104445e36b6/diff:/var/lib/docker/overlay2/f865343cdf89dbccbdfec7cd48fd3e558de2f277f3cf59081ecd8ba599a5bd3f/diff:/var/lib/docker/overlay2/c750b15548ad2172d012fc2203a3701388f118c179e474b4f7f9d8a0f6250585/diff:/var/lib/docker/overlay2/191a92987e87298d263bd14212175bb1e5d939fd3e1db2ea4d8cd06ca97545a1/diff:/var/lib/docker/overlay2/6ea015b2eb89984429f0f52d4a87b1b2dc3c7bd921a99d01d78c6d2f82be74ad/diff:/var/lib/docker/overlay2/c83dab9623c2c0dd821267d1944bea2aa03d0cd1f2880c6b3df9ca156b837818/diff:/var/lib/docker/overlay2/90e25a194c70ce1c5130378825bcf5519487a0dd01a0cc1ecab7b35ad2186445/diff:/var/lib/docker/overlay2/04be1b1ca3008ab927240456894eab4c9fa2b2632c1f5ec0f83a356a8be336bf/diff:/var/lib/docker/overlay2/b5bb3def8478d84f77f0f4f012c601a1856cba787c3955399d526168f2b39309/diff:/var/lib/docker/overlay2/b5ef21ec0f9327d50d0db36a10bbc9cbf0fc1ea79fdcf5980639876f361df58f/diff:/var/lib/docker/overlay2/3e65f1cee066815a88c130e1507d0790c4eec3ecd5c220d36f70a9b57346b550/diff:/var/lib/docker/overlay2/2b8a0d0d4e5969948f15addd3bdf7e0ffa5131de836db5a440a1c1270642ccbc/diff:/var/lib/docker/overlay2/0b313e411e4f6ef2c79b5d694cec6e1d5998c8db92979cc854d195b3061426d5/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2951c15b49074c5a3b7eaf1ec2a91231ca3df3b89a0456e25c410597280536df/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2951c15b49074c5a3b7eaf1ec2a91231ca3df3b89a0456e25c410597280536df/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2951c15b49074c5a3b7eaf1ec2a91231ca3df3b89a0456e25c410597280536df/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6",
+                "sha256:2b5efc47eab95557b5a62e0469b257e36b7456800ebcfba40f8fca2dfa825d17",
+                "sha256:2b123c10b3307cc86d8f9021a96ad53afad2f5c6756bf7255f9d16b48aa60b6b",
+                "sha256:d3d548bda77e29fcc084828a7e2d814ca57a3b25c9c9ae0edbb3874b50bc531f",
+                "sha256:157b8f0d1c7f87e50a9369f50525c9da677c7ac1b4e65b344400cb663f3c5ec0",
+                "sha256:c85ec34948b72b70f9082e473aaef4741635e73c5f0f6a0f899130226c13a6d8",
+                "sha256:f7e79a22a00da2275e53e98c2a237f1202aa34f43bdfc4874e2c023c5edeb8ae",
+                "sha256:26a84f106fc0b44f0e90e236a802ecbf1c76201dcd94f42171bbf740648f0ab9",
+                "sha256:cc4e9e0bccab9727b8df208027016cdf2da3f3c433ef5d485df13c6bda2780c8",
+                "sha256:34d8848fef35f257e5d68c175c9a9b774f7daabfe4b6c265b7b0df6f97831d3f",
+                "sha256:4c22d60ab8a3319bc535b634733492bf38026f2649046ac65c91083bf23a6e1c",
+                "sha256:5a14f4d9db38ef1613923c03d7dfeee933a9c98c7ce3aab0512a5f760ce8a765",
+                "sha256:7b7644656395d13bea960336a988a3e4e1bf6e97088061bf6d277b5b9495a1c4",
+                "sha256:8d181f604d098f7d6e28057ceafcb033d252cb9a4c36c04450653f84831cc46b",
+                "sha256:48712e717fa0f0360ca9f67587e7e2b7d9da45c9817427a47c31f258bced253a",
+                "sha256:2f81de303647496cd53dcfbd67ba479bde2df88405b089188b5ad2b794c9bc19",
+                "sha256:97eddbd3cb4ca03020f83fdc8e5f3b27b1c7815bc6970c776e16978e4d03cf2e",
+                "sha256:54d98724792f09a4038b1180cb7587448ebebf72b9710d8c538d1dee31c5e5aa",
+                "sha256:9a995845282f736fc01f72c9a70d34a5f993a9ec0acd86b1e8c0ec3ecaae1846",
+                "sha256:33f89db0426db16f6510ef478d532e55bca5d3473f0721302ab1a16be0af0c8b"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

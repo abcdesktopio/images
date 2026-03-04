@@ -1,0 +1,91 @@
+[
+    {
+        "Id": "sha256:47047e6edde10313fbd791a2031d1e9c4853d7f7d225b0ce1673d899953debdf",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/chess.d:4.4"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/chess.d@sha256:bc37da9bf9b11cf4b88c44ee8c765c2b29955e00d1a00b4e99a49ecf015bf190"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-28T11:30:54.015556042Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "APPNAME=chess",
+                "APPBIN=/usr/bin/gnome-chess",
+                "APP=/usr/bin/gnome-chess"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.desktopfile": "org.gnome.Chess.desktop",
+                "oc.displayname": "chess",
+                "oc.icon": "circle_chess.svg",
+                "oc.icondata": "PHN2ZyBpZD0ic3ZnNDciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzIGlkPSJkZWZzMjUiPgogIDxmaWx0ZXIgaWQ9ImciIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgaWQ9ImZlR2F1c3NpYW5CbHVyMiIgc3RkRGV2aWF0aW9uPSIxNC4zNDM3NDkiLz4KICA8L2ZpbHRlcj4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIzMiIgeDI9IjMyIiB5MT0iMiIgeTI9IjYyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIGlkPSJzdG9wNSIgc3RvcC1jb2xvcj0iIzFkMjEyMyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIGlkPSJzdG9wNyIgc3RvcC1jb2xvcj0iIzNlNDU0YSIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8ZmlsdGVyIGlkPSJmaWx0ZXI5MTQiIHg9Ii0uMDY2IiB5PSItLjA1NSIgd2lkdGg9IjEuMTMyIiBoZWlnaHQ9IjEuMTEiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBpZD0iZmVHYXVzc2lhbkJsdXI5MTYiIHN0ZERldmlhdGlvbj0iMC42NDE2NjY2OCIvPgogIDwvZmlsdGVyPgogPC9kZWZzPgogPGNpcmNsZSBpZD0iY2lyY2xlMjciIHRyYW5zZm9ybT0ibWF0cml4KC4wNjI3NDUgMCAwIC4wNjI3NDUgLS4xMjU0OSAtLjEyNTQ5KSIgY3g9IjUxMiIgY3k9IjUxMiIgcj0iNDc4LjEyIiBmaWx0ZXI9InVybCgjZykiIG9wYWNpdHk9Ii4yNSIgc3Ryb2tlLXdpZHRoPSIxNS45MzgiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgbWFya2VycyBmaWxsIi8+CiA8Y2lyY2xlIGlkPSJjaXJjbGUyOSIgY3g9IjMyIiBjeT0iMzIiIHI9IjMwIiBmaWxsPSJ1cmwoI2IpIiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIG1hcmtlcnMgZmlsbCIvPgogPHBhdGggaWQ9InBhdGg4NjQiIGQ9Im0yNC40OSAxOGMtMC4zNjUxNyAwLTAuNjYwMzMgMC4yODctMC42NjAzMyAwLjY1NTY3djUuNjg3NWMwIDAuMzY1MTcgMC4yOTE2NyAwLjY1NjgzIDAuNjYwMzMgMC42NTY4M2gwLjUwNjMzbC0xLjE2NjcgMS4xNjY3IDEuMTY2NyAxLjE2NjctMS4xNjMyIDEyLjgzM2MtMS4yOTM4IDAtMi4zMzIyIDEuMDM5NS0yLjMzMjIgMi4zMjg3IDAgMC40MjM1IDAuMTI3MTcgMC44MjAxNyAwLjMyMzE3IDEuMTY2N2wtMC4zMjQzMyAwLjAwNDYtMS4xNjY3IDIuMzMzNGgyMy4zMzNsLTEuMTY2Ny0yLjMzMzMtMC4zMjY2Ny0wLjAwNDZjMC4yMDA2Ny0wLjM0NjUgMC4zMjc4My0wLjc0MzE3IDAuMzI3ODMtMS4xNjY3IDAtMS4yOTM4LTEuMDQ1My0yLjMyODctMi4zMzQ1LTIuMzI4N2wtMS4xNjU1LTEyLjgzMyAxLjE2NjctMS4xNjY3LTEuMTY2Ny0xLjE2NjdoMC41MTFjMC4zNjg2NyAwIDAuNjYwMzMtMC4yODcgMC42NjAzMy0wLjY1Njgzdi01LjY4NzVjMC0wLjM2NTE3LTAuMjg3LTAuNjU1NjctMC42NjAzMy0wLjY1NTY3aC0xLjY3ODh2Mi4zMzMzaC0yLjMzMzN2LTIuMzMzM2gtMi4zMzMzdjIuMzMzM2gtMi4zMzMzdi0yLjMzMzRoLTIuMzMzM3YyLjMzMzNoLTIuMzMzM3YtMi4zMzMzIiBmaWx0ZXI9InVybCgjZmlsdGVyOTE0KSIgb3BhY2l0eT0iLjUiIHN0cm9rZS13aWR0aD0iMS4xNjY3Ii8+CiA8cGF0aCBpZD0icGF0aDI5IiBkPSJtMjQuNDkgMThjLTAuMzY1MTcgMC0wLjY2MDMzIDAuMjg3LTAuNjYwMzMgMC42NTU2N3Y1LjY4NzVjMCAwLjM2NTE3IDAuMjkxNjcgMC42NTY4MyAwLjY2MDMzIDAuNjU2ODNoMC41MDYzM2wtMS4xNjY3IDEuMTY2NyAxLjE2NjcgMS4xNjY3LTEuMTYzMiAxMi44MzNjLTEuMjkzOCAwLTIuMzMyMiAxLjAzOTUtMi4zMzIyIDIuMzI4NyAwIDAuNDIzNSAwLjEyNzE3IDAuODIwMTcgMC4zMjMxNyAxLjE2NjdsLTAuMzI0MzMgMC4wMDQ2LTEuMTY2NyAyLjMzMzRoMjMuMzMzbC0xLjE2NjctMi4zMzMzLTAuMzI2NjctMC4wMDQ2YzAuMjAwNjctMC4zNDY1IDAuMzI3ODMtMC43NDMxNyAwLjMyNzgzLTEuMTY2NyAwLTEuMjkzOC0xLjA0NTMtMi4zMjg3LTIuMzM0NS0yLjMyODdsLTEuMTY1NS0xMi44MzMgMS4xNjY3LTEuMTY2Ny0xLjE2NjctMS4xNjY3aDAuNTExYzAuMzY4NjcgMCAwLjY2MDMzLTAuMjg3IDAuNjYwMzMtMC42NTY4M3YtNS42ODc1YzAtMC4zNjUxNy0wLjI4Ny0wLjY1NTY3LTAuNjYwMzMtMC42NTU2N2gtMS42Nzg4djIuMzMzM2gtMi4zMzMzdi0yLjMzMzNoLTIuMzMzM3YyLjMzMzNoLTIuMzMzM3YtMi4zMzM0aC0yLjMzMzN2Mi4zMzMzaC0yLjMzMzN2LTIuMzMzMyIgZmlsbD0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjE2NjciLz4KPC9zdmc+Cg==",
+                "oc.keyword": "chess,chess gnuchess",
+                "oc.launch": "gnome-chess.gnome-chess",
+                "oc.mimetype": "application/x-chess-pgn",
+                "oc.name": "chess",
+                "oc.path": "/usr/bin/gnome-chess",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 681500804,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/6c9760e63823c489bbc149fc6a3f9542fc7f2dad9f0ace0a64e1cc0dc3ef3670/diff:/var/lib/docker/overlay2/cd055d25d9c8bb3455e276174f7dca6643f012c993d61cd86ce6550494e39a58/diff:/var/lib/docker/overlay2/e4324be3edd4409af9f8a02bd7e10ffb584a033984b0a9907233d11259c00b66/diff:/var/lib/docker/overlay2/3750d410cd56c4ab6e4b93e5898202315c109640bc860aa161617f46940290aa/diff:/var/lib/docker/overlay2/c9056df4702cee0c38cd512f3c2ea32da099b5554e13fa3ca0704e388bb6a46c/diff:/var/lib/docker/overlay2/59cdf0f0d5ae14dc2b8757f0a29ab4bedf510d71201fd085220f4116fed31cec/diff:/var/lib/docker/overlay2/f2f3d4f0073e33e3184f3ca8966adeac3a6434740e1f4f699370253fc5a8426d/diff:/var/lib/docker/overlay2/d5466e6a171804092399c7a60479b76a45f1e6fb5b31bf36f532bb41dcd91993/diff:/var/lib/docker/overlay2/08c58163e6dbf281ecbdafa8d5e56cde8a2550311ad42b9e6f7a70313d281e47/diff:/var/lib/docker/overlay2/edad671a31b4150c4355efd76d73bf68baf1c9c8ffd426c80e73c8c341e714df/diff",
+                "MergedDir": "/var/lib/docker/overlay2/609f3994758268cb4648134c2a272b5a214417a224660794941a2b94b627c737/merged",
+                "UpperDir": "/var/lib/docker/overlay2/609f3994758268cb4648134c2a272b5a214417a224660794941a2b94b627c737/diff",
+                "WorkDir": "/var/lib/docker/overlay2/609f3994758268cb4648134c2a272b5a214417a224660794941a2b94b627c737/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+                "sha256:e5b0a55317717dde2d2fbbbd54f8ddcee5faa158386dea01c660fb19f5518646",
+                "sha256:d7d0cdd011db616352eb6c2062b3beab75f1f42b23f40251496c2964502c46ad",
+                "sha256:dd2e3dc623c2365b4f5f06bc43782c35594ff852ff848a5ad905fc36275db584",
+                "sha256:d5acb28658071f4ba4d8f6f21fd92732d69189d16bde3df6c76df013672ef75b",
+                "sha256:83566bd69393a1b59dd0e6961eba800e19b76cd4b90e8b176caa3cb0b128cc77",
+                "sha256:9a6ac59d8ae1fd78179a0bd2986480aff00931a6453baf34fb98203d3e888c2d",
+                "sha256:62fdf5eefc5b2617fec080e113502f9d720819a28c090fd52967bb20c4663b5a",
+                "sha256:d72c0c27347f4e0bb6cdd270714e056c414cb9beb5682cdb7fe3650a74c3110f",
+                "sha256:73c377dac686d94ce9750338d4ede0ee8f58ceb6de182161c441651c7e15f259",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

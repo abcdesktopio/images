@@ -1,0 +1,87 @@
+[
+    {
+        "Id": "sha256:b71c4986180db1e7f08fa3a4598583ca9724e55022eba220badd0c0499d6ede4",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/devsecops.d:4.4"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/devsecops.d@sha256:b71c4986180db1e7f08fa3a4598583ca9724e55022eba220badd0c0499d6ede4"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-17T09:27:31.650223023Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=devsecops",
+                "APPBIN=/usr/bin/konsole",
+                "APP=/usr/bin/konsole",
+                "SHELL=/bin/bash"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "TerminalEmulator",
+                "oc.desktopfile": "org.kde.konsole.desktop",
+                "oc.desktopfileoverwrited": "org.kde.konsole.devsecops.desktop",
+                "oc.displayname": "DevSecOps",
+                "oc.icon": "circle_security.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2NCA2NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0M3NUM1Qzt9DQoJLnN0MXtvcGFjaXR5OjAuMjt9DQoJLnN0MntmaWxsOiMyMzFGMjA7fQ0KCS5zdDN7ZmlsbDojRjVDRjg3O30NCgkuc3Q0e2ZpbGw6I0UwOTk1RTt9DQo8L3N0eWxlPg0KPGcgaWQ9IkxheWVyXzEiPg0KCTxnPg0KCQk8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIvPg0KCTwvZz4NCgk8ZyBjbGFzcz0ic3QxIj4NCgkJPHBhdGggY2xhc3M9InN0MiIgZD0iTTMyLDU2YzAsMC0xOC02LjgtMTgtMjEuNVYyMC45YzAsMCw1LjgtNi45LDE4LTYuOVY1NnoiLz4NCgk8L2c+DQoJPGcgY2xhc3M9InN0MSI+DQoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zMiw1NmMwLDAsMTgtNi44LDE4LTIxLjVWMjAuOWMwLDAtNS44LTYuOS0xOC02LjlWNTZ6Ii8+DQoJPC9nPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QzIiBkPSJNMzIsNTRjMCwwLTE4LTYuOC0xOC0yMS41VjE4LjljMCwwLDUuOC02LjksMTgtNi45VjU0eiIvPg0KCTwvZz4NCgk8Zz4NCgkJPHBhdGggY2xhc3M9InN0NCIgZD0iTTMyLDU0YzAsMCwxOC02LjgsMTgtMjEuNVYxOC45YzAsMC01LjgtNi45LTE4LTYuOVY1NHoiLz4NCgk8L2c+DQo8L2c+DQo8ZyBpZD0iTGF5ZXJfMiI+DQo8L2c+DQo8L3N2Zz4NCg==",
+                "oc.keyword": "devsecops,konsole,terminal,bash,shell,cmd,admin,ftp,telnet,netcat,sshfs,curl,wget,git,ssh",
+                "oc.launch": "konsole.konsole",
+                "oc.name": "devsecops",
+                "oc.path": "/usr/bin/konsole",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.showinview": "dock",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.24.04",
+                "oc.type": "app",
+                "oc.wm_class": "konsole",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            },
+            "ArgsEscaped": true,
+            "Shell": [
+                "/bin/bash",
+                "-c"
+            ]
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1233173009,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f",
+                "sha256:23a027ee94c054c6613ff8a4e14ceeb4c9b14f58956e0e909ec4fcad0ac7d3bb",
+                "sha256:4bc6d2eed36b0df90e5e17b8b862c460f5654f84dcbc87b44c1ecf916f061e94",
+                "sha256:b83e2f6f515d5b98cfd01a24f6f8fb4366505a69db5f64c395b3f4dd81289292",
+                "sha256:54dfa15109193dc20a379c84116cd69c8060ffc73cfb7e0b08529b08d25f1b64",
+                "sha256:6760e7b22b065de4d9708ec899efcf09db37c680920428cd11faf6f72b531491",
+                "sha256:965096fcc45d2d2256ec897b391d6b6c3cb9a91e74a46db09bb24c3b6d6d0495",
+                "sha256:8e0bd9f7eb0e0cde1289a924654900195f210f5984313e98a3bb8aef585fdc1a",
+                "sha256:95620dc4d1c65f8e20916ff5c16a91a7eede7178735e74ac78d7f53ef94290bf",
+                "sha256:654a6cd91bab4061f2c4fb5c274b9a99659f21bab4482d0f369521b8573187bf",
+                "sha256:c37fe590f8199af38eff792e81e1805ff83b192481f8fddff4e945027d253ebf",
+                "sha256:2dfc14bbc0e839549b2045de7d8035d57f8ef5c26066116e8838405d08d11833",
+                "sha256:ed6f849ea89eeaf0b0eef92ad9cbf65619db9bb0a58b530500c503b5749d38b2",
+                "sha256:83dde837966ef7b782944fd141c7db351194aeedb6405628cf08e23ea3271516",
+                "sha256:c8ef43f255fe9265f35c2f4a2299324d3ad2cd3c0829807fbc6b930d320f6a24"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-17T09:57:41.712314184Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:b71c4986180db1e7f08fa3a4598583ca9724e55022eba220badd0c0499d6ede4",
+            "size": 1609
+        }
+    }
+]

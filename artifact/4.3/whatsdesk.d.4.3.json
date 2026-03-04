@@ -1,0 +1,102 @@
+[
+    {
+        "Id": "sha256:ca106b237163779c1fff4ddf3522903d56fed92fa678c09850b6f4cefb6eae3e",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/whatsdesk.d:4.3"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/whatsdesk.d@sha256:5698fcd352fc752a76cd421d87bd927f400d3ef4ad4d0ae9e671d3fde9e38743"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-12-15T15:39:08.905892568Z",
+        "DockerVersion": "",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
+                "APPNAME=whatsdesk",
+                "APPBIN=/opt/whatsdesk/whatsdesk",
+                "APP=/opt/whatsdesk/whatsdesk"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities,office",
+                "oc.desktopfile": "whatsdesk.desktop",
+                "oc.displayname": "whatsdesk",
+                "oc.icon": "whatsapp.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzUuMjE2IDE3NS41NTIiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9Ijg1LjkxNSIgeDI9Ijg2LjUzNSIgeTE9IjMyLjU2NyIgeTI9IjEzNy4wOTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM1N2QxNjMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyM2IzM2EiLz48L2xpbmVhckdyYWRpZW50PjxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxLjExNSIgaGVpZ2h0PSIxLjExNCIgeD0iLS4wNTciIHk9Ii0uMDU3IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMuNTMxIi8+PC9maWx0ZXI+PC9kZWZzPjxwYXRoIGZpbGw9IiNiM2IzYjMiIGQ9Im01NC41MzIgMTM4LjQ1IDIuMjM1IDEuMzI0YzkuMzg3IDUuNTcxIDIwLjE1IDguNTE4IDMxLjEyNiA4LjUyM2guMDIzYzMzLjcwNyAwIDYxLjEzOS0yNy40MjYgNjEuMTUzLTYxLjEzNS4wMDYtMTYuMzM1LTYuMzQ5LTMxLjY5Ni0xNy44OTUtNDMuMjUxQTYwLjc1IDYwLjc1IDAgMCAwIDg3Ljk0IDI1Ljk4M2MtMzMuNzMzIDAtNjEuMTY2IDI3LjQyMy02MS4xNzggNjEuMTNhNjAuOTggNjAuOTggMCAwIDAgOS4zNDkgMzIuNTM1bDEuNDU1IDIuMzEyLTYuMTc5IDIyLjU1OHptLTQwLjgxMSAyMy41NDRMMjQuMTYgMTIzLjg4Yy02LjQzOC0xMS4xNTQtOS44MjUtMjMuODA4LTkuODIxLTM2Ljc3Mi4wMTctNDAuNTU2IDMzLjAyMS03My41NSA3My41NzgtNzMuNTUgMTkuNjgxLjAxIDM4LjE1NCA3LjY2OSA1Mi4wNDcgMjEuNTcyczIxLjUzNyAzMi4zODMgMjEuNTMgNTIuMDM3Yy0uMDE4IDQwLjU1My0zMy4wMjcgNzMuNTUzLTczLjU3OCA3My41NTNoLS4wMzJjLTEyLjMxMy0uMDA1LTI0LjQxMi0zLjA5NC0zNS4xNTktOC45NTR6bTAgMCIgZmlsdGVyPSJ1cmwoI2EpIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0ibTEyLjk2NiAxNjEuMjM4IDEwLjQzOS0zOC4xMTRhNzMuNDIgNzMuNDIgMCAwIDEtOS44MjEtMzYuNzcyYy4wMTctNDAuNTU2IDMzLjAyMS03My41NSA3My41NzgtNzMuNTUgMTkuNjgxLjAxIDM4LjE1NCA3LjY2OSA1Mi4wNDcgMjEuNTcyczIxLjUzNyAzMi4zODMgMjEuNTMgNTIuMDM3Yy0uMDE4IDQwLjU1My0zMy4wMjcgNzMuNTUzLTczLjU3OCA3My41NTNoLS4wMzJjLTEyLjMxMy0uMDA1LTI0LjQxMi0zLjA5NC0zNS4xNTktOC45NTR6Ii8+PHBhdGggZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDE3ODApIiBkPSJNODcuMTg0IDI1LjIyN2MtMzMuNzMzIDAtNjEuMTY2IDI3LjQyMy02MS4xNzggNjEuMTNhNjAuOTggNjAuOTggMCAwIDAgOS4zNDkgMzIuNTM1bDEuNDU1IDIuMzEyLTYuMTc5IDIyLjU1OSAyMy4xNDYtNi4wNjkgMi4yMzUgMS4zMjRjOS4zODcgNS41NzEgMjAuMTUgOC41MTggMzEuMTI2IDguNTI0aC4wMjNjMzMuNzA3IDAgNjEuMTQtMjcuNDI2IDYxLjE1My02MS4xMzVhNjAuNzUgNjAuNzUgMCAwIDAtMTcuODk1LTQzLjI1MSA2MC43NSA2MC43NSAwIDAgMC00My4yMzUtMTcuOTI5eiIvPjxwYXRoIGZpbGw9InVybCgjYikiIGQ9Ik04Ny4xODQgMjUuMjI3Yy0zMy43MzMgMC02MS4xNjYgMjcuNDIzLTYxLjE3OCA2MS4xM2E2MC45OCA2MC45OCAwIDAgMCA5LjM0OSAzMi41MzVsMS40NTUgMi4zMTMtNi4xNzkgMjIuNTU4IDIzLjE0Ni02LjA2OSAyLjIzNSAxLjMyNGM5LjM4NyA1LjU3MSAyMC4xNSA4LjUxNyAzMS4xMjYgOC41MjNoLjAyM2MzMy43MDcgMCA2MS4xNC0yNy40MjYgNjEuMTUzLTYxLjEzNWE2MC43NSA2MC43NSAwIDAgMC0xNy44OTUtNDMuMjUxIDYwLjc1IDYwLjc1IDAgMCAwLTQzLjIzNS0xNy45Mjh6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNjguNzcyIDU1LjYwM2MtMS4zNzgtMy4wNjEtMi44MjgtMy4xMjMtNC4xMzctMy4xNzZsLTMuNTI0LS4wNDNjLTEuMjI2IDAtMy4yMTguNDYtNC45MDIgMi4zcy02LjQzNSA2LjI4Ny02LjQzNSAxNS4zMzIgNi41ODggMTcuNzg1IDcuNTA2IDE5LjAxMyAxMi43MTggMjAuMzgxIDMxLjQwNSAyNy43NWMxNS41MjkgNi4xMjQgMTguNjg5IDQuOTA2IDIyLjA2MSA0LjZzMTAuODc3LTQuNDQ3IDEyLjQwOC04Ljc0IDEuNTMyLTcuOTcxIDEuMDczLTguNzQtMS42ODUtMS4yMjYtMy41MjUtMi4xNDYtMTAuODc3LTUuMzY3LTEyLjU2Mi01Ljk4MS0yLjkxLS45MTktNC4xMzcuOTIxLTQuNzQ2IDUuOTc5LTUuODE5IDcuMjA2LTIuMTQ0IDEuMzgxLTMuOTg0LjQ2Mi03Ljc2LTIuODYxLTE0Ljc4NC05LjEyNGMtNS40NjUtNC44NzMtOS4xNTQtMTAuODkxLTEwLjIyOC0xMi43M3MtLjExNC0yLjgzNS44MDgtMy43NTFjLjgyNS0uODI0IDEuODM4LTIuMTQ3IDIuNzU5LTMuMjJzMS4yMjQtMS44NCAxLjgzNi0zLjA2NS4zMDctMi4zMDEtLjE1My0zLjIyLTQuMDMyLTEwLjAxMS01LjY2Ni0xMy42NDciLz48L3N2Zz4=",
+                "oc.keyword": "whatsdesk,whatsapp,whatsdesk",
+                "oc.launch": "whatsdesk.whatsdesk",
+                "oc.mimetype": "x-scheme-handler/whatsapp;",
+                "oc.name": "whatsdesk",
+                "oc.path": "/opt/whatsdesk/whatsdesk",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.20.04",
+                "oc.type": "app",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 777178781,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/84c56f2a71407446f29c0e8183fe57a33ff3eec56606623e468a206a7b8713ef/diff:/var/lib/docker/overlay2/ecf45011b523158744b4b252b4c9f5baf28ebe6b8d65241d4dc7ca97dca2405f/diff:/var/lib/docker/overlay2/ce18045886b3e2b09f34dfb1f91a8ac112ed38c852c4d581df3a8d083120cc5c/diff:/var/lib/docker/overlay2/ff8102e3bb184b261aa8de5ee876666b2abb9163cef81439574d948610818459/diff:/var/lib/docker/overlay2/e1f0cef1330a192f1fcb6edaad4344bd7ca213474731ed1a62e2bcc9b3458648/diff:/var/lib/docker/overlay2/40e83e755c5f4b400adbc6a281dc89e8fcbe0f7460601e2547e71dedcbfc6451/diff:/var/lib/docker/overlay2/1a46e7b13722d72a429c25639cbb7a602e712e86720a9421a98951eb31c80c39/diff:/var/lib/docker/overlay2/d6428bc608d116cb193ba127113b9ddfe158bdd5ae12a79f30ebeb71e1cf51b2/diff:/var/lib/docker/overlay2/cc87cce3153453a5efc809685a92c8594fbc76f5ca067d7be5cbc147a45238c5/diff:/var/lib/docker/overlay2/ad786ec255cb9cf9a525869ae7415ed5ba1a152d7930ad19eb0512a9d9de176e/diff:/var/lib/docker/overlay2/41e843cb09ac4745253af9c7e9e498e834408d97425888ad30dab448f59a5ea3/diff:/var/lib/docker/overlay2/646e18f70ddd285b8dd0d92bf98994d61cbed18acc4d956fa58df1d74b3fd41d/diff:/var/lib/docker/overlay2/daa60806236cbdb7a831d6d74af9a703134e986852deb95072f27a3819094a34/diff:/var/lib/docker/overlay2/e080f9a2ab41b18f263fad31955afaa264d2737a6544f45a20bf5d172ece10f1/diff:/var/lib/docker/overlay2/07bc4f8a139efde8f012f543da1b6ef08bbffd0217b12e97f20872cd7306ffd8/diff:/var/lib/docker/overlay2/49a35128d458899cd0ea86c9796d55fa4e41d910ecbfa3789c38b071d98d3101/diff:/var/lib/docker/overlay2/1aa883bdfae1390a818b5592ab582c40cad5a11aca34acf0fa45045e1af2a90f/diff",
+                "MergedDir": "/var/lib/docker/overlay2/0da86cf382f20b41530fd972566d1552763f68a7eb46f26f01bafa5a507f88a3/merged",
+                "UpperDir": "/var/lib/docker/overlay2/0da86cf382f20b41530fd972566d1552763f68a7eb46f26f01bafa5a507f88a3/diff",
+                "WorkDir": "/var/lib/docker/overlay2/0da86cf382f20b41530fd972566d1552763f68a7eb46f26f01bafa5a507f88a3/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6",
+                "sha256:23e3dc69e8bd350cc160be164debd8d8738d9c40ff3ac6f881140a1a91cb2ce2",
+                "sha256:82ab1e4c6d2e19b227e1f2a38628637a1e7a40489a3be60f376310f51840db2c",
+                "sha256:a5070015171c22906c18d96b3a9949a18a53822c8ceb1643baf2f3b7d7b70748",
+                "sha256:8c87087d3b96739b9adcabf44ecf628c5f99a6427dcee2b228d6a3fa033e9816",
+                "sha256:91de67723bef4f2d6f25e0a75319c27e394fe0ef751f1c445dc90fe4a7ad822c",
+                "sha256:2d604aad97029558765bf94231dc8b1b8a61636dd04a57e916a81136610e418f",
+                "sha256:c89be4d403e2898f148349fa95dacfb7ae57a146168eb221062f96ce2053a7d6",
+                "sha256:9ee0b58d720154919d5b30a1a866f63bf2d66bc43bc5e7716f56898ed8766d21",
+                "sha256:496fc4ba7d7362d9ad9adb9ad168016546c5b9d68042329290390e6b4d1cd1fb",
+                "sha256:8167e470fae7eac26a9e675376975433a7b47bd97e75bffdb61229ac7c4dd2ae",
+                "sha256:2b064c9060644ace009f4fdbef21533a78a8d3240386a735551adb32a26654ca",
+                "sha256:ff965fbc1bec555b5ccfe82443106eec3cabcd37fdb336ba6dd62f7b0ee92da7",
+                "sha256:097637d7d1642f83f1b6b48c71d03005fe245a8db3a782ed9d3729c3146cbe1a",
+                "sha256:8a9f39b135ed52db9484205eaa666cd91c0e00322f86aa5e4d1930cceb620464",
+                "sha256:e89b461e2f7481848d03d41a3a78a174f21d1b52583d2236c7491cfc4869048a",
+                "sha256:f525feec40abf6647ffe84a2d1a50c4b695c1e5f3666c0dadcffd0121be4c6a7",
+                "sha256:1781e5c27773dd8d5ca580c3629d4ce5b7dbb7cc0a824ec5bc0b04b06bb8ea3a"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

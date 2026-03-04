@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:b65a70bb47102c3832016f8844c4b84865f5a90c79e49ba16e7b0da20f89b96d",
+        "Id": "sha256:71a2f124bed7eeb00ae7bcc45405ee37ca461900c00dc608ccf5a6db7c964a5f",
         "RepoTags": [
             "ghcr.io/abcdesktopio/konsolepodbronze.d:4.1"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/konsolepodbronze.d@sha256:16bcd5888208e01b8db13c2f93043eda04a22a5aea2e62723ee2cb7794b5b1cb"
+            "ghcr.io/abcdesktopio/konsolepodbronze.d@sha256:9705665e85117c6a5bfce3053a7bdeb1f632742fdeffd370be8203161da67d08"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2025-07-10T10:53:12.971164977Z",
+        "Created": "2025-08-28T14:32:42.934384915Z",
         "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
@@ -27,7 +27,6 @@
                 "TERM=linux",
                 "LANG=en_US.utf8",
                 "ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount",
-                "ARGS=--name podbronze",
                 "APPNAME=konsolepodbronze",
                 "APPBIN=/usr/bin/konsole",
                 "APP=/usr/bin/konsole",
@@ -44,7 +43,6 @@
             "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
-                "oc.args": "--name podbronze",
                 "oc.cat": "development",
                 "oc.containerengine": "pod_application",
                 "oc.displayname": "konsole bronze [pod]",
@@ -62,34 +60,34 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 961207249,
+        "Size": 966494403,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/9992031ee4d9fc4ecad269966ccdd6ebc580e95bd633231deac7a405fb655e4f/diff:/var/lib/docker/overlay2/2af1fbfd54942cea9bb68b410e0eeb94a0e76bd05054f258c26dc37b7a1a3c5a/diff:/var/lib/docker/overlay2/6867d95e4e1b2fcd60c7737a0ad43e36734fc1ffb0f7207eb2791fef55e9b1ba/diff:/var/lib/docker/overlay2/4242b432baa3195a4b94876149c993d3736415aa4d0f4af521764acca8aa66ef/diff:/var/lib/docker/overlay2/a60bec69e2194af9a443d6e0017f84ee86ee1f264806f5c375d9e340c1129e7a/diff:/var/lib/docker/overlay2/55019ddc1319c20dd1979f991e71dcb0b85d8eee55433a240c8e1ffb08ee4b9d/diff:/var/lib/docker/overlay2/ecad6318cb84151ed879ababa7aabc952617067145f747309142a37efbd26e30/diff:/var/lib/docker/overlay2/d70d9cb2732c56bb867c8e48aa4790bcd1f2d5208dd7ca63d78372a90ed7044f/diff:/var/lib/docker/overlay2/b0e7063e5e6a3bb5eec203ac5b269cf9f9540b77b5cad7c3558ee55c4c35a6ba/diff:/var/lib/docker/overlay2/5a2345262d2b87e7e4ff3b76a6db3cc7f8584ec58dc5f914839792e3b2cae2d8/diff:/var/lib/docker/overlay2/d8fa498180becf8243e3d100097058f26278909284dd38f8fc21b2798b6d0034/diff:/var/lib/docker/overlay2/9f5f6ebcf1882c65f2e15af6485cb08a17a7b3194ebf718e1066386e87ce6902/diff:/var/lib/docker/overlay2/30a94b0045f32138462ac1ba7b7ed765075d59cd5b1656b1548f2f94152578f0/diff:/var/lib/docker/overlay2/0678925b5ba8eccf5503a7555cc60d8f7fe76b8cbba65b70b2e8c5914e15e670/diff",
-                "MergedDir": "/var/lib/docker/overlay2/6c4a945f9e728c6d6322b4d42befa822a6d7ca086917bd262a29099e2276b6d2/merged",
-                "UpperDir": "/var/lib/docker/overlay2/6c4a945f9e728c6d6322b4d42befa822a6d7ca086917bd262a29099e2276b6d2/diff",
-                "WorkDir": "/var/lib/docker/overlay2/6c4a945f9e728c6d6322b4d42befa822a6d7ca086917bd262a29099e2276b6d2/work"
+                "LowerDir": "/var/lib/docker/overlay2/d66b72b12db8a1b34efdb59390edc96cee49a3c7e61618b28feb476c1af8690e/diff:/var/lib/docker/overlay2/95f93435471fcc83167d7d430f1dccc0a4b74b9489efba4df40fe3d504536376/diff:/var/lib/docker/overlay2/2906b9858b0089e3560e7ca6b6fc09cbf88e80e260e3d901d737fbbc7050736d/diff:/var/lib/docker/overlay2/90ac7c30464218d0ee5021bf596259ec25843cb879840eaff9c14516590a1669/diff:/var/lib/docker/overlay2/9cb39c34f80485048ac94ec9988215b4112814ae3643624a54e372d7dbeaa33b/diff:/var/lib/docker/overlay2/19db1e14f6b14078668efc8477ad6f015f148967ab9b4dc5b80b968a469de572/diff:/var/lib/docker/overlay2/5c4912fa1c64658ceb82f7bed4479e1e44e9cec0b3147b07fe14636162cd52f6/diff:/var/lib/docker/overlay2/f7c0fc8fdf555c99958251d26f94dce24ec319f73afa8b590ca01c07c4b81c34/diff:/var/lib/docker/overlay2/8f47c63b60f5925f40a5699b668374649676ce8149f04872b4523c37a492a95a/diff:/var/lib/docker/overlay2/dc3b91338ba57fe8fa7e01490a0e2a9897fbba7affef57d81e5e978b722caed2/diff:/var/lib/docker/overlay2/e032fad4743145770220c967031a0b6a994cd639b22bff16fd99b4a50d8d9471/diff:/var/lib/docker/overlay2/d6e4424da1fb9c19c5b001d0bfd3343c589cb7a21b340888bb66d4485ff93243/diff:/var/lib/docker/overlay2/b6e74a3b1e106c8f41a11b250460c3ffef90346b1c00cc55d54d661ad4f816d5/diff:/var/lib/docker/overlay2/243760fa7a2bf21e6345a943c59d9c9a049e3673c09b9f49669a4be34f564a6b/diff",
+                "MergedDir": "/var/lib/docker/overlay2/1eb4e3e21326aa6360cdd4c96c8a9f0ddf85d1c7264223c36b01bf7a49499748/merged",
+                "UpperDir": "/var/lib/docker/overlay2/1eb4e3e21326aa6360cdd4c96c8a9f0ddf85d1c7264223c36b01bf7a49499748/diff",
+                "WorkDir": "/var/lib/docker/overlay2/1eb4e3e21326aa6360cdd4c96c8a9f0ddf85d1c7264223c36b01bf7a49499748/work"
             },
             "Name": "overlay2"
         },
         "RootFS": {
             "Type": "layers",
             "Layers": [
-                "sha256:fd2758d7a50e2b78d275ee7d1c218489f2439084449d895fa17eede6c61ab2c4",
-                "sha256:2f111e596a206d465a461625d3cec58397937b130fd5d72f98b993b9a946b2bb",
-                "sha256:83fa7256f94db0ebe20d27d9c00bbad45f969abc049763d699d1508e8024f5c4",
-                "sha256:dbfc081283cac7fcd6aad2e3f2d6c279eb302de86bfb00d83db04917e3f437c6",
-                "sha256:2567a939560c5b87768f58c3c276f2abc31e27adf26674326326d28fbe23d144",
-                "sha256:15a1dcd5ce235156d4d8cbdb74e834d782f43e6b12c82c4a3b3ec69720ef91ce",
-                "sha256:e405266cdc2b56e9a39fb402d379e54ba6082a0def07905e3ce9001307d5b963",
-                "sha256:899495fefd9daeb152275d748cd80a9502766c5fec583c2f9e7b9c0f54cf542b",
-                "sha256:5582a44a7ac2c0eeba46718ad7db3ca1752307cffc457fa1f0c8bc6481ceaccc",
-                "sha256:5b965b094721537747e965b3bfa8c7e0a2e71b3487fa3abe2aab0b3d45ba8add",
-                "sha256:140a6c4944ac30a9049d5cc459b48baa568c526e487b567ce6c222caa2330e81",
+                "sha256:418dccb7d85a63a6aa574439840f7a6fa6fd2321b3e2394568a317735e867d35",
+                "sha256:a0aa413cf461a9c98338454629ea66cf121d0ca83316e3fc08d8a57becd14ae6",
+                "sha256:9ba565bc90d3dbf25d63c0291d943ac234bc5a683cf3741282c390cffbe71ff5",
+                "sha256:353e210095d17712fecaec5cb4e8e147e8258d5ad17a9228a5af540858e0e95a",
+                "sha256:03f58259b0158c9dbc160828cb28d4f10891419f88391b0367845bd3e8bf6390",
+                "sha256:705bae5dd99df997843201378f1a05a614dd70bad09e1cdaddcaf8b80b0219a4",
+                "sha256:46774f58fabd380b05c4053b6a44d5bc01dca4eb29796539af06dc4540432975",
+                "sha256:dce97b64a4a5f8bcb6a7809ae081d2ebd0c7f256c0db09569ed482e1bcc79e12",
+                "sha256:e3499aa64bddf3a12fde856ff93f79fb8adc036101c1240a80cbf0a941081a8e",
+                "sha256:c57201f67e7cbc8447cd1c9c21a10aa6ddfb250e6a326e4deecf0f3224120870",
+                "sha256:0d12f340ed7ff6e228890d1ea0013e200f4d0394f92b60c0b828d3c36de36c3a",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:dadbe3e08866dad3c1e3809f9a63883e56df5877fe3c15f854c58f9876eba335",
-                "sha256:a8fd046f368b21f70fc32632d8376da9689407db28cfcd6b6bf7087c859ba0d1",
-                "sha256:b3fbeab3a0d5290eae43a1c1dd9bf0b119d0b3b795b8ea782dbe20864563e29b"
+                "sha256:e02db13e2d7392f25d9d1665a3296781732fcb327e44b5656e31fc7175eb73c6",
+                "sha256:2643304cf53a66033af83a80f73be3666af3e414c3a71b316a41fc244361363a",
+                "sha256:09f7c8e9a9c412d51fbb03e4ce968f75f06e773e4abfe25aded784751ca05625"
             ]
         },
         "Metadata": {
