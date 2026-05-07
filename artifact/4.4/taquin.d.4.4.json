@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:0e1a0524c88d128b1631810f619e6085131eb70335a6bbe709c2723c53847c8a",
+        "Id": "sha256:8afac30efe2f76ac1db750db4a8f3e026726939857c34050d853007abd55148c",
         "RepoTags": [
             "ghcr.io/abcdesktopio/taquin.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/taquin.d@sha256:c31daecba21d03172cac7276daecb9e52c26d41d5006742727cdb994401736ac"
+            "ghcr.io/abcdesktopio/taquin.d@sha256:45c165c0191c35a4518b6e7fbb8b50373bad7bd3bfc147ba504833cfc122ada9"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T15:53:44.49755643Z",
+        "Created": "2026-05-07T14:14:04.181145479Z",
         "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
@@ -27,7 +27,6 @@
                 "TERM=linux",
                 "LANG=en_US.utf8",
                 "APPNAME=taquin",
-                "APPBIN=/usr/bin/gnome-taquin",
                 "APP=/usr/bin/gnome-taquin"
             ],
             "Cmd": [
@@ -42,6 +41,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "games",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.desktopfile": "org.gnome.Taquin.desktop",
                 "oc.displayname": "taquin",
                 "oc.icon": "org.gnome.Taquin.svg",
@@ -60,10 +60,10 @@
         "Size": 341950265,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/16a47c991a15861c0e6c7c79dd6d1ca45015f4fcd2f29d747b990721b5b526f5/diff:/var/lib/docker/overlay2/cb5a99d7df7fb692f05242c2d3c782dbece8769dad9c64849dab89ec3b41f186/diff:/var/lib/docker/overlay2/7d73395f83e87ed517f0de316ac0d01129ac3c745ae63b8c6b1e8a46c0cd96db/diff:/var/lib/docker/overlay2/3fad04edac636075057da2f4d173e8cec2a9c1b4f73369c993083e11cd2e7aa0/diff:/var/lib/docker/overlay2/702d8571fb562b2a5b6b3f07e90a6a9293c3813b12b8e919eee4c6095e09bf03/diff:/var/lib/docker/overlay2/2d814282104da87d0e2c9af3fbb7f5d2259da9590dcfd28e26d389845457cc79/diff:/var/lib/docker/overlay2/50ffc81adfe6b91eaccad07752ad8ae829002a68da43803819620786531b3932/diff:/var/lib/docker/overlay2/f3929827d6c32c649b0ad0c8af98e2fc9206e653558769e0e95910818d3c1cdc/diff:/var/lib/docker/overlay2/c44a3231aab47d6ca954149b7a0b0f129cf3287b322cc75ec8f7e8941e3702f8/diff:/var/lib/docker/overlay2/9c232f566cb8513656ee78d9a3a4e1b4e5755383f8be5c801a21d06458506e34/diff",
-                "MergedDir": "/var/lib/docker/overlay2/81b5c2f257bed7d4dad20bde2b4ee42e40721ae5386acc2e08672c5f4cd62bba/merged",
-                "UpperDir": "/var/lib/docker/overlay2/81b5c2f257bed7d4dad20bde2b4ee42e40721ae5386acc2e08672c5f4cd62bba/diff",
-                "WorkDir": "/var/lib/docker/overlay2/81b5c2f257bed7d4dad20bde2b4ee42e40721ae5386acc2e08672c5f4cd62bba/work"
+                "LowerDir": "/var/lib/docker/overlay2/87d7b2f88c6c8db4eca544302869878c9ec595b5f82cb7315040bdd3cc0583b2/diff:/var/lib/docker/overlay2/685eed088f094e25353d356575cd7a5737497190edd60dc8d074946e521efe21/diff:/var/lib/docker/overlay2/bf4771c4deafb92c460f10d18a593a316aee3770562f8443360c5e45fc7b623b/diff:/var/lib/docker/overlay2/64e5c52f435a6a8f7a9cbe221396dee4e7ad884a052e387c6f5decadf1d01522/diff:/var/lib/docker/overlay2/25d848c0ee00e0aa5028f6cce9df113b74ca1e39b6bd02588cb17d042603f3ed/diff:/var/lib/docker/overlay2/539a382c9b9b1b2d01b4ebaa5f924b854342bf5316be6579189517f7c68f5793/diff:/var/lib/docker/overlay2/2909fd85e78d4c1752c42276d3c0a4301f6ab0f85b4423813cf1e2a4dd59c509/diff:/var/lib/docker/overlay2/db02bde69682483431c29781516422eb14ba95471c7a2599d1bc25d68aa26825/diff:/var/lib/docker/overlay2/d4fee18b2bea6dc769f880a88cc2a832e3124740422373da0e925e33e7e6c4ea/diff:/var/lib/docker/overlay2/9c232f566cb8513656ee78d9a3a4e1b4e5755383f8be5c801a21d06458506e34/diff",
+                "MergedDir": "/var/lib/docker/overlay2/0effe49b5626b7dfc582027ba380792eb2738ba82b2c3bca9fe042332db4d1f0/merged",
+                "UpperDir": "/var/lib/docker/overlay2/0effe49b5626b7dfc582027ba380792eb2738ba82b2c3bca9fe042332db4d1f0/diff",
+                "WorkDir": "/var/lib/docker/overlay2/0effe49b5626b7dfc582027ba380792eb2738ba82b2c3bca9fe042332db4d1f0/work"
             },
             "Name": "overlay2"
         },
@@ -79,7 +79,7 @@
                 "sha256:9a6ac59d8ae1fd78179a0bd2986480aff00931a6453baf34fb98203d3e888c2d",
                 "sha256:62fdf5eefc5b2617fec080e113502f9d720819a28c090fd52967bb20c4663b5a",
                 "sha256:d72c0c27347f4e0bb6cdd270714e056c414cb9beb5682cdb7fe3650a74c3110f",
-                "sha256:6a19fbc2b6473bf3aa699619dd394d11cf82686445c04c0aecaab736d297b917",
+                "sha256:ab4db7d68e269af7e0d7176f45baa1bc6be61e77d6d42925119874542a1210e3",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
