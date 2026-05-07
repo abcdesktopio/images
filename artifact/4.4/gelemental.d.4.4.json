@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:0f7fecd1cd98593810d30693e7b6a96aab72d657f3f4caf113da1f5fedee2b52",
+        "Id": "sha256:8ca0a495058ec3e9505b6680cdac746638a733cb4b1482bd14a8d62eef0feb34",
         "RepoTags": [
             "ghcr.io/abcdesktopio/gelemental.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/gelemental.d@sha256:db16f03bbdd9bcdeae162e48f440df70f99cb4f6c8d76932669599ee86a1fc23"
+            "ghcr.io/abcdesktopio/gelemental.d@sha256:d83c5393f2b2ce5b2641d1524f35a361f18696f640cb226eb5fe9cf7334f44bc"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T15:46:34.37043654Z",
+        "Created": "2026-05-07T14:05:09.564995169Z",
         "DockerVersion": "",
         "Author": "",
         "Config": {
@@ -29,7 +29,6 @@
                 "NODE_MAJOR=24",
                 "LANG=en_US.utf8",
                 "APPNAME=gElemental",
-                "APPBIN=/usr/bin/gelemental",
                 "APP=/usr/bin/gelemental"
             ],
             "Cmd": [
@@ -44,6 +43,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "education",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.desktopfile": "gelemental.desktop",
                 "oc.displayname": "gElemental",
                 "oc.icon": "gelemental.svg",
@@ -60,13 +60,13 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 515381584,
+        "Size": 515381954,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/68c444948546a447d44172c182259b4e52d70e57f902c59745a42fe3497d07e3/diff:/var/lib/docker/overlay2/98739892f95e2478a71da7630532439508d7325df1490a41451903b673b10954/diff:/var/lib/docker/overlay2/3d61dd73c71a602eedaea41ea8882c6b21bdf01896899e54636c7330aff7660d/diff:/var/lib/docker/overlay2/8fb13ade32e270ecc6317e55f853ce55d80d46f6468d269b9f82efe1f7853549/diff:/var/lib/docker/overlay2/9ab29eb1f560185d50fe306d70ee4d090fd6d08b390cda3e359abe3915965a65/diff:/var/lib/docker/overlay2/7327f11dbb596e6cef339b02ebc63d2162269dad240a5b996f6fc6aab5898165/diff:/var/lib/docker/overlay2/143ac0cb2f1a69e93e8b75505217b318b11ef993ddde472d6d5f856cfb3430f0/diff:/var/lib/docker/overlay2/66066f8e855eda8bd70a1928d5419ba4f4d91460af296c031715d8ffcad1c0e0/diff:/var/lib/docker/overlay2/cc907d606b0579785426b4dbf911f33c5cbd4c5533e692dbcbb202e58ccff0d7/diff",
-                "MergedDir": "/var/lib/docker/overlay2/da0b01f2ba8e2e74f365c6ea7f2d0cc8815a38308ba908f1213a414575de7e09/merged",
-                "UpperDir": "/var/lib/docker/overlay2/da0b01f2ba8e2e74f365c6ea7f2d0cc8815a38308ba908f1213a414575de7e09/diff",
-                "WorkDir": "/var/lib/docker/overlay2/da0b01f2ba8e2e74f365c6ea7f2d0cc8815a38308ba908f1213a414575de7e09/work"
+                "LowerDir": "/var/lib/docker/overlay2/4e1e69f036f5ea01429d2d0bf6d74395ca09259e16c8d29b21ed79c28c4f8796/diff:/var/lib/docker/overlay2/882314f19742a28185455e68d510d9de4e58855e4ece5e12ae9ad7c67e739332/diff:/var/lib/docker/overlay2/751352e2ee9c26e67b9bb894bc14c51598dd68d631b833d363f1c041c5d7eef9/diff:/var/lib/docker/overlay2/d07a26a090777965cdb96ee53abaedde2075a6bbf72317cf5e7e7022e5e0b24a/diff:/var/lib/docker/overlay2/070e8c88190f7c935b37989b0a9f64fe377df8297dbed881c6cf28946f7855e1/diff:/var/lib/docker/overlay2/932bab5cadfbbc3cf4c9724cd54d5895fb0afefc5e782aca7d1893748a60a0b9/diff:/var/lib/docker/overlay2/61a6bbda8e237c4687367f89f56cccc66bd385c227493bba21aba0b0e0621377/diff:/var/lib/docker/overlay2/1fc44fc54d6b96965d3ef0249cff53844f18728419c0545793e2b477de0193c2/diff:/var/lib/docker/overlay2/f6dc3feb5b67cf1c3e0fa15dd7be15fb338b80fa9ebed74bc9477721ffaaf689/diff",
+                "MergedDir": "/var/lib/docker/overlay2/1d86da61f64b9a70d087a881e7a5c0cc4d3bb37942959e0046ef3436b115603d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/1d86da61f64b9a70d087a881e7a5c0cc4d3bb37942959e0046ef3436b115603d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/1d86da61f64b9a70d087a881e7a5c0cc4d3bb37942959e0046ef3436b115603d/work"
             },
             "Name": "overlay2"
         },
@@ -80,8 +80,8 @@
                 "sha256:67612572b383af698936858951d315e62f6f2ac08fb7ec51020dec4af88584b7",
                 "sha256:20571bd9b5a419e4d5dcbb3112d223fe314feb40f87f43492f23d07de55ece3b",
                 "sha256:45966269f1456ccbc714f9eddf8dd138e57d40aca1d063f6a99e2051cfb18bfa",
-                "sha256:e485545bdbe87aa827d6ebd3c385380a7cb3792ef18f91dd04f593e3b1b27a7c",
-                "sha256:186eca18900f7b8ff699654125d336d11dcd12eba2a4bcc328735d35ce2c8100",
+                "sha256:8c3dcab675d1b3c088425675a9f2dd7989dda834016982ab3fefa83263b4e612",
+                "sha256:61895c47ecca6dc2b68d81a1c77cab53e3d1d6483f6aaa44bf58afeb8767fb50",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
