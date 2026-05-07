@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:0cfea47830a82e1396237d660e50b81af49dfd6ea2cd7f3b557dc2f4512b84c6",
+        "Id": "sha256:3253b8ff05c4f0706ed081db3abdcb4b117640a8125daedaafb76e08be663304",
         "RepoTags": [
             "ghcr.io/abcdesktopio/supertux2.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/supertux2.d@sha256:b246f45a36c34cce276964ae23bb3049f214fab2ecfb3ce994a7bacf74d8fa8a"
+            "ghcr.io/abcdesktopio/supertux2.d@sha256:d2e2b33676c3b8b9ff63542f33434f1d15394dcbd7748819636fc8f206f63291"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T15:56:01.957854387Z",
+        "Created": "2026-05-07T14:10:22.181989811Z",
         "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
@@ -27,7 +27,6 @@
                 "TERM=linux",
                 "LANG=en_US.utf8",
                 "APPNAME=supertux2",
-                "APPBIN=/usr/games/supertux2",
                 "APP=/usr/games/supertux2"
             ],
             "Cmd": [
@@ -42,6 +41,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "games",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.desktopfile": "supertux2.desktop",
                 "oc.displayname": "supertux2",
                 "oc.icon": "circle_supertux.svg",
@@ -59,10 +59,10 @@
         "Size": 605496505,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/e46a26fd1896369e7c85bb4681802201220c2d6fdeb5672e77568d4c03daf56b/diff:/var/lib/docker/overlay2/9aa1ef067193b94977d6399c11d60ff076e3674d9c43b63d2ed5efcc23867f48/diff:/var/lib/docker/overlay2/be8a429019dd59d31959bd5899360023068142969937854a23dc852ad5675604/diff:/var/lib/docker/overlay2/b6dee6bbdd2489ba9d8f72d1d4860bc4cb45bef747ca489055c26e82dedaadff/diff:/var/lib/docker/overlay2/fb8f085703123b3dd13d6de0842f8fe70ed9e7cb887624f1cc7ba5efae6364fa/diff:/var/lib/docker/overlay2/1dd6d104a6aa66b0cd75ad21a392717be0ecc85c122e58a1618e4eb229f4a31f/diff:/var/lib/docker/overlay2/79a34153658e42c4855dab29f506813a534c340e7428a7d58c8ec14509b859b2/diff:/var/lib/docker/overlay2/6fc20ff831a5d50403a9b3be4c104160a1006a079f857d77e67b0dbd04c762c0/diff:/var/lib/docker/overlay2/9c232f566cb8513656ee78d9a3a4e1b4e5755383f8be5c801a21d06458506e34/diff",
-                "MergedDir": "/var/lib/docker/overlay2/eeafe2bd552ee10c5e0f8a33270dd6e9f3f7007fae21f7d60c14d0d1ca34a31b/merged",
-                "UpperDir": "/var/lib/docker/overlay2/eeafe2bd552ee10c5e0f8a33270dd6e9f3f7007fae21f7d60c14d0d1ca34a31b/diff",
-                "WorkDir": "/var/lib/docker/overlay2/eeafe2bd552ee10c5e0f8a33270dd6e9f3f7007fae21f7d60c14d0d1ca34a31b/work"
+                "LowerDir": "/var/lib/docker/overlay2/92e2ecbb3d1b8c665e5c4cb7f78bb355408d4412c7dd03416cb77731bea3bdfd/diff:/var/lib/docker/overlay2/3299c3212328f424a2ebaf76b65285e693b8e6025cfc41e55384d9675253e1b5/diff:/var/lib/docker/overlay2/6833b715cdd15fc5b83f4499e1e579daf98e02fbd9e0fe11bb583a648ad50c8f/diff:/var/lib/docker/overlay2/76713d503cb6e759032ffa2654da11f8b59278c9acbaac89d689fc138566c941/diff:/var/lib/docker/overlay2/beda35423087984987baf93269fffd65d1011c6f3466bf1cecf3c82fa852554a/diff:/var/lib/docker/overlay2/e9fb1cebaa286f709cefcd1b018110c9f7b5b91ac2acc20ebb26d474995ed610/diff:/var/lib/docker/overlay2/c83ed0ee03a4ed9d3df722fc5c82a8903a912ef9c5050dde77f08a3001881303/diff:/var/lib/docker/overlay2/ffce83108a66a39712329d20d0994311290568718a7a52a2af817f39a155d292/diff:/var/lib/docker/overlay2/9c232f566cb8513656ee78d9a3a4e1b4e5755383f8be5c801a21d06458506e34/diff",
+                "MergedDir": "/var/lib/docker/overlay2/202d68e584f24659cb94479f3ece1e85889d7c6ffa4ab6592fee9aa4206a1387/merged",
+                "UpperDir": "/var/lib/docker/overlay2/202d68e584f24659cb94479f3ece1e85889d7c6ffa4ab6592fee9aa4206a1387/diff",
+                "WorkDir": "/var/lib/docker/overlay2/202d68e584f24659cb94479f3ece1e85889d7c6ffa4ab6592fee9aa4206a1387/work"
             },
             "Name": "overlay2"
         },
@@ -77,7 +77,7 @@
                 "sha256:83566bd69393a1b59dd0e6961eba800e19b76cd4b90e8b176caa3cb0b128cc77",
                 "sha256:9a6ac59d8ae1fd78179a0bd2986480aff00931a6453baf34fb98203d3e888c2d",
                 "sha256:62fdf5eefc5b2617fec080e113502f9d720819a28c090fd52967bb20c4663b5a",
-                "sha256:cba26597ed451f332dfc2c8a60c3195690e68baa5fcc4e11e423a031c54efd42",
+                "sha256:64b4f4ef81cb2b05ed0a0676fc14a4978c0c571b48b211e9d761a1870d9fd21e",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
