@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:0c7b8f51a7eb2d73c10b180646d17fac5892dc77783d844101ea839c9b8e4bff",
+        "Id": "sha256:ec9157322d32c4d77e919047866127b1baa5cdf5800970d150e8f5ff71f3df48",
         "RepoTags": [
             "ghcr.io/abcdesktopio/planner.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/planner.d@sha256:f72bcb420b1032adee3e4f3849d115f79daac389f2124a39dd4aedf1746fb43a"
+            "ghcr.io/abcdesktopio/planner.d@sha256:6b7e8f02b1c0ce1dcb17bc363a512f82d0e024da59cac49ad268793fc14afd71"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T15:58:56.11572991Z",
+        "Created": "2026-05-07T14:11:59.823918639Z",
         "DockerVersion": "",
         "Author": "",
         "Config": {
@@ -29,7 +29,6 @@
                 "NODE_MAJOR=24",
                 "LANG=en_US.utf8",
                 "APPNAME=Planner",
-                "APPBIN=/usr/bin/planner",
                 "APP=/usr/bin/planner"
             ],
             "Cmd": [
@@ -44,6 +43,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "office",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.displayname": "Planner",
                 "oc.fileextensions": "mpp;mpx",
                 "oc.icon": "planner.svg",
@@ -63,13 +63,13 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 544995310,
+        "Size": 544995676,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/a59934b52c8019c3fe784cf7e11338f6365ddc254d0c77081dbdf18f77a94a72/diff:/var/lib/docker/overlay2/880c67770a63e308c931c68adc0762115f8e569ed195300366f9ac1914798016/diff:/var/lib/docker/overlay2/56d66347540f879693be18c5a5c729b3bf0ed8c836a7486cdb0e071d253ea390/diff:/var/lib/docker/overlay2/aa38e1527919cbfe2422a746b350319207f9a33d06657e8f63c8607d5765302c/diff:/var/lib/docker/overlay2/364b3cf101ae21277fa47dd1a730ea2a01021b5548948ff069f45df122687803/diff:/var/lib/docker/overlay2/514519e7fceab1c1072d1338ce13b3dfc5b534b52060e7f6c02e408f84af6fbd/diff:/var/lib/docker/overlay2/5758f341c785f8cc0c35cf6db2aeec52448d65d5027ba6b0645e660ef36c3405/diff:/var/lib/docker/overlay2/b5e298c5ad7d43abaf7d1a307c5585a6a7a8c15af8834eba66adedd9938331ff/diff:/var/lib/docker/overlay2/b4aadae4e4f1d19cad04da2a08a4413b99b8effea2b257775083db602550baa3/diff",
-                "MergedDir": "/var/lib/docker/overlay2/0dd2b5b81cc73500078185c8d63e22ee68006cca6f1fb03338634e39062e8f9f/merged",
-                "UpperDir": "/var/lib/docker/overlay2/0dd2b5b81cc73500078185c8d63e22ee68006cca6f1fb03338634e39062e8f9f/diff",
-                "WorkDir": "/var/lib/docker/overlay2/0dd2b5b81cc73500078185c8d63e22ee68006cca6f1fb03338634e39062e8f9f/work"
+                "LowerDir": "/var/lib/docker/overlay2/266b14757c910b61e8766fce5b7e96117d1deb90ff83bd6a9642708a0755f718/diff:/var/lib/docker/overlay2/5f7d2af1b8b04ab9b0c120b85b001ec70bc5f0d8e3faecf5687f22dae496d84a/diff:/var/lib/docker/overlay2/e43ebe65c5ef735cd9cad034e8eb6bdac2488c0fec5706f47686e61bcf3f6a2b/diff:/var/lib/docker/overlay2/1ac9f862ddc7dafc400439421d24277f62a28dd4d6f23ce434726ce8b3f56fbd/diff:/var/lib/docker/overlay2/8e44b03598302379095100a8834dbf6acc5f5e8cf17edd2626b60271ae8beaed/diff:/var/lib/docker/overlay2/75e0cfe6c5a37c26c50c7fb9804e301c37b1ec908439bac123cd7d495d575a2b/diff:/var/lib/docker/overlay2/3efe70e9b8d662c69ad026ea938dc03e421b9c9474ce91fa80dd1ae02307b61b/diff:/var/lib/docker/overlay2/6b4ddd66d81881a370dff98d008ea83167f2fa6317c431274c0120098e9ed544/diff:/var/lib/docker/overlay2/458c0ee4bcd6907a7d63e42f97e2db687870b7446ad5e1449ae4b894590980e4/diff",
+                "MergedDir": "/var/lib/docker/overlay2/ab75d48e615d838c62ddc9af3a3693ac5490586e6729e7ae024b320c53d039ac/merged",
+                "UpperDir": "/var/lib/docker/overlay2/ab75d48e615d838c62ddc9af3a3693ac5490586e6729e7ae024b320c53d039ac/diff",
+                "WorkDir": "/var/lib/docker/overlay2/ab75d48e615d838c62ddc9af3a3693ac5490586e6729e7ae024b320c53d039ac/work"
             },
             "Name": "overlay2"
         },
@@ -83,8 +83,8 @@
                 "sha256:67612572b383af698936858951d315e62f6f2ac08fb7ec51020dec4af88584b7",
                 "sha256:20571bd9b5a419e4d5dcbb3112d223fe314feb40f87f43492f23d07de55ece3b",
                 "sha256:45966269f1456ccbc714f9eddf8dd138e57d40aca1d063f6a99e2051cfb18bfa",
-                "sha256:b935ce4af3bede429b3bacd31fbabeb6027b0b6af9ebaf7ce66ab9933d1e4ca5",
-                "sha256:5996687097c0c345253ed7cfa25b924c03279a9b0b377dcf93b863416d0765c4",
+                "sha256:91cb9a1cdd45c23c4bfbff95b5ec3eb5b8185f8669cfec06addf8eefe9a0e00c",
+                "sha256:cb2d81c7bd86e42415b78d2f04d358924f46c5df75519b79bd40408ec030e13c",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
