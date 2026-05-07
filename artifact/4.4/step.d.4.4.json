@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:0755d57045c7b2d6c182985f4d11ea35adb36c42a175cc46692b8462b3999e74",
+        "Id": "sha256:d3d52f7fe8a4329e4b519efa22a2799555f7385721fe330a98ae852bfa42a3f3",
         "RepoTags": [
             "ghcr.io/abcdesktopio/step.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/step.d@sha256:ca3bc656fdf153eed39ab5e4a2e19c1c5b2847e1938312fe088ea242d1fa4c81"
+            "ghcr.io/abcdesktopio/step.d@sha256:81eecbb6d74803826083161c88f5a971f800e7be5f1c4f6c1d3e0c30423429b0"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T15:55:21.86367146Z",
+        "Created": "2026-05-07T14:10:24.559562657Z",
         "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
@@ -27,7 +27,6 @@
                 "TERM=linux",
                 "LANG=en_US.utf8",
                 "APPNAME=Step",
-                "APPBIN=/usr/bin/step",
                 "APP=/usr/bin/step"
             ],
             "Cmd": [
@@ -42,6 +41,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "education",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.desktopfile": "org.kde.step.desktop",
                 "oc.displayname": "Step",
                 "oc.icon": "step.svg",
@@ -58,13 +58,13 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 811051375,
+        "Size": 811051057,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/36d9c142bae0728d00df5d90edff22a5c69a7d58cf72d028fd416500c4f3f677/diff:/var/lib/docker/overlay2/c5119bf08b40aede8054183df54566279ad73e9bf7865d4317c45265b20e101f/diff:/var/lib/docker/overlay2/23bcf33b06133081b5d03b070f1a44b375e88286667864c2e14e5cb0c6f0e293/diff:/var/lib/docker/overlay2/fcc3b8b11224c17d1e9ef6eed5580cf36730276a1195023b26912a2d131f0ddd/diff:/var/lib/docker/overlay2/68a8ded1ac07e4798611336f8b0c2afa4e557b4cbd906007b57dccb3baccaa84/diff:/var/lib/docker/overlay2/5e85d2bf646ab7674aa55c42673de531a3d81d2c7a515742106d729068840f44/diff:/var/lib/docker/overlay2/9738f3a474d95757298276b7c6f3cf5b065873e98286f26b9ac82bd0c883d118/diff:/var/lib/docker/overlay2/45e159e3a7694b1ae39e388862aa3088f97f76433e9d3a555ba215ef25c05462/diff:/var/lib/docker/overlay2/764a218601c5a324a8404c71536e347152d6dae0b9319ff15bdb966bb3d4c127/diff:/var/lib/docker/overlay2/9c232f566cb8513656ee78d9a3a4e1b4e5755383f8be5c801a21d06458506e34/diff",
-                "MergedDir": "/var/lib/docker/overlay2/cc6e73861e64e012d1e81e1ba35e7ada3f42181409a43eecc359276a9cd8923f/merged",
-                "UpperDir": "/var/lib/docker/overlay2/cc6e73861e64e012d1e81e1ba35e7ada3f42181409a43eecc359276a9cd8923f/diff",
-                "WorkDir": "/var/lib/docker/overlay2/cc6e73861e64e012d1e81e1ba35e7ada3f42181409a43eecc359276a9cd8923f/work"
+                "LowerDir": "/var/lib/docker/overlay2/eed7a2f4abdd67745fa68724ccdaa66104f42651504f15da9978d088b345330e/diff:/var/lib/docker/overlay2/4adb41609f8dfceb610ffccfc7d250d1dadc2bc4f81f75f70d7fcac6589b3ee5/diff:/var/lib/docker/overlay2/4a82fbfa395166019a69980a590dce0fdda7831f506cda25d02ba52874501137/diff:/var/lib/docker/overlay2/6574d80cb3d18a046fa50a82457fce7a77c305087439e404f83e7a487aa09e25/diff:/var/lib/docker/overlay2/a53e227dad1706bd58fe4f63c2c82bfae3370a4b7fdd887e6b7fc4460dd414d9/diff:/var/lib/docker/overlay2/c3e3307cb946d7a0249ac64adad32525fe4263e6e584f27dd35000914ea51516/diff:/var/lib/docker/overlay2/69655e712387c4f8566ca16d4c6937325912571235ca5180e600cdf1ecf329c2/diff:/var/lib/docker/overlay2/0c1204be6b28a4088c23195f3fe8394da6eec5cd0907fdbf192981f77d2fc60b/diff:/var/lib/docker/overlay2/161ad53458173a4a05b2057d72e77e8305c6d7084cad9fb4c9c6afc9d4d53749/diff:/var/lib/docker/overlay2/9c232f566cb8513656ee78d9a3a4e1b4e5755383f8be5c801a21d06458506e34/diff",
+                "MergedDir": "/var/lib/docker/overlay2/aa36b0a8086d7a8c20d3f45dc43ffa7d0c8dbedf87811e4c81efa4b272936877/merged",
+                "UpperDir": "/var/lib/docker/overlay2/aa36b0a8086d7a8c20d3f45dc43ffa7d0c8dbedf87811e4c81efa4b272936877/diff",
+                "WorkDir": "/var/lib/docker/overlay2/aa36b0a8086d7a8c20d3f45dc43ffa7d0c8dbedf87811e4c81efa4b272936877/work"
             },
             "Name": "overlay2"
         },
@@ -80,7 +80,7 @@
                 "sha256:9a6ac59d8ae1fd78179a0bd2986480aff00931a6453baf34fb98203d3e888c2d",
                 "sha256:62fdf5eefc5b2617fec080e113502f9d720819a28c090fd52967bb20c4663b5a",
                 "sha256:d72c0c27347f4e0bb6cdd270714e056c414cb9beb5682cdb7fe3650a74c3110f",
-                "sha256:c8fdf8c1231b201e902ca0ddc3735c987c07fec9f9dc87392c762d00f20eb147",
+                "sha256:db3145440d61d8518d87cf6f264aff531427bef379b3056a7fd1422ccb865d22",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
