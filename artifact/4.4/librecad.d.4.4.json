@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:ecbe236aab7f2002f38b944acd2ae7ca65d9575bc876450d7837ad2742b5164e",
+        "Id": "sha256:2c607a56daabc91773c3dc4a42c13c7a7a38fac6755c313f4baff6e3c731bed9",
         "RepoTags": [
             "ghcr.io/abcdesktopio/librecad.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/librecad.d@sha256:ff514ca63481407c0a98f6eae1493211024b43e212f51fb2afe415c2426eb837"
+            "ghcr.io/abcdesktopio/librecad.d@sha256:409615cbc433a558cda62431b619e68894b2be9aeff07801e1ce883f64ef5261"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T15:58:26.937220969Z",
+        "Created": "2026-05-07T14:13:57.603356052Z",
         "DockerVersion": "",
         "Author": "",
         "Config": {
@@ -29,7 +29,6 @@
                 "NODE_MAJOR=24",
                 "LANG=en_US.utf8",
                 "APPNAME=LibreCAD",
-                "APPBIN=/usr/bin/librecad",
                 "APP=/usr/bin/librecad"
             ],
             "Cmd": [
@@ -44,6 +43,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "development",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.displayname": "LibreCAD",
                 "oc.fileextensions": "dxf;dwg",
                 "oc.icon": "librecad.svg",
@@ -63,13 +63,13 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 778225729,
+        "Size": 778226091,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/0af682c8dbf28a5417b1d59913e70008bb89c8b6ab31285f37e3301bbeae40cd/diff:/var/lib/docker/overlay2/77710e5cbb7f8dd5f9dcad8f55d3bac376281963ff5c76a0b788eae71acb3e6f/diff:/var/lib/docker/overlay2/11ced0311a8057cc6db8e17994edc5e3e7023951e1ec58ed5aa2c81c7555b3e9/diff:/var/lib/docker/overlay2/99833009f07a9955d6c9b5f43a2a7c9879b1f5b4a2dd92e41c05b49415bc5de3/diff:/var/lib/docker/overlay2/17183e17bdba8216cdcb898d4a236a2085b40112d0e1e44bfc0db9265eca8d71/diff:/var/lib/docker/overlay2/d046cf7025773da49359a63b8a0ba2d8123cd516df652e4d45283693c0069816/diff:/var/lib/docker/overlay2/f63498aaaae62461fe10d15f94a70cfcd1ae7ed67e408141bd8cd5cd8b621aad/diff:/var/lib/docker/overlay2/99fd7f25922b984586d88fa1194c9fa481760838112ec5209bc1b63d67199af2/diff:/var/lib/docker/overlay2/6b4677d08178748d18e564eb7c8d5b4670dcfd91cc1f1450b324c00be8a72ce7/diff",
-                "MergedDir": "/var/lib/docker/overlay2/33418ea6995156e092d6de886113e740db92a946c6fc021df6100cee157dea6f/merged",
-                "UpperDir": "/var/lib/docker/overlay2/33418ea6995156e092d6de886113e740db92a946c6fc021df6100cee157dea6f/diff",
-                "WorkDir": "/var/lib/docker/overlay2/33418ea6995156e092d6de886113e740db92a946c6fc021df6100cee157dea6f/work"
+                "LowerDir": "/var/lib/docker/overlay2/c551681b162a30f1357ec5e77a64d9001388727b1fd49d7e8c3b88571e34688a/diff:/var/lib/docker/overlay2/40f3fffb802f15fc69b67e6af8f8d0f92edbe5edc842804005a8872ced90fdc0/diff:/var/lib/docker/overlay2/deb4672189e47cc21f906a3852254f249f1f8d5a89d3fde71c67d13c5de85462/diff:/var/lib/docker/overlay2/4baaadb51b41f427c3be1838a080e534b1bebe477a19388f15d6729fc3f615a2/diff:/var/lib/docker/overlay2/928bc3526882994a3218016f269ce1276f754351eb2585e6fa96e36494a1a05e/diff:/var/lib/docker/overlay2/10f196de353fc8c6f7944df2235748a5d0902e723508e52ff21dc3f9b8494bcb/diff:/var/lib/docker/overlay2/e9c59bfc4f8e0610eb2b55ed823c9c1e1bf2f4ae31a56b0d844ff0fdaa4c409b/diff:/var/lib/docker/overlay2/17a03686a9711beb7a70c9fc5a2cdfd47ebda42dbdd21769e4889cb9ca02db67/diff:/var/lib/docker/overlay2/bdba016c8f9b24d49bcf05d9886ba207c2b9136771b6a5327ecc06fad120297f/diff",
+                "MergedDir": "/var/lib/docker/overlay2/efe7f81671ce7a5c13e463d83764bf98a58717aa5815caf17803c2e9b8b95ac5/merged",
+                "UpperDir": "/var/lib/docker/overlay2/efe7f81671ce7a5c13e463d83764bf98a58717aa5815caf17803c2e9b8b95ac5/diff",
+                "WorkDir": "/var/lib/docker/overlay2/efe7f81671ce7a5c13e463d83764bf98a58717aa5815caf17803c2e9b8b95ac5/work"
             },
             "Name": "overlay2"
         },
@@ -83,8 +83,8 @@
                 "sha256:67612572b383af698936858951d315e62f6f2ac08fb7ec51020dec4af88584b7",
                 "sha256:20571bd9b5a419e4d5dcbb3112d223fe314feb40f87f43492f23d07de55ece3b",
                 "sha256:45966269f1456ccbc714f9eddf8dd138e57d40aca1d063f6a99e2051cfb18bfa",
-                "sha256:a59f2bebe267b8f16014b50f4b8679bd5ead02ea2517acdf14c48411d3443a0c",
-                "sha256:b7ab803a47ae0fb5923d26767fc70e383904c658ae1711846a90ffbd538b227f",
+                "sha256:4227391c2a5cf1b353b57862a100c178e09e6ecce66638424ca01aa007da4059",
+                "sha256:3fa8c8584ebbdf407ec3eb3b79a98195bd159fb38f01c3c5638108740db8116f",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
