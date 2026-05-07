@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:11d9691eff01bb0d1e7eabf2a44febbec301d649461a790693e9b39088784aed",
+        "Id": "sha256:3224029bed745c7aca8594a614727e6738c8a72bdf8d8da4d77f33bae431b953",
         "RepoTags": [
             "ghcr.io/abcdesktopio/robots.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/robots.d@sha256:61105c664b84c7cc7a716bf7d542ad5c7b3861522c8d82e4d7b67a941711071d"
+            "ghcr.io/abcdesktopio/robots.d@sha256:e286bddccf5ed3dbca07ee29e201dd5bdd956d790f46485f6ec97349510c54fb"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T15:51:55.768820845Z",
+        "Created": "2026-05-07T14:19:54.992214689Z",
         "DockerVersion": "",
         "Author": "",
         "Config": {
@@ -29,7 +29,6 @@
                 "NODE_MAJOR=24",
                 "LANG=en_US.utf8",
                 "APPNAME=Robots",
-                "APPBIN=/usr/games/gnome-robots",
                 "APP=/usr/games/gnome-robots"
             ],
             "Cmd": [
@@ -44,6 +43,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "games",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.desktopfile": "gnome-robots.desktop",
                 "oc.displayname": "Robots",
                 "oc.icon": "circle_gnome-robots.svg",
@@ -60,13 +60,13 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 533611391,
+        "Size": 533611959,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/26f7bd8938f1d50f24c0f6d9dbde20f0fc3c9f9d85d0b670b0205829385aec2e/diff:/var/lib/docker/overlay2/68e5d6908a1e3d408a259aa00bcf1d0b9be4442eb3d67e9bf242d280a031b03b/diff:/var/lib/docker/overlay2/9876f85047598e2b9a43dcb9482b6b799af1714eac32aa60a7dca5f03de9c88d/diff:/var/lib/docker/overlay2/46fd4886305d96c2d7e115f56e5671499bc48feb1e7e3255f7c7e446c50a186e/diff:/var/lib/docker/overlay2/7a74de88ecb2fafdc49f5dc007e38b3cc74d2e9d00789af84f1ac17f66765fb4/diff:/var/lib/docker/overlay2/63f19b6f856342e225c791241750daddd03a6c4b53b4c96e4b59397f7ac10075/diff:/var/lib/docker/overlay2/e08b83acdfc639d1fb1806f680ef03999db3491ba9ac3f67ced722fa67dec761/diff:/var/lib/docker/overlay2/7696b5c2fbb142266442674979d97a8e6a43cb0fb23b63b6c65be44c09eac0a3/diff:/var/lib/docker/overlay2/7fa4e086b10bb4de1a11e15932af99ba4cc48181c8d37d7f7a8ade7c889b2199/diff",
-                "MergedDir": "/var/lib/docker/overlay2/82144851c5d8807723a8b35d9498d3b3f0719437fe16a0b4d9c8af4c1ed6da3d/merged",
-                "UpperDir": "/var/lib/docker/overlay2/82144851c5d8807723a8b35d9498d3b3f0719437fe16a0b4d9c8af4c1ed6da3d/diff",
-                "WorkDir": "/var/lib/docker/overlay2/82144851c5d8807723a8b35d9498d3b3f0719437fe16a0b4d9c8af4c1ed6da3d/work"
+                "LowerDir": "/var/lib/docker/overlay2/c2c106935e232aab7421992af7c6adac852bf6fa55857bfce9f8ebcb5389b105/diff:/var/lib/docker/overlay2/7a710539c904c938d17a6f5bedcd32983fa09a4a43ccb2aa1200e6a006648cea/diff:/var/lib/docker/overlay2/977d731dc4650e334777f30346247367e88535b7387b902d8ed6608c3ddd5f93/diff:/var/lib/docker/overlay2/58b22c1090e2168c5659563c8c0549771159fb7400156abb0abf6dd0c44c1814/diff:/var/lib/docker/overlay2/e5e6d7702fec044fa18b2ef71e7a35d494b15f0053631da3523acb2f1eb6b6b9/diff:/var/lib/docker/overlay2/6dc8bb41aefbe35866b9c0b9e9bbd07a8daa37dcd995e154ef5e172844df9709/diff:/var/lib/docker/overlay2/5e127e4a06bdc1c342bdb0d72af0ca59ccf81ad82884c744558a068f43d88407/diff:/var/lib/docker/overlay2/c87f26c7380c448bf4e457930c442ba83a61cd83e06ac84daf8ceb94d970d059/diff:/var/lib/docker/overlay2/e3c4c94e503b61d605843809b2fbf050e7f95bd40a523734b3d420ee3f77a21a/diff",
+                "MergedDir": "/var/lib/docker/overlay2/b91e3b563d4a28cc2a306f196214d228f9015f2a46af46a45260c5a3e157fde4/merged",
+                "UpperDir": "/var/lib/docker/overlay2/b91e3b563d4a28cc2a306f196214d228f9015f2a46af46a45260c5a3e157fde4/diff",
+                "WorkDir": "/var/lib/docker/overlay2/b91e3b563d4a28cc2a306f196214d228f9015f2a46af46a45260c5a3e157fde4/work"
             },
             "Name": "overlay2"
         },
@@ -80,8 +80,8 @@
                 "sha256:67612572b383af698936858951d315e62f6f2ac08fb7ec51020dec4af88584b7",
                 "sha256:20571bd9b5a419e4d5dcbb3112d223fe314feb40f87f43492f23d07de55ece3b",
                 "sha256:45966269f1456ccbc714f9eddf8dd138e57d40aca1d063f6a99e2051cfb18bfa",
-                "sha256:eb0fbd72747ae63a43a9b107d5df231751a251deb3fc0f8cd416876e8c67f9a3",
-                "sha256:fb35d5ac99891b9aa7ec789d64404afdb3c7a3fd744837fd305ebfb1c741e41c",
+                "sha256:9dc34dc97b437809c63dc53741b397526c71fec43d2bf26a8411314ed0bef0de",
+                "sha256:54583935146bb39c9ed71a1cf7d78521aa0c40687152c08ff622b7909bf77ccb",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
