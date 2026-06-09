@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:3720deb20d7907f0a4ef19a222b47ad3c3c091e1110cd0cf62bdf0b74ac8a5a3",
+        "Id": "sha256:2b35a6a48ad8d068c88be0719bb304d77d87d4be3eff2ced2b1c187ec74da696",
         "RepoTags": [
             "ghcr.io/abcdesktopio/weather.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/weather.d@sha256:52478aa1a92b1e19b9b882efc451ddb50a5c12a51d2fb511cc6edbc8e70830bc"
+            "ghcr.io/abcdesktopio/weather.d@sha256:83be802845d79332048197dffe55252189829981dc1984f81a3eb8f2a4964a9a"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-04-20T16:00:57.732849339Z",
+        "Created": "2026-06-09T09:30:50.407599866Z",
         "DockerVersion": "",
         "Author": "Alexandre DEVELY",
         "Config": {
@@ -27,7 +27,6 @@
                 "TERM=linux",
                 "LANG=en_US.utf8",
                 "APPNAME=weather",
-                "APPBIN=/usr/bin/gnome-weather",
                 "APP=/usr/bin/gnome-weather"
             ],
             "Cmd": [
@@ -42,6 +41,7 @@
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "office",
+                "oc.comment": "{{ oc.comment }}",
                 "oc.desktopfile": "org.gnome.Weather.desktop",
                 "oc.displayname": "weather",
                 "oc.icon": "org.gnome.Weather.svg",
@@ -57,13 +57,13 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 726812920,
+        "Size": 726878109,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/87b4400836ed02f0bfc066fb4268bcade84e0de2bba1efc7789bfe0747cf8507/diff:/var/lib/docker/overlay2/a32b3c82715095c6c40289aabb7a8dc7f7e95562e56fe9bc8118e524c09d0b83/diff:/var/lib/docker/overlay2/b210c4c1eba64f798c40c01a050b771e615ab7b43bf7dd06d795dedc4204769b/diff:/var/lib/docker/overlay2/120f64361e22dc3639fc2749719ffb48c76e7d137b0ee449167b80ab7397fb38/diff:/var/lib/docker/overlay2/27c49030c862de8c0ff51e587146f2f9ced44995c70919da79a3ee02cbc33214/diff:/var/lib/docker/overlay2/a2a671dbb92c3d0cc92c4187f954e4cada851004675e805ca949e47f234c1898/diff:/var/lib/docker/overlay2/af4350a90cbbbeea56445354fbef920a2e087e6c4262f854b9fa06f22541b70a/diff:/var/lib/docker/overlay2/ed4b2c7e75f4dbc1e00915d46cf1d8fb241f48d4b9d928d7feebf897e29412b7/diff:/var/lib/docker/overlay2/ae46efaa2041e5d4e42fe172bac5c186da0e53fafad3e8064e9ebc436067a1ed/diff:/var/lib/docker/overlay2/9c232f566cb8513656ee78d9a3a4e1b4e5755383f8be5c801a21d06458506e34/diff",
-                "MergedDir": "/var/lib/docker/overlay2/1bc6ea98810bc924a04d8f679eead7110820979b9992b377749cab6a8ed8cf00/merged",
-                "UpperDir": "/var/lib/docker/overlay2/1bc6ea98810bc924a04d8f679eead7110820979b9992b377749cab6a8ed8cf00/diff",
-                "WorkDir": "/var/lib/docker/overlay2/1bc6ea98810bc924a04d8f679eead7110820979b9992b377749cab6a8ed8cf00/work"
+                "LowerDir": "/var/lib/docker/overlay2/f72a0ef9cb39ebee9aa5560c6c78f61c6147877e2dd662e025f3930a2a94b23c/diff:/var/lib/docker/overlay2/78f0408c8de3f0dfb85bb797ea2a7e18a2aedf518e08b02ca1b42c869c419fa7/diff:/var/lib/docker/overlay2/a9cdcf58950f7047ecac0d30fc3fb0e4133b38de344cf83cbf4e99ca9fcb3697/diff:/var/lib/docker/overlay2/d0b0248d08c5d037f9a6b1cc2038f494f3bf673b0193b97ba20dac8e1030d6c7/diff:/var/lib/docker/overlay2/d71778412be97f17e8292ef40af8e01d6ec798d720e6a0a0f948a4452d47f5a4/diff:/var/lib/docker/overlay2/44f21e5ced5f7ca74904ae08f974aa1f0d47e07cca9f7c742b5336f95344b76e/diff:/var/lib/docker/overlay2/647a63ea28d5c0643494be06f723c6ae3cf3282ec8ae80128a8b5de9c4b32d96/diff:/var/lib/docker/overlay2/9be07a500924c6792a5f09f2feaea76b8621928cc9dfbba5077e811dd7ffb938/diff:/var/lib/docker/overlay2/557efc3f2e41229d401a0f18aa4f796da85190d9f8d86cc9bcf9fc935de1e2d9/diff:/var/lib/docker/overlay2/02ca092581bce5f222dd1b6bbbfe30a6d8adb25ecc77ca10ea6cc01accc208d5/diff",
+                "MergedDir": "/var/lib/docker/overlay2/4ed6da8ebc679f0c03b20bdd80aad20d729aea40fd0b40afe995397f616eefdb/merged",
+                "UpperDir": "/var/lib/docker/overlay2/4ed6da8ebc679f0c03b20bdd80aad20d729aea40fd0b40afe995397f616eefdb/diff",
+                "WorkDir": "/var/lib/docker/overlay2/4ed6da8ebc679f0c03b20bdd80aad20d729aea40fd0b40afe995397f616eefdb/work"
             },
             "Name": "overlay2"
         },
@@ -79,7 +79,7 @@
                 "sha256:9a6ac59d8ae1fd78179a0bd2986480aff00931a6453baf34fb98203d3e888c2d",
                 "sha256:62fdf5eefc5b2617fec080e113502f9d720819a28c090fd52967bb20c4663b5a",
                 "sha256:d72c0c27347f4e0bb6cdd270714e056c414cb9beb5682cdb7fe3650a74c3110f",
-                "sha256:e73cad9ba76e68fd0ae436d8ffef1e04e25db49d613aaad811877bebe0f66367",
+                "sha256:5f8e7cd8a3a0eb9be23f4a67eaf6c0292425a7af9c5964cbdc8f4153267ab610",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
