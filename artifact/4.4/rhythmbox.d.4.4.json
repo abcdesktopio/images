@@ -1,27 +1,17 @@
 [
     {
-        "Id": "sha256:54c9c251a41d646df752b384038426e998e12e079bf58d19331c83d4b3b19cea",
+        "Id": "sha256:5645e18129969d09356823b6b6bd9fb275acdc34ec6aab4fdcc5ef2898421814",
         "RepoTags": [
             "ghcr.io/abcdesktopio/rhythmbox.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/rhythmbox.d@sha256:11b2ae7f03ca4f1a9c74ad3ef77cd79d169b3c1922fa12f6aeb34f1d31dcecce"
+            "ghcr.io/abcdesktopio/rhythmbox.d@sha256:5645e18129969d09356823b6b6bd9fb275acdc34ec6aab4fdcc5ef2898421814"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-11-07T03:41:51.395367026Z",
-        "DockerVersion": "",
+        "Created": "2026-11-08T03:07:49.73153187Z",
         "Author": "Alexandre DEVELY",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
             "User": "root",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "TERM=linux",
@@ -32,12 +22,7 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
-            "Volumes": null,
             "WorkingDir": "/",
-            "Entrypoint": null,
-            "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "utilities",
@@ -53,20 +38,12 @@
                 "oc.path": "/usr/bin/rhythmbox",
                 "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
                 "oc.type": "app"
-            }
+            },
+            "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 586260103,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/504040f3c3146fae2911a288a7d3a0d43933ecf9daf1e7dc3b2f0f51baaa25da/diff:/var/lib/docker/overlay2/e31e8056079ee1ae5fe1465b46cfa3965a586c6b011edabb179ec162ca26ed76/diff:/var/lib/docker/overlay2/45dd7f25020acbb88f08ad9bf1bbd8eff4793e3a453882c945f560ff09f77ad4/diff:/var/lib/docker/overlay2/cc9e39a331146d1e8882a7dd5d0b4df725981860ca94eda4dfe899beef6d3fb5/diff:/var/lib/docker/overlay2/c725b064a6cf556daa7829937307cad6903c4f4b5b30124e4965a2eab9672319/diff:/var/lib/docker/overlay2/f6208be668af2bc49659bbe57ed28aab65c402c27a43fffa39d3fdaace04b562/diff:/var/lib/docker/overlay2/278e5bc9c2374d6eee9eeac3a701288e9167e83fa024cfcd0455a10b82baeed7/diff:/var/lib/docker/overlay2/ab400a837e8654a4fba702b5bc7637562400393c5eb04a29358eec022b3ecd9d/diff:/var/lib/docker/overlay2/205a4b38a51aa3f877cc34ab5e1e3a07fdc6cb8596e681598ef505bb3856acbe/diff:/var/lib/docker/overlay2/b7dc570bc4ff0c09c99d9294970b2f475d06f9c077c1388dd0c6835eeb974127/diff",
-                "MergedDir": "/var/lib/docker/overlay2/ed35008a5a811258b8c98871f98763d52b6f7c534ef304e134df476dca8e0b5c/merged",
-                "UpperDir": "/var/lib/docker/overlay2/ed35008a5a811258b8c98871f98763d52b6f7c534ef304e134df476dca8e0b5c/diff",
-                "WorkDir": "/var/lib/docker/overlay2/ed35008a5a811258b8c98871f98763d52b6f7c534ef304e134df476dca8e0b5c/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 248285983,
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -79,12 +56,24 @@
                 "sha256:b16c28b58a574d46704bc0883c686ca3cf9176162b15ff4fe6eeeccb4864806d",
                 "sha256:3e738a95e6ff5b3d342f1e9c04246377751109a0be5974d698e392a2f083115b",
                 "sha256:a0b594366db09e8c7db4554a2f2b13af70d27779c41a9394ad9e58809b37342d",
-                "sha256:d0538175da4797c3e6bb142d2a5d1b520f777a7828c640258329dfde0a71d0b1",
+                "sha256:dbf0502b8e7916583aeab258f3c413b67fd150ba6b1569fb7d5638e8bb5eb99a",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "0001-01-01T00:00:00Z"
+            "LastTagTime": "2026-11-08T03:11:58.45909379Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:5645e18129969d09356823b6b6bd9fb275acdc34ec6aab4fdcc5ef2898421814",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/rhythmbox.d"
+                }
+            ]
         }
     }
 ]
