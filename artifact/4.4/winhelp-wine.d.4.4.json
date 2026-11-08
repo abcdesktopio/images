@@ -1,27 +1,17 @@
 [
     {
-        "Id": "sha256:d862fc55b4eedcfac10d370e4ff0b76db913954274a06c2ba38c599d1bc8d6ef",
+        "Id": "sha256:7aaae9b87050f37948a47a05d28e08bce8be3371f41054352a80d3d184ae7e6f",
         "RepoTags": [
             "ghcr.io/abcdesktopio/winhelp-wine.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/winhelp-wine.d@sha256:7f9ab8a3a9db3c67f04eee7a68a37abfc4170d889586ab576536834fcd8e1fde"
+            "ghcr.io/abcdesktopio/winhelp-wine.d@sha256:7aaae9b87050f37948a47a05d28e08bce8be3371f41054352a80d3d184ae7e6f"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-11-07T03:41:38.933246224Z",
-        "DockerVersion": "",
+        "Created": "2026-11-08T03:11:03.88337832Z",
         "Author": "Alexandre DEVELY",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
             "User": "root",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "TERM=linux",
@@ -36,12 +26,7 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
-            "Volumes": null,
             "WorkingDir": "/",
-            "Entrypoint": null,
-            "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.args": "winhelp",
@@ -59,20 +44,12 @@
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
                 "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.wine",
                 "oc.type": "app"
-            }
+            },
+            "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 1856712814,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/90252f3b43c6b30272985661a2564eb56fb96a6a1baf694abcbbb5afdf8bec13/diff:/var/lib/docker/overlay2/6e63e8c46bd60fb4332068ac5c14ea02a578fb66240a9f3c00b0e06d9f687877/diff:/var/lib/docker/overlay2/bdad49eb7aed33840fd2cc76a86f3b59edb15b756e4eca4146b60cee54bc542e/diff:/var/lib/docker/overlay2/03ec007598a2e0f897301415407be10a526683705f799d67bed5fab4e3d6fa22/diff:/var/lib/docker/overlay2/5c67fcfb71b4018c91d85840e996e8336a1e2115fdbb38607a31ac70f9e05195/diff:/var/lib/docker/overlay2/520c1c9cb5773024a70b93abc4750ec21671abb1118f19b97939873da46b93ca/diff:/var/lib/docker/overlay2/16a48b9d2a8897f4e155fb95848fe3f90750accf6bfc38ea741cd29f1abc260d/diff:/var/lib/docker/overlay2/7c51cd9a91730d92b6d3468a274bc4feabb0be94ce2710f12f92a498d2f58dc8/diff:/var/lib/docker/overlay2/72ac16e4422adb5f070a2f99416aab6134e580984e4d6f204dd5a4c587e59130/diff:/var/lib/docker/overlay2/ee2017be0e107be5ba1c4a7834b8228eb3a9eabe7ede8afe402f618afcdf9561/diff:/var/lib/docker/overlay2/9450da6abe9ef116ae3ae9e458bc7f0978f16ae9305a3dc82f0e4a0392f954e4/diff:/var/lib/docker/overlay2/576e4b0b1176a46975c6989a53329e5704613cb8f88b02dec0e7fc5bca7ee96c/diff:/var/lib/docker/overlay2/a86d99fc3e059d09b9bb0a72af730093d2b61edbd2d2d9fdefb9f3fc8f280e7d/diff:/var/lib/docker/overlay2/0bda6abcc6b9ae458a247ff29139dbfc2dcda24c7ecf75453902f215f0875657/diff:/var/lib/docker/overlay2/0bc99e6dd8f581c6c4476e101e0d55154ffdc848ca15bc2c7db838f07893ab57/diff:/var/lib/docker/overlay2/1cafea9788ef09abec079427896c9a6c2863200211066644ba5151f12bd2f886/diff:/var/lib/docker/overlay2/a67d1384bbe3053b4a66fe9d53da9d364dee5ec6cbd2582a6fb213046de70c96/diff",
-                "MergedDir": "/var/lib/docker/overlay2/fd8f2e2059c42a6c99972c2df995eafeaf1ee19b69eb69455e553590da850152/merged",
-                "UpperDir": "/var/lib/docker/overlay2/fd8f2e2059c42a6c99972c2df995eafeaf1ee19b69eb69455e553590da850152/diff",
-                "WorkDir": "/var/lib/docker/overlay2/fd8f2e2059c42a6c99972c2df995eafeaf1ee19b69eb69455e553590da850152/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 651208502,
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -87,17 +64,29 @@
                 "sha256:a0b594366db09e8c7db4554a2f2b13af70d27779c41a9394ad9e58809b37342d",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
                 "sha256:c80b7d60a34a23e36c61f9b4fbd605daadf5e0c796a913fdc587035369b516f3",
-                "sha256:fc72ac38eeac5dfbfae6192decd547d0b09b256a348acba8f2a0c721889a1d74",
-                "sha256:435a423c3ca8b44452645c086200eb0246213cce92a95d35f7685a2911bc45be",
-                "sha256:5855e1e0436fa9c23d66fe55dc1955bb97f57e0b368ef2949ab6c65ea868daca",
-                "sha256:1aff5a9bc5e9202ed90c347cf15717ee25fe0ac7d39fe330f431862a5f7846a4",
-                "sha256:0887d05c6ab1d2ad171f887b344411f508ed713fb4a25515a525265ad478b8e7",
-                "sha256:99e13fa50d90f5926fb1ebe25308ec6b72cb74160f6b6f6ce2c45bf47e79298e",
+                "sha256:8e10145e1a301398f20d61a94647e3cf13e22dadefb13881db7596577d190d1e",
+                "sha256:a9e8c1a9f3c03528c8014b82592bc843922cbaed2a498d5c9f1c7b1e15df71ea",
+                "sha256:b667c8ff6b8492e2711ba83bfe720c5b2c7a741ffb16c23f0250d270ae66e32e",
+                "sha256:caeebf4516d737c915d67b9c9ae41eb06e4be0eb1a92cc476e58b8eac10d71d3",
+                "sha256:57604a819464c3d8f92aeea981bbc8c1036d34ecd69cbed633ddb9d007445adb",
+                "sha256:3f8b954c993b774c06c67bb6a326716ad0c946b9bb5c6f8f25abf67034f87f91",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "0001-01-01T00:00:00Z"
+            "LastTagTime": "2026-11-08T03:13:30.278941163Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:7aaae9b87050f37948a47a05d28e08bce8be3371f41054352a80d3d184ae7e6f",
+            "size": 856
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/winhelp-wine.d"
+                }
+            ]
         }
     }
 ]
