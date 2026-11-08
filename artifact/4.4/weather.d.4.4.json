@@ -1,27 +1,17 @@
 [
     {
-        "Id": "sha256:c9c9d0246abf0c9486227d3d44a2e3f6ec4179fa2056fd97c3e908d9d15c0d2e",
+        "Id": "sha256:06792b28bb95cc3a5f8b59c466b7209fb490f2329fbc829690cf8a99f3f23632",
         "RepoTags": [
             "ghcr.io/abcdesktopio/weather.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/weather.d@sha256:89edb97113b75fe370e83ccae59a148eb2365d3e5f4d1eed1880dde38ce2e519"
+            "ghcr.io/abcdesktopio/weather.d@sha256:06792b28bb95cc3a5f8b59c466b7209fb490f2329fbc829690cf8a99f3f23632"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-11-07T03:40:30.816954057Z",
-        "DockerVersion": "",
+        "Created": "2026-11-08T03:07:28.364939258Z",
         "Author": "Alexandre DEVELY",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
             "User": "root",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "TERM=linux",
@@ -32,12 +22,7 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
-            "Volumes": null,
             "WorkingDir": "/",
-            "Entrypoint": null,
-            "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "office",
@@ -53,20 +38,12 @@
                 "oc.rules": "{\"homedir\":{\"default\":true}}",
                 "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
                 "oc.type": "app"
-            }
+            },
+            "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 739953453,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/8050f54d989006a2672fd85049eb049246889268757560a3d4e4c46b2bf2e2d5/diff:/var/lib/docker/overlay2/e815f9ca9a9f7620d68bbe80c7f6153e6ef0c8a425289ffebfd4bc3c7ce42f9e/diff:/var/lib/docker/overlay2/13f302eeb12715b58a014044829f991591db90238b5722b96b08fe540d32406a/diff:/var/lib/docker/overlay2/6bffe51e7aeec8ef42e64c38956dedc88458dd1d230f31777f81db13b564c934/diff:/var/lib/docker/overlay2/726e0e9852a49215efe0818eeead565a82f661a98c6b59f969afa5180b0ad200/diff:/var/lib/docker/overlay2/c38c395a3853140fccd36ee8a2b28d8a3e81b0c234d4c5dc55e3b6ab79246ec1/diff:/var/lib/docker/overlay2/1fae43acbd8ef0375d27097a638cd68841112659dce843e54c353949b31d99fc/diff:/var/lib/docker/overlay2/06ca37b021487410091b508eedd58d52b986996b7d3fef71e8476b185c4b5a22/diff:/var/lib/docker/overlay2/b56ac6500dea7d7a27e471511507998ce3b8b53877de4fca908bb9fd5bc7ece6/diff:/var/lib/docker/overlay2/a8843521451c6a33c4ecb04481821d206f37c32078aa6e9198114b3b695b0a36/diff",
-                "MergedDir": "/var/lib/docker/overlay2/fb20235d8dfe7192b212b50a219a21452dd7928c64269b7a83c97e035c5e3e1b/merged",
-                "UpperDir": "/var/lib/docker/overlay2/fb20235d8dfe7192b212b50a219a21452dd7928c64269b7a83c97e035c5e3e1b/diff",
-                "WorkDir": "/var/lib/docker/overlay2/fb20235d8dfe7192b212b50a219a21452dd7928c64269b7a83c97e035c5e3e1b/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 311067105,
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -79,12 +56,24 @@
                 "sha256:b16c28b58a574d46704bc0883c686ca3cf9176162b15ff4fe6eeeccb4864806d",
                 "sha256:3e738a95e6ff5b3d342f1e9c04246377751109a0be5974d698e392a2f083115b",
                 "sha256:a0b594366db09e8c7db4554a2f2b13af70d27779c41a9394ad9e58809b37342d",
-                "sha256:190e9409709217a05b087d6a749c3ed2252e50a4f606843407eec0915101518c",
+                "sha256:5e29cc0e937d00aa4434f7552c0b976d5cece06ebbdf5d3f10b2c6e53dcb08c0",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "0001-01-01T00:00:00Z"
+            "LastTagTime": "2026-11-08T03:11:52.805655425Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:06792b28bb95cc3a5f8b59c466b7209fb490f2329fbc829690cf8a99f3f23632",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/weather.d"
+                }
+            ]
         }
     }
 ]
