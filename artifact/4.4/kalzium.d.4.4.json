@@ -1,27 +1,17 @@
 [
     {
-        "Id": "sha256:1093f1e617df47083aea0dc2b1e0f6b53fceb65ac2dfa574b2050ef80cffa954",
+        "Id": "sha256:dca79e2b40127429018e27542c78973d6ee5f11d0b89fa6d1ea2bc9bff86e58a",
         "RepoTags": [
             "ghcr.io/abcdesktopio/kalzium.d:4.4"
         ],
         "RepoDigests": [
-            "ghcr.io/abcdesktopio/kalzium.d@sha256:069ba3887ddaa5decb16fce467d59ba08a6e2947d5d4864f400d51a7603b3592"
+            "ghcr.io/abcdesktopio/kalzium.d@sha256:dca79e2b40127429018e27542c78973d6ee5f11d0b89fa6d1ea2bc9bff86e58a"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-11-07T03:34:07.559488798Z",
-        "DockerVersion": "",
+        "Created": "2026-11-08T03:02:03.412839317Z",
         "Author": "Alexandre DEVELY",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
             "User": "root",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "TERM=linux",
@@ -32,12 +22,7 @@
             "Cmd": [
                 "/composer/appli-docker-entrypoint.sh"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
-            "Volumes": null,
             "WorkingDir": "/",
-            "Entrypoint": null,
-            "OnBuild": null,
             "Labels": {
                 "oc.acl": "{\"permit\":[\"all\"]}",
                 "oc.cat": "education",
@@ -52,20 +37,12 @@
                 "oc.path": "/usr/bin/kalzium",
                 "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
                 "oc.type": "app"
-            }
+            },
+            "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 876883646,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/c9780870eb73e6db7d40f04bd8e99c0cca54112e5ae0ba2cb1cd72d6a5b9a837/diff:/var/lib/docker/overlay2/a82634bc0831dccb5547ca91a73bd8a7b63adea3418105fb7746d5221b3566d7/diff:/var/lib/docker/overlay2/104689fbbdf8fd7e0f8b3988578c2c7f032768069631fba292b00d2a30ff9268/diff:/var/lib/docker/overlay2/4060e25f21da299bd097db814bdc3b6b26262be2ff373d24411c17757cec78aa/diff:/var/lib/docker/overlay2/8ad6c48cb01a9d8c71365f1ab310c2eb60e72dfee9dd3a67a4a7cd2b9208e236/diff:/var/lib/docker/overlay2/783507c4ae53762c3caf3b69804bfc774d23c0b574c56eb48639ecfd4a03d530/diff:/var/lib/docker/overlay2/421ed697a6bfaeaaf9ebdbddb4dd59b6191fb16ea01f5a4c42266a68f0da3895/diff:/var/lib/docker/overlay2/5f38dbdd465b0d099071edf43710575317ded641daccfb8ef7af5d50652554eb/diff:/var/lib/docker/overlay2/ce41a8fbd8bf9352e29894ac15f128bfdd0c9e9695d357b13d7285d42293ade3/diff:/var/lib/docker/overlay2/0f8e9a2d5b65e20e00e1a0b2a3554801c49a43d5fb1f34ef369387f91a7dfb39/diff",
-                "MergedDir": "/var/lib/docker/overlay2/90e4aa74477ca85dc7b0cc17e0d0d7157f3f852a1a45eb2b98b70456f05bf9ba/merged",
-                "UpperDir": "/var/lib/docker/overlay2/90e4aa74477ca85dc7b0cc17e0d0d7157f3f852a1a45eb2b98b70456f05bf9ba/diff",
-                "WorkDir": "/var/lib/docker/overlay2/90e4aa74477ca85dc7b0cc17e0d0d7157f3f852a1a45eb2b98b70456f05bf9ba/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 337923273,
         "RootFS": {
             "Type": "layers",
             "Layers": [
@@ -78,12 +55,24 @@
                 "sha256:b16c28b58a574d46704bc0883c686ca3cf9176162b15ff4fe6eeeccb4864806d",
                 "sha256:3e738a95e6ff5b3d342f1e9c04246377751109a0be5974d698e392a2f083115b",
                 "sha256:a0b594366db09e8c7db4554a2f2b13af70d27779c41a9394ad9e58809b37342d",
-                "sha256:903bdd16331177810164acde3a7ead0a44f608bb31bade9ce64be02c9a742e5f",
+                "sha256:a132596089a0166f9d92761ea9f3370b51442510c00faa122af257d75da5bece",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
             ]
         },
         "Metadata": {
-            "LastTagTime": "0001-01-01T00:00:00Z"
+            "LastTagTime": "2026-11-08T03:03:20.377134666Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:dca79e2b40127429018e27542c78973d6ee5f11d0b89fa6d1ea2bc9bff86e58a",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/kalzium.d"
+                }
+            ]
         }
     }
 ]
