@@ -1,0 +1,81 @@
+[
+    {
+        "Id": "sha256:bfdc588ccb37f0c969a6d4b047b388065e29e6264096def661d3b31389bd028c",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/evolution.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/evolution.d@sha256:bfdc588ccb37f0c969a6d4b047b388065e29e6264096def661d3b31389bd028c"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:20:30.692410672Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "LANG=en_US.utf8",
+                "WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1",
+                "APPNAME=evolution",
+                "APP=/usr/bin/evolution"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "office",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "org.gnome.Evolution.desktop",
+                "oc.displayname": "Evolution",
+                "oc.icon": "evolution.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzlhYTI5YSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiNWJlYjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImIiIGN4PSI2LjcwMyIgY3k9IjczLjYxNiIgcj0iNy4yMjgiIGdyYWRpZW50VHJhbnNmb3JtPSJzY2FsZSgxLjkwMjIgLjUyNTcpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iaSIgeDE9IjguNzgiIHgyPSI5Ljc2MiIgeTE9IjM3Ljc4NSIgeTI9IjMyLjIwMyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgyLjM5NDkgMCAwIC43ODEwNiAyLjg4IC4zNDMpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1vcGFjaXR5PSIuMTI5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJoIiB4MT0iMTEuMjMzIiB4Mj0iMjEuMTEyIiB5MT0iMTMuNjg2IiB5Mj0iMjQuMTMzIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMzcwOSAwIDAgMS40NDM4IDIuNDMxIC0uMTQpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlZGVkZWQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSI4LjkxNiIgeDI9IjkuODg2IiB5MT0iMzcuMTk3IiB5Mj0iNTIuMDkxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDIuNDU0OCAwIDAgLjc2MiAyLjg4IC4zNDMpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeGxpbms6aHJlZj0iI2EiLz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZiIgeDE9IjEwLjE4NCIgeDI9IjE1LjMxMSIgeTE9IjE1LjE0OCIgeTI9IjI5LjU2OSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjgxOTMgMCAwIDEuMDI4MiAyLjg4IC4zNDMpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNkY2RjZGMiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImUiIHgxPSI1LjgyNyIgeDI9IjEzLjQ2NyIgeTE9IjcuMjMxIiB5Mj0iMTcuODc3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuNTcwNiAwIDAgMS4xOTEgMi44OCAuMzQzKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlZGVkZWQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzhjOGM4Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjIiB4MT0iMTEuNTczIiB4Mj0iMTguNDc1IiB5MT0iNC43NDYiIHkyPSIyNi4wMjMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4zNDM1IDAgMCAxLjQxNzkgMi44OCAuMzE1KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZTJlMmUyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJkIiB4MT0iMi4wNjIiIHgyPSIzMC42IiB5MT0iMTUuMjU3IiB5Mj0iMTUuMjU3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMzQzNSAwIDAgMS40MTc5IDIuODggLjMxNSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOTg5NjkwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzY1NjQ2MCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBhdGggZmlsbD0idXJsKCNiKSIgZD0iTTI2LjUgMzguN2ExMy43NSAzLjggMCAxIDEtMjcuNSAwIDEzLjc1IDMuOCAwIDEgMSAyNy41IDB6IiBjb2xvcj0iIzAwMCIgb3BhY2l0eT0iLjQ1NiIgdHJhbnNmb3JtPSJtYXRyaXgoMS44MDA2IDAgMCAxLjk3NDggMS4wODQgLTM4LjAxMykiLz4KICA8cGF0aCBmaWxsPSJ1cmwoI2MpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0idXJsKCNkKSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIuODU3IiBkPSJNNi4zMzMgMTYuOTcydjI0LjUxaDM2Ljk3M2wtLjA2Mi0yNC4zOTJjLS4wMDMtMS4zNzgtMTEuODQ4LTE0LjY3OC0xNC4wMzMtMTQuNjc4SDIwLjY2Yy0yLjI5NyAwLTE0LjMyNiAxMy4yNjItMTQuMzI2IDE0LjU2eiIvPgogIDxwYXRoIGZpbGw9InVybCgjZSkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuOTIzIDE2Ljc4N2MtLjM5OC0uNDMgMTEuODg3LTEzLjY5NCAxMy43NDQtMTMuNjk0aDguMzc2YzEuNzQ3IDAgMTQuMDM3IDEzLjEyOCAxMy40MjcgMTMuODg2TDMxLjYxIDMwLjQ3NGwtMTIuMzE1LS4zMTgtMTIuMzcyLTEzLjM3eiIvPgogIDxwYXRoIGZpbGwtb3BhY2l0eT0iLjE0NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTkuMDc4IDMwLjAxOGwtNy4zMzMtOC43NDYgMjQuODE4LTYuOTM2IDMuMDI5IDYuMjE2LTcuNDE2IDkuNDQiLz4KICA8cGF0aCBmaWxsLW9wYWNpdHk9Ii4xNDYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE4LjI5MiAyOS44MzZsLTcuNDgzLTguODEgMjQuNjQ4LTYuODkzIDMuMTc0IDYuMjcxLTcuMjQxIDkuNDA3Ii8+CiAgPHBhdGggZmlsbC1vcGFjaXR5PSIuMTQ2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOC43NzUgMjkuOTU3bC03LjY3NS04LjY2IDI0Ljk2OC03LjA2NSAzLjI4NiA2LjU5My03LjQ4IDkuMTA3Ii8+CiAgPHBhdGggZmlsbD0idXJsKCNmKSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTguNTk0IDMwLjQ0MWwtNy4zMzMtOC43NDYgMjQuNzEyLTYuODk0IDMuMTEgNi4zODgtNy4xMiA4Ljk4NiIvPgogIDxwYXRoIGZpbGw9InVybCgjZykiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIwLjQ4OCAyOS4wNjRMNy4wOTIgNDAuMDM2bDEzLjkwOS05LjYwNGg5LjAxOGwxMi40MiA5LjQ4Mi0xMS44NjQtMTAuODVIMjAuNDg4eiIvPgogIDxwYXRoIGZpbGw9InVybCgjZykiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuOTYzIDE2Ljg4NUwxOC40OCAzMS4yMDFsMS4wNjgtLjg1NEw2Ljk2NCAxNi44ODV6IiBjb2xvcj0iIzAwMCIvPgogIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNoKSIgc3Ryb2tlLXdpZHRoPSIuODU3IiBkPSJNNy4zMDggMTcuMTMxbC4wMyAyMy4yMTFoMzQuOTQ2bC0uMDYzLTIzLjA4NGMtLjAwMi0uNzUtMTEuMjE2LTEzLjc5OS0xMy4zODQtMTMuNzk5aC03Ljg5NWMtMi4yNTMgMC0xMy42MzUgMTIuODkyLTEzLjYzNCAxMy42NzJ6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjAuOTU3IDMwLjQ1M0w5LjAxNiAzOC43MjRsMi4yMTkuMDA2IDkuOTk4LTYuODY5IDguODIyLTEuNDIzLTkuMDk4LjAxNXptLTkuNTI5LTguNzgzbDEuMzI0IDEuNDExIDIyLjc5MS02Ljg4NCAyLjkxNSA1LjY4Mi42MTQtLjcxMi0zLjA2OS02LjM3OC0yNC41NzUgNi44ODF6Ii8+CiAgPHBhdGggZmlsbD0idXJsKCNpKSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMzA4IDIzLjYzNmw2LjAyNiA2LjQ1NCAxLjE5Ny0xLjAyNiAxMC4wODcuMDQzLjgxMi43MjcgMy45NzUtNC43NDRjLTEuMTU0LTEuNDExLTIyLjA5Ny0xLjQ1NC0yMi4wOTctMS40NTR6Ii8+CiAgPHBhdGggZmlsbD0iI2IxYjFiMSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNDEuODEzIDE3Ljg0OGwtOS45NTIgMTIuNjMxLTEuMDY4LS44NTUgMTEuMDItMTEuNzc2eiIgY29sb3I9IiMwMDAiLz4KPC9zdmc+Cg==",
+                "oc.keyword": "evolution,evolution,mail",
+                "oc.launch": "evolution.Evolution",
+                "oc.mimetype": "text/calendar;text/x-vcard;text/directory;application/mbox;message/rfc822;x-scheme-handler/mailto;",
+                "oc.name": "evolution",
+                "oc.path": "/usr/bin/evolution",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.version": "22.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 307466343,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:af272fa34b9eaf77b9456d49daa4d157829b4e27b91a79d1fe5602a1556635ad",
+                "sha256:1da2e36f563a8c0a4894041c139a9f3598a1615eb28b12fea922a1c08a707db6",
+                "sha256:c10c5983c4a81ca9c4f3e7cce2aefce7d649dd61bdc1fc33bf4b637bf187c766",
+                "sha256:eb4c71e4d12d8cd48d7dd678cbe2d0149ad976f4c98acaa2791a6ec358d14876",
+                "sha256:7f38a73c002e55663b0ba05577ee72cc999815a7a852ea788e49681367e163fd",
+                "sha256:8d744e4953698e4191fbb97432cdbfd89c896356a56414c72efbd3ad0f445f61",
+                "sha256:2be0b7f5ab299a227314d67d46066d4f18bdee4b54d8929fc9847ba91ebab514",
+                "sha256:f3dd10361f7695c72ca53a6f8ce2b501e20f4a95ced8405a1381adf6df55b03c",
+                "sha256:830608ea5c7936674d1a8c54dbc7b9c21e4def055ef33fbc44b6cb525e3251b7",
+                "sha256:2f3f7904e54adb5953a36bb9ddd9c004a34ad8ad66fa792739dd8bae0f64b614"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:27:04.342090818Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:bfdc588ccb37f0c969a6d4b047b388065e29e6264096def661d3b31389bd028c",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/evolution.d"
+                }
+            ]
+        }
+    }
+]
