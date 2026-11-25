@@ -1,0 +1,79 @@
+[
+    {
+        "Id": "sha256:026672d280305bee8d0ce3dfb0fc35b9df8d1364a35c2868acc452036b165f08",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/sudoku.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/sudoku.d@sha256:026672d280305bee8d0ce3dfb0fc35b9df8d1364a35c2868acc452036b165f08"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:33:44.673898633Z",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "APPNAME=sudoku",
+                "APP=/usr/bin/gnome-sudoku"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "WorkingDir": "/",
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "org.gnome.Sudoku.desktop",
+                "oc.displayname": "sudoku",
+                "oc.icon": "org.gnome.Sudoku.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMjQgMTAyNCIgaW1hZ2UtcmVuZGVyaW5nPSJvcHRpbWl6ZVNwZWVkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZSIgeDE9IjMxLjIyMiIgeDI9IjMxLjYyOCIgeTE9IjYxLjE0NyIgeTI9IjIuODUzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzlhOWE5YSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0ic2lsdmVyIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjMxLjY0MSIgeDI9IjMyLjE2OCIgeTE9IjYxLjMzOSIgeTI9IjMuODEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2VmYjUyOCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2U2OWM3NiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIzMS43MjIiIHgyPSIzMi4yNzgiIHkxPSI2Mi44NzMiIHkyPSIuNzQzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ViZWJlYiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJhIiB4PSItLjAzNiIgeT0iLS4wMzYiIHdpZHRoPSIxLjA3MiIgaGVpZ2h0PSIxLjA3MiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxNC4xNiIvPjwvZmlsdGVyPjxmaWx0ZXIgaWQ9ImQiIHg9Ii0uMTUzIiB5PSItLjA5OCIgd2lkdGg9IjEuMzA2IiBoZWlnaHQ9IjEuMTk2IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249Ii4zNiIvPjwvZmlsdGVyPjwvZGVmcz48cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCguMDYzNTYgMCAwIC4wNjM1NiAtLjU0NiAtLjU0NikiIGQ9Ik05MjkuODUgMjg5LjY1Yy0yLjM1LTQuMzUtNC45NS05LTcuNjUtMTMuNi0yMC4zLTM0LjUtNDUuOC02Ny4yLTc2LjM1LTk3Ljc1Qzc3My4yNSAxMDUuNyA2ODguNyA2MS42NSA1OTIuMiA0Ni4yNWMtMTYuMjUtMi42LTMyLjgtNC40LTUwLjA1LTUuMzUtOS43LS41NS0xOS44NS0uODUtMzAuMS0uODUtOS4zNSAwLTE4LjYuMjUtMjcuOS43NS0xMTguMzUgNi4xLTIyMC4zIDUxLjk1LTMwNS44NSAxMzcuNS0yMC41IDIwLjUtMzguNzUgNDEuOTUtNTQuNyA2NC40LTE1LjM1IDIxLjU1LTI4LjU1IDQ0LTM5LjYgNjcuMmwtLjAyNS0uMDI1UTQwLjA1IDQwMS44NzMgNDAuMDUgNTEyLjA1NWMwIDEzMC4zNSA0Ni4xIDI0MS42NSAxMzguMjUgMzMzLjggNTYuNyA1Ni42NSAxMjAuNTUgOTUuOSAxOTEuMSAxMTcuNTUgMzYuNzUgMTEuMjUgNzQuOCAxNy44NSAxMTQuNzUgMTkuOTVoLjRjOC41LjQ1IDE2LjYuNyAyNC41LjdoM2MxMC4zIDAgMjAuNS0uMyAzMC4xLS44IDIuNS0uMTUgNC43NS0uMyA2Ljk1LS40NSAyMC4yLTEuNDUgMzkuOS00LjA1IDU4LjctNy43IDcuOTUtMS41NSAxNS44LTMuMyAyMy40LTUuMTUgODAuOC0yMC4zIDE1Mi4xNS02MS42IDIxNC42NS0xMjQuMSA0OC42LTQ4LjYgODQuNC0xMDIuNSAxMDcuMzUtMTYxLjggMTguNDUtNDcuNjUgMjguNjUtOTguOCAzMC41NS0xNTMuNS4yLTYuMDUuMy0xMi4yNS4zLTE4LjV2LTNjLS4yLTQwLjY1LTQuOTUtNzkuNS0xNC4zLTExNy0xLjEtNC4zNS0yLjM1LTktMy42NS0xMy42LTEtMy40LTItNi44NS0zLjE1LTEwLjUtMS42LTUuMTUtMy40LTEwLjUtNS4zLTE1Ljg1LTUuMDUtMTQuMjUtMTAuODUtMjguMjUtMTcuNDUtNDIuMTUtMS44NS0zLjgtMy43NS03LjY1LTUuNy0xMS41LTEuNDUtMi44NS0yLjk1LTUuNy00LjY1LTguOHoiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjI1Ii8+PHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMzAiIHJ5PSIzMCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHg9IjIxLjI4NiIgeT0iMjEuMjg2IiB3aWR0aD0iMjEuNDI5IiBoZWlnaHQ9IjIxLjQyOSIgcnk9IjAiIGZpbGw9InVybCgjYykiLz48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjYuNjE2IDIxLjI2NnEwIC44NjQtLjQ5MiAxLjM4LS40OC41MDQtMS4yODQuNjcydi4wNDhxMS4wMi4xMiAxLjUyNC42NDguNTE2LjUyOC41MTYgMS4zOCAwIC43NTYtLjM0OCAxLjMzMnQtMS4wOC45cS0uNzIuMzI0LTEuODYuMzI0LS42NzIgMC0xLjI0OC0uMTA4LS41NzYtLjA5Ni0xLjEwNC0uMzZ2LS45ODRxLjU0LjI3NiAxLjE2NC40MnQxLjIuMTQ0cTEuMTUyIDAgMS42NTYtLjQ0NC41MTYtLjQ1Ni41MTYtMS4yNDggMC0uODA0LS42MzYtMS4xNTItLjYyNC0uMzYtMS43NjQtLjM2aC0uODI4di0uOWguODRxMS4wNTYgMCAxLjU5Ni0uNDQ0LjU1Mi0uNDQ0LjU1Mi0xLjE3NiAwLS42MjQtLjQyLS45Ni0uNDItLjM0OC0xLjE0LS4zNDgtLjY5NiAwLTEuMTg4LjIwNHQtLjk3Mi41MTZsLS41MjgtLjcycS40NTYtLjM2IDEuMTI4LS42MjQuNjg0LS4yNjQgMS41NDgtLjI2NCAxLjM0NCAwIDEuOTkyLjYuNjYuNi42NiAxLjUyNHoiIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNkKSIgb3BhY2l0eT0iLjI1IiB0cmFuc2Zvcm09Im1hdHJpeCgxLjUxOTggMCAwIDEuNDU5NyAtNC41NjUgLTIuMzcpIi8+PHBhdGggZD0iTTM1Ljg4NiAyOC42NzJxMCAxLjI2LS43NDggMi4wMTQtLjczLjczNi0xLjk1Mi45OHYuMDcxcTEuNTUuMTc1IDIuMzE3Ljk0Ni43ODQuNzcuNzg0IDIuMDE0IDAgMS4xMDQtLjUzIDEuOTQ1dC0xLjY0IDEuMzEzcS0xLjA5NS40NzMtMi44MjcuNDczLTEuMDIyIDAtMS44OTctLjE1Ny0uODc1LS4xNC0xLjY3OC0uNTI2VjM2LjMxcS44Mi40MDMgMS43Ny42MTN0MS44MjMuMjFxMS43NSAwIDIuNTE3LS42NDguNzg0LS42NjYuNzg0LTEuODIyIDAtMS4xNzMtLjk2Ny0xLjY4MS0uOTQ4LS41MjYtMi42OC0uNTI2aC0xLjI1OXYtMS4zMTRoMS4yNzdxMS42MDUgMCAyLjQyNS0uNjQ4Ljg0LS42NDguODQtMS43MTYgMC0uOTExLS42NC0xLjQwMi0uNjM3LS41MDgtMS43MzItLjUwOC0xLjA1NyAwLTEuODA1LjI5OHQtMS40NzcuNzUzbC0uODAzLTEuMDVxLjY5My0uNTI2IDEuNzE0LS45MTEgMS4wNC0uMzg2IDIuMzUzLS4zODYgMi4wNDMgMCAzLjAyOC44NzYgMS4wMDMuODc2IDEuMDAzIDIuMjI1eiIvPjwvZz48cGF0aCBkPSJNMjEuMjg2IDMuOTkyQTI5LjkxMyAyOS45MTMgMCAwIDAgMy45OTIgMjEuMjg2aDE3LjI5NHptMjEuNDI5IDB2MTcuMjk0aDE3LjI5NEEyOS45MTMgMjkuOTEzIDAgMCAwIDQyLjcxNSAzLjk5MnpNMy45OTMgNDIuNzE0YTI5LjkxMyAyOS45MTMgMCAwIDAgMTcuMjk0IDE3LjI5NFY0Mi43MTR6bTM4LjcyMiAwdjE3LjI5NGEyOS45MTMgMjkuOTEzIDAgMCAwIDE3LjI5NC0xNy4yOTR6IiBmaWxsPSJ1cmwoI2UpIi8+PC9zdmc+",
+                "oc.keyword": "sudoku,sudoku",
+                "oc.launch": "org.gnome.Sudoku.org.gnome.Sudoku",
+                "oc.name": "sudoku",
+                "oc.path": "/usr/bin/gnome-sudoku",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 293067922,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26f97af196845307e3064",
+                "sha256:4617e4dd87ca9c7625f47ba10f911c3aa48038b9716d63ded0a1b56dd75cc4bb",
+                "sha256:654b4fbf75db905b07cf88c4e36f2ae3b3f154826cadfa485f3385e0a52a01ee",
+                "sha256:974b86c3c34f440b52d1696f1857a71dc52c44a62c4bbf9b9ac649efebff23dc",
+                "sha256:799dac54df568036ed5dbac023da9cd16100f61cc3d33a2e5b67d046154da53a",
+                "sha256:d52b555e27edede8a60e828afd2a95b5fa202b842c6598cb158c28e4c28b032e",
+                "sha256:31960568bdcb4cae25897cb7272052db21c9b2e58a1df838c05a4eb6f25d8149",
+                "sha256:4635d513b85c17240385e5bed242928019e909a84456138d36af4cc390085a7d",
+                "sha256:923aa3d42a80e877fc9c9748365de065048c313cef93c2e22fb75b6255f11759",
+                "sha256:47216b8bd051b9d6dad2a52734ab36f4b4c0193082523d406cca44e1cca5510d",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:35:02.464018395Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:026672d280305bee8d0ce3dfb0fc35b9df8d1364a35c2868acc452036b165f08",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/sudoku.d"
+                }
+            ]
+        }
+    }
+]
