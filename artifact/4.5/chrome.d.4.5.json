@@ -1,0 +1,111 @@
+[
+    {
+        "Id": "sha256:dbfe878e7224e5de82340dea09f9f805405b9d0ab172502b79a5bd210f418631",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/chrome.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/chrome.d@sha256:dbfe878e7224e5de82340dea09f9f805405b9d0ab172502b79a5bd210f418631"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:16:45.068858653Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "ARGS=--no-first-run --no-default-browser-check --use-gl=angle --use-angle=gl-egl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-dev-shm-usage",
+                "APPNAME=chrome",
+                "APP=/usr/bin/google-chrome-stable",
+                "NVIDIA_VISIBLE_DEVICES=all",
+                "NVIDIA_DRIVER_CAPABILITIES=all",
+                "LD_PRELOAD=/usr/lib/libdlfaker.so:/usr/lib/libvglfaker.so",
+                "VGL_ISACTIVE=1",
+                "VGL_DISPLAY=egl0",
+                "GEOPROBE_USEGLX=1",
+                "PROMAGIC_USEGLX=1",
+                "VBOX_CROGL_FORCE_SUPPORTED=1"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--no-first-run --no-default-browser-check --use-gl=angle --use-angle=gl-egl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-dev-shm-usage",
+                "oc.cat": "office",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "google-chrome.desktop",
+                "oc.displayname": "Chrome",
+                "oc.fileextensions": "html;xml;gif",
+                "oc.icon": "circle_google-chrome.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiA8ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImUiIHgxPSIxNy4xODciIHgyPSIxNy4xODciIHkxPSI0Ni43MzciIHkyPSIxOTkuOTgiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoNC43MDUgMCAwIDQuNzA1IDQxIDcwLjM2MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM1QzEzMCIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiMzNEJEMzAiIG9mZnNldD0iLjM0ODMiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzMxQjIzMSIgb2Zmc2V0PSIuNjgwOSIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMkM5RjMyIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iZCIgeDE9Ijk1Ljk3IiB4Mj0iOTUuOTciIHkxPSIyLjI5MjIiIHkyPSIxOTguNDQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS43MTkxIDAgMCAxLjcxOTEgMzQwLjA5IDM2OC40NSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ3QjlGRiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiMzRDhBRkYiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJjIiB4MT0iMTE0Ljc1IiB4Mj0iMTE0Ljc1IiB5MT0iNTYuNjgxIiB5Mj0iMTg4LjkzIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDUuMSAwIDAgNS4xIDIgMikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmY2UwMCIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNlNmJjMDAiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4MT0iMTAzLjY3IiB4Mj0iMTAzLjY3IiB5MT0iLTQuNjYyMyIgeTI9IjIwNi41IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDIuMTY5OSAwIDAgMi4xNjk5IDI5NS4wMSAzMjMuMzcpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmZmYiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZDdkN2Q3IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImciIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI2LjUwOTc3ODkiLz4KICA8L2ZpbHRlcj4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI5Ny40MjUiIHgyPSI5Ny40MjUiIHkxPSItOS4wMDcxIiB5Mj0iMjA5Ljg3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQuNzA1IDAgMCA0LjcwNSA0MSA0MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI0Y2NTAzQiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNGMjQ3MzUiIG9mZnNldD0iLjIxNzQiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI0U2MkYyNSIgb2Zmc2V0PSIuNTcxOSIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjRDQwOTBEIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImYiIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxNC4xMTUiLz4KICA8L2ZpbHRlcj4KIDwvZGVmcz4KIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTk4OC4zNikiPgogIDxnIHRyYW5zZm9ybT0ibWF0cml4KC4wNjM3NjIgMCAwIC4wNjM3NjIgLS42MTQyNCA5ODUuODgpIiBzdHJva2Utd2lkdGg9IjE1LjY4MyI+CiAgIDxjaXJjbGUgY3g9IjUxMS41IiBjeT0iNTQwLjg2IiByPSI0NzAuNSIgY29sb3I9IiMwMDAwMDAiIGZpbHRlcj0idXJsKCNmKSIgb3BhY2l0eT0iLjI1Ii8+CiAgIDxjaXJjbGUgY3g9IjUxMS41IiBjeT0iNTQwLjg2IiByPSI0NzAuNSIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjZSkiLz4KICAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyOC4zNjIpIiBkPSJtODEzLjQxIDE1MS43NGMtOTYuNzI2IDIzLjAzMi01NTQuMTcgMTM2LjQ1LTMwMC4xNCAxNjMuOTEgMjgzLjA1IDMwLjYgMTc1LjMxIDMxNy40NyAxNzUuMzEgMzE3LjQ3bC0yMDcuMjYgMzQ4LjM3YTQ3MC41IDQ3MC41IDAgMCAwIDMwLjE2OCAxLjUwOTggNDcwLjUgNDcwLjUgMCAwIDAgNDcwLjUtNDcwLjUgNDcwLjUgNDcwLjUgMCAwIDAtMTY4LjU5LTM2MC43NnoiIGZpbGw9InVybCgjYykiLz4KICAgPGc+CiAgICA8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDI4LjM2MikiIGQ9Im01MTEuNSA0MmE0NzAuNSA0NzAuNSAwIDAgMC0zOTQuNDUgMjE0LjgybDIxMC4zNSAzNTMuODRzLTUuNjMzOC0xNzAuNDUgOC40NTMxLTE4Ny4zNmMxNC4wODctMTYuOTA0IDgzLjExMy04MS43MDMgODMuMTEzLTgxLjcwM2w5NC4zODEtMjguMTc0LTUuMTA1NS0xOC4zMTIgNDE4LjcxLTIuNzUzOWE0NzAuNSA0NzAuNSAwIDAgMC00MTUuNDYtMjUwLjM2eiIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjYSkiLz4KICAgIDxjaXJjbGUgY3g9IjUxMiIgY3k9IjU1MC4zNiIgcj0iMjE2Ljk5IiBjb2xvcj0iIzAwMDAwMCIgZmlsbD0iIzExMSIgZmlsdGVyPSJ1cmwoI2cpIiBvcGFjaXR5PSIuMiIvPgogICAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTQwLjM2IiByPSIyMTYuOTkiIGNvbG9yPSIjMDAwMDAwIiBmaWxsPSJ1cmwoI2IpIi8+CiAgICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI1NDAuMzYiIHI9IjE3MS45MSIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjZCkiLz4KICAgPC9nPgogIDwvZz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "chrome,web,browser,internet",
+                "oc.launch": "google-chrome.Google-chrome",
+                "oc.legacyfileextensions": "html;xml",
+                "oc.mimetype": "text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;video/webm;",
+                "oc.name": "chrome",
+                "oc.path": "/usr/bin/google-chrome-stable",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.showinview": "dock",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.26.04",
+                "oc.type": "app",
+                "org.opencontainers.image.created": "2026-11-06T10:28:50.132595+00:00",
+                "org.opencontainers.image.description": "The Ubuntu container image maintained by Canonical\n\nUbuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.\nIt is the world's most popular operating system across public clouds and OpenStack clouds.\nIt is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.\nFast, secure and simple, Ubuntu powers millions of PCs worldwide.\n",
+                "org.opencontainers.image.title": "ubuntu",
+                "org.opencontainers.image.version": "26.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 702018708,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:2a89eb4dbc78f8fe790775a4e807e1355ba2f6b145c8dd7a267a782df1605124",
+                "sha256:758b22fe15be2c330dcead0c1b50476c074e113ec507627c6430337ffc9daa5e",
+                "sha256:f64cc480979c2a82c068962d596c4c3aa9f257d16325fb9e09d42cbbe2354b30",
+                "sha256:d2a2ddff12e4032959af69e1fd1fffebcf78cd93ff3a9de54ad30a3adfe3c927",
+                "sha256:c2195c74c29ab806e51136acb4913f109df343b76a64338663bb20966d3f23b5",
+                "sha256:05bb0bcae29e5cd85514c407a39ca78f954f6af2dfcd657c05c955c746d04a4b",
+                "sha256:991feed40681e2f2dcdae2bc7ec012b07d4b428e4533909c01d8a929a244abef",
+                "sha256:b302880f3fae3d825583c99ad2dc32003915aa41b6184aed48a671c857659124",
+                "sha256:ba45d04aec1b1f557e5475d95a4c60c7ab42af477173485818c4dc8064a0de08",
+                "sha256:4bc02cb9b3938bce54c0ebb67722b233c1501498bc62fbd619815047c1f92574",
+                "sha256:266a70fb1e8dde7fb71f2c093be8de33deef3dbe5cc0452e204c1d8335422329",
+                "sha256:099eafef84e0aed02315a3b86926c46e59947ad137fbe83c961842ea919f6159",
+                "sha256:f990e3c6205f5dd238d3c66cfdbdecce96fb9e146ada6489cb536f486607d737",
+                "sha256:ff2c280190f4e32ae8e5634f7afc54d6fc17c135f4774bb1e49effca7119d9b0",
+                "sha256:bdc0717d4ebae4ae51fcec48f6d661aa26226bb0e6c253c956c31f6322422479",
+                "sha256:e6ddee8e501a6f13fa098428300542228c2921929edc6bd4f91cbca7421ffb1c",
+                "sha256:451a1b2a811fddc3296a59bc22da73ba9149b8ec15399857e0c64266a6159a56",
+                "sha256:b2da902980b55823b3279442dca7ba373274676e2ddcfc0af3564d4841f1b475",
+                "sha256:ecf8c1e41b6d288dac0355f6faceaade85200ec2135d1520e247c1399f8ccbbb",
+                "sha256:1456a8acf8811fda0f31726c40bc2829f1b01a97972b936843297e80b9305f3f",
+                "sha256:7db0c7d0982808ec6900fb14d04925cc584fd0d1a25417313b771117e5cc89ec",
+                "sha256:42644a62f1bbbd88c3de318b4f5cc555a66738f5973eb392e0f154f27bcf0756",
+                "sha256:813b41231fccf4fae094e8d783a3db3c4ad657ee888a636a1f47f80932886627",
+                "sha256:2ebb818608ae349ad6665efe9b1760e9cadb8d5d701d3e5d548ed4763607cf6b",
+                "sha256:ec6e73a213becfd8b8ff9a2c571aed135e6f0a4ee7e4370522ba4517a3312ba9",
+                "sha256:7f0225c43d31ac2d9c6e2d6065243b7bc9cf70d99ca6678a77a0dd9a48f938c9"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:19:14.802262342Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:dbfe878e7224e5de82340dea09f9f805405b9d0ab172502b79a5bd210f418631",
+            "size": 856
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/chrome.d"
+                }
+            ]
+        }
+    }
+]
