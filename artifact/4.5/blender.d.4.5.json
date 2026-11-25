@@ -1,0 +1,80 @@
+[
+    {
+        "Id": "sha256:33346b689c5d773e47d2c981359133b0edf4ae0308573f1549945164c0dc0358",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/blender.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/blender.d@sha256:33346b689c5d773e47d2c981359133b0edf4ae0308573f1549945164c0dc0358"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:14:32.3599438Z",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "APPNAME=blender",
+                "APP=/usr/bin/blender"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "WorkingDir": "/",
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities,graphics",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "blender.desktop",
+                "oc.displayname": "Blender",
+                "oc.fileextensions": "blend,obj,fbx,3ds,ply,stl",
+                "oc.icon": "circle_blender.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiA8ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIxMDEuODEiIHgyPSIxMDEuODEiIHkxPSItMTYuNTc4IiB5Mj0iMjQyLjcyIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQuNzgxMiAwIDAgNC43ODEyIDMzLjg3NSA2Mi4yMzcpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmYmI1MjEiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZjE1ZjE5IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iZSIgeDE9IjUyMCIgeDI9IjUyMCIgeTE9IjMyLjM2MiIgeTI9IjEwNTIuNCIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSg1LjQzNzIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeGxpbms6aHJlZj0iI2EiLz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImQiIHgxPSI1MjAiIHgyPSI1MjAiIHkxPSIyNTIuMzYiIHkyPSI3MTIuMzYiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc1Ljk5MyAtMTIyLjk5KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMTk3Y2YxIiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzIxYzlmYiIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImMiIHgxPSI2Ny4wMjQiIHgyPSIxMDIuOTEiIHkxPSIyODMuOTEiIHkyPSI1ODEuNzYiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQuNjQxIDIuNjc5NSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjYSIvPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNlOGViZWMiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZmRmZWZmIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImciIHg9Ii0uMDM2MzI0IiB5PSItLjAzNTY4MiIgd2lkdGg9IjEuMDcyNiIgaGVpZ2h0PSIxLjA3MTQiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjExLjYyMzYzNyIvPgogIDwvZmlsdGVyPgogIDxmaWx0ZXIgaWQ9ImYiIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxNC4zNDM3NDkiLz4KICA8L2ZpbHRlcj4KIDwvZGVmcz4KIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTk4OC4zNikiPgogIDxnIHRyYW5zZm9ybT0ibWF0cml4KC4wNjI3NDUgMCAwIC4wNjI3NDUgLS4xMjU0OSA5ODYuNDYpIiBzdHJva2Utd2lkdGg9IjE1LjkzOCI+CiAgIDxjaXJjbGUgY3g9IjUxMiIgY3k9IjU0MC4zNiIgcj0iNDc4LjEyIiBjb2xvcj0iIzAwMDAwMCIgZmlsdGVyPSJ1cmwoI2YpIiBvcGFjaXR5PSIuMjUiLz4KICAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTQwLjM2IiByPSI0NzguMTIiIGNvbG9yPSIjMDAwMDAwIiBmaWxsPSJ1cmwoI2IpIi8+CiAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMTApIiBmaWxsPSIjMTQxNDE0IiBmaWx0ZXI9InVybCgjZykiIG9wYWNpdHk9Ii4yIiBzdHJva2Utd2lkdGg9IjI1NCI+CiAgICA8ZWxsaXBzZSB0cmFuc2Zvcm09InJvdGF0ZSgtMzApIiBjeD0iMTY4LjU4IiBjeT0iNDYwLjI1IiByeD0iMTgzLjMxIiByeT0iMTYwLjE5IiBvcGFjaXR5PSIxIiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIG1hcmtlcnMgZmlsbCIvPgogICAgPGNpcmNsZSBjeD0iNTEyLjAxIiBjeT0iNTQ1Ljg1IiByPSIzODQiIG9wYWNpdHk9IjEiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgbWFya2VycyBmaWxsIi8+CiAgICA8Y2lyY2xlIGN4PSI0MDEuMzIiIGN5PSIzNDYuNzUiIHI9IjEyOCIgb3BhY2l0eT0iMSIgc3Ryb2tlPSIjZjBmMGYwIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2Utd2lkdGg9IjE3LjY3NSIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBtYXJrZXJzIGZpbGwiLz4KICAgPC9nPgogICA8ZyBzdHJva2Utd2lkdGg9IjE1LjkzOCI+CiAgICA8ZWxsaXBzZSB0cmFuc2Zvcm09InJvdGF0ZSgtMzApIiBjeD0iMTY4LjU4IiBjeT0iNDYwLjI1IiByeD0iMTgzLjMxIiByeT0iMTYwLjE5IiBmaWxsPSJ1cmwoI2MpIiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIG1hcmtlcnMgZmlsbCIvPgogICAgPGNpcmNsZSBjeD0iNTEyLjAxIiBjeT0iNTQ1Ljg1IiByPSIzODQiIGZpbGw9InVybCgjZSkiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgbWFya2VycyBmaWxsIi8+CiAgICA8Y2lyY2xlIGN4PSI0NDEuMzIiIGN5PSI0MjYuNzUiIHI9IjEyOCIgZmlsbD0idXJsKCNkKSIgc3Ryb2tlPSIjZjBmMGYwIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2Utd2lkdGg9IjE3LjY3NSIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBtYXJrZXJzIGZpbGwiLz4KICAgPC9nPgogIDwvZz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "blender,blender,modeler",
+                "oc.launch": "Blender.Blender",
+                "oc.mimetype": "application/x-blender",
+                "oc.name": "blender",
+                "oc.path": "/usr/bin/blender",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 533615979,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26f97af196845307e3064",
+                "sha256:4617e4dd87ca9c7625f47ba10f911c3aa48038b9716d63ded0a1b56dd75cc4bb",
+                "sha256:654b4fbf75db905b07cf88c4e36f2ae3b3f154826cadfa485f3385e0a52a01ee",
+                "sha256:974b86c3c34f440b52d1696f1857a71dc52c44a62c4bbf9b9ac649efebff23dc",
+                "sha256:799dac54df568036ed5dbac023da9cd16100f61cc3d33a2e5b67d046154da53a",
+                "sha256:d52b555e27edede8a60e828afd2a95b5fa202b842c6598cb158c28e4c28b032e",
+                "sha256:31960568bdcb4cae25897cb7272052db21c9b2e58a1df838c05a4eb6f25d8149",
+                "sha256:4635d513b85c17240385e5bed242928019e909a84456138d36af4cc390085a7d",
+                "sha256:923aa3d42a80e877fc9c9748365de065048c313cef93c2e22fb75b6255f11759",
+                "sha256:b394c74dc1843ef6aaeb3fabcc3bb620d3bac8162b5d15acb1a5d2ace2fe7acd",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:17:11.677121736Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:33346b689c5d773e47d2c981359133b0edf4ae0308573f1549945164c0dc0358",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/blender.d"
+                }
+            ]
+        }
+    }
+]
