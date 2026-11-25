@@ -1,0 +1,79 @@
+[
+    {
+        "Id": "sha256:85fb648b23f3a333fe88128279ae26080b6b802d216c0122acbb3621b1b16f8e",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/weather.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/weather.d@sha256:85fb648b23f3a333fe88128279ae26080b6b802d216c0122acbb3621b1b16f8e"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:33:04.056658185Z",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "APPNAME=weather",
+                "APP=/usr/bin/gnome-weather"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "WorkingDir": "/",
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "office",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "org.gnome.Weather.desktop",
+                "oc.displayname": "weather",
+                "oc.icon": "org.gnome.Weather.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGZpbHRlciBpZD0iYSIgeD0iLS4wMzYiIHk9Ii0uMDM2IiB3aWR0aD0iMS4wNzIiIGhlaWdodD0iMS4wNzIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iLjQyIi8+PC9maWx0ZXI+PGZpbHRlciBpZD0iZiIgeD0iLS4wNSIgeT0iLS4wNzUiIHdpZHRoPSIxLjEiIGhlaWdodD0iMS4xNSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIuNzc3Ii8+PC9maWx0ZXI+PGZpbHRlciBpZD0iZSIgeD0iLS4wOTYiIHk9Ii0uMDk2IiB3aWR0aD0iMS4xOTIiIGhlaWdodD0iMS4xOTIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iLjg4Ii8+PC9maWx0ZXI+PGZpbHRlciBpZD0iZCIgeD0iLS4wOCIgeT0iLS4xMiIgd2lkdGg9IjEuMTYiIGhlaWdodD0iMS4yNCIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxLjI0NCIvPjwvZmlsdGVyPjxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjM5OS41NyIgeDI9IjM5OS41NyIgeTE9IjU0NS44IiB5Mj0iNTE3LjgiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgyNi4zNiAtMTEwNy41KSBzY2FsZSgyLjE0MjkpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzM4ODllOSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzVlYTVmYiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIzOTkuOTkiIHgyPSIzOTkuOTkiIHkxPSI1NDUuMTQiIHkyPSI1MTguMTQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgyNi4zNiAtMTEwNy41KSBzY2FsZSgyLjE0MjkpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzdhZGNmYyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzBhNzllZCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGNpcmNsZSB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODI2LjM2IC0xMTA3LjUpIHNjYWxlKDIuMTQyOSkiIGN4PSI0MDAuNTciIGN5PSI1MzEuOCIgcj0iMTQiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjI1Ii8+PGcgc3Ryb2tlLXdpZHRoPSIxLjU3MSI+PGNpcmNsZSBjeD0iMzIuMDIiIGN5PSIzMi4wNDQiIHI9IjMwLjAwMSIgZmlsbD0idXJsKCNiKSIvPjxjaXJjbGUgY3g9IjMyLjAyIiBjeT0iMzIuMDQ0IiByPSIzMC4wMDEiIGZpbGw9Im5vbmUiLz48L2c+PHBhdGggZD0iTTMyLjQ3OCAyMi4xMTZhMTEuMTQ1IDExLjE0NSAwIDAgMC0xMS4xNDUgMTEuMTQ1IDExLjE0NSAxMS4xNDUgMCAwIDAgLjAxOC41MTIgNi42MzIgNi42MzIgMCAwIDAtNS45OTcgNi41OTVBNi42MzIgNi42MzIgMCAwIDAgMjEuOTg2IDQ3aDIxLjY0MmE5LjAxOCA5LjAxOCAwIDAgMCA5LjAxOC05LjAxOCA5LjAxOCA5LjAxOCAwIDAgMC05LjAxOC05LjAxOCA5LjAxOCA5LjAxOCAwIDAgMC0uODU3LjA0OSAxMS4xNDUgMTEuMTQ1IDAgMCAwLTEwLjI5NC02Ljg5N3oiIGZpbHRlcj0idXJsKCNkKSIgb3BhY2l0eT0iLjEiIHN0eWxlPSJwYWludC1vcmRlcjpub3JtYWwiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjI4IiByPSIxMSIgZmlsdGVyPSJ1cmwoI2UpIiBvcGFjaXR5PSIuMjUiIHN0eWxlPSJwYWludC1vcmRlcjpub3JtYWwiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjI4IiByPSIxMSIgZmlsbD0iI2ZmZDIwZiIgc3R5bGU9InBhaW50LW9yZGVyOm5vcm1hbCIvPjxwYXRoIGQ9Ik0zMi40NzggMjIuMTE2YTExLjE0NSAxMS4xNDUgMCAwIDAtMTEuMTQ1IDExLjE0NSAxMS4xNDUgMTEuMTQ1IDAgMCAwIC4wMTguNTEyIDYuNjMyIDYuNjMyIDAgMCAwLTUuOTk3IDYuNTk1QTYuNjMyIDYuNjMyIDAgMCAwIDIxLjk4NiA0N2gyMS42NDJhOS4wMTggOS4wMTggMCAwIDAgOS4wMTgtOS4wMTggOS4wMTggOS4wMTggMCAwIDAtOS4wMTgtOS4wMTggOS4wMTggOS4wMTggMCAwIDAtLjg1Ny4wNDkgMTEuMTQ1IDExLjE0NSAwIDAgMC0xMC4yOTQtNi44OTd6IiBmaWx0ZXI9InVybCgjZikiIG9wYWNpdHk9Ii4xNSIgc3R5bGU9InBhaW50LW9yZGVyOm5vcm1hbCIvPjxwYXRoIGQ9Ik0zMi40NzggMjIuMTE2YTExLjE0NSAxMS4xNDUgMCAwIDAtMTEuMTQ1IDExLjE0NSAxMS4xNDUgMTEuMTQ1IDAgMCAwIC4wMTguNTEyIDYuNjMyIDYuNjMyIDAgMCAwLTUuOTk3IDYuNTk1QTYuNjMyIDYuNjMyIDAgMCAwIDIxLjk4NiA0N2gyMS42NDJhOS4wMTggOS4wMTggMCAwIDAgOS4wMTgtOS4wMTggOS4wMTggOS4wMTggMCAwIDAtOS4wMTgtOS4wMTggOS4wMTggOS4wMTggMCAwIDAtLjg1Ny4wNDkgMTEuMTQ1IDExLjE0NSAwIDAgMC0xMC4yOTQtNi44OTd6IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODUiIHN0eWxlPSJwYWludC1vcmRlcjpub3JtYWwiLz48L3N2Zz4=",
+                "oc.keyword": "weather,weather",
+                "oc.launch": "org.gnome.Weather.org.gnome.Weather",
+                "oc.name": "weather",
+                "oc.path": "/usr/bin/gnome-weather",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 312270936,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26f97af196845307e3064",
+                "sha256:4617e4dd87ca9c7625f47ba10f911c3aa48038b9716d63ded0a1b56dd75cc4bb",
+                "sha256:654b4fbf75db905b07cf88c4e36f2ae3b3f154826cadfa485f3385e0a52a01ee",
+                "sha256:974b86c3c34f440b52d1696f1857a71dc52c44a62c4bbf9b9ac649efebff23dc",
+                "sha256:799dac54df568036ed5dbac023da9cd16100f61cc3d33a2e5b67d046154da53a",
+                "sha256:d52b555e27edede8a60e828afd2a95b5fa202b842c6598cb158c28e4c28b032e",
+                "sha256:31960568bdcb4cae25897cb7272052db21c9b2e58a1df838c05a4eb6f25d8149",
+                "sha256:4635d513b85c17240385e5bed242928019e909a84456138d36af4cc390085a7d",
+                "sha256:923aa3d42a80e877fc9c9748365de065048c313cef93c2e22fb75b6255f11759",
+                "sha256:d85aa99fbab5c990010c407c9c7c4079ba6ecb465ca1d20f949576e7622a6694",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:34:32.698666587Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:85fb648b23f3a333fe88128279ae26080b6b802d216c0122acbb3621b1b16f8e",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/weather.d"
+                }
+            ]
+        }
+    }
+]
