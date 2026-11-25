@@ -1,0 +1,94 @@
+[
+    {
+        "Id": "sha256:b7d07ec44f579e62f4ccfc31c36d9a48d9590b6179c090f1482aad319d953218",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/xpad.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/xpad.d@sha256:b7d07ec44f579e62f4ccfc31c36d9a48d9590b6179c090f1482aad319d953218"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:28:08.925007169Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "APPNAME=xpad",
+                "APP=/usr/bin/xpad"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "xpad.desktop",
+                "oc.displayname": "Xpad",
+                "oc.icon": "xpad.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIFNvZGlwb2RpICgiaHR0cDovL3d3dy5zb2RpcG9kaS5jb20vIikgLS0+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIGlkPSJzdmcxMTQiCiAgIHNvZGlwb2RpOnZlcnNpb249IjAuMzIiCiAgIHdpZHRoPSI3NTAiCiAgIGhlaWdodD0iNzUwIgogICBzb2RpcG9kaTpkb2NiYXNlPSIvaG9tZS9taWtlL0NvZGUveHBhZC9pbWFnZXMvaGljb2xvci9zY2FsYWJsZS9hcHBzLyIKICAgc29kaXBvZGk6ZG9jbmFtZT0ieHBhZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjAuNDYiCiAgIGlua3NjYXBlOm91dHB1dF9leHRlbnNpb249Im9yZy5pbmtzY2FwZS5vdXRwdXQuc3ZnLmlua3NjYXBlIgogICB2ZXJzaW9uPSIxLjAiPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTIzIj4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZGVmcwogICAgIGlkPSJkZWZzMTE2Ij4KICAgIDxpbmtzY2FwZTpwZXJzcGVjdGl2ZQogICAgICAgc29kaXBvZGk6dHlwZT0iaW5rc2NhcGU6cGVyc3AzZCIKICAgICAgIGlua3NjYXBlOnZwX3g9IjAgOiA0NjguNzUgOiAxIgogICAgICAgaW5rc2NhcGU6dnBfeT0iMCA6IDEwMDAgOiAwIgogICAgICAgaW5rc2NhcGU6dnBfej0iOTM3LjUgOiA0NjguNzUgOiAxIgogICAgICAgaW5rc2NhcGU6cGVyc3AzZC1vcmlnaW49IjQ2OC43NSA6IDMxMi41IDogMSIKICAgICAgIGlkPSJwZXJzcGVjdGl2ZTI1IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ2MjAiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZWVkZDg4O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDYyMSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzY2NTUwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A2MjIiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ2MTciPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmZlZTk5O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDYxOCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2VlZGQ4ODtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A2MTkiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxMjciPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojY2NjZDAwO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDEyOCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzY1NjcwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AxMjkiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxMTkiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmZmZjMyO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDEyMCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2Q3ZDUwYTtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AxMjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQxMjciCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxMjIiCiAgICAgICB4MT0iNi44NjM1ODg4ZS0wOSIKICAgICAgIHkxPSI4LjAwNzgzNzllLTA5IgogICAgICAgeDI9IjEiCiAgICAgICB5Mj0iOC4wMDc4Mzc5ZS0wOSIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NjE3IgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50MTI0IgogICAgICAgY3g9IjAuMTEyMTg4MDkiCiAgICAgICBjeT0iLTAuMjA4MTMwOTMiCiAgICAgICBmeD0iMC4xMTIxODgwOSIKICAgICAgIGZ5PSItMC4yMDgxMzA5MyIKICAgICAgIHI9IjEuNTc0MDgiCiAgICAgICBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIKICAgICAgIHNwcmVhZE1ldGhvZD0icGFkIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ2MjAiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQxMjYiCiAgICAgICBjeD0iMS4yMjQ0OCIKICAgICAgIGN5PSIwLjExNjk3NjU5IgogICAgICAgZng9IjEuMjI0NDgiCiAgICAgICBmeT0iMC4xMTY5NzY1OSIKICAgICAgIHI9IjEuNDk2ODciCiAgICAgICBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIKICAgICAgIHNwcmVhZE1ldGhvZD0icGFkIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQxMjciCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ2MTYiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDYyMCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDI0MDIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIHNwcmVhZE1ldGhvZD0icGFkIgogICAgICAgY3g9IjU4Mi44MDUyNCIKICAgICAgIGN5PSIxOTMuMDU0NCIKICAgICAgIGZ4PSI1ODIuODA1MjQiCiAgICAgICBmeT0iMTkzLjA1NDQiCiAgICAgICByPSI1ODcuNjQwMzgiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ic2NhbGUoMC45MzcwMTk4LDEuMDY3MjEzMykiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDYxNyIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDI0MDQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIHNwcmVhZE1ldGhvZD0icGFkIgogICAgICAgY3g9IjE5Ni40Njk1NiIKICAgICAgIGN5PSItMzYuODYzNTg2IgogICAgICAgZng9IjE5Ni40Njk1NiIKICAgICAgIGZ5PSItMzYuODYzNTg2IgogICAgICAgcj0iMTEzMi45ODA1IgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09InNjYWxlKDEuMDAyMjkzNiwwLjk5NzcxMTYpIiAvPgogIDwvZGVmcz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9ImJhc2UiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjAuNDkyOCIKICAgICBpbmtzY2FwZTpjeD0iNDY4Ljc1IgogICAgIGlua3NjYXBlOmN5PSI0MTkuODYyODEiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSI2NDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNjgwIgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNiIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcxMTQiIC8+CiAgPGcKICAgICBpZD0iZzIzOTgiCiAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC45NjU0MTY2LDAuMjYwNzExNywtMC4yNjA3MTE3LDAuOTY1NDE2Niw1NS41NzEwNywtMjUxLjkyMDE1KSI+CiAgICA8cGF0aAogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC42NjMwMDIsLTAuMjE2MzUzLDAuMTg3NTksMC41NzQ4NTQsODEuNTUyNiw2MTkuMjY3KSIKICAgICAgIHNvZGlwb2RpOm5vZGV0eXBlcz0iY2NjYyIKICAgICAgIGlkPSJwYXRoMTI1IgogICAgICAgZD0iTSA5NS42NjkzLDE1Ny4wMjEgTCA0NjMuNTI0LDU3NS45ODcgTCA0NjEuODUyLDE1OC45NSBMIDk1LjY2OTMsMTU3LjAyMSB6IgogICAgICAgc3R5bGU9ImZvbnQtc2l6ZToxMnB4O2ZpbGw6dXJsKCNyYWRpYWxHcmFkaWVudDI0MDIpO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS13aWR0aDoxcHQiIC8+CiAgICA8cGF0aAogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC45NTgzNjIsLTAuMjg1NTU2LDAuMjg1NTU2LDAuOTU4MzYyLC0xMjAuNDkyLDIwNi4xNzQpIgogICAgICAgc29kaXBvZGk6bm9kZXR5cGVzPSJjY2NjY2NjIgogICAgICAgaWQ9InBhdGgxMTgiCiAgICAgICBkPSJNIDEyNS4zNiwxMjIuMDYgTCAxMjUuMzYsNDcxLjc0OCBDIDEyNS4zNiw1ODguMzExIDI0OC44OTQsNjEwLjE3NSAzNzcuNTUyLDU2OC4zODkgQyAzMjEuNDE1LDY1MS4yNjYgMzU5LjU4NSw4MjEuNDM2IDQ3Ni42OTcsODIxLjQzNiBMIDgyOC4wMzQsODIxLjQzNiBMIDgyOC4wMzQsMTIyLjA2IEwgMTI1LjM2LDEyMi4wNiB6IgogICAgICAgc3R5bGU9ImZvbnQtc2l6ZToxMnB4O2ZpbGw6dXJsKCNyYWRpYWxHcmFkaWVudDI0MDQpO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxOC43NTtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICA8L2c+Cjwvc3ZnPgo=",
+                "oc.keyword": "xpad,xpad, note, sticky, postit",
+                "oc.launch": "xpad.xpad",
+                "oc.name": "xpad",
+                "oc.path": "/usr/bin/xpad",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.26.04",
+                "oc.type": "app",
+                "org.opencontainers.image.created": "2026-11-06T10:28:50.132595+00:00",
+                "org.opencontainers.image.description": "The Ubuntu container image maintained by Canonical\n\nUbuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.\nIt is the world's most popular operating system across public clouds and OpenStack clouds.\nIt is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.\nFast, secure and simple, Ubuntu powers millions of PCs worldwide.\n",
+                "org.opencontainers.image.title": "ubuntu",
+                "org.opencontainers.image.version": "26.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 309176592,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:2a89eb4dbc78f8fe790775a4e807e1355ba2f6b145c8dd7a267a782df1605124",
+                "sha256:758b22fe15be2c330dcead0c1b50476c074e113ec507627c6430337ffc9daa5e",
+                "sha256:f64cc480979c2a82c068962d596c4c3aa9f257d16325fb9e09d42cbbe2354b30",
+                "sha256:d2a2ddff12e4032959af69e1fd1fffebcf78cd93ff3a9de54ad30a3adfe3c927",
+                "sha256:c2195c74c29ab806e51136acb4913f109df343b76a64338663bb20966d3f23b5",
+                "sha256:05bb0bcae29e5cd85514c407a39ca78f954f6af2dfcd657c05c955c746d04a4b",
+                "sha256:991feed40681e2f2dcdae2bc7ec012b07d4b428e4533909c01d8a929a244abef",
+                "sha256:b302880f3fae3d825583c99ad2dc32003915aa41b6184aed48a671c857659124",
+                "sha256:ba45d04aec1b1f557e5475d95a4c60c7ab42af477173485818c4dc8064a0de08",
+                "sha256:4bc02cb9b3938bce54c0ebb67722b233c1501498bc62fbd619815047c1f92574",
+                "sha256:266a70fb1e8dde7fb71f2c093be8de33deef3dbe5cc0452e204c1d8335422329",
+                "sha256:099eafef84e0aed02315a3b86926c46e59947ad137fbe83c961842ea919f6159",
+                "sha256:f990e3c6205f5dd238d3c66cfdbdecce96fb9e146ada6489cb536f486607d737",
+                "sha256:ff2c280190f4e32ae8e5634f7afc54d6fc17c135f4774bb1e49effca7119d9b0",
+                "sha256:bdc0717d4ebae4ae51fcec48f6d661aa26226bb0e6c253c956c31f6322422479",
+                "sha256:e6ddee8e501a6f13fa098428300542228c2921929edc6bd4f91cbca7421ffb1c",
+                "sha256:451a1b2a811fddc3296a59bc22da73ba9149b8ec15399857e0c64266a6159a56",
+                "sha256:b2da902980b55823b3279442dca7ba373274676e2ddcfc0af3564d4841f1b475",
+                "sha256:ecf8c1e41b6d288dac0355f6faceaade85200ec2135d1520e247c1399f8ccbbb",
+                "sha256:5a81c2cc610d1316c5f1430a859c18516a71455b312cf03abfe5e7d04d7eb28a",
+                "sha256:a58601255bc79142c78d878b60d5bef436d81dc90a7f185425f73c30bbc36978",
+                "sha256:ff4e5be03c1a4e483373e0c25a3ed988df159597429e30c5a99ea88905fe9be6",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:33:15.506143297Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:b7d07ec44f579e62f4ccfc31c36d9a48d9590b6179c090f1482aad319d953218",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/xpad.d"
+                }
+            ]
+        }
+    }
+]
