@@ -1,0 +1,95 @@
+[
+    {
+        "Id": "sha256:4cc47b196de6cc5412a0e244219358083273956a12e58f333a2634dee5f65ae3",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/file-roller.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/file-roller.d@sha256:4cc47b196de6cc5412a0e244219358083273956a12e58f333a2634dee5f65ae3"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:19:45.861381749Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "APPNAME=file-roller",
+                "APP=/usr/bin/file-roller"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "org.gnome.FileRoller.desktop",
+                "oc.displayname": "file-roller",
+                "oc.fileextensions": "7z;7zip;Z;unzip;zip;tar;tgz;war;tar.gz;ar;bcz;cpio;ear;jar;iso;tar.Z;tar.gz;tar.lz;tar.lzma;tar.lzo;tar.xz",
+                "oc.icon": "circle_file-roller.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9Ijk5LjAzNiIgeDI9Ijk5LjAzNiIgeTE9Ii0uNTA0NzIiIHkyPSIxOTkuODQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoNC42ODY2IDAgMCA0LjY4NjYgNDIuODQgNzIuMTk4KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZWNkNWI5IiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2UyY2E4NyIgb2Zmc2V0PSIuNSIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZDZhYTM3IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjUwMCIgeDI9IjUwMCIgeTE9IjI1Mi4zNiIgeTI9IjgwNi4wMyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguOTk2MDkgMCAwIC45OTYwOSAtNC44Mjk0IDExLjUxOCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmZiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNlYmViZWIiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0iZCIgeD0iLS4wNTgyNTEiIHk9Ii0uMDI2MDUiIHdpZHRoPSIxLjExNjUiIGhlaWdodD0iMS4wNTIxIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI1LjU1NzI0MjIiLz4KICA8L2ZpbHRlcj4KICA8ZmlsdGVyIGlkPSJjIiB4PSItLjAzNiIgeT0iLS4wMzYiIHdpZHRoPSIxLjA3MiIgaGVpZ2h0PSIxLjA3MiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTQuMDU5ODYzIi8+CiAgPC9maWx0ZXI+CiA8L2RlZnM+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC05ODguMzYpIj4KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCguMDY0MDEyIDAgMCAuMDY0MDEyIC0uNzQyMjYgOTg1Ljc0KSIgc3Ryb2tlLXdpZHRoPSIxNS42MjIiPgogICA8Y2lyY2xlIGN4PSI1MTEuNSIgY3k9IjU0MC44NiIgcj0iNDY4LjY2IiBjb2xvcj0iIzAwMDAwMCIgZmlsdGVyPSJ1cmwoI2MpIiBvcGFjaXR5PSIuMjUiLz4KICAgPGNpcmNsZSBjeD0iNTExLjUiIGN5PSI1NDAuODYiIHI9IjQ2OC42NiIgY29sb3I9IiMwMDAwMDAiIGZpbGw9InVybCgjYSkiLz4KICAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoLjk5NjA5IDAgMCAuOTk2MDkgLTQuODI5NCAxMS41MTgpIiBkPSJtNjAyLjgzIDU3Mi42MmgtMi43NjU0di00OS43MzhoLTMxLjA4NnYtNDkuNzM4aC00OS43Mzh2LTQ5LjczOGg0OS43Mzh2LTQ5LjczOGgtNDkuNzM4di00OS43MzhoNDkuNzM4di00OS43MzhoLTYyLjE3MnY0OS43MzhoLTQ5LjczOHY0OS43MzhoNDkuNzM4djQ5LjczOGgtNDkuNzM4djQ5LjczOGg0OS43Mzh2NDkuNzM4aC04MC44MjR2NDkuNzM4aC0yLjc2NTRsLTI0LjY3NiAxNjQuNTEgMTE0LjQ4IDQ5LjA2NCAxMTQuNDgtNDkuMDY0em0tODkuODA1IDE1OS40Ni01OS42LTI1LjU0MyAxMi42MjYtODQuMThoOTMuOTQ2bDEyLjYyNiA4NC4xOHoiIGZpbHRlcj0idXJsKCNkKSIgb3BhY2l0eT0iLjIiIHN0cm9rZS13aWR0aD0iMTkuNDI1Ii8+CiAgIDxwYXRoIGlkPSJYTUxJRF8xMDczXyIgZD0ibTU5NS42NSA1NzEuOTRoLTIuNzU0NnYtNDkuNTQ0aC0zMC45NjV2LTQ5LjU0NGgtNDkuNTQ0di00OS41NDRoNDkuNTQ0di00OS41NDRoLTQ5LjU0NHYtNDkuNTQ0aDQ5LjU0NHYtNDkuNTQ0aC02MS45Mjl2NDkuNTQ0aC00OS41NDR2NDkuNTQ0aDQ5LjU0NHY0OS41NDRoLTQ5LjU0NHY0OS41NDRoNDkuNTQ0djQ5LjU0NGgtODAuNTA4djQ5LjU0NGgtMi43NTQ2bC0yNC41OCAxNjMuODcgMTE0LjA0IDQ4Ljg3MiAxMTQuMDQtNDguODcyem0tODkuNDU1IDE1OC44NC01OS4zNjctMjUuNDQzIDEyLjU3Ny04My44NTFoOTMuNTc5bDEyLjU3NyA4My44NTF6IiBmaWxsPSJ1cmwoI2IpIiBzdHJva2Utd2lkdGg9IjE5LjM0OSIvPgogIDwvZz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "file-roller,zip,tar,gz,tgz,unzip,compress,7zip,7z,iso",
+                "oc.launch": "file-roller.File-roller",
+                "oc.mimetype": "application/x-7z-compressed;application/gzip;application/gtar;application/tar;application/zip;application/x-compress;application/x-compressed;application/x-zip-compressed;multipart/x-zip;application/gnutar;application/x-lzx;application/lzx;application/x-gzip;application/x-gtar;application/x-bzip2;application/x-bzip;application/x-bzip2;",
+                "oc.name": "file-roller",
+                "oc.path": "/usr/bin/file-roller",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.26.04",
+                "oc.type": "app",
+                "org.opencontainers.image.created": "2026-11-06T10:28:50.132595+00:00",
+                "org.opencontainers.image.description": "The Ubuntu container image maintained by Canonical\n\nUbuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.\nIt is the world's most popular operating system across public clouds and OpenStack clouds.\nIt is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.\nFast, secure and simple, Ubuntu powers millions of PCs worldwide.\n",
+                "org.opencontainers.image.title": "ubuntu",
+                "org.opencontainers.image.version": "26.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 380719575,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:2a89eb4dbc78f8fe790775a4e807e1355ba2f6b145c8dd7a267a782df1605124",
+                "sha256:758b22fe15be2c330dcead0c1b50476c074e113ec507627c6430337ffc9daa5e",
+                "sha256:f64cc480979c2a82c068962d596c4c3aa9f257d16325fb9e09d42cbbe2354b30",
+                "sha256:d2a2ddff12e4032959af69e1fd1fffebcf78cd93ff3a9de54ad30a3adfe3c927",
+                "sha256:c2195c74c29ab806e51136acb4913f109df343b76a64338663bb20966d3f23b5",
+                "sha256:05bb0bcae29e5cd85514c407a39ca78f954f6af2dfcd657c05c955c746d04a4b",
+                "sha256:991feed40681e2f2dcdae2bc7ec012b07d4b428e4533909c01d8a929a244abef",
+                "sha256:b302880f3fae3d825583c99ad2dc32003915aa41b6184aed48a671c857659124",
+                "sha256:ba45d04aec1b1f557e5475d95a4c60c7ab42af477173485818c4dc8064a0de08",
+                "sha256:4bc02cb9b3938bce54c0ebb67722b233c1501498bc62fbd619815047c1f92574",
+                "sha256:266a70fb1e8dde7fb71f2c093be8de33deef3dbe5cc0452e204c1d8335422329",
+                "sha256:099eafef84e0aed02315a3b86926c46e59947ad137fbe83c961842ea919f6159",
+                "sha256:f990e3c6205f5dd238d3c66cfdbdecce96fb9e146ada6489cb536f486607d737",
+                "sha256:ff2c280190f4e32ae8e5634f7afc54d6fc17c135f4774bb1e49effca7119d9b0",
+                "sha256:bdc0717d4ebae4ae51fcec48f6d661aa26226bb0e6c253c956c31f6322422479",
+                "sha256:e6ddee8e501a6f13fa098428300542228c2921929edc6bd4f91cbca7421ffb1c",
+                "sha256:451a1b2a811fddc3296a59bc22da73ba9149b8ec15399857e0c64266a6159a56",
+                "sha256:b2da902980b55823b3279442dca7ba373274676e2ddcfc0af3564d4841f1b475",
+                "sha256:ecf8c1e41b6d288dac0355f6faceaade85200ec2135d1520e247c1399f8ccbbb",
+                "sha256:c9cb393ba0302faf36acab25a2174c33e5c0a64ef180a07e8748bd04311c725a",
+                "sha256:98905e8a6aa691dc70f58e834ee1cff22d8b174704dbe6039c6bb56b781f92d2",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:25:45.107177641Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:4cc47b196de6cc5412a0e244219358083273956a12e58f333a2634dee5f65ae3",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/file-roller.d"
+                }
+            ]
+        }
+    }
+]
