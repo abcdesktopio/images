@@ -1,0 +1,92 @@
+[
+    {
+        "Id": "sha256:850d00f880eda189fae5378c3e24660399d877965fa52666415a00f597baf6de",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/golly.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/golly.d@sha256:850d00f880eda189fae5378c3e24660399d877965fa52666415a00f597baf6de"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:17:55.706031484Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "APPNAME=Golly",
+                "APP=/usr/games/golly"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "education",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.displayname": "Golly",
+                "oc.icon": "golly.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUwOCA1MDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwOCA1MDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZEODQ2OTsiIGN4PSIyNTQiIGN5PSIyNTQiIHI9IjI1NCIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzMyNEE1RTsiIGQ9Ik0yNTQuOCwyNTMuNmwtODUuNiwxMy4yYy0yLDAuNC00LjQtMC40LTUuNi0ybC01NC40LTY3LjZjLTEuMi0xLjYtMS42LTQtMC44LTZsMzEuMi04MC44DQoJCWMwLjgtMiwyLjQtMy42LDQuOC0zLjZMMjMwLDkzLjJjMi0wLjQsNC40LDAuNCw1LjYsMmw1NC40LDY4YzEuMiwxLjYsMS42LDQsMC44LDZMMjU5LjYsMjUwQzI1OC44LDI1MS42LDI1Ni44LDI1My4yLDI1NC44LDI1My42eg0KCQkgTTE3MC44LDI1NC40bDc4LjgtMTIuNGwyOC44LTc0LjRsLTUwLTYyTDE0OS42LDExOGwtMjguOCw3NC40TDE3MC44LDI1NC40eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMzMjRBNUU7IiBkPSJNMjc3LjYsNDAxLjZMMTkyLDQxNC44Yy0yLDAuNC00LjQtMC40LTUuNi0ybC01NC02Ny42Yy0xLjItMS42LTEuNi00LTAuOC02bDMxLjItODAuOA0KCQljMC44LTIsMi40LTMuNiw0LjgtMy42bDg1LjYtMTMuMmMyLTAuNCw0LjQsMC40LDUuNiwybDU0LjQsNjcuNmMxLjIsMS42LDEuNiw0LDAuOCw2TDI4Mi40LDM5OEMyODEuNiw0MDAsMjgwLDQwMS42LDI3Ny42LDQwMS42eg0KCQkgTTE5My42LDQwMi44bDc4LjgtMTIuNGwyOC44LTc0LjRsLTUwLTYybC03OC44LDEyLjRsLTI4LjgsNzQuNEwxOTMuNiw0MDIuOHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojMzI0QTVFOyIgZD0iTTM5NC44LDMwNy42bC04NS42LDEzLjJjLTIsMC40LTQuNC0wLjQtNS42LTJsLTU0LjQtNjcuNmMtMS4yLTEuNi0xLjYtNC0wLjgtNmwzMS4yLTgwLjgNCgkJYzAuOC0yLDIuNC0zLjYsNC44LTMuNmw4NS42LTEzLjJjMi0wLjQsNC40LDAuNCw1LjYsMmw1NC40LDY3LjZjMS4yLDEuNiwxLjYsNCwwLjgsNkwzOTkuNiwzMDRDMzk4LjgsMzA2LDM5Ni44LDMwNy4yLDM5NC44LDMwNy42DQoJCXogTTMxMC44LDMwOC44bDc4LjgtMTIuNGwyOC44LTc0LjRsLTUwLTYybC03OC44LDEyLjRsLTI4LjgsNzQuNEwzMTAuOCwzMDguOHoiLz4NCjwvZz4NCjxnPg0KCTxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGN4PSIyODUuMiIgY3k9IjE2Ni44IiByPSIyNy42Ii8+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZGRkZGOyIgY3g9IjM3MC44IiBjeT0iMTUzLjYiIHI9IjI3LjYiLz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBjeD0iNDI1LjIiIGN5PSIyMjAuOCIgcj0iMjcuNiIvPg0KCTxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGN4PSIzOTMuNiIgY3k9IjMwMC40IiByPSIyNy42Ii8+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZGRkZGOyIgY3g9IjMwOCIgY3k9IjMxNS4yIiByPSIyNy42Ii8+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZGRkZGOyIgY3g9IjI1NCIgY3k9IjI0Ny42IiByPSIyNy42Ii8+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZGRkZGOyIgY3g9IjE2OC40IiBjeT0iMjYwLjgiIHI9IjI3LjYiLz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBjeD0iMTE0IiBjeT0iMTkzLjIiIHI9IjI3LjYiLz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBjeD0iMTQ2IiBjeT0iMTE1LjYiIHI9IjI3LjYiLz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBjeD0iMjMzLjYiIGN5PSI5OC44IiByPSIyNy42Ii8+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZGRkZGOyIgY3g9IjEzNi44IiBjeT0iMzQxLjYiIHI9IjI3LjYiLz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBjeD0iMTkxLjIiIGN5PSI0MDkuMiIgcj0iMjcuNiIvPg0KCTxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGN4PSIyNzYuNCIgY3k9IjM5Mi44IiByPSIyNy42Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==",
+                "oc.keyword": "golly,golly",
+                "oc.launch": "golly.Golly",
+                "oc.name": "Golly",
+                "oc.path": "/usr/games/golly",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.gtk.26.04",
+                "oc.type": "app",
+                "org.opencontainers.image.created": "2026-11-06T10:28:50.132595+00:00",
+                "org.opencontainers.image.description": "The Ubuntu container image maintained by Canonical\n\nUbuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.\nIt is the world's most popular operating system across public clouds and OpenStack clouds.\nIt is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.\nFast, secure and simple, Ubuntu powers millions of PCs worldwide.\n",
+                "org.opencontainers.image.title": "ubuntu",
+                "org.opencontainers.image.version": "26.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 384561924,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:2a89eb4dbc78f8fe790775a4e807e1355ba2f6b145c8dd7a267a782df1605124",
+                "sha256:758b22fe15be2c330dcead0c1b50476c074e113ec507627c6430337ffc9daa5e",
+                "sha256:f64cc480979c2a82c068962d596c4c3aa9f257d16325fb9e09d42cbbe2354b30",
+                "sha256:d2a2ddff12e4032959af69e1fd1fffebcf78cd93ff3a9de54ad30a3adfe3c927",
+                "sha256:c2195c74c29ab806e51136acb4913f109df343b76a64338663bb20966d3f23b5",
+                "sha256:05bb0bcae29e5cd85514c407a39ca78f954f6af2dfcd657c05c955c746d04a4b",
+                "sha256:991feed40681e2f2dcdae2bc7ec012b07d4b428e4533909c01d8a929a244abef",
+                "sha256:b302880f3fae3d825583c99ad2dc32003915aa41b6184aed48a671c857659124",
+                "sha256:ba45d04aec1b1f557e5475d95a4c60c7ab42af477173485818c4dc8064a0de08",
+                "sha256:4bc02cb9b3938bce54c0ebb67722b233c1501498bc62fbd619815047c1f92574",
+                "sha256:266a70fb1e8dde7fb71f2c093be8de33deef3dbe5cc0452e204c1d8335422329",
+                "sha256:099eafef84e0aed02315a3b86926c46e59947ad137fbe83c961842ea919f6159",
+                "sha256:f990e3c6205f5dd238d3c66cfdbdecce96fb9e146ada6489cb536f486607d737",
+                "sha256:ff2c280190f4e32ae8e5634f7afc54d6fc17c135f4774bb1e49effca7119d9b0",
+                "sha256:bdc0717d4ebae4ae51fcec48f6d661aa26226bb0e6c253c956c31f6322422479",
+                "sha256:e6ddee8e501a6f13fa098428300542228c2921929edc6bd4f91cbca7421ffb1c",
+                "sha256:451a1b2a811fddc3296a59bc22da73ba9149b8ec15399857e0c64266a6159a56",
+                "sha256:b2da902980b55823b3279442dca7ba373274676e2ddcfc0af3564d4841f1b475",
+                "sha256:ecf8c1e41b6d288dac0355f6faceaade85200ec2135d1520e247c1399f8ccbbb",
+                "sha256:90bfc46be0cd8c0bc121647ae3fc1f0e04cb36ef04a29c762910267f3aa15190",
+                "sha256:016df17b3c458e442c01c2623d2fd7322e2bee6891e7c830aafb655d117b65c3",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:24:18.68748762Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:850d00f880eda189fae5378c3e24660399d877965fa52666415a00f597baf6de",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/golly.d"
+                }
+            ]
+        }
+    }
+]
