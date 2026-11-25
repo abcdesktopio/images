@@ -1,0 +1,79 @@
+[
+    {
+        "Id": "sha256:295d4e3152494cbcf5480a85bae886c15260f0f464a990f13b7f462096791f86",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/calculator.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/calculator.d@sha256:295d4e3152494cbcf5480a85bae886c15260f0f464a990f13b7f462096791f86"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:14:50.88679486Z",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "APPNAME=calculator",
+                "APP=/usr/bin/gnome-calculator"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "WorkingDir": "/",
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities,office",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "org.gnome.Calculator.desktop",
+                "oc.displayname": "calculator",
+                "oc.icon": "gnome_calculator.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjEyOHB4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjE5MjM1MSAwIDAgMC4yNSAyMi4wMDUyMTMgNTcuMDAwMDMxKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMC4yNzYxNTYiIHgyPSI0MjYuMjc2MjE1IiB5MT0iMjU5Ljk5OTg3OCIgeTI9IjI1OS45OTk4NzgiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzlhOTk5NiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMC4wNTAyMTU2IiBzdG9wLWNvbG9yPSIjYzBiZmJjIi8+CiAgICAgICAgPHN0b3Agb2Zmc2V0PSIwLjEwMDIwNCIgc3RvcC1jb2xvcj0iIzlhOTk5NiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMC45MDAwMjMiIHN0b3AtY29sb3I9IiM5YTk5OTYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjAuOTUwMDExIiBzdG9wLWNvbG9yPSIjYzBiZmJjIi8+CiAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOWE5OTk2Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHBhdGggZD0ibSAzMiAzNiBoIDY0IGMgNC40MTc5NjkgMCA4IDMuNTgyMDMxIDggOCB2IDY4IGMgMCA0LjQxNzk2OSAtMy41ODIwMzEgOCAtOCA4IGggLTY0IGMgLTQuNDE3OTY5IDAgLTggLTMuNTgyMDMxIC04IC04IHYgLTY4IGMgMCAtNC40MTc5NjkgMy41ODIwMzEgLTggOCAtOCB6IG0gMCAwIiBmaWxsPSJ1cmwoI2EpIi8+CiAgICA8cGF0aCBkPSJtIDMyIDggaCA2NCBjIDQuNDE3OTY5IDAgOCAzLjU4MjAzMSA4IDggdiA5MCBjIDAgNC40MTc5NjkgLTMuNTgyMDMxIDggLTggOCBoIC02NCBjIC00LjQxNzk2OSAwIC04IC0zLjU4MjAzMSAtOCAtOCB2IC05MCBjIDAgLTQuNDE3OTY5IDMuNTgyMDMxIC04IDggLTggeiBtIDAgMCIgZmlsbD0iI2RlZGRkYSIvPgogICAgPHBhdGggZD0ibSAzOCAxOCBoIDUyLjAzOTA2MiBjIDIuMjEwOTM4IDAgNCAxLjc4OTA2MiA0IDQgdiA2IGMgMCAyLjIxMDkzOCAtMS43ODkwNjIgNCAtNCA0IGggLTUyLjAzOTA2MiBjIC0yLjIxMDkzOCAwIC00IC0xLjc4OTA2MiAtNCAtNCB2IC02IGMgMCAtMi4yMTA5MzggMS43ODkwNjIgLTQgNCAtNCB6IG0gMCAwIiBmaWxsPSIjNzc3NjdiIi8+CiAgICA8cGF0aCBkPSJtIDM4IDM2IGggNTIuMDM5MDYyIGMgMi4yMTA5MzggMCA0IC0xLjc4OTA2MiA0IC00IHYgLTggYyAwIC0yLjIxMDkzOCAtMS43ODkwNjIgLTQgLTQgLTQgaCAtNTIuMDM5MDYyIGMgLTIuMjEwOTM4IDAgLTQgMS43ODkwNjIgLTQgNCB2IDggYyAwIDIuMjEwOTM4IDEuNzg5MDYyIDQgNCA0IHogbSAwIDAiIGZpbGw9IiM2ZmIxODIiLz4KICAgIDxwYXRoIGQ9Im0gMzQgNTEgdiAyIGMgMCAzLjg3ODkwNiAzLjEyMTA5NCA3IDcgNyBzIDcgLTMuMTIxMDk0IDcgLTcgdiAtMiB6IG0gMCAwIiBmaWxsPSIjNWU1YzY0Ii8+CiAgICA8cGF0aCBkPSJtIDQxIDQ0IGMgMy44NjcxODggMCA3IDMuMTMyODEyIDcgNyBzIC0zLjEzMjgxMiA3IC03IDcgcyAtNyAtMy4xMzI4MTIgLTcgLTcgcyAzLjEzMjgxMiAtNyA3IC03IHogbSAwIDAiIGZpbGw9IiM5YTk5OTYiLz4KICAgIDxwYXRoIGQ9Im0gNTcuMDExNzE5IDUxIHYgMiBjIDAgMy44Nzg5MDYgMy4xMjEwOTMgNyA3IDcgYyAzLjg3NSAwIDcgLTMuMTIxMDk0IDcgLTcgdiAtMiB6IG0gMCAwIiBmaWxsPSIjNWU1YzY0Ii8+CiAgICA8cGF0aCBkPSJtIDY0IDQ0IGMgMy44NjcxODggMCA3IDMuMTMyODEyIDcgNyBzIC0zLjEzMjgxMiA3IC03IDcgcyAtNyAtMy4xMzI4MTIgLTcgLTcgcyAzLjEzMjgxMiAtNyA3IC03IHogbSAwIDAiIGZpbGw9IiM5YTk5OTYiLz4KICAgIDxwYXRoIGQ9Im0gODAgNTEgdiAyIGMgMCAzLjg3ODkwNiAzLjEyMTA5NCA3IDcgNyBzIDcgLTMuMTIxMDk0IDcgLTcgdiAtMiB6IG0gMCAwIiBmaWxsPSIjNWU1YzY0Ii8+CiAgICA8cGF0aCBkPSJtIDg3IDQ0IGMgMy44NjcxODggMCA3IDMuMTMyODEyIDcgNyBzIC0zLjEzMjgxMiA3IC03IDcgcyAtNyAtMy4xMzI4MTIgLTcgLTcgcyAzLjEzMjgxMiAtNyA3IC03IHogbSAwIDAiIGZpbGw9IiM5YTk5OTYiLz4KICAgIDxwYXRoIGQ9Im0gMzQgNzMgdiAyIGMgMCAzLjg3ODkwNiAzLjEyMTA5NCA3IDcgNyBzIDcgLTMuMTIxMDk0IDcgLTcgdiAtMiB6IG0gMCAwIiBmaWxsPSIjM2QzODQ2Ii8+CiAgICA8cGF0aCBkPSJtIDU3LjAxMTcxOSA3MyB2IDIgYyAwIDMuODc4OTA2IDMuMTIxMDkzIDcgNyA3IGMgMy44NzUgMCA3IC0zLjEyMTA5NCA3IC03IHYgLTIgeiBtIDAgMCIgZmlsbD0iIzNkMzg0NiIvPgogICAgPHBhdGggZD0ibSA0MSA2NiBjIDMuODY3MTg4IDAgNyAzLjEzMjgxMiA3IDcgcyAtMy4xMzI4MTIgNyAtNyA3IHMgLTcgLTMuMTMyODEyIC03IC03IHMgMy4xMzI4MTIgLTcgNyAtNyB6IG0gMCAwIiBmaWxsPSIjNWU1YzY0Ii8+CiAgICA8cGF0aCBkPSJtIDY0IDY2IGMgMy44NjcxODggMCA3IDMuMTMyODEyIDcgNyBzIC0zLjEzMjgxMiA3IC03IDcgcyAtNyAtMy4xMzI4MTIgLTcgLTcgcyAzLjEzMjgxMiAtNyA3IC03IHogbSAwIDAiIGZpbGw9IiM1ZTVjNjQiLz4KICAgIDxwYXRoIGQ9Im0gMzQgOTUgdiAyIGMgMCAzLjg3ODkwNiAzLjEyMTA5NCA3IDcgNyBzIDcgLTMuMTIxMDk0IDcgLTcgdiAtMiB6IG0gMCAwIiBmaWxsPSIjM2QzODQ2Ii8+CiAgICA8cGF0aCBkPSJtIDQxIDg4IGMgMy44NjcxODggMCA3IDMuMTMyODEyIDcgNyBzIC0zLjEzMjgxMiA3IC03IDcgcyAtNyAtMy4xMzI4MTIgLTcgLTcgcyAzLjEzMjgxMiAtNyA3IC03IHogbSAwIDAiIGZpbGw9IiM1ZTVjNjQiLz4KICAgIDxwYXRoIGQ9Im0gNTcuMDExNzE5IDk1IHYgMiBjIDAgMy44Nzg5MDYgMy4xMjEwOTMgNyA3IDcgYyAzLjg3NSAwIDcgLTMuMTIxMDk0IDcgLTcgdiAtMiB6IG0gMCAwIiBmaWxsPSIjM2QzODQ2Ii8+CiAgICA8cGF0aCBkPSJtIDY0IDg4IGMgMy44NjcxODggMCA3IDMuMTMyODEyIDcgNyBzIC0zLjEzMjgxMiA3IC03IDcgcyAtNyAtMy4xMzI4MTIgLTcgLTcgcyAzLjEzMjgxMiAtNyA3IC03IHogbSAwIDAiIGZpbGw9IiM1ZTVjNjQiLz4KICAgIDxwYXRoIGQ9Im0gODcgODYgYyAzLjg2NzE4OCAwIDcgMy4xMzI4MTIgNyA3IHYgNCBjIDAgMy44NjcxODggLTMuMTMyODEyIDcgLTcgNyBzIC03IC0zLjEzMjgxMiAtNyAtNyB2IC00IGMgMCAtMy44NjcxODggMy4xMzI4MTIgLTcgNyAtNyB6IG0gMCAwIiBmaWxsPSIjYzY0NjAwIi8+CiAgICA8cGF0aCBkPSJtIDg3IDY2IGMgMy44NjcxODggMCA3IDMuMTMyODEyIDcgNyB2IDIyIGMgMCAzLjg2NzE4OCAtMy4xMzI4MTIgNyAtNyA3IHMgLTcgLTMuMTMyODEyIC03IC03IHYgLTIyIGMgMCAtMy44NjcxODggMy4xMzI4MTIgLTcgNyAtNyB6IG0gMCAwIiBmaWxsPSIjZmY3ODAwIi8+Cjwvc3ZnPgo=",
+                "oc.keyword": "calculator,calculator",
+                "oc.launch": "gnome-calculator.gnome-calculator",
+                "oc.name": "calculator",
+                "oc.path": "/usr/bin/gnome-calculator",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.edge",
+                "oc.type": "app"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 305103953,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:3783642dbaf4383d4c48f6ae3646ae3135d317f504a5e8ae5e0103b3c63af2d0",
+                "sha256:c8d3fef9fe3b08b99ad4ac4f9056e89001204640aac36b4f03a9aecdac1642e9",
+                "sha256:e664e299815b410a8c77836e112835c578bd70726fc66db33f24bce28afba031",
+                "sha256:ce411e9f6acef28a3c5257d79d316b3501f82507b1f3adef3b29abd252edce6a",
+                "sha256:ea96889615a880d07b0e85743f1779172330b668e9c41adec7c13d64cb509c7a",
+                "sha256:73da6e179858fa7ed32862b0edea2ce24e5d9247e92794c95ba36128fd4061cd",
+                "sha256:d39de8aeaead78b9ae3afd341aee47deb39db3027156c74fce8593eea8eb2b22",
+                "sha256:646e24a1a1abd90b7e116b10b46bb4ff72ceb104a0c3c9fc0844847bf1143719",
+                "sha256:01f65cffd88a1d46d44f6924dbcebf4f95f864e64a0df923b62a758ef742c481",
+                "sha256:e9282f357ba2189d0bb7e0780a2f26e58640f1fab31994e37cf102585f75ad1d",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:16:28.959213014Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:295d4e3152494cbcf5480a85bae886c15260f0f464a990f13b7f462096791f86",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/calculator.d"
+                }
+            ]
+        }
+    }
+]
