@@ -1,0 +1,97 @@
+[
+    {
+        "Id": "sha256:1d94b668dc16a51cf06a6034d579ea53190c38ca50534085f85b367e58f896d8",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/math.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/math.d@sha256:1d94b668dc16a51cf06a6034d579ea53190c38ca50534085f85b367e58f896d8"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:27:09.257668951Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "LANG=en_US.utf8",
+                "ARGS=--math",
+                "APPNAME=math",
+                "APP=/usr/bin/libreoffice"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "--math",
+                "oc.cat": "office",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "libreoffice-math.desktop",
+                "oc.displayname": "Math",
+                "oc.fileextensions": "odf;odc",
+                "oc.icon": "circle_libreoffice_math.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiA8ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIzOTkuNTciIHgyPSIzOTkuNTciIHkxPSI1NDUuOCIgeTI9IjUxNy44IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDIuMTQyOSwwLDAsMi4xNDI5LC04MjYuMzYsLTExMDcuNSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM4ODllOSIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiM1ZWE1ZmIiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0iYyIgeD0iLS4wMzYiIHk9Ii0uMDM2IiB3aWR0aD0iMS4wNzIiIGhlaWdodD0iMS4wNzIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNDE5OTk4NzQiLz4KICA8L2ZpbHRlcj4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIzMi4wMiIgeDI9IjMyLjAyIiB5MT0iMi4wNDMiIHkyPSI2Mi4wNDUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjYSIvPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iZiIgeDE9IjMyIiB4Mj0iMzIiIHkxPSI3IiB5Mj0iNTciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2U3ZTdlNyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmZmYiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJlIiB4MT0iNDUuNTAxIiB4Mj0iNDUuNTAxIiB5MT0iNy4xMDU1IiB5Mj0iMjkuODk2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmNWY1ZjUiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZmZmIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImsiIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIwLjc1Ii8+CiAgPC9maWx0ZXI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJkIiBjeD0iMzguMDY2IiBjeT0iMjYuMTkyIiByPSIyNSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtLjggM2UtOCAtMS45MjY1ZS04IC0uOTQwMzQgODAuNDUzIDM4LjYyOSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzFlMzUzYyIgc3RvcC1vcGFjaXR5PSIuNDg1MzgiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMTkxOTE5IiBzdG9wLW9wYWNpdHk9IjAiIG9mZnNldD0iMSIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJpIiB4MT0iMzYxOC40IiB4Mj0iMzYxOC40IiB5MT0iLTc1OC42NCIgeTI9Ii03NzIuNjQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS44NzUgMCAwIDIgLTY3NTkuMiAxNTYzLjMpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmZmYiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZmZmIiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iaCIgeDE9IjM3MTYuMiIgeDI9IjM3MTYuMiIgeTE9IjY4My45OCIgeTI9IjcwNS4xMyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJhIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzY2NiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiMzMzMiIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJqIiB4MT0iMTk1Ljc1IiB4Mj0iMTk1Ljc1IiB5MT0iMTAxNi4yIiB5Mj0iMTAzMi4yIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDM0MzUuNSwtMTg5MS41KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJsIiB4MT0iMTk1Ljc1IiB4Mj0iMTk1Ljc1IiB5MT0iMTAxNi4yIiB5Mj0iMTAzMi4yIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0xLDAsMCwxLDM4MzAuNSwtMTg5MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjYSIvPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibSIgeDE9IjM3MTYuMiIgeDI9IjM3MTYuMiIgeTE9IjY4My45OCIgeTI9IjcwNS4xMyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguOTk0NTkgMCAwIDEgMjAuMDM5IC0uMTMwNTcpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeGxpbms6aHJlZj0iI2EiLz4KICA8ZmlsdGVyIGlkPSJvIiB4PSItLjA1OCIgeT0iLS4wNjIxNDMiIHdpZHRoPSIxLjExNiIgaGVpZ2h0PSIxLjEyNDMiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNzI1Ii8+CiAgPC9maWx0ZXI+CiAgPGZpbHRlciBpZD0ibiIgeD0iLS4wNTI4MjYiIHk9Ii0uMDY5NDI4IiB3aWR0aD0iMS4xMDU3IiBoZWlnaHQ9IjEuMTM4OSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC40MDQ5OTYyMiIvPgogIDwvZmlsdGVyPgogPC9kZWZzPgogPGNpcmNsZSB0cmFuc2Zvcm09Im1hdHJpeCgyLjE0MjkgMCAwIDIuMTQyOSAtODI2LjM2IC0xMTA3LjUpIiBjeD0iNDAwLjU3IiBjeT0iNTMxLjgiIHI9IjE0IiBmaWx0ZXI9InVybCgjYykiIG9wYWNpdHk9Ii4yNSIgc3Ryb2tlLXdpZHRoPSIuNzMzMzMiLz4KIDxnIHN0cm9rZS13aWR0aD0iMS41NzE1Ij4KICA8Y2lyY2xlIGN4PSIzMi4wMiIgY3k9IjMyLjA0NCIgcj0iMzAuMDAxIiBmaWxsPSJ1cmwoI2cpIi8+CiAgPHBhdGggZD0ibTMyIDdhMjUgMjUgMCAwIDAtMjUgMjUgMjUgMjUgMCAwIDAgMjUgMjUgMjUgMjUgMCAwIDAgMjUtMjUgMjUgMjUgMCAwIDAtMC4xMDM1Mi0yLjEwMzVsLTIyLjc5MS0yMi43OTFhMjUgMjUgMCAwIDAtMi4xMDU1LTAuMTA1NDd6IiBmaWx0ZXI9InVybCgjaykiIG9wYWNpdHk9Ii4yNSIvPgogIDxjaXJjbGUgY3g9IjMyLjAyIiBjeT0iMzIuMDQ0IiByPSIzMC4wMDEiIGZpbGwtb3BhY2l0eT0iMCIvPgogIDxjaXJjbGUgY3g9IjMyLjAyIiBjeT0iMzIuMDQ0IiByPSIwIiBmaWxsPSJ1cmwoI2IpIi8+CiAgPHBhdGggZD0ibTMyIDdhMjUgMjUgMCAwIDAtMjUgMjUgMjUgMjUgMCAwIDAgMjUgMjUgMjUgMjUgMCAwIDAgMjUtMjUgMjUgMjUgMCAwIDAtMC4xMDM1Mi0yLjEwMzVsLTIyLjc5MS0yMi43OTFhMjUgMjUgMCAwIDAtMi4xMDU1LTAuMTA1NDd6IiBmaWxsPSJ1cmwoI2YpIi8+CiA8L2c+CiA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLjI1IDAgMCAxLjI1IC00NTA1LjUgMTExNS4zKSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgc3Ryb2tlLXdpZHRoPSIuOCI+CiAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoLjggMCAwIC44IDM2MDQuNCAtODkyLjI0KSIgZD0ibTE5IDE4Yy0xLjEwOCAwLTIgMC44OTE5OS0yIDJ2MjRjMCAxLjEwOCAwLjg5MTk5IDIgMiAyaDI2YzEuMTA4IDAgMi0wLjg5MTk5IDItMnYtMTljMC0zLTUtNy04LTdoLTIweiIgZmlsdGVyPSJ1cmwoI28pIiBvcGFjaXR5PSIuMjUiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KC44IDAgMCAuOCAzNjA0LjQgLTg5Mi4yNCkiIGQ9Im0xOSAxOGMtMS4xMDggMC0yIDAuODkxOTktMiAydjI0YzAgMS4xMDggMC44OTE5OSAyIDIgMmgyNmMxLjEwOCAwIDItMC44OTE5OSAyLTJ2LTE5YzAtMy01LTctOC03aC0yMHoiIGZpbGw9InVybCgjaSkiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxnIGZpbGw9IiNmMDllNmYiPgogICA8cmVjdCB4PSIzNjE4IiB5PSItODU3Ljg0IiB3aWR0aD0iMjQiIGhlaWdodD0iLjc5OTk4Ii8+CiAgIDxyZWN0IHg9IjM2MTgiIHk9Ii04NzYuMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIuODAwMDMiLz4KICAgPHJlY3QgdHJhbnNmb3JtPSJyb3RhdGUoOTApIiB4PSItODc3Ljg0IiB5PSItMzYyMC40IiB3aWR0aD0iMjIuNCIgaGVpZ2h0PSIuOCIvPgogICA8cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg5MCkiIHg9Ii04NzcuODQiIHk9Ii0zNjQwLjQiIHdpZHRoPSIyMi40IiBoZWlnaHQ9Ii43OTk5MiIvPgogIDwvZz4KICA8ZyBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9Ii4yNSI+CiAgIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEuNTA0MSwwLDAsMS41MDQxLC0xOTYzLjksLTE5MTQuMikiIGQ9Im0zNzI0LjkgNjkxLjY2djEuOTk0NWgtMC45OTE4di0wLjkzMDc4aC02LjE0OTZsLTEuMzg4NyA4LjI0NDFoLTEuNTg2OWwtMS4zMjI1LTQuMTg4NWgtMC43OTM2di0xLjEzMDJsMS42NTMyIDJlLTUgMS4xNTcxIDMuMzI0MiAxLjE1NzItNy4zMTMzIiBzdHJva2Utd2lkdGg9Ii44Ii8+CiAgIDxwYXRoIGQ9Im0zNjM3LTg2Ny42NC03IDciIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNiIvPgogICA8cGF0aCBkPSJtMzYzMC04NjcuNjQgNyA3IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS41MDQxIDAgMCAxLjUwNDEgLTE5NjMuOSAtMTkxNC4yKSIgZmlsbD0idXJsKCNoKSI+CiAgIDxwYXRoIGQ9Im0zNzI0LjkgNjkxLjY2djEuOTk0NWgtMC45OTE4di0wLjkzMDc4aC02LjE0OTZsLTEuMzg4NyA4LjI0NDFoLTEuNTg2OWwtMS4zMjI1LTQuMTg4NWgtMC43OTM2di0xLjEzMDJsMS42NTMyIDJlLTUgMS4xNTcxIDMuMzI0MiAxLjE1NzItNy4zMTMzIiBmaWxsPSJ1cmwoI20pIiBzdHJva2Utd2lkdGg9Ii44Ii8+CiAgPC9nPgogIDxwYXRoIGQ9Im0zNjM3LTg2Ny42NC03IDciIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNqKSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNiIvPgogIDxwYXRoIGQ9Im0zNjMwLTg2Ny42NCA3IDciIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNsKSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNiIvPgogPC9nPgogPHBhdGggZD0ibTMyIDdhMjUgMjUgMCAwIDAtMjUgMjUgMjUgMjUgMCAwIDAgMjUgMjUgMjUgMjUgMCAwIDAgMjUtMjUgMjUgMjUgMCAwIDAtMC4xMDM1Mi0yLjEwMzVsLTIyLjc5MS0yMi43OTFhMjUgMjUgMCAwIDAtMi4xMDU1LTAuMTA1NDd6IiBmaWxsPSJ1cmwoI2QpIiBzdHJva2Utd2lkdGg9IjEuNTcxNSIvPgogPHBhdGggZD0ibTU2Ljg5NiAyOS44OTYtMjIuNzkxLTIyLjc5MWEyNSAyNSAwIDAgMCAyMi43OTEgMjIuNzkxeiIgZmlsbD0idXJsKCNlKSIgc3Ryb2tlLXdpZHRoPSIxLjU3MTUiLz4KPC9zdmc+Cg==",
+                "oc.keyword": "math,libreoffice,office",
+                "oc.launch": "libreoffice.libreoffice-math",
+                "oc.legacyfileextensions": "odf;odc",
+                "oc.mimetype": "application/vnd.oasis.opendocument.formula;application/vnd.sun.xml.math;application/vnd.oasis.opendocument.formula-template;text/mathml;application/mathml+xml;",
+                "oc.name": "math",
+                "oc.path": "/usr/bin/libreoffice",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.libreoffice",
+                "oc.type": "app",
+                "oc.uniquerunkey": "libreoffice",
+                "oc.usedefaultapplication": "true",
+                "org.opencontainers.image.version": "24.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 852972964,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:369ede38a92da8cd72a76f15f37e496def401830f3c8b7d39c0c7695682a51ce",
+                "sha256:2c84f0019f9811c44388e1c74321091815260c4cf83a9d99d45ca2ebcb3b3603",
+                "sha256:e664e299815b410a8c77836e112835c578bd70726fc66db33f24bce28afba031",
+                "sha256:09ed5a71bc1b619325426f440a6e2a5d5e49dcdc3eb5d84dd2471707702d1d7c",
+                "sha256:e41b60732d1165c0b7859b817197b48eeeabfc2702392284308356792377d8c9",
+                "sha256:dcdaa60881986d0ea6b228b5867c0728c807b4c047288b78b091bc7090a033c8",
+                "sha256:6dc7c116754694487a6df4d8828d2d3dc62d960a3d45792e7538e858dae4fd7e",
+                "sha256:abebd48526d50159068c19c15a37d6eeb8054cd9f6866045e1bd6f270e570ef8",
+                "sha256:7b7971612afdaa47a06f764a66542827770c96a440da6ca7f4a97c9d25337b70",
+                "sha256:9d3435792e947972340049fb80ac607520449cc4ea5b0f96844e94237599a5a7",
+                "sha256:4a96fa4b71d1b653da8f9b47436993c2ca94bcec6bc6ad634fb39920948acc59",
+                "sha256:cdcc69c74e971e8d6f3962a95171011daa33b7d628d7df2713c9a42e3eded24d",
+                "sha256:e469e8340edf964245676b2df38b0d64ea2ad689782bda10ca42d219d606cb71",
+                "sha256:4e6f2f05f8691c83b2dea99ebb1fa716398cb6068aba891422efa768c5053b7f",
+                "sha256:939faa76741b4f9283aa4275ffd902650a8c78eaaaab299a7fd57163b1f0494d",
+                "sha256:d829d1f83b6808abd28a75558b6fda01bad9bb3ed8ac09714cba2c495028874b",
+                "sha256:684f5277f71f839baff8cdd6b003a5c03d2e9f42b58dbc3a9f7bf3b6f8d7f21a",
+                "sha256:f6c4527f0b81004964abfdfeef83912e0c293f7154a1882d9b7b09fe4688e55f",
+                "sha256:f9b7b311a31114b8842cf5443cb33a788ea62c2f46e2f5771f9e8e77d15a68f7",
+                "sha256:f9b61ccb206112080866c1fddbbe924e8a8ff17f21b430a18b867f43c5821611",
+                "sha256:402015409680e46e03480582ab561762b0f5c7c60a04484e004528b984a25211"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:31:00.217707284Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:1d94b668dc16a51cf06a6034d579ea53190c38ca50534085f85b367e58f896d8",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/math.d"
+                }
+            ]
+        }
+    }
+]
