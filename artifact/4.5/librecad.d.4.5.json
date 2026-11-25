@@ -1,0 +1,81 @@
+[
+    {
+        "Id": "sha256:5db3dd8f0c07d93241f066dd971441d80586a4fa7906cf2a2969bb9c3a13bfdf",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/librecad.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/librecad.d@sha256:5db3dd8f0c07d93241f066dd971441d80586a4fa7906cf2a2969bb9c3a13bfdf"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:26:07.653996546Z",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "NODE_MAJOR=24",
+                "LANG=en_US.utf8",
+                "APPNAME=LibreCAD",
+                "APP=/usr/bin/librecad"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "development",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.displayname": "LibreCAD",
+                "oc.fileextensions": "dxf;dwg",
+                "oc.icon": "librecad.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48dGl0bGU+TGlicmVDQUQgSWNvbjwvdGl0bGU+PHBhdGggZmlsbD0iIzhlZDkwMCIgZD0iTTAgMGgxMi4xMzh2MTIuMTRIMHoiLz48cGF0aCBmaWxsPSIjOGVkOTAwIiBkPSJNMCA4Ny44NjJoMTIuMTM4djEyLjE0SDB6Ii8+PHBhdGggZmlsbD0iIzhlZDkwMCIgZD0iTTg3Ljg2IDBIMTAwdjEyLjE0SDg3Ljg2eiIvPjxwYXRoIGZpbGw9IiM4ZWQ5MDAiIGQ9Ik04Ny44NiA4Ny44NjJIMTAwdjEyLjE0SDg3Ljg2eiIvPjxwYXRoIGQ9Ik01MCAuMDMyQzIyLjM4Ni4wMzIgMCAyMi4zODYgMCA1MGMwIDI3LjYxNSAyMi4zODYgNTAgNTAgNTBzNTAtMjIuMzg1IDUwLTUwQzEwMCAyMi4zODYgNzcuNjE0LjAzMiA1MCAuMDMyem0wIDEyYzIwLjk4NyAwIDM4IDE2Ljk4MiAzOCAzNy45NjggMCAyMC45ODctMTcuMDEzIDM4LjAzMi0zOCAzOC4wMzItMjAuOTg2IDAtMzgtMTcuMDQ1LTM4LTM4LjAzMiAwLTIwLjk4NiAxNy4wMTQtMzcuOTY4IDM4LTM3Ljk2OHoiIGZpbGw9IiM4ZWQ5MDAiLz48cGF0aCBmaWxsPSIjNGQ0ZDRkIiBkPSJNMTAwIDU2SDI0djZIMFYzOGgyNHY2aDc2eiIvPjwvc3ZnPg==",
+                "oc.keyword": "librecad,librecad,modeling",
+                "oc.launch": "librecad.Librecad",
+                "oc.legacyfileextensions": "dxf;dwg",
+                "oc.mimetype": "image/vnd.dxf;",
+                "oc.name": "LibreCAD",
+                "oc.path": "/usr/bin/librecad",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app",
+                "org.opencontainers.image.version": "22.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 244768993,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:af272fa34b9eaf77b9456d49daa4d157829b4e27b91a79d1fe5602a1556635ad",
+                "sha256:1da2e36f563a8c0a4894041c139a9f3598a1615eb28b12fea922a1c08a707db6",
+                "sha256:c10c5983c4a81ca9c4f3e7cce2aefce7d649dd61bdc1fc33bf4b637bf187c766",
+                "sha256:eb4c71e4d12d8cd48d7dd678cbe2d0149ad976f4c98acaa2791a6ec358d14876",
+                "sha256:7f38a73c002e55663b0ba05577ee72cc999815a7a852ea788e49681367e163fd",
+                "sha256:8d744e4953698e4191fbb97432cdbfd89c896356a56414c72efbd3ad0f445f61",
+                "sha256:2be0b7f5ab299a227314d67d46066d4f18bdee4b54d8929fc9847ba91ebab514",
+                "sha256:3e186c3a96f3ae58daf16942a7e7489dd42e03036bc5b2d547e6bfed28622114",
+                "sha256:8529bcdb37becec675f34fb4bc66e97287c52d1e67e1f0c152c6ea5d6284bb53",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:30:15.794419303Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:5db3dd8f0c07d93241f066dd971441d80586a4fa7906cf2a2969bb9c3a13bfdf",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/librecad.d"
+                }
+            ]
+        }
+    }
+]
