@@ -1,0 +1,92 @@
+[
+    {
+        "Id": "sha256:f17af27c05f40300589298809fa9a0730420bca8b588407810461401755292eb",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/winhelp-wine.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/winhelp-wine.d@sha256:f17af27c05f40300589298809fa9a0730420bca8b588407810461401755292eb"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:29:46.623258746Z",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "WINEARCH=win64",
+                "WINEDLLOVERRIDES=mscoree,mshtml=",
+                "WINEPREFIX=/tmp/.wine",
+                "ARGS=winhelp",
+                "APPNAME=winhelp-wine",
+                "APP=/usr/local/bin/wine-seed.sh"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "WorkingDir": "/",
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "winhelp",
+                "oc.cat": "utilities",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.displayname": "Winhelp Wine",
+                "oc.fileextensions": "hlp;",
+                "oc.icon": "winhelp.svg",
+                "oc.icondata": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0OCA0OC4wMDAwMDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyR3JhZGllbnQ0NTM3IiB4MT0iLTQ3IiB4Mj0iLTEiIHkxPSIyNCIgeTI9IjI0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiMzMGEwZDQiIG9mZnNldD0iMCIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjNDFhOGQ3IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogPC9kZWZzPgogPG1ldGFkYXRhPgogIDxyZGY6UkRGPgogICA8Y2M6V29yayByZGY6YWJvdXQ9IiI+CiAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgIDxkYzp0eXBlIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiLz4KICAgIDxkYzp0aXRsZS8+CiAgIDwvY2M6V29yaz4KICA8L3JkZjpSREY+CiA8L21ldGFkYXRhPgogPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzLjk0OWUtNSkiPgogIDxwYXRoIGQ9Im0xIDQzdjAuMjVjMCAyLjIxNiAxLjc4NCA0IDQgNGgzOGMyLjIxNiAwIDQtMS43ODQgNC00di0wLjI1YzAgMi4yMTYtMS43ODQgNC00IDRoLTM4Yy0yLjIxNiAwLTQtMS43ODQtNC00em0wIDAuNXYwLjVjMCAyLjIxNiAxLjc4NCA0IDQgNGgzOGMyLjIxNiAwIDQtMS43ODQgNC00di0wLjVjMCAyLjIxNi0xLjc4NCA0LTQgNGgtMzhjLTIuMjE2IDAtNC0xLjc4NC00LTR6IiBvcGFjaXR5PSIuMDIiLz4KICA8cGF0aCBkPSJtMSA0My4yNXYwLjI1YzAgMi4yMTYgMS43ODQgNCA0IDRoMzhjMi4yMTYgMCA0LTEuNzg0IDQtNHYtMC4yNWMwIDIuMjE2LTEuNzg0IDQtNCA0aC0zOGMtMi4yMTYgMC00LTEuNzg0LTQtNHoiIG9wYWNpdHk9Ii4wNSIvPgogIDxwYXRoIGQ9Im0xIDQzdjAuMjVjMCAyLjIxNiAxLjc4NCA0IDQgNGgzOGMyLjIxNiAwIDQtMS43ODQgNC00di0wLjI1YzAgMi4yMTYtMS43ODQgNC00IDRoLTM4Yy0yLjIxNiAwLTQtMS43ODQtNC00eiIgb3BhY2l0eT0iLjEiLz4KIDwvZz4KIDxyZWN0IHRyYW5zZm9ybT0icm90YXRlKC05MCkiIHg9Ii00NyIgeT0iMSIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjQ2IiByeD0iNCIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudDQ1MzcpIi8+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMuOTQ5ZS01KSI+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMTAwNC40KSI+CiAgIDxwYXRoIGQ9Im0xIDEwNDMuNHY0YzAgMi4yMTYgMS43ODQgNCA0IDRoMzhjMi4yMTYgMCA0LTEuNzg0IDQtNHYtNGMwIDIuMjE2LTEuNzg0IDQtNCA0aC0zOGMtMi4yMTYgMC00LTEuNzg0LTQtNHoiIG9wYWNpdHk9Ii4xIi8+CiAgPC9nPgogPC9nPgogPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEsLTEpIj4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICAgPGcgb3BhY2l0eT0iLjEiPjwhLS0gY29sb3I6ICM0MWE4ZDggLS0+CiAgICA8cGF0aCBkPSJtMjQgOWMtOC4yODUgMC0xNSA2LjcxNS0xNSAxNXM2LjcxNSAxNSAxNSAxNSAxNS02LjcxNSAxNS0xNS02LjcxNS0xNS0xNS0xNW0wIDZjNC45NjkgMCA5IDQuMDMgOSA5IDAgNC45NjktNC4wMyA5LTkgOS00Ljk2OSAwLTktNC4wMy05LTkgMC00Ljk2OSA0LjAzLTkgOS05Ii8+CiAgICA8cGF0aCBkPSJtMjQgOWMtOC4yODUgMC0xNSA2LjcxNS0xNSAxNSAwIDQuMzk4IDEuOTIyIDguMzIgNC45MzggMTEuMDYtMi40MjYtMi42NjQtMy45MzgtNi4xNzYtMy45MzgtMTAuMDYgMC04LjI4NSA2LjcxNS0xNSAxNS0xNSAzLjg4NyAwIDcuMzk4IDEuNTEyIDEwLjA2IDMuOTM4LTIuNzQyLTMuMDItNi42NjQtNC45MzgtMTEuMDYtNC45MzgiIGZpbGwtb3BhY2l0eT0iLjE0OSIvPgogICAgPHBhdGggZD0ibTM1LjA1IDIzLjg1Yy0wLjE2MjY0IDIuMDYzMy0xLjAzMDMgNC4wNzkzLTIuNjA3OCA1LjY1NjktMy41MTM2IDMuNTEzNi05LjIxMzYgMy41MTQzLTEyLjcyOCAwLTEuNTc2OC0xLjU3NjgtMi40NDQ1LTMuNTk0Mi0yLjYwNzgtNS42NTY5LTAuMTk2NTggMi41MzI5IDAuNjcxMDQgNS4xMzQzIDIuNjA3OCA3LjA3MTEgMy41MTM2IDMuNTEzNiA5LjIxMzYgMy41MTQzIDEyLjcyOCAwIDEuOTM2MS0xLjkzNjEgMi44MDMtNC41MzgyIDIuNjA3OC03LjA3MTEiIGZpbGwtb3BhY2l0eT0iLjE0OSIvPgogICA8L2c+CiAgPC9nPgogPC9nPgogPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwtMSkiPjwhLS0gY29sb3I6ICM0MWE4ZDggLS0+CiAgPHBhdGggZD0ibTI0IDljLTguMjg1IDAtMTUgNi43MTUtMTUgMTVzNi43MTUgMTUgMTUgMTUgMTUtNi43MTUgMTUtMTUtNi43MTUtMTUtMTUtMTVtMCA2YzQuOTY5IDAgOSA0LjAzIDkgOSAwIDQuOTY5LTQuMDMgOS05IDktNC45NjkgMC05LTQuMDMtOS05IDAtNC45NjkgNC4wMy05IDktOSIgZmlsbD0iI2VhNWM1MyIvPgogIDxnIGZpbGw9IiNlZWVjZTAiPgogICA8cGF0aCBkPSJtMTAuMzc1IDE3Ljc4MWMtMC44NjcgMS44OTUtMS4zNzUgNC0xLjM3NSA2LjIxOXMwLjUwOCA0LjMyNCAxLjM3NSA2LjIxOWw1LjI1LTNjLTAuMzgzLTEtMC42MjUtMi4wODItMC42MjUtMy4yMTlzMC4yNDItMi4yMTkgMC42MjUtMy4yMTltLTUuMjUtMyIvPgogICA8cGF0aCBkPSJtMzcuNjI1IDE3Ljc4MS01LjI1IDNjMC4zODMgMSAwLjYyNSAyLjA4MiAwLjYyNSAzLjIxOXMtMC4yNDIgMi4yMTktMC42MjUgMy4yMTlsNS4yNSAzYzAuODY3LTEuODk1IDEuMzc1LTQgMS4zNzUtNi4yMTlzLTAuNTA4LTQuMzI0LTEuMzc1LTYuMjE5Ii8+CiAgIDxwYXRoIGQ9Im0yMC43ODEgMzIuMzc1LTMgNS4yNWMxLjg5NSAwLjg2NyA0IDEuMzc1IDYuMjE5IDEuMzc1czQuMzI0LTAuNTA4IDYuMjE5LTEuMzc1bC0zLTUuMjVjLTEgMC4zODMtMi4wODIgMC42MjUtMy4yMTkgMC42MjVzLTIuMjE5LTAuMjQyLTMuMjE5LTAuNjI1Ii8+CiAgIDxwYXRoIGQ9Im0yNCA5Yy0yLjIxOSAwLTQuMzI0IDAuNTA4LTYuMjE5IDEuMzc1bDMgNS4yNWMxLTAuMzgzIDIuMDgyLTAuNjI1IDMuMjE5LTAuNjI1czIuMjE5IDAuMjQyIDMuMjE5IDAuNjI1bDMtNS4yNWMtMS44OTUtMC44NjctNC0xLjM3NS02LjIxOS0xLjM3NSIvPgogIDwvZz4KIDwvZz4KIDxwYXRoIGQ9Im0zMi45NzkgMjMuNDI0YTkgOSAwIDAgMSAtOC45Nzg1IDguNTc2MiA5IDkgMCAwIDEgLTguOTc4NSAtOC40MjM4IDkgOSAwIDAgMCAtMC4wMjE0ODQgMC40MjM4MyA5IDkgMCAwIDAgOSA5IDkgOSAwIDAgMCA5IC05IDkgOSAwIDAgMCAtMC4wMjE0ODQgLTAuNTc2MTd6IiBvcGFjaXR5PSIuMSIgc3Ryb2tlLXdpZHRoPSIuOTk4MjciLz4KIDxwYXRoIGQ9Ik0gMjQgOCBBIDE1IDE1IDAgMCAwIDkgMjMgQSAxNSAxNSAwIDAgMCA5LjAxOTUzMTIgMjMuNTg1OTM4IEEgMTUgMTUgMCAwIDEgMjQgOSBBIDE1IDE1IDAgMCAxIDM4Ljk4MDQ2OSAyMy40MTQwNjIgQSAxNSAxNSAwIDAgMCAzOSAyMyBBIDE1IDE1IDAgMCAwIDI0IDggeiAiIG9wYWNpdHk9Ii4xIiBzdHJva2Utd2lkdGg9IjQuMjYyMyIvPgo8L3N2Zz4K",
+                "oc.keyword": "winhelp-wine,wine,winhelp,text,hlp,help,wine",
+                "oc.launch": "winhlp32.exe.Wine",
+                "oc.mimetype": "application/hlp;",
+                "oc.name": "winhelp-wine",
+                "oc.path": "/usr/local/bin/wine-seed.sh",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine.wine",
+                "oc.type": "app"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 652414819,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26f97af196845307e3064",
+                "sha256:4617e4dd87ca9c7625f47ba10f911c3aa48038b9716d63ded0a1b56dd75cc4bb",
+                "sha256:654b4fbf75db905b07cf88c4e36f2ae3b3f154826cadfa485f3385e0a52a01ee",
+                "sha256:974b86c3c34f440b52d1696f1857a71dc52c44a62c4bbf9b9ac649efebff23dc",
+                "sha256:799dac54df568036ed5dbac023da9cd16100f61cc3d33a2e5b67d046154da53a",
+                "sha256:d52b555e27edede8a60e828afd2a95b5fa202b842c6598cb158c28e4c28b032e",
+                "sha256:31960568bdcb4cae25897cb7272052db21c9b2e58a1df838c05a4eb6f25d8149",
+                "sha256:4635d513b85c17240385e5bed242928019e909a84456138d36af4cc390085a7d",
+                "sha256:923aa3d42a80e877fc9c9748365de065048c313cef93c2e22fb75b6255f11759",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:a4a165db043c8ad1c4b2ef252f93642d038eda9ed6ec2cc27fe608fbd94be51f",
+                "sha256:04a4346edf60287683b7969fbf405b8549f5dde1b29ef58e98ca40fd73daaaf5",
+                "sha256:1e70ae0f3c7b5b747ea0f54b8db55dced28a1e7eca0be78c15b98ea4741dde32",
+                "sha256:1fe06f6fd80808814008ad34a2331cea85c99333ff74b4a2319b8532ed6b2444",
+                "sha256:7a1b8e666c5fa294ead4e26eb1db039126a9517e71d3b4b98c9bf21139a9cf76",
+                "sha256:89c745a1b2af0e9149c0dd36d3de555df9cd56c7079396baf346b6134c6d59ba",
+                "sha256:cbefae45127f3e2725edceb1903babfd3bbc0f824c3da8748eb5b81d36ba2c99",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:33:10.706901846Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:f17af27c05f40300589298809fa9a0730420bca8b588407810461401755292eb",
+            "size": 856
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/winhelp-wine.d"
+                }
+            ]
+        }
+    }
+]
