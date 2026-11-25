@@ -1,0 +1,79 @@
+[
+    {
+        "Id": "sha256:bb25a0692d801c1e1813ed2b53603fdc5f690f303c8968d480960955e5845ddb",
+        "RepoTags": [
+            "ghcr.io/abcdesktopio/rhythmbox.d:4.5"
+        ],
+        "RepoDigests": [
+            "ghcr.io/abcdesktopio/rhythmbox.d@sha256:bb25a0692d801c1e1813ed2b53603fdc5f690f303c8968d480960955e5845ddb"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-25T16:30:13.215206466Z",
+        "Author": "Alexandre DEVELY",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "APPNAME=rhythmbox",
+                "APP=/usr/bin/rhythmbox"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "WorkingDir": "/",
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities",
+                "oc.comment": "{{ oc.comment }}",
+                "oc.desktopfile": "org.gnome.Rhythmbox3.desktop",
+                "oc.displayname": "rhythmbox",
+                "oc.icon": "circle_rhythmbox.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRjNGM0YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzJhMmEyYSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImYiIHgxPSI1MjAiIHgyPSI1MjAiIHkxPSIyNCIgeTI9IjEwMDQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM3OS42NSAtNDg1LjkzKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHhsaW5rOmhyZWY9IiNhIi8+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMzk4Ljk1IiB4Mj0iMzk4Ljk1IiB5MT0iMTEzLjQxIiB5Mj0iOTEzLjQxIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC00MzAuMjIgLTUwNi4zMykgc2NhbGUoMS4wMjExKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNmZWRmMmQiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmNDhkMDEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJpIiB4MT0iNTU4Ljk1IiB4Mj0iNTU4Ljk1IiB5MT0iMjEzLjQxIiB5Mj0iODEzLjQxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC45OCAwIDAgLjk4IC00MDcuNTkgLTQ4NC45MSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjYiIvPjxsaW5lYXJHcmFkaWVudCBpZD0iYiI+PHN0b3Agb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1vcGFjaXR5PSIwIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iayIgeDE9IjUyOC45NSIgeDI9IjUyOC45NSIgeTE9IjM2MS4wNiIgeTI9IjY4OC41MSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgtNDY3LjU4IC01NDEuNjgpIHNjYWxlKDEuMDg4OSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjYSIvPjxsaW5lYXJHcmFkaWVudCBpZD0ibCIgeDE9IjU1OC45NSIgeDI9IjU1OC45NSIgeTE9IjIxMy40MSIgeTI9IjgxMy40MSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguMDYgMCAwIC4wNiAtMS4wNTcgLjcxNSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjYiIvPjxsaW5lYXJHcmFkaWVudCBpZD0iZCIgeDE9IjQwOC4yNSIgeDI9IjQwNy45NCIgeTE9IjU0Ny42IiB5Mj0iNDk4Ljg5IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC01MTAuNjQgLTY2My41Mikgc2NhbGUoMS4zMjc2KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNmZmYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNlNmU2ZTYiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iaiIgeD0iLS4zNiIgeT0iLS4zNiIgd2lkdGg9IjEuNzIiIGhlaWdodD0iMS43MiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIzMCIvPjwvZmlsdGVyPjxmaWx0ZXIgaWQ9ImUiIHg9Ii0uMDgxIiB5PSItLjA4MSIgd2lkdGg9IjEuMTYyIiBoZWlnaHQ9IjEuMTYyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMzLjEyNCIvPjwvZmlsdGVyPjxmaWx0ZXIgaWQ9ImMiIHg9Ii0uMDM2IiB5PSItLjAzNiIgd2lkdGg9IjEuMDcyIiBoZWlnaHQ9IjEuMDcyIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249Ii44OSIvPjwvZmlsdGVyPjxyYWRpYWxHcmFkaWVudCBpZD0iaCIgY3g9IjU1MC45NSIgY3k9IjUyMS40MSIgcj0iNDI1IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC00MzAuMjIgLTUwNi4zMykgc2NhbGUoMS4wMjExKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNmZThjMDYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZWE5MzMiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zODkuMzIgLTQ4OS45Mikgc2NhbGUoMS4wMTE1KSIgeD0iMzg2Ljg1IiB5PSI0ODYuMzEiIHdpZHRoPSI1OS4zMTUiIGhlaWdodD0iNTkuMzE1IiByeT0iMjkuNjU3IiBmaWx0ZXI9InVybCgjYykiIG9wYWNpdHk9Ii4yNSIvPjxyZWN0IHg9IjEuOTgzIiB5PSIxLjk3OCIgd2lkdGg9IjU5Ljk5NyIgaGVpZ2h0PSI1OS45OTciIHJ5PSIyOS45OTgiIGZpbGw9InVybCgjZCkiLz48ZyB0cmFuc2Zvcm09Im1hdHJpeCguMDM2NzMgMCAwIC4wMzY3MyAyNy4xMzggMzguMDQyKSI+PGNpcmNsZSBjeD0iMTMyLjM1IiBjeT0iMjYuMDc0IiByPSI0OTAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsdGVyPSJ1cmwoI2UpIiBvcGFjaXR5PSIuMTUiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgbWFya2VycyBmaWxsIi8+PGNpcmNsZSBjeD0iMTMyLjM1IiBjeT0iMjYuMDc0IiByPSI0OTAiIGZpbGw9InVybCgjZikiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBtYXJrZXJzIGZpbGwiLz48Y2lyY2xlIGN4PSIxMzIuMzUiIGN5PSIyNi4wNzQiIHI9IjQwOC40MyIgZmlsbD0idXJsKCNnKSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9InVybCgjaCkiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNTQuMjQ1IiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIGZpbGwgbWFya2VycyIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNjEuNjcgLTYzMS45MSkiIGZpbGw9Im5vbmUiPjxjaXJjbGUgY3g9IjUxMiIgY3k9IjU0MC4zNiIgcj0iMTc1IiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIG1hcmtlcnMgZmlsbCIvPjxjaXJjbGUgY3g9IjIyNi4wMyIgY3k9IjgyNS42MSIgcj0iMTI1IiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIG1hcmtlcnMgZmlsbCIvPjxwYXRoIGQ9Im0zNjAgNDUyLjM2LTIzNSAzMDAgMTgwIDE3MCAzMTUtMjQ1eiIvPjwvZz48Y2lyY2xlIGN4PSIxMzIuMzUiIGN5PSIyNi4wNzQiIHI9IjI0NSIgZmlsbD0idXJsKCNpKSIgZmlsbC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz48Y2lyY2xlIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MDguMyAtNjQyLjg3KSBzY2FsZSgxLjE2MjgpIiBjeD0iNTUwLjk1IiBjeT0iNjExLjQxIiByPSIxMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsdGVyPSJ1cmwoI2opIiBvcGFjaXR5PSIuNCIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz48Y2lyY2xlIGN4PSIxMzIuMzUiIGN5PSIyNi4wNzQiIHI9IjE2My4zMyIgZmlsbD0idXJsKCNrKSIgZmlsbC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuOSIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz48cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzkwLjMyIC00OTYuNTkpIHNjYWxlKDE2LjMzMykiIGQ9Ik0zMS44ODcgMTdBMTUgMTUgMCAwIDAgMTcgMzJhMTUgMTUgMCAwIDAgMTQuMzUgMTQuOTg2QTE0LjM1OSAxNC41IDAgMCAxIDE3LjY0MSAzMi41IDE0LjM1OSAxNC41IDAgMCAxIDMyIDE4YTE0LjM1OSAxNC41IDAgMCAxIDE0LjM1OSAxNC41IDE0LjM1OSAxNC41IDAgMCAxLTEzLjczNiAxNC40ODZBMTUgMTUgMCAwIDAgNDcgMzJhMTUgMTUgMCAwIDAtMTUtMTUgMTUgMTUgMCAwIDAtLjExMyAwem0uNzM2IDI5Ljk4NmExNC4zNTkgMTQuNSAwIDAgMS0uMzE4LjAxIDE1IDE1IDAgMCAwIC4zMTgtLjAxem0tLjMxOC4wMUExNC4zNTkgMTQuNSAwIDAgMSAzMiA0N2ExNSAxNSAwIDAgMCAuMzA1LS4wMDR6IiBmaWxsPSJ1cmwoI2wpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4wNSIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz48L2c+PGNpcmNsZSB0cmFuc2Zvcm09InJvdGF0ZSg5MCkiIGN4PSIxNyIgY3k9Ii0yMCIgcj0iMyIgb3BhY2l0eT0iLjc1Ii8+PGNpcmNsZSB0cmFuc2Zvcm09InJvdGF0ZSg5MCkiIGN4PSIxNyIgY3k9Ii00NCIgcj0iMyIgb3BhY2l0eT0iLjc1Ii8+PGNpcmNsZSB0cmFuc2Zvcm09InJvdGF0ZSg5MCkiIGN4PSIxNyIgY3k9Ii0yMCIgcj0iMiIgZmlsbD0iIzRkNGQ0ZCIvPjxjaXJjbGUgdHJhbnNmb3JtPSJyb3RhdGUoOTApIiBjeD0iMTciIGN5PSItNDQiIHI9IjIiIGZpbGw9IiM0ZDRkNGQiLz48L3N2Zz4=",
+                "oc.keyword": "rhythmbox,rhythmbox,audio;song;mp3;cd;podcast;MTP;playlist;last.fm;dlna;radio;",
+                "oc.launch": "rhythmbox.Rhythmbox",
+                "oc.mimetype": "application/x-ogg;application/ogg;audio/x-vorbis+ogg;audio/vorbis;audio/x-vorbis;audio/x-scpls;audio/x-mp3;audio/x-mpeg;audio/mpeg;audio/x-mpegurl;audio/x-flac;audio/mp4;audio/x-it;audio/x-mod;audio/x-s3m;audio/x-stm;audio/x-xm;",
+                "oc.name": "rhythmbox",
+                "oc.path": "/usr/bin/rhythmbox",
+                "oc.template": "ghcr.io/abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 249489621,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26f97af196845307e3064",
+                "sha256:4617e4dd87ca9c7625f47ba10f911c3aa48038b9716d63ded0a1b56dd75cc4bb",
+                "sha256:654b4fbf75db905b07cf88c4e36f2ae3b3f154826cadfa485f3385e0a52a01ee",
+                "sha256:974b86c3c34f440b52d1696f1857a71dc52c44a62c4bbf9b9ac649efebff23dc",
+                "sha256:799dac54df568036ed5dbac023da9cd16100f61cc3d33a2e5b67d046154da53a",
+                "sha256:d52b555e27edede8a60e828afd2a95b5fa202b842c6598cb158c28e4c28b032e",
+                "sha256:31960568bdcb4cae25897cb7272052db21c9b2e58a1df838c05a4eb6f25d8149",
+                "sha256:4635d513b85c17240385e5bed242928019e909a84456138d36af4cc390085a7d",
+                "sha256:923aa3d42a80e877fc9c9748365de065048c313cef93c2e22fb75b6255f11759",
+                "sha256:66aef11ac2687784b2256e211e37624ffcafb961227c88ee874518c92eb7b914",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-25T16:33:46.17842259Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:bb25a0692d801c1e1813ed2b53603fdc5f690f303c8968d480960955e5845ddb",
+            "size": 1609
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "ghcr.io/abcdesktopio/rhythmbox.d"
+                }
+            ]
+        }
+    }
+]
